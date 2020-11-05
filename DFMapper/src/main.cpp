@@ -9,12 +9,13 @@ TODO:
 
 #include "define/define.hpp"
 #include "resource/dfg.h"
+#include "common/dfg_tool.h"
 
 using namespace DFMpr;
 
 int main()
 {
-    Dfg dfg;
-    dfg.genDfg("./IR/backprop.ll");
-    dfg.printDfg();
+    Dfg* dfg = new Dfg();
+    dfg->genDfg("./IR/backprop.ll");
+    DfgTool::printDfg(dfg);
 }

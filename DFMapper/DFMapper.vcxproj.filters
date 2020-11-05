@@ -28,6 +28,9 @@
     <Filter Include="src\resource">
       <UniqueIdentifier>{992fa409-3f80-417e-89de-a6f942d3a331}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\common">
+      <UniqueIdentifier>{3f4dc042-7487-4753-b361-3c14ba716020}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\util\ReadFile.hpp">
@@ -45,6 +48,9 @@
     <ClInclude Include="src\resource\dfg.h">
       <Filter>src\resource</Filter>
     </ClInclude>
+    <ClInclude Include="src\common\dfg_tool.h">
+      <Filter>src\common</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -55,6 +61,9 @@
     </ClCompile>
     <ClCompile Include="src\resource\dfg.cpp">
       <Filter>src\resource</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\dfg_tool.cpp">
+      <Filter>src\common</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

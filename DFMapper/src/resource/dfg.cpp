@@ -1,6 +1,9 @@
 #include "./dfg.h"
 
 using namespace DFMpr;
+Dfg::Dfg()
+{
+}
 
 void Dfg::genDfg(string fpath)
 {
@@ -170,32 +173,4 @@ void Dfg::genDfg(string fpath)
     //}
 
     in.close();
-}
-
-void Dfg::printDfg() const
-{
-    for (auto pair : nodes)
-    {
-        //vector<int>::iterator it = find(start.begin(), start.end(), pair.first);
-        //if (it != start.end())
-        //    continue;
-
-        std::cout << pair.first << "\tpre_nodes: ";
-        for (auto node : pair.second.pre_nodes)
-        {
-            //vector<int>::iterator it = find(start.begin(), start.end(), node);
-            //if (it != start.end())
-            //    continue;
-            std::cout << node << " ";
-        }
-        std::cout << "\n\tnext_nodes: ";
-        for (auto node : pair.second.next_nodes)
-        {
-            //vector<int>::iterator it = find(start.begin(), start.end(), node);
-            //if (it != start.end())
-            //    continue;
-            std::cout << node << " ";
-        }
-        std::cout << std::endl << std::endl;
-    }
 }

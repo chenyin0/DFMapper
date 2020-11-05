@@ -138,6 +138,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\common\dfg_tool.h" />
     <ClInclude Include="src\define\define.hpp" />
     <ClInclude Include="src\resource\arch.h" />
     <ClInclude Include="src\resource\dfg.h" />
@@ -145,6 +146,7 @@
     <ClInclude Include="src\util\util.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\common\dfg_tool.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\resource\arch.cpp" />
     <ClCompile Include="src\resource\dfg.cpp" />

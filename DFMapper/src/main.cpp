@@ -15,7 +15,10 @@ using namespace DFMpr;
 
 int main()
 {
-    Dfg* dfg = new Dfg();
-    dfg->genDfg("./IR/backprop.ll");
+    Dfg dfg;
+    dfg.genDfg("./IR/backprop.ll");
+    DfgTool::bfsTraverse(dfg);
+    DfgTool::pathAnalyze(dfg);
     DfgTool::printDfg(dfg);
+    //std::cout << dfg.nodes.size() << std::endl;
 }

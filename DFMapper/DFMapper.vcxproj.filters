@@ -31,6 +31,9 @@
     <Filter Include="src\common">
       <UniqueIdentifier>{3f4dc042-7487-4753-b361-3c14ba716020}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\mapper\template_match">
+      <UniqueIdentifier>{83635f20-5135-4dac-b3e3-e02d288becc9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\util\ReadFile.hpp">

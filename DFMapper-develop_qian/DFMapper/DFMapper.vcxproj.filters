@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{eb86fd26-80e7-43f0-b647-c96e46a198f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mapper">
+      <UniqueIdentifier>{243c242f-2bf7-4f6c-a99c-302e6b8033a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\util">
+      <UniqueIdentifier>{9f406661-cc75-45da-9b1e-a340a027e68a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mapper\ILP">
+      <UniqueIdentifier>{e78f8c80-aee3-4e07-a456-1af33bae8d0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mapper\simulate_anneal">
+      <UniqueIdentifier>{008dc975-aaf9-4dc4-a491-eee563e2d26e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mapper\graph_traversal">
+      <UniqueIdentifier>{761cde92-82bd-40b4-8672-02b03248f130}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IR">
+      <UniqueIdentifier>{4cecc739-7d82-4c36-8643-81e1877495f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\define">
+      <UniqueIdentifier>{0626d718-6c9d-498a-83af-5c136c92aa4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\resource">
+      <UniqueIdentifier>{992fa409-3f80-417e-89de-a6f942d3a331}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common">
+      <UniqueIdentifier>{3f4dc042-7487-4753-b361-3c14ba716020}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\util\ReadFile.hpp">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\util.hpp">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\define\define.hpp">
+      <Filter>src\define</Filter>
+    </ClInclude>
+    <ClInclude Include="src\resource\arch.h">
+      <Filter>src\resource</Filter>
+    </ClInclude>
+    <ClInclude Include="src\resource\dfg.h">
+      <Filter>src\resource</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\dfg_tool.h">
+      <Filter>src\common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\resource\arch.cpp">
+      <Filter>src\resource</Filter>
+    </ClCompile>
+    <ClCompile Include="src\resource\dfg.cpp">
+      <Filter>src\resource</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\dfg_tool.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IR\backprop.ll">
+      <Filter>IR</Filter>
+    </None>
+    <None Include="IR\gemm.ll">
+      <Filter>IR</Filter>
+    </None>
+  </ItemGroup>
+</Project>

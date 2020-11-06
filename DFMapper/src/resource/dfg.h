@@ -1,10 +1,12 @@
 #pragma once
 #include "../define/define.hpp"
+#include "../common/enum.h"
 
 namespace DFMpr {
     struct Node
     {
         string tag;
+        Op op;
         set<int> pre_nodes;
         set<int> next_nodes;
         int nodeLevel = -1;  // The max level of a node in BFS traversal
@@ -21,8 +23,10 @@ namespace DFMpr {
         vector<uint> pathDelay;  // Record the delay cycle of each Edge
         vector<uint> delayDist;  // Delay distribution
         vector<float> delayDistNorm;  // Normalized delay distribution (%)
+        vector<float> delayDistIntervalNorm;
 
     private:
+        Op getNodeOp(int nodeId, string _op);
         std::ifstream in;
         std::fstream out;
     };

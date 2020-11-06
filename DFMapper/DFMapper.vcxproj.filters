@@ -34,6 +34,9 @@
     <Filter Include="src\mapper\template_match">
       <UniqueIdentifier>{83635f20-5135-4dac-b3e3-e02d288becc9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\mapper\routing">
+      <UniqueIdentifier>{ad894d9e-46c1-4826-97f3-2f10c545d307}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\util\ReadFile.hpp">
@@ -45,22 +48,19 @@
     <ClInclude Include="src\define\define.hpp">
       <Filter>src\define</Filter>
     </ClInclude>
-    <ClInclude Include="src\resource\arch.h">
-      <Filter>src\resource</Filter>
-    </ClInclude>
     <ClInclude Include="src\resource\dfg.h">
       <Filter>src\resource</Filter>
     </ClInclude>
     <ClInclude Include="src\common\dfg_tool.h">
       <Filter>src\common</Filter>
     </ClInclude>
+    <ClInclude Include="src\common\enum.h">
+      <Filter>src\common</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
       <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="src\resource\arch.cpp">
-      <Filter>src\resource</Filter>
     </ClCompile>
     <ClCompile Include="src\resource\dfg.cpp">
       <Filter>src\resource</Filter>

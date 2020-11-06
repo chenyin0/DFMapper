@@ -174,3 +174,31 @@ void Dfg::genDfg(string fpath)
 
     in.close();
 }
+
+
+// Modify this function according to your need!!!
+Op Dfg::getNodeOp(int nodeId, string _op)
+{
+    if (_op == "add" || _op == "fadd")
+        return Op::Add;
+    else if (_op == "sub" || _op == "fsub")
+        return Op::Sub;
+    else if (_op == "mul" || _op == "fmul" || _op == "shl")
+        return Op::Mul;
+    else if (_op == "udiv" || _op == "sdiv" || _op == "fdiv" || _op == "lshr" || _op == "ashr" || _op == "trunc")
+        return Op::Div;
+    else if (_op == "and")
+        return Op::And;
+    else if (_op == "or")
+        return Op::Or;
+    else if (_op == "xor")
+        return Op::Xor;
+    else if (_op == "icmp")
+        return Op::Cmp;
+    else if (_op == "load")
+        return Op::Load;
+    else if (_op == "store")
+        return Op::Store;
+    else
+        return Op::Undefine;
+}

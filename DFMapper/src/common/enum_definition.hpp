@@ -1,10 +1,23 @@
 #pragma once
-
+#include "../define/define.hpp"
 #include "../util/cord.hpp"
-#include "../../lib/tinyxml2/tinyxml2.h"
+#include "../tinyxml2/tinyxml2.h"
 
-namespace Simulator
-{
+namespace DFMpr {
+    enum class Op {
+        Add,  // add, fadd
+        Sub,  // sub, fsub
+        Mul,  // mul, fmul, shl 
+        Div,  // udiv, sdiv, fdiv, lshr, ashr, trunc
+        And,  // and
+        Or,  // or
+        Xor,  // xor
+        Cmp,  // icmp
+        Load,  // load
+        Store,  // store
+        Undefine
+    }; 
+
 	enum class NodeType
 	{
 		/** real node */
@@ -206,7 +219,7 @@ namespace Simulator
 		in1,
 		in2,
 		aluin1,
-		in0in1	
+		in0in1
 	};
 	enum class CondMode
 	{
@@ -299,7 +312,7 @@ namespace Simulator
 		out,
 		null
 	};
-	
+
 	using WireType = PortType;
 	using SegmentType = PortType;
 

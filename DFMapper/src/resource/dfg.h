@@ -1,6 +1,6 @@
 #pragma once
 #include "../define/define.hpp"
-#include "../common/enum.h"
+#include "../common/enum_definition.hpp"
 
 namespace DFMpr {
     struct Node

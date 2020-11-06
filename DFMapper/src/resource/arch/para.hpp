@@ -1,9 +1,8 @@
 #pragma once
 
-#include "../util/cord.hpp"
-#include "../../lib/tinyxml2/tinyxml2.h"
-#include "dfg_node.hpp"
-#include "enum_definition.hpp"
+#include "../../util/cord.hpp"
+#include "../../tinyxml2/tinyxml2.h"
+#include "../../common/enum_definition.hpp"
 #include "arch_block_net.hpp"
 
 namespace Simulator::Preprocess

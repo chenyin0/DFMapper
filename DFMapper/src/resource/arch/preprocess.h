@@ -1,12 +1,10 @@
 #pragma once
 
-#include "../define/global.hpp"
-#include "../util/util.hpp"
-#include "../util/cord.hpp"
-#include "../../lib/tinyxml2/tinyxml2.h"
-#include "enum_definition.hpp"
-#include "enum_converter.hpp"
-#include "dfg_node.hpp"
+#include "../../util/util.hpp"
+#include "../../util/cord.hpp"
+#include "../../tinyxml2/tinyxml2.h"
+#include "../../common/enum_definition.hpp"
+#include "../../common/enum_converter.hpp"
 #include "para.hpp"
 
 using namespace tinyxml2;
@@ -17,10 +15,7 @@ private:
 	Para();
 
 public:
-	[[nodiscard]]
 	auto getArrayPara() const -> const ArrayPara&;
-
-	[[nodiscard]]
 	auto getArchPara() const -> const ArchPara&;
 
 private:

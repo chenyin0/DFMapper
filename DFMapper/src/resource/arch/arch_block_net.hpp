@@ -6,10 +6,10 @@
  * 行 2019.9.5
  */
 
-#include "../util/cord.hpp"
-#include "../../lib/tinyxml2/tinyxml2.h"
-#include "enum_definition.hpp"
-#include "enum_converter.hpp"
+#include "../../util/cord.hpp"
+#include "../../tinyxml2/tinyxml2.h"
+#include "../../common/enum_definition.hpp"
+#include "../../common/enum_converter.hpp"
 
 namespace Simulator::Preprocess
 {

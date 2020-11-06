@@ -1,5 +1,14 @@
 #pragma once
 
+#include "../define/global.hpp"
+#include "../util/util.hpp"
+#include "../util/cord.hpp"
+#include "../../lib/tinyxml2/tinyxml2.h"
+#include "enum_definition.hpp"
+#include "enum_converter.hpp"
+#include "dfg_node.hpp"
+#include "para.hpp"
+
 using namespace tinyxml2;
 
 class Para : 

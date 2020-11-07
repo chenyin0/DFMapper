@@ -4,7 +4,7 @@
 #include <stdexcept>
 #include <cstdio>
 
-namespace Simulator
+namespace DFMpr
 {
 	class NodeTypeConverter
 	{

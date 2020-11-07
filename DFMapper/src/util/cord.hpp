@@ -21,7 +21,7 @@
 #include "../define/define.hpp"
 #include "util.hpp"
 
-namespace Simulator
+namespace DFMpr
 {
 	struct Cord final
 	{
@@ -115,10 +115,10 @@ namespace Simulator
 namespace std
 {
 	template <>
-	struct hash<Simulator::Cord> final
+	struct hash<DFMpr::Cord> final
 	{
 	public:
-		size_t operator()(const Simulator::Cord& b_) const noexcept
+		size_t operator()(const DFMpr::Cord& b_) const noexcept
 		{
 			return hash<uint>()(b_.x) ^ hash<uint>()(b_.y);
 		}

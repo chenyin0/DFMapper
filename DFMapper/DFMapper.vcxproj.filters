@@ -37,6 +37,12 @@
     <Filter Include="src\mapper\routing">
       <UniqueIdentifier>{ad894d9e-46c1-4826-97f3-2f10c545d307}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\resource\arch">
+      <UniqueIdentifier>{9faaf821-0375-4b09-89ab-9275372547a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tinyxml2">
+      <UniqueIdentifier>{90717ac1-6fd4-42c6-991e-a5f663fd1e41}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\util\ReadFile.hpp">
@@ -54,8 +60,26 @@
     <ClInclude Include="src\common\dfg_tool.h">
       <Filter>src\common</Filter>
     </ClInclude>
-    <ClInclude Include="src\common\enum.h">
+    <ClInclude Include="src\resource\arch\arch_block_net.hpp">
+      <Filter>src\resource\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="src\resource\arch\para.hpp">
+      <Filter>src\resource\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="src\resource\arch\preprocess.h">
+      <Filter>src\resource\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\enum_converter.hpp">
       <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\enum_definition.hpp">
+      <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\cord.hpp">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tinyxml2\tinyxml2.h">
+      <Filter>src\tinyxml2</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -68,6 +92,12 @@
     <ClCompile Include="src\common\dfg_tool.cpp">
       <Filter>src\common</Filter>
     </ClCompile>
+    <ClCompile Include="src\resource\arch\preprocess.cpp">
+      <Filter>src\resource\arch</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tinyxml2\tinyxml2.cpp">
+      <Filter>src\tinyxml2</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="IR\backprop.ll">
@@ -76,5 +106,13 @@
     <None Include="IR\gemm.ll">
       <Filter>IR</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="src\resource\arch\arch_config_64.xml">
+      <Filter>src\resource\arch</Filter>
+    </Xml>
+    <Xml Include="src\resource\arch\arch_config.xml">
+      <Filter>src\resource\arch</Filter>
+    </Xml>
   </ItemGroup>
 </Project>

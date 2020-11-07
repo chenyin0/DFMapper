@@ -36,7 +36,7 @@
 
 #include "../define/define.hpp"
 
-namespace DFSim
+namespace DFMpr
 {
     template <class Typename>
     class Singleton

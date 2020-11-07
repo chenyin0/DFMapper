@@ -81,6 +81,9 @@
     <ClInclude Include="src\tinyxml2\tinyxml2.h">
       <Filter>src\tinyxml2</Filter>
     </ClInclude>
+    <ClInclude Include="src\define\global.hpp">
+      <Filter>src\define</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">

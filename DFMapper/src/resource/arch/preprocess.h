@@ -6,28 +6,26 @@
 #include "../../common/enum_definition.hpp"
 #include "../../common/enum_converter.hpp"
 #include "para.hpp"
+#include "../../define/global.hpp"
 
 using namespace tinyxml2;
 
 namespace DFMpr {
-	class Para
+	class Para : public Singleton<Para>
 	{
 	private:
 		Para();
 
 	public:
-		auto getArrayPara() const -> const ArrayPara&;
+		[[nodiscard]]
 		auto getArchPara() const -> const ArchPara&;
 
 	private:
 		friend Singleton<Para>;
-
-		ArrayPara _array_para;
 		ArchPara _arch_para; //archpara定义在para.hpp中
 
 	private:
 		auto xmlRead() -> void;
-		auto arrayParaXmlRead() -> void;
 		auto archParaXmlRead() -> void;
 
 		auto archBlockXmlRead(XMLElement* block_xml_) -> void;

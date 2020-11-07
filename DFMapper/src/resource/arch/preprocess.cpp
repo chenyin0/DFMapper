@@ -1,5 +1,7 @@
 #include "preprocess.h"
 
+using namespace DFMpr;
+
 Para::Para()
 {
 }

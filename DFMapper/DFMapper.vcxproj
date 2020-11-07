@@ -139,20 +139,32 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="src\common\dfg_tool.h" />
-    <ClInclude Include="src\common\enum.h" />
+    <ClInclude Include="src\common\enum_converter.hpp" />
+    <ClInclude Include="src\common\enum_definition.hpp" />
     <ClInclude Include="src\define\define.hpp" />
+    <ClInclude Include="src\resource\arch\arch_block_net.hpp" />
+    <ClInclude Include="src\resource\arch\para.hpp" />
+    <ClInclude Include="src\resource\arch\preprocess.h" />
     <ClInclude Include="src\resource\dfg.h" />
+    <ClInclude Include="src\tinyxml2\tinyxml2.h" />
+    <ClInclude Include="src\util\cord.hpp" />
     <ClInclude Include="src\util\ReadFile.hpp" />
     <ClInclude Include="src\util\util.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\common\dfg_tool.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\resource\arch\preprocess.cpp" />
     <ClCompile Include="src\resource\dfg.cpp" />
+    <ClCompile Include="src\tinyxml2\tinyxml2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="IR\backprop.ll" />
     <None Include="IR\gemm.ll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="src\resource\arch\arch_config.xml" />
+    <Xml Include="src\resource\arch\arch_config_64.xml" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

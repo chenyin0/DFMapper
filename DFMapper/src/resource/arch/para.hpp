@@ -5,7 +5,7 @@
 #include "../../common/enum_definition.hpp"
 #include "arch_block_net.hpp"
 
-namespace Simulator::Preprocess
+namespace DFMpr
 {
 /** Arch Parameter */
 

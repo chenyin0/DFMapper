@@ -173,8 +173,10 @@
     <None Include="IR\bfs_queue.ll" />
     <None Include="IR\fft_strided.ll" />
     <None Include="IR\fft_transpose.ll" />
+    <None Include="IR\gemm.ll" />
     <None Include="IR\gemm_blocked.ll" />
     <None Include="IR\gemm_ncube.ll" />
+    <None Include="IR\gemm_ncubed.ll" />
     <None Include="IR\kmp.ll" />
     <None Include="IR\md_grid.ll" />
     <None Include="IR\md_knn.ll" />

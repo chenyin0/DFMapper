@@ -15,8 +15,9 @@ using namespace DFMpr;
 
 int main()
 {
-    //string appName = "backprop";
-    string appName = "bfs_queue";  // dfgGen error, fix it!
+    //string appName = "aes";  // dfgGen error, fix it!
+    string appName = "backprop";
+    //string appName = "bfs_queue";  // dfgGen error, fix it!
     //string appName = "fft_strided";
     //string appName = "gemm_blocked";
     //string appName = "kmp";
@@ -41,7 +42,7 @@ int main()
     //Dfg gemm_inner = dfg.genSubDfg(filePath, { 18 });
     //DfgTool::printDfg(gemm_inner);
 
-    //std::cout << ">>>>>>>>>>> md_knn: <<<<<<<<<<<" << std::endl;
-    //Dfg mdknn_inner = dfg.genSubDfg(filePath, { 59 });
-    //DfgTool::printDfg(mdknn_inner);
+    std::cout << ">>>>>>>>>>> md_knn: <<<<<<<<<<<" << std::endl;
+    Dfg mdknn_inner = dfg.genSubDfg(filePath, { 52 });
+    DfgTool::printDfg(mdknn_inner);
 }

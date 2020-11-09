@@ -183,6 +183,24 @@ void DfgTool::nodeLevelAnalyze(Dfg& _dfg)
     }
 }
 
+void DfgTool::breakFeedbackLoop(Dfg& _dfg)
+{
+    for (auto& pair : _dfg.nodes)
+    {
+        for (set<int>::iterator iter = pair.second.pre_nodes.begin(); iter != pair.second.pre_nodes.end();)
+        {
+            if (*iter > pair.first)
+            {
+                pair.second.pre_nodes.erase(iter++);
+            }
+            else
+            {
+                ++iter;
+            }
+        }
+    }
+}
+
 Dfg DfgTool::genSubDfg(Dfg& _dfg, vector<uint> nodeList)
 {
     Dfg subDfg;
@@ -218,18 +236,18 @@ Dfg DfgTool::genSubDfg(Dfg& _dfg, vector<uint> nodeList)
         }
     }
 
-    /*The first statement in a basic block must be Phi statement,
-    And we should cut off the feedback edge*/
-    int firstNodeId = nodeList.front();
-    for (auto preNodeId : subDfg.nodes.at(firstNodeId).pre_nodes)
-    {
-        set<int>::iterator iter = find(subDfg.nodes.at(preNodeId).next_nodes.begin(), subDfg.nodes.at(preNodeId).next_nodes.end(), firstNodeId);
-        if (iter != subDfg.nodes.at(preNodeId).next_nodes.end())
-        {
-            subDfg.nodes.at(preNodeId).next_nodes.erase(iter);
-        }
-    }
-    subDfg.nodes.at(nodeList.front()).pre_nodes.clear();
+    ///*The first statement in a basic block must be Phi statement,
+    //And we should cut off the feedback edge*/
+    //int firstNodeId = nodeList.front();
+    //for (auto preNodeId : subDfg.nodes.at(firstNodeId).pre_nodes)
+    //{
+    //    set<int>::iterator iter = find(subDfg.nodes.at(preNodeId).next_nodes.begin(), subDfg.nodes.at(preNodeId).next_nodes.end(), firstNodeId);
+    //    if (iter != subDfg.nodes.at(preNodeId).next_nodes.end())
+    //    {
+    //        subDfg.nodes.at(preNodeId).next_nodes.erase(iter);
+    //    }
+    //}
+    //subDfg.nodes.at(nodeList.front()).pre_nodes.clear();
 
     return subDfg;
 }

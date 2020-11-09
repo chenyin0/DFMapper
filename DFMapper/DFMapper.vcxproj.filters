@@ -163,5 +163,11 @@
     <None Include="IR\viterbi.ll">
       <Filter>IR</Filter>
     </None>
+    <None Include="IR\gemm.ll">
+      <Filter>IR</Filter>
+    </None>
+    <None Include="IR\gemm_ncubed.ll">
+      <Filter>IR</Filter>
+    </None>
   </ItemGroup>
 </Project>

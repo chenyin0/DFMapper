@@ -246,6 +246,7 @@ Dfg Dfg::genSubDfg(string fpath, vector<uint> _blockId)
 
 void Dfg::dfgAnalyze()
 {
+    DfgTool::breakFeedbackLoop(*this);
     DfgTool::bfsTraverse(*this);
     DfgTool::pathAnalyze(*this);
     DfgTool::nodeLevelAnalyze(*this);
@@ -254,7 +255,9 @@ void Dfg::dfgAnalyze()
 // Modify this function according to your need!!!
 Op Dfg::getNodeOp(int nodeId, string _op)
 {
-    if (_op == "add" || _op == "fadd")
+    if (_op == "phi")
+        return Op::Phi;
+    else if (_op == "add" || _op == "fadd")
         return Op::Add;
     else if (_op == "sub" || _op == "fsub")
         return Op::Sub;

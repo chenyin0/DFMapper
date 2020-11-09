@@ -5,6 +5,7 @@
 
 namespace DFMpr {
     enum class Op {
+        Phi,
         Add,  // add, fadd
         Sub,  // sub, fsub
         Mul,  // mul, fmul, shl 

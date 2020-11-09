@@ -3,54 +3,6 @@ source_filename = "kmp.c"
 target datalayout = "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
 
-; Function Attrs: alwaysinline nofree norecurse nounwind optsize uwtable
-define dso_local void @CPF(i8* nocapture readonly %0, i32* nocapture %1) local_unnamed_addr #0 {
-  store i32 0, i32* %1, align 4, !tbaa !2
-  br label %3
-
-3:                                                ; preds = %2, %20
-  %4 = phi i64 [ 1, %2 ], [ %29, %20 ]
-  %5 = phi i32 [ 0, %2 ], [ %27, %20 ]
-  %6 = icmp sgt i32 %5, 0
-  %7 = getelementptr inbounds i8, i8* %0, i64 %4
-  %8 = load i8, i8* %7, align 1, !tbaa !6
-  br i1 %6, label %9, label %20
-
-9:                                                ; preds = %3
-  %10 = getelementptr inbounds i32, i32* %1, i64 %4
-  br label %11
-
-11:                                               ; preds = %9, %17
-  %12 = phi i32 [ %5, %9 ], [ %18, %17 ]
-  %13 = zext i32 %12 to i64
-  %14 = getelementptr inbounds i8, i8* %0, i64 %13
-  %15 = load i8, i8* %14, align 1, !tbaa !6
-  %16 = icmp eq i8 %15, %8
-  br i1 %16, label %20, label %17
-
-17:                                               ; preds = %11
-  %18 = load i32, i32* %10, align 4, !tbaa !2
-  %19 = icmp sgt i32 %18, 0
-  br i1 %19, label %11, label %20
-
-20:                                               ; preds = %11, %17, %3
-  %21 = phi i32 [ %5, %3 ], [ %18, %17 ], [ %12, %11 ]
-  %22 = sext i32 %21 to i64
-  %23 = getelementptr inbounds i8, i8* %0, i64 %22
-  %24 = load i8, i8* %23, align 1, !tbaa !6
-  %25 = icmp eq i8 %24, %8
-  %26 = zext i1 %25 to i32
-  %27 = add nsw i32 %21, %26
-  %28 = getelementptr inbounds i32, i32* %1, i64 %4
-  store i32 %27, i32* %28, align 4, !tbaa !2
-  %29 = add nuw nsw i64 %4, 1
-  %30 = icmp eq i64 %29, 4
-  br i1 %30, label %31, label %3
-
-31:                                               ; preds = %20
-  ret void
-}
-
 ; Function Attrs: nofree norecurse nounwind optsize uwtable
 define dso_local i32 @kmp(i8* nocapture readonly %0, i8* nocapture readonly %1, i32* nocapture %2, i32* nocapture %3) local_unnamed_addr #1 {
   store i32 0, i32* %3, align 4, !tbaa !2

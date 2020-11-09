@@ -5,6 +5,43 @@ target triple = "x86_64-unknown-linux-gnu"
 
 @__const.twiddles8.reversed8 = private unnamed_addr constant [8 x i32] [i32 0, i32 4, i32 2, i32 6, i32 1, i32 5, i32 3, i32 7], align 16
 
+; Function Attrs: alwaysinline nofree nounwind optsize uwtable
+define dso_local void @twiddles8(double* nocapture %0, double* nocapture %1, i32 %2, i32 %3) local_unnamed_addr #0 {
+  %5 = sitofp i32 %3 to double
+  %6 = sitofp i32 %2 to double
+  br label %7
+
+7:                                                ; preds = %4, %7
+  %8 = phi i64 [ 1, %4 ], [ %28, %7 ]
+  %9 = getelementptr inbounds [8 x i32], [8 x i32]* @__const.twiddles8.reversed8, i64 0, i64 %8
+  %10 = load i32, i32* %9, align 4, !tbaa !2
+  %11 = sitofp i32 %10 to double
+  %12 = fmul double %11, 0xC01921FB54411744
+  %13 = fdiv double %12, %5
+  %14 = fmul double %13, %6
+  %15 = tail call double @cos(double %14) #5
+  %16 = tail call double @sin(double %14) #5
+  %17 = getelementptr inbounds double, double* %0, i64 %8
+  %18 = load double, double* %17, align 8, !tbaa !6
+  %19 = fmul double %15, %18
+  %20 = getelementptr inbounds double, double* %1, i64 %8
+  %21 = load double, double* %20, align 8, !tbaa !6
+  %22 = fmul double %16, %21
+  %23 = fsub double %19, %22
+  store double %23, double* %17, align 8, !tbaa !6
+  %24 = fmul double %16, %18
+  %25 = load double, double* %20, align 8, !tbaa !6
+  %26 = fmul double %15, %25
+  %27 = fadd double %24, %26
+  store double %27, double* %20, align 8, !tbaa !6
+  %28 = add nuw nsw i64 %8, 1
+  %29 = icmp eq i64 %28, 8
+  br i1 %29, label %30, label %7
+
+30:                                               ; preds = %7
+  ret void
+}
+
 ; Function Attrs: argmemonly nounwind willreturn
 declare void @llvm.lifetime.start.p0i8(i64 immarg, i8* nocapture) #1
 
@@ -16,6 +53,120 @@ declare dso_local double @sin(double) local_unnamed_addr #2
 
 ; Function Attrs: argmemonly nounwind willreturn
 declare void @llvm.lifetime.end.p0i8(i64 immarg, i8* nocapture) #1
+
+; Function Attrs: alwaysinline nofree norecurse nounwind optsize uwtable
+define dso_local void @loadx8(double* nocapture %0, double* nocapture readonly %1, i32 %2, i32 %3) local_unnamed_addr #3 {
+  %5 = sext i32 %2 to i64
+  %6 = getelementptr inbounds double, double* %1, i64 %5
+  %7 = load double, double* %6, align 8, !tbaa !6
+  store double %7, double* %0, align 8, !tbaa !6
+  %8 = add nsw i32 %3, %2
+  %9 = sext i32 %8 to i64
+  %10 = getelementptr inbounds double, double* %1, i64 %9
+  %11 = load double, double* %10, align 8, !tbaa !6
+  %12 = getelementptr inbounds double, double* %0, i64 1
+  store double %11, double* %12, align 8, !tbaa !6
+  %13 = shl nsw i32 %3, 1
+  %14 = add nsw i32 %13, %2
+  %15 = sext i32 %14 to i64
+  %16 = getelementptr inbounds double, double* %1, i64 %15
+  %17 = load double, double* %16, align 8, !tbaa !6
+  %18 = getelementptr inbounds double, double* %0, i64 2
+  store double %17, double* %18, align 8, !tbaa !6
+  %19 = mul nsw i32 %3, 3
+  %20 = add nsw i32 %19, %2
+  %21 = sext i32 %20 to i64
+  %22 = getelementptr inbounds double, double* %1, i64 %21
+  %23 = load double, double* %22, align 8, !tbaa !6
+  %24 = getelementptr inbounds double, double* %0, i64 3
+  store double %23, double* %24, align 8, !tbaa !6
+  %25 = shl nsw i32 %3, 2
+  %26 = add nsw i32 %25, %2
+  %27 = sext i32 %26 to i64
+  %28 = getelementptr inbounds double, double* %1, i64 %27
+  %29 = load double, double* %28, align 8, !tbaa !6
+  %30 = getelementptr inbounds double, double* %0, i64 4
+  store double %29, double* %30, align 8, !tbaa !6
+  %31 = mul nsw i32 %3, 5
+  %32 = add nsw i32 %31, %2
+  %33 = sext i32 %32 to i64
+  %34 = getelementptr inbounds double, double* %1, i64 %33
+  %35 = load double, double* %34, align 8, !tbaa !6
+  %36 = getelementptr inbounds double, double* %0, i64 5
+  store double %35, double* %36, align 8, !tbaa !6
+  %37 = mul nsw i32 %3, 6
+  %38 = add nsw i32 %37, %2
+  %39 = sext i32 %38 to i64
+  %40 = getelementptr inbounds double, double* %1, i64 %39
+  %41 = load double, double* %40, align 8, !tbaa !6
+  %42 = getelementptr inbounds double, double* %0, i64 6
+  store double %41, double* %42, align 8, !tbaa !6
+  %43 = mul nsw i32 %3, 7
+  %44 = add nsw i32 %43, %2
+  %45 = sext i32 %44 to i64
+  %46 = getelementptr inbounds double, double* %1, i64 %45
+  %47 = load double, double* %46, align 8, !tbaa !6
+  %48 = getelementptr inbounds double, double* %0, i64 7
+  store double %47, double* %48, align 8, !tbaa !6
+  ret void
+}
+
+; Function Attrs: alwaysinline nofree norecurse nounwind optsize uwtable
+define dso_local void @loady8(double* nocapture %0, double* nocapture readonly %1, i32 %2, i32 %3) local_unnamed_addr #3 {
+  %5 = sext i32 %2 to i64
+  %6 = getelementptr inbounds double, double* %1, i64 %5
+  %7 = load double, double* %6, align 8, !tbaa !6
+  store double %7, double* %0, align 8, !tbaa !6
+  %8 = add nsw i32 %3, %2
+  %9 = sext i32 %8 to i64
+  %10 = getelementptr inbounds double, double* %1, i64 %9
+  %11 = load double, double* %10, align 8, !tbaa !6
+  %12 = getelementptr inbounds double, double* %0, i64 1
+  store double %11, double* %12, align 8, !tbaa !6
+  %13 = shl nsw i32 %3, 1
+  %14 = add nsw i32 %13, %2
+  %15 = sext i32 %14 to i64
+  %16 = getelementptr inbounds double, double* %1, i64 %15
+  %17 = load double, double* %16, align 8, !tbaa !6
+  %18 = getelementptr inbounds double, double* %0, i64 2
+  store double %17, double* %18, align 8, !tbaa !6
+  %19 = mul nsw i32 %3, 3
+  %20 = add nsw i32 %19, %2
+  %21 = sext i32 %20 to i64
+  %22 = getelementptr inbounds double, double* %1, i64 %21
+  %23 = load double, double* %22, align 8, !tbaa !6
+  %24 = getelementptr inbounds double, double* %0, i64 3
+  store double %23, double* %24, align 8, !tbaa !6
+  %25 = shl nsw i32 %3, 2
+  %26 = add nsw i32 %25, %2
+  %27 = sext i32 %26 to i64
+  %28 = getelementptr inbounds double, double* %1, i64 %27
+  %29 = load double, double* %28, align 8, !tbaa !6
+  %30 = getelementptr inbounds double, double* %0, i64 4
+  store double %29, double* %30, align 8, !tbaa !6
+  %31 = mul nsw i32 %3, 5
+  %32 = add nsw i32 %31, %2
+  %33 = sext i32 %32 to i64
+  %34 = getelementptr inbounds double, double* %1, i64 %33
+  %35 = load double, double* %34, align 8, !tbaa !6
+  %36 = getelementptr inbounds double, double* %0, i64 5
+  store double %35, double* %36, align 8, !tbaa !6
+  %37 = mul nsw i32 %3, 6
+  %38 = add nsw i32 %37, %2
+  %39 = sext i32 %38 to i64
+  %40 = getelementptr inbounds double, double* %1, i64 %39
+  %41 = load double, double* %40, align 8, !tbaa !6
+  %42 = getelementptr inbounds double, double* %0, i64 6
+  store double %41, double* %42, align 8, !tbaa !6
+  %43 = mul nsw i32 %3, 7
+  %44 = add nsw i32 %43, %2
+  %45 = sext i32 %44 to i64
+  %46 = getelementptr inbounds double, double* %1, i64 %45
+  %47 = load double, double* %46, align 8, !tbaa !6
+  %48 = getelementptr inbounds double, double* %0, i64 7
+  store double %47, double* %48, align 8, !tbaa !6
+  ret void
+}
 
 ; Function Attrs: nounwind optsize uwtable
 define dso_local void @fft1D_512(double* nocapture %0, double* nocapture %1) local_unnamed_addr #4 {

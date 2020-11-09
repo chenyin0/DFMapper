@@ -3,6 +3,39 @@ source_filename = "backprop.c"
 target datalayout = "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
 
+; Function Attrs: alwaysinline nofree nounwind optsize uwtable
+define dso_local void @soft_max(double* nocapture %0, double* nocapture readonly %1) local_unnamed_addr #0 {
+  br label %3
+
+3:                                                ; preds = %2, %3
+  %4 = phi i64 [ 0, %2 ], [ %11, %3 ]
+  %5 = phi double [ 0.000000e+00, %2 ], [ %10, %3 ]
+  %6 = getelementptr inbounds double, double* %1, i64 %4
+  %7 = load double, double* %6, align 8, !tbaa !2
+  %8 = fneg double %7
+  %9 = tail call double @exp(double %8) #6
+  %10 = fadd double %5, %9
+  %11 = add nuw nsw i64 %4, 1
+  %12 = icmp eq i64 %11, 3
+  br i1 %12, label %13, label %3
+
+13:                                               ; preds = %3, %13
+  %14 = phi i64 [ %21, %13 ], [ 0, %3 ]
+  %15 = getelementptr inbounds double, double* %1, i64 %14
+  %16 = load double, double* %15, align 8, !tbaa !2
+  %17 = fneg double %16
+  %18 = tail call double @exp(double %17) #6
+  %19 = fdiv double %18, %10
+  %20 = getelementptr inbounds double, double* %0, i64 %14
+  store double %19, double* %20, align 8, !tbaa !2
+  %21 = add nuw nsw i64 %14, 1
+  %22 = icmp eq i64 %21, 3
+  br i1 %22, label %23, label %13
+
+23:                                               ; preds = %13
+  ret void
+}
+
 ; Function Attrs: argmemonly nounwind willreturn
 declare void @llvm.lifetime.start.p0i8(i64 immarg, i8* nocapture) #1
 
@@ -11,6 +44,672 @@ declare dso_local double @exp(double) local_unnamed_addr #2
 
 ; Function Attrs: argmemonly nounwind willreturn
 declare void @llvm.lifetime.end.p0i8(i64 immarg, i8* nocapture) #1
+
+; Function Attrs: alwaysinline nofree nounwind optsize uwtable
+define dso_local void @RELU(double* nocapture %0, double* nocapture %1, i32 %2) local_unnamed_addr #0 {
+  %4 = icmp sgt i32 %2, 0
+  br i1 %4, label %5, label %21
+
+5:                                                ; preds = %3
+  %6 = zext i32 %2 to i64
+  br label %7
+
+7:                                                ; preds = %5, %7
+  %8 = phi i64 [ 0, %5 ], [ %19, %7 ]
+  %9 = getelementptr inbounds double, double* %0, i64 %8
+  %10 = load double, double* %9, align 8, !tbaa !2
+  %11 = fsub double 1.000000e+00, %10
+  %12 = fmul double %10, %11
+  %13 = getelementptr inbounds double, double* %1, i64 %8
+  store double %12, double* %13, align 8, !tbaa !2
+  %14 = load double, double* %9, align 8, !tbaa !2
+  %15 = fneg double %14
+  %16 = tail call double @exp(double %15) #6
+  %17 = fadd double %16, 1.000000e+00
+  %18 = fdiv double 1.000000e+00, %17
+  store double %18, double* %9, align 8, !tbaa !2
+  %19 = add nuw nsw i64 %8, 1
+  %20 = icmp eq i64 %19, %6
+  br i1 %20, label %21, label %7
+
+21:                                               ; preds = %7, %3
+  ret void
+}
+
+; Function Attrs: alwaysinline nofree norecurse nounwind optsize uwtable
+define dso_local void @add_bias_to_activations(double* nocapture readonly %0, double* nocapture %1, i32 %2) local_unnamed_addr #3 {
+  %4 = icmp sgt i32 %2, 0
+  br i1 %4, label %5, label %16
+
+5:                                                ; preds = %3
+  %6 = zext i32 %2 to i64
+  br label %7
+
+7:                                                ; preds = %5, %7
+  %8 = phi i64 [ 0, %5 ], [ %14, %7 ]
+  %9 = getelementptr inbounds double, double* %1, i64 %8
+  %10 = load double, double* %9, align 8, !tbaa !2
+  %11 = getelementptr inbounds double, double* %0, i64 %8
+  %12 = load double, double* %11, align 8, !tbaa !2
+  %13 = fadd double %10, %12
+  store double %13, double* %9, align 8, !tbaa !2
+  %14 = add nuw nsw i64 %8, 1
+  %15 = icmp eq i64 %14, %6
+  br i1 %15, label %16, label %7
+
+16:                                               ; preds = %7, %3
+  ret void
+}
+
+; Function Attrs: alwaysinline nofree norecurse nounwind optsize uwtable
+define dso_local void @matrix_vector_product_with_bias_input_layer(double* nocapture readonly %0, double* nocapture readonly %1, double* nocapture %2, double* nocapture readonly %3) local_unnamed_addr #3 {
+  br label %5
+
+5:                                                ; preds = %4, %21
+  %6 = phi i64 [ 0, %4 ], [ %22, %21 ]
+  %7 = getelementptr inbounds double, double* %2, i64 %6
+  store double 0.000000e+00, double* %7, align 8, !tbaa !2
+  %8 = mul nuw nsw i64 %6, 13
+  br label %9
+
+9:                                                ; preds = %5, %9
+  %10 = phi double [ 0.000000e+00, %5 ], [ %18, %9 ]
+  %11 = phi i64 [ 0, %5 ], [ %19, %9 ]
+  %12 = add nuw nsw i64 %11, %8
+  %13 = getelementptr inbounds double, double* %1, i64 %12
+  %14 = load double, double* %13, align 8, !tbaa !2
+  %15 = getelementptr inbounds double, double* %3, i64 %11
+  %16 = load double, double* %15, align 8, !tbaa !2
+  %17 = fmul double %14, %16
+  %18 = fadd double %10, %17
+  store double %18, double* %7, align 8, !tbaa !2
+  %19 = add nuw nsw i64 %11, 1
+  %20 = icmp eq i64 %19, 13
+  br i1 %20, label %21, label %9
+
+21:                                               ; preds = %9
+  %22 = add nuw nsw i64 %6, 1
+  %23 = icmp eq i64 %22, 64
+  br i1 %23, label %24, label %5
+
+24:                                               ; preds = %21, %24
+  %25 = phi i64 [ %31, %24 ], [ 0, %21 ]
+  %26 = getelementptr inbounds double, double* %2, i64 %25
+  %27 = load double, double* %26, align 8, !tbaa !2
+  %28 = getelementptr inbounds double, double* %0, i64 %25
+  %29 = load double, double* %28, align 8, !tbaa !2
+  %30 = fadd double %27, %29
+  store double %30, double* %26, align 8, !tbaa !2
+  %31 = add nuw nsw i64 %25, 1
+  %32 = icmp eq i64 %31, 64
+  br i1 %32, label %33, label %24
+
+33:                                               ; preds = %24
+  ret void
+}
+
+; Function Attrs: alwaysinline nofree norecurse nounwind optsize uwtable
+define dso_local void @matrix_vector_product_with_bias_second_layer(double* nocapture readonly %0, double* nocapture readonly %1, double* nocapture %2, double* nocapture readonly %3) local_unnamed_addr #3 {
+  br label %5
+
+5:                                                ; preds = %4, %21
+  %6 = phi i64 [ 0, %4 ], [ %22, %21 ]
+  %7 = getelementptr inbounds double, double* %2, i64 %6
+  store double 0.000000e+00, double* %7, align 8, !tbaa !2
+  %8 = shl nsw i64 %6, 6
+  br label %9
+
+9:                                                ; preds = %5, %9
+  %10 = phi double [ 0.000000e+00, %5 ], [ %18, %9 ]
+  %11 = phi i64 [ 0, %5 ], [ %19, %9 ]
+  %12 = add nuw nsw i64 %11, %8
+  %13 = getelementptr inbounds double, double* %1, i64 %12
+  %14 = load double, double* %13, align 8, !tbaa !2
+  %15 = getelementptr inbounds double, double* %3, i64 %11
+  %16 = load double, double* %15, align 8, !tbaa !2
+  %17 = fmul double %14, %16
+  %18 = fadd double %10, %17
+  store double %18, double* %7, align 8, !tbaa !2
+  %19 = add nuw nsw i64 %11, 1
+  %20 = icmp eq i64 %19, 64
+  br i1 %20, label %21, label %9
+
+21:                                               ; preds = %9
+  %22 = add nuw nsw i64 %6, 1
+  %23 = icmp eq i64 %22, 64
+  br i1 %23, label %24, label %5
+
+24:                                               ; preds = %21, %24
+  %25 = phi i64 [ %31, %24 ], [ 0, %21 ]
+  %26 = getelementptr inbounds double, double* %2, i64 %25
+  %27 = load double, double* %26, align 8, !tbaa !2
+  %28 = getelementptr inbounds double, double* %0, i64 %25
+  %29 = load double, double* %28, align 8, !tbaa !2
+  %30 = fadd double %27, %29
+  store double %30, double* %26, align 8, !tbaa !2
+  %31 = add nuw nsw i64 %25, 1
+  %32 = icmp eq i64 %31, 64
+  br i1 %32, label %33, label %24
+
+33:                                               ; preds = %24
+  ret void
+}
+
+; Function Attrs: alwaysinline nofree norecurse nounwind optsize uwtable
+define dso_local void @matrix_vector_product_with_bias_output_layer(double* nocapture readonly %0, double* nocapture readonly %1, double* nocapture %2, double* nocapture readonly %3) local_unnamed_addr #3 {
+  br label %5
+
+5:                                                ; preds = %4, %21
+  %6 = phi i64 [ 0, %4 ], [ %22, %21 ]
+  %7 = getelementptr inbounds double, double* %2, i64 %6
+  store double 0.000000e+00, double* %7, align 8, !tbaa !2
+  %8 = shl nsw i64 %6, 6
+  br label %9
+
+9:                                                ; preds = %5, %9
+  %10 = phi double [ 0.000000e+00, %5 ], [ %18, %9 ]
+  %11 = phi i64 [ 0, %5 ], [ %19, %9 ]
+  %12 = add nuw nsw i64 %11, %8
+  %13 = getelementptr inbounds double, double* %1, i64 %12
+  %14 = load double, double* %13, align 8, !tbaa !2
+  %15 = getelementptr inbounds double, double* %3, i64 %11
+  %16 = load double, double* %15, align 8, !tbaa !2
+  %17 = fmul double %14, %16
+  %18 = fadd double %10, %17
+  store double %18, double* %7, align 8, !tbaa !2
+  %19 = add nuw nsw i64 %11, 1
+  %20 = icmp eq i64 %19, 64
+  br i1 %20, label %21, label %9
+
+21:                                               ; preds = %9
+  %22 = add nuw nsw i64 %6, 1
+  %23 = icmp eq i64 %22, 3
+  br i1 %23, label %24, label %5
+
+24:                                               ; preds = %21, %24
+  %25 = phi i64 [ %31, %24 ], [ 0, %21 ]
+  %26 = getelementptr inbounds double, double* %2, i64 %25
+  %27 = load double, double* %26, align 8, !tbaa !2
+  %28 = getelementptr inbounds double, double* %0, i64 %25
+  %29 = load double, double* %28, align 8, !tbaa !2
+  %30 = fadd double %27, %29
+  store double %30, double* %26, align 8, !tbaa !2
+  %31 = add nuw nsw i64 %25, 1
+  %32 = icmp eq i64 %31, 3
+  br i1 %32, label %33, label %24
+
+33:                                               ; preds = %24
+  ret void
+}
+
+; Function Attrs: alwaysinline nofree norecurse nounwind optsize uwtable
+define dso_local void @take_difference(double* nocapture readonly %0, double* nocapture readonly %1, double* nocapture %2, double* nocapture readonly %3) local_unnamed_addr #3 {
+  br label %5
+
+5:                                                ; preds = %4, %5
+  %6 = phi i64 [ 0, %4 ], [ %17, %5 ]
+  %7 = getelementptr inbounds double, double* %0, i64 %6
+  %8 = load double, double* %7, align 8, !tbaa !2
+  %9 = getelementptr inbounds double, double* %1, i64 %6
+  %10 = load double, double* %9, align 8, !tbaa !2
+  %11 = fsub double %8, %10
+  %12 = fneg double %11
+  %13 = getelementptr inbounds double, double* %3, i64 %6
+  %14 = load double, double* %13, align 8, !tbaa !2
+  %15 = fmul double %14, %12
+  %16 = getelementptr inbounds double, double* %2, i64 %6
+  store double %15, double* %16, align 8, !tbaa !2
+  %17 = add nuw nsw i64 %6, 1
+  %18 = icmp eq i64 %17, 3
+  br i1 %18, label %19, label %5
+
+19:                                               ; preds = %5
+  ret void
+}
+
+; Function Attrs: alwaysinline nofree norecurse nounwind optsize uwtable
+define dso_local void @get_delta_matrix_weights3(double* nocapture %0, double* nocapture readonly %1, double* nocapture readonly %2) local_unnamed_addr #3 {
+  br label %4
+
+4:                                                ; preds = %3, %18
+  %5 = phi i64 [ 0, %3 ], [ %19, %18 ]
+  %6 = getelementptr inbounds double, double* %2, i64 %5
+  %7 = mul nuw nsw i64 %5, 3
+  br label %8
+
+8:                                                ; preds = %4, %8
+  %9 = phi i64 [ 0, %4 ], [ %16, %8 ]
+  %10 = load double, double* %6, align 8, !tbaa !2
+  %11 = getelementptr inbounds double, double* %1, i64 %9
+  %12 = load double, double* %11, align 8, !tbaa !2
+  %13 = fmul double %10, %12
+  %14 = add nuw nsw i64 %9, %7
+  %15 = getelementptr inbounds double, double* %0, i64 %14
+  store double %13, double* %15, align 8, !tbaa !2
+  %16 = add nuw nsw i64 %9, 1
+  %17 = icmp eq i64 %16, 3
+  br i1 %17, label %18, label %8
+
+18:                                               ; preds = %8
+  %19 = add nuw nsw i64 %5, 1
+  %20 = icmp eq i64 %19, 64
+  br i1 %20, label %21, label %4
+
+21:                                               ; preds = %18
+  ret void
+}
+
+; Function Attrs: alwaysinline nofree norecurse nounwind optsize uwtable
+define dso_local void @get_oracle_activations2(double* nocapture readonly %0, double* nocapture readonly %1, double* nocapture %2, double* nocapture readonly %3) local_unnamed_addr #3 {
+  br label %5
+
+5:                                                ; preds = %4, %21
+  %6 = phi i64 [ 0, %4 ], [ %25, %21 ]
+  %7 = getelementptr inbounds double, double* %2, i64 %6
+  store double 0.000000e+00, double* %7, align 8, !tbaa !2
+  %8 = mul nuw nsw i64 %6, 3
+  br label %9
+
+9:                                                ; preds = %5, %9
+  %10 = phi double [ 0.000000e+00, %5 ], [ %18, %9 ]
+  %11 = phi i64 [ 0, %5 ], [ %19, %9 ]
+  %12 = getelementptr inbounds double, double* %1, i64 %11
+  %13 = load double, double* %12, align 8, !tbaa !2
+  %14 = add nuw nsw i64 %11, %8
+  %15 = getelementptr inbounds double, double* %0, i64 %14
+  %16 = load double, double* %15, align 8, !tbaa !2
+  %17 = fmul double %13, %16
+  %18 = fadd double %10, %17
+  store double %18, double* %7, align 8, !tbaa !2
+  %19 = add nuw nsw i64 %11, 1
+  %20 = icmp eq i64 %19, 3
+  br i1 %20, label %21, label %9
+
+21:                                               ; preds = %9
+  %22 = getelementptr inbounds double, double* %3, i64 %6
+  %23 = load double, double* %22, align 8, !tbaa !2
+  %24 = fmul double %18, %23
+  store double %24, double* %7, align 8, !tbaa !2
+  %25 = add nuw nsw i64 %6, 1
+  %26 = icmp eq i64 %25, 64
+  br i1 %26, label %27, label %5
+
+27:                                               ; preds = %21
+  ret void
+}
+
+; Function Attrs: alwaysinline nofree norecurse nounwind optsize uwtable
+define dso_local void @get_delta_matrix_weights2(double* nocapture %0, double* nocapture readonly %1, double* nocapture readonly %2) local_unnamed_addr #3 {
+  br label %4
+
+4:                                                ; preds = %3, %18
+  %5 = phi i64 [ 0, %3 ], [ %19, %18 ]
+  %6 = getelementptr inbounds double, double* %2, i64 %5
+  %7 = shl nsw i64 %5, 6
+  br label %8
+
+8:                                                ; preds = %4, %8
+  %9 = phi i64 [ 0, %4 ], [ %16, %8 ]
+  %10 = load double, double* %6, align 8, !tbaa !2
+  %11 = getelementptr inbounds double, double* %1, i64 %9
+  %12 = load double, double* %11, align 8, !tbaa !2
+  %13 = fmul double %10, %12
+  %14 = add nuw nsw i64 %9, %7
+  %15 = getelementptr inbounds double, double* %0, i64 %14
+  store double %13, double* %15, align 8, !tbaa !2
+  %16 = add nuw nsw i64 %9, 1
+  %17 = icmp eq i64 %16, 64
+  br i1 %17, label %18, label %8
+
+18:                                               ; preds = %8
+  %19 = add nuw nsw i64 %5, 1
+  %20 = icmp eq i64 %19, 64
+  br i1 %20, label %21, label %4
+
+21:                                               ; preds = %18
+  ret void
+}
+
+; Function Attrs: alwaysinline nofree norecurse nounwind optsize uwtable
+define dso_local void @get_oracle_activations1(double* nocapture readonly %0, double* nocapture readonly %1, double* nocapture %2, double* nocapture readonly %3) local_unnamed_addr #3 {
+  br label %5
+
+5:                                                ; preds = %4, %21
+  %6 = phi i64 [ 0, %4 ], [ %25, %21 ]
+  %7 = getelementptr inbounds double, double* %2, i64 %6
+  store double 0.000000e+00, double* %7, align 8, !tbaa !2
+  %8 = shl nsw i64 %6, 6
+  br label %9
+
+9:                                                ; preds = %5, %9
+  %10 = phi double [ 0.000000e+00, %5 ], [ %18, %9 ]
+  %11 = phi i64 [ 0, %5 ], [ %19, %9 ]
+  %12 = getelementptr inbounds double, double* %1, i64 %11
+  %13 = load double, double* %12, align 8, !tbaa !2
+  %14 = add nuw nsw i64 %11, %8
+  %15 = getelementptr inbounds double, double* %0, i64 %14
+  %16 = load double, double* %15, align 8, !tbaa !2
+  %17 = fmul double %13, %16
+  %18 = fadd double %10, %17
+  store double %18, double* %7, align 8, !tbaa !2
+  %19 = add nuw nsw i64 %11, 1
+  %20 = icmp eq i64 %19, 64
+  br i1 %20, label %21, label %9
+
+21:                                               ; preds = %9
+  %22 = getelementptr inbounds double, double* %3, i64 %6
+  %23 = load double, double* %22, align 8, !tbaa !2
+  %24 = fmul double %18, %23
+  store double %24, double* %7, align 8, !tbaa !2
+  %25 = add nuw nsw i64 %6, 1
+  %26 = icmp eq i64 %25, 64
+  br i1 %26, label %27, label %5
+
+27:                                               ; preds = %21
+  ret void
+}
+
+; Function Attrs: alwaysinline nofree norecurse nounwind optsize uwtable
+define dso_local void @get_delta_matrix_weights1(double* nocapture %0, double* nocapture readonly %1, double* nocapture readonly %2) local_unnamed_addr #3 {
+  br label %4
+
+4:                                                ; preds = %3, %18
+  %5 = phi i64 [ 0, %3 ], [ %19, %18 ]
+  %6 = getelementptr inbounds double, double* %2, i64 %5
+  %7 = shl nsw i64 %5, 6
+  br label %8
+
+8:                                                ; preds = %4, %8
+  %9 = phi i64 [ 0, %4 ], [ %16, %8 ]
+  %10 = load double, double* %6, align 8, !tbaa !2
+  %11 = getelementptr inbounds double, double* %1, i64 %9
+  %12 = load double, double* %11, align 8, !tbaa !2
+  %13 = fmul double %10, %12
+  %14 = add nuw nsw i64 %9, %7
+  %15 = getelementptr inbounds double, double* %0, i64 %14
+  store double %13, double* %15, align 8, !tbaa !2
+  %16 = add nuw nsw i64 %9, 1
+  %17 = icmp eq i64 %16, 64
+  br i1 %17, label %18, label %8
+
+18:                                               ; preds = %8
+  %19 = add nuw nsw i64 %5, 1
+  %20 = icmp eq i64 %19, 13
+  br i1 %20, label %21, label %4
+
+21:                                               ; preds = %18
+  ret void
+}
+
+; Function Attrs: alwaysinline nofree nounwind optsize uwtable
+define dso_local void @update_weights(double* nocapture %0, double* nocapture %1, double* nocapture %2, double* nocapture readonly %3, double* nocapture readonly %4, double* nocapture readonly %5, double* nocapture %6, double* nocapture %7, double* nocapture %8, double* nocapture readonly %9, double* nocapture readonly %10, double* nocapture readonly %11) local_unnamed_addr #0 {
+  br label %13
+
+13:                                               ; preds = %12, %31
+  %14 = phi i64 [ 0, %12 ], [ %32, %31 ]
+  %15 = phi double [ 0.000000e+00, %12 ], [ %28, %31 ]
+  %16 = shl nsw i64 %14, 6
+  br label %17
+
+17:                                               ; preds = %13, %17
+  %18 = phi i64 [ 0, %13 ], [ %29, %17 ]
+  %19 = phi double [ %15, %13 ], [ %28, %17 ]
+  %20 = add nuw nsw i64 %18, %16
+  %21 = getelementptr inbounds double, double* %3, i64 %20
+  %22 = load double, double* %21, align 8, !tbaa !2
+  %23 = fmul double %22, 1.000000e-02
+  %24 = getelementptr inbounds double, double* %0, i64 %20
+  %25 = load double, double* %24, align 8, !tbaa !2
+  %26 = fsub double %25, %23
+  store double %26, double* %24, align 8, !tbaa !2
+  %27 = fmul double %26, %26
+  %28 = fadd double %19, %27
+  %29 = add nuw nsw i64 %18, 1
+  %30 = icmp eq i64 %29, 64
+  br i1 %30, label %31, label %17
+
+31:                                               ; preds = %17
+  %32 = add nuw nsw i64 %14, 1
+  %33 = icmp eq i64 %32, 13
+  br i1 %33, label %34, label %13
+
+34:                                               ; preds = %31, %34
+  %35 = phi i64 [ %45, %34 ], [ 0, %31 ]
+  %36 = phi double [ %44, %34 ], [ 0.000000e+00, %31 ]
+  %37 = getelementptr inbounds double, double* %9, i64 %35
+  %38 = load double, double* %37, align 8, !tbaa !2
+  %39 = fmul double %38, 1.000000e-02
+  %40 = getelementptr inbounds double, double* %6, i64 %35
+  %41 = load double, double* %40, align 8, !tbaa !2
+  %42 = fsub double %41, %39
+  store double %42, double* %40, align 8, !tbaa !2
+  %43 = fmul double %42, %42
+  %44 = fadd double %36, %43
+  %45 = add nuw nsw i64 %35, 1
+  %46 = icmp eq i64 %45, 64
+  br i1 %46, label %47, label %34
+
+47:                                               ; preds = %34
+  %48 = tail call double @sqrt(double %28) #6
+  %49 = tail call double @sqrt(double %44) #6
+  %50 = insertelement <2 x double> undef, double %48, i32 0
+  %51 = shufflevector <2 x double> %50, <2 x double> undef, <2 x i32> zeroinitializer
+  br label %52
+
+52:                                               ; preds = %47, %65
+  %53 = phi i64 [ 0, %47 ], [ %66, %65 ]
+  %54 = shl nsw i64 %53, 6
+  br label %55
+
+55:                                               ; preds = %55, %52
+  %56 = phi i64 [ 0, %52 ], [ %63, %55 ]
+  %57 = add nuw nsw i64 %56, %54
+  %58 = getelementptr inbounds double, double* %0, i64 %57
+  %59 = bitcast double* %58 to <2 x double>*
+  %60 = load <2 x double>, <2 x double>* %59, align 8, !tbaa !2
+  %61 = fdiv <2 x double> %60, %51
+  %62 = bitcast double* %58 to <2 x double>*
+  store <2 x double> %61, <2 x double>* %62, align 8, !tbaa !2
+  %63 = add i64 %56, 2
+  %64 = icmp eq i64 %63, 64
+  br i1 %64, label %65, label %55, !llvm.loop !6
+
+65:                                               ; preds = %55
+  %66 = add nuw nsw i64 %53, 1
+  %67 = icmp eq i64 %66, 13
+  br i1 %67, label %68, label %52
+
+68:                                               ; preds = %65
+  %69 = insertelement <2 x double> undef, double %49, i32 0
+  %70 = shufflevector <2 x double> %69, <2 x double> undef, <2 x i32> zeroinitializer
+  br label %71
+
+71:                                               ; preds = %71, %68
+  %72 = phi i64 [ 0, %68 ], [ %78, %71 ]
+  %73 = getelementptr inbounds double, double* %6, i64 %72
+  %74 = bitcast double* %73 to <2 x double>*
+  %75 = load <2 x double>, <2 x double>* %74, align 8, !tbaa !2
+  %76 = fdiv <2 x double> %75, %70
+  %77 = bitcast double* %73 to <2 x double>*
+  store <2 x double> %76, <2 x double>* %77, align 8, !tbaa !2
+  %78 = add i64 %72, 2
+  %79 = icmp eq i64 %78, 64
+  br i1 %79, label %80, label %71, !llvm.loop !8
+
+80:                                               ; preds = %71, %98
+  %81 = phi i64 [ %99, %98 ], [ 0, %71 ]
+  %82 = phi double [ %95, %98 ], [ 0.000000e+00, %71 ]
+  %83 = shl nsw i64 %81, 6
+  br label %84
+
+84:                                               ; preds = %80, %84
+  %85 = phi i64 [ 0, %80 ], [ %96, %84 ]
+  %86 = phi double [ %82, %80 ], [ %95, %84 ]
+  %87 = add nuw nsw i64 %85, %83
+  %88 = getelementptr inbounds double, double* %4, i64 %87
+  %89 = load double, double* %88, align 8, !tbaa !2
+  %90 = fmul double %89, 1.000000e-02
+  %91 = getelementptr inbounds double, double* %1, i64 %87
+  %92 = load double, double* %91, align 8, !tbaa !2
+  %93 = fsub double %92, %90
+  store double %93, double* %91, align 8, !tbaa !2
+  %94 = fmul double %93, %93
+  %95 = fadd double %86, %94
+  %96 = add nuw nsw i64 %85, 1
+  %97 = icmp eq i64 %96, 64
+  br i1 %97, label %98, label %84
+
+98:                                               ; preds = %84
+  %99 = add nuw nsw i64 %81, 1
+  %100 = icmp eq i64 %99, 64
+  br i1 %100, label %101, label %80
+
+101:                                              ; preds = %98, %101
+  %102 = phi i64 [ %112, %101 ], [ 0, %98 ]
+  %103 = phi double [ %111, %101 ], [ 0.000000e+00, %98 ]
+  %104 = getelementptr inbounds double, double* %10, i64 %102
+  %105 = load double, double* %104, align 8, !tbaa !2
+  %106 = fmul double %105, 1.000000e-02
+  %107 = getelementptr inbounds double, double* %7, i64 %102
+  %108 = load double, double* %107, align 8, !tbaa !2
+  %109 = fsub double %108, %106
+  store double %109, double* %107, align 8, !tbaa !2
+  %110 = fmul double %109, %109
+  %111 = fadd double %103, %110
+  %112 = add nuw nsw i64 %102, 1
+  %113 = icmp eq i64 %112, 64
+  br i1 %113, label %114, label %101
+
+114:                                              ; preds = %101
+  %115 = tail call double @sqrt(double %95) #6
+  %116 = tail call double @sqrt(double %111) #6
+  %117 = insertelement <2 x double> undef, double %115, i32 0
+  %118 = shufflevector <2 x double> %117, <2 x double> undef, <2 x i32> zeroinitializer
+  br label %119
+
+119:                                              ; preds = %114, %132
+  %120 = phi i64 [ 0, %114 ], [ %133, %132 ]
+  %121 = shl nsw i64 %120, 6
+  br label %122
+
+122:                                              ; preds = %122, %119
+  %123 = phi i64 [ 0, %119 ], [ %130, %122 ]
+  %124 = add nuw nsw i64 %123, %121
+  %125 = getelementptr inbounds double, double* %1, i64 %124
+  %126 = bitcast double* %125 to <2 x double>*
+  %127 = load <2 x double>, <2 x double>* %126, align 8, !tbaa !2
+  %128 = fdiv <2 x double> %127, %118
+  %129 = bitcast double* %125 to <2 x double>*
+  store <2 x double> %128, <2 x double>* %129, align 8, !tbaa !2
+  %130 = add i64 %123, 2
+  %131 = icmp eq i64 %130, 64
+  br i1 %131, label %132, label %122, !llvm.loop !9
+
+132:                                              ; preds = %122
+  %133 = add nuw nsw i64 %120, 1
+  %134 = icmp eq i64 %133, 64
+  br i1 %134, label %135, label %119
+
+135:                                              ; preds = %132
+  %136 = insertelement <2 x double> undef, double %116, i32 0
+  %137 = shufflevector <2 x double> %136, <2 x double> undef, <2 x i32> zeroinitializer
+  br label %138
+
+138:                                              ; preds = %138, %135
+  %139 = phi i64 [ 0, %135 ], [ %145, %138 ]
+  %140 = getelementptr inbounds double, double* %7, i64 %139
+  %141 = bitcast double* %140 to <2 x double>*
+  %142 = load <2 x double>, <2 x double>* %141, align 8, !tbaa !2
+  %143 = fdiv <2 x double> %142, %137
+  %144 = bitcast double* %140 to <2 x double>*
+  store <2 x double> %143, <2 x double>* %144, align 8, !tbaa !2
+  %145 = add i64 %139, 2
+  %146 = icmp eq i64 %145, 64
+  br i1 %146, label %147, label %138, !llvm.loop !10
+
+147:                                              ; preds = %138, %165
+  %148 = phi i64 [ %166, %165 ], [ 0, %138 ]
+  %149 = phi double [ %162, %165 ], [ 0.000000e+00, %138 ]
+  %150 = mul nuw nsw i64 %148, 3
+  br label %151
+
+151:                                              ; preds = %147, %151
+  %152 = phi i64 [ 0, %147 ], [ %163, %151 ]
+  %153 = phi double [ %149, %147 ], [ %162, %151 ]
+  %154 = add nuw nsw i64 %152, %150
+  %155 = getelementptr inbounds double, double* %5, i64 %154
+  %156 = load double, double* %155, align 8, !tbaa !2
+  %157 = fmul double %156, 1.000000e-02
+  %158 = getelementptr inbounds double, double* %2, i64 %154
+  %159 = load double, double* %158, align 8, !tbaa !2
+  %160 = fsub double %159, %157
+  store double %160, double* %158, align 8, !tbaa !2
+  %161 = fmul double %160, %160
+  %162 = fadd double %153, %161
+  %163 = add nuw nsw i64 %152, 1
+  %164 = icmp eq i64 %163, 3
+  br i1 %164, label %165, label %151
+
+165:                                              ; preds = %151
+  %166 = add nuw nsw i64 %148, 1
+  %167 = icmp eq i64 %166, 64
+  br i1 %167, label %168, label %147
+
+168:                                              ; preds = %165, %168
+  %169 = phi i64 [ %179, %168 ], [ 0, %165 ]
+  %170 = phi double [ %178, %168 ], [ 0.000000e+00, %165 ]
+  %171 = getelementptr inbounds double, double* %11, i64 %169
+  %172 = load double, double* %171, align 8, !tbaa !2
+  %173 = fmul double %172, 1.000000e-02
+  %174 = getelementptr inbounds double, double* %8, i64 %169
+  %175 = load double, double* %174, align 8, !tbaa !2
+  %176 = fsub double %175, %173
+  store double %176, double* %174, align 8, !tbaa !2
+  %177 = fmul double %176, %176
+  %178 = fadd double %170, %177
+  %179 = add nuw nsw i64 %169, 1
+  %180 = icmp eq i64 %179, 3
+  br i1 %180, label %181, label %168
+
+181:                                              ; preds = %168
+  %182 = tail call double @sqrt(double %162) #6
+  %183 = tail call double @sqrt(double %178) #6
+  br label %184
+
+184:                                              ; preds = %181, %195
+  %185 = phi i64 [ 0, %181 ], [ %196, %195 ]
+  %186 = mul nuw nsw i64 %185, 3
+  br label %187
+
+187:                                              ; preds = %184, %187
+  %188 = phi i64 [ 0, %184 ], [ %193, %187 ]
+  %189 = add nuw nsw i64 %188, %186
+  %190 = getelementptr inbounds double, double* %2, i64 %189
+  %191 = load double, double* %190, align 8, !tbaa !2
+  %192 = fdiv double %191, %182
+  store double %192, double* %190, align 8, !tbaa !2
+  %193 = add nuw nsw i64 %188, 1
+  %194 = icmp eq i64 %193, 3
+  br i1 %194, label %195, label %187
+
+195:                                              ; preds = %187
+  %196 = add nuw nsw i64 %185, 1
+  %197 = icmp eq i64 %196, 64
+  br i1 %197, label %198, label %184
+
+198:                                              ; preds = %195, %198
+  %199 = phi i64 [ %203, %198 ], [ 0, %195 ]
+  %200 = getelementptr inbounds double, double* %8, i64 %199
+  %201 = load double, double* %200, align 8, !tbaa !2
+  %202 = fdiv double %201, %183
+  store double %202, double* %200, align 8, !tbaa !2
+  %203 = add nuw nsw i64 %199, 1
+  %204 = icmp eq i64 %203, 3
+  br i1 %204, label %205, label %198
+
+205:                                              ; preds = %198
+  ret void
+}
 
 ; Function Attrs: nofree nounwind optsize
 declare dso_local double @sqrt(double) local_unnamed_addr #2

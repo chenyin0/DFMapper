@@ -17,6 +17,8 @@ namespace DFMpr {
     public:
         Dfg();
         void genDfg(string fpath);
+        void dfgAnalyze();  // Contain dfg analysis function in DfgTool
+        Dfg genSubDfg(string fpath, vector<uint> blockId);
         map<int, Node> nodes;
 
         uint maxDelay = 0;
@@ -24,6 +26,7 @@ namespace DFMpr {
         vector<uint> delayDist;  // Delay distribution
         vector<float> delayDistNorm;  // Normalized delay distribution (%)
         vector<float> delayDistIntervalNorm;
+        vector<uint> nodeLevelDist;
 
     private:
         Op getNodeOp(int nodeId, string _op);

@@ -6,13 +6,15 @@ const vector<uint> DfgTool::distInterval = { 0,1,4,7,10,20 };
 
 void DfgTool::printDfg(Dfg& _dfg)
 {
+    // Print node info
+    std::cout << std::endl;
     for (auto pair : _dfg.nodes)
     {
         //vector<int>::iterator it = find(start.begin(), start.end(), pair.first);
         //if (it != start.end())
         //    continue;
         std::cout << pair.first << "\tnodeLevel: " << pair.second.nodeLevel << std::endl;
-        std::cout << pair.first << "\ttag: " << pair.second.tag << std::endl;
+        std::cout << "\ttag: " << pair.second.tag << std::endl;
 
         std::cout << "\tpre_nodes: ";
         for (auto node : pair.second.pre_nodes)
@@ -33,6 +35,8 @@ void DfgTool::printDfg(Dfg& _dfg)
         std::cout << std::endl << std::endl;
     }
 
+    // Print maximal node delay
+    std::cout << std::endl;
     std::cout << "MaxDelay: " << _dfg.maxDelay << std::endl;
 
     //for (auto delay : _dfg.pathDelay)
@@ -40,16 +44,21 @@ void DfgTool::printDfg(Dfg& _dfg)
     //    std::cout << "\n" << delay << std::endl;
     //}
 
+    // Print normalized delay distribution
+    std::cout << std::endl;
     for (size_t i = 0; i < _dfg.delayDistNorm.size(); ++i)
     {
         std::cout << "Delay: " << i << "\tDist: " << _dfg.delayDistNorm[i] << std::endl;
     }
 
+    //// Print delay distribution
+    //std::cout << std::endl;
     //for (size_t i = 0; i < _dfg.delayDist.size(); ++i)
     //{
     //    std::cout << "Delay: " << i << "\tDist: " << _dfg.delayDist[i] << std::endl;
     //}
 
+    // Print normalized delay distribution with interval
     std::cout << std::endl;
     for (size_t i = 0; i < _dfg.delayDistIntervalNorm.size(); ++i)
     {
@@ -62,70 +71,18 @@ void DfgTool::printDfg(Dfg& _dfg)
             std::cout << "[ " << DfgTool::distInterval[i] << " , INF ) = " << _dfg.delayDistIntervalNorm[i] << std::endl;
         }
     }
+
+    // Print node level distribution
+    std::cout << std::endl;
+    for (size_t i = 0; i < _dfg.nodeLevelDist.size(); ++i)
+    {
+        std::cout << "Node_level: " << i << "\tNode_num: " << _dfg.nodeLevelDist[i] << std::endl;
+    }
 }
 
 void DfgTool::bfsTraverse(Dfg& _dfg)
 {
-    //vector<int> hasVisited(_dfg.nodes.size());
     deque<int> queue;
-    //for (size_t i = 10; i > 0; i--)
-    //{
-    //for (auto& pair : _dfg.nodes)
-    //{
-    //    if (pair.second.pre_nodes.empty())
-    //    {
-    //        pair.second.nodeLevel = 0;  // Initial node
-    //        //hasVisited[pair.first] = 1;
-    //        for (auto nextNodeId : pair.second.next_nodes)
-    //        {
-    //            queue.push_back(nextNodeId);
-    //        }
-    //    }
-    //}
-
-    //    while (!queue.empty())
-    //    {
-    //        bool nodeReady = 1;
-    //        //for (auto preNodeId : _dfg.nodes.at(queue.front()).pre_nodes)
-    //        //{
-    //        //    if(preNodeId < queue.front())
-    //        //    {
-    //        //        //nodeReady &= hasVisited[preNodeId];
-    //        //        if (_dfg.nodes.at(preNodeId).nodeLevel == -1)
-    //        //        {
-    //        //            nodeReady = 0;
-    //        //        }
-    //        //    }
-    //        //}
-
-    //        if (nodeReady)
-    //        {
-    //            for (auto preNodeId : _dfg.nodes.at(queue.front()).pre_nodes)
-    //            {
-    //                int preNodeLevel = _dfg.nodes.at(preNodeId).nodeLevel;
-    //                int& _nodeLevel = _dfg.nodes.at(queue.front()).nodeLevel;
-
-    //                if (_nodeLevel == -1)
-    //                {
-    //                    for (auto nextNodeId : _dfg.nodes.at(queue.front()).next_nodes)
-    //                    {
-    //                        queue.push_back(nextNodeId);
-    //                    }
-    //                }
-
-    //                _nodeLevel = std::max<int>(_nodeLevel, preNodeLevel + nodeDelay);
-    //            }
-
-    //            //hasVisited[queue.front()] = 1;
-    //            queue.pop_front();
-    //        }
-    //        else
-    //        {
-    //            queue.push_back(queue.front());
-    //            queue.pop_front();
-    //        }
-    //    }
-    //}
 
     for (auto& pair : _dfg.nodes)
     {
@@ -209,33 +166,70 @@ void DfgTool::pathAnalyze(Dfg& _dfg)
         }
     }
     _dfg.delayDistIntervalNorm[ptr] = sum;
+}
 
-    //for (size_t intervId = 0; intervId < _dfg.delayDistIntervalNorm.size(); intervId++)
-    //{
-    //    if (intervId != _dfg.delayDistIntervalNorm.size() - 1)
-    //    {
-    //        for (auto& i : _dfg.delayDist)
-    //        {
-    //            if (distInterval[intervId] <= i && i < distInterval[intervId + 1])
-    //            {
-    //                _dfg.delayDistIntervalNorm[intervId]++;
-    //            }
-    //        }
-    //    }
-    //    else
-    //    {
-    //        for (auto& i : _dfg.delayDist)
-    //        {
-    //            if (distInterval[intervId] <= i)
-    //            {
-    //                _dfg.delayDistIntervalNorm[intervId]++;
-    //            }
-    //        }
-    //    }
-    //}
+void DfgTool::nodeLevelAnalyze(Dfg& _dfg)
+{
+    int maxLevel = 0;
+    for (auto pair : _dfg.nodes)
+    {
+        maxLevel = std::max<uint>(maxLevel, pair.second.nodeLevel);
+    }
 
-    //for (auto& i : _dfg.delayDistIntervalNorm)
-    //{
-    //    i = i * 100.0 / _dfg.pathDelay.size();
-    //}
+    _dfg.nodeLevelDist.resize(maxLevel + 1);
+    for (auto pair : _dfg.nodes)
+    {
+        _dfg.nodeLevelDist[pair.second.nodeLevel]++;
+    }
+}
+
+Dfg DfgTool::genSubDfg(Dfg& _dfg, vector<uint> nodeList)
+{
+    Dfg subDfg;
+    for (auto nodeId : nodeList)
+    {
+        subDfg.nodes.insert(std::make_pair(nodeId, Node()));
+    }
+
+    // Generate sub-dfg
+    for (auto& pair : subDfg.nodes)
+    {
+        uint subDfgNodeId = pair.first;
+        pair.second.op = _dfg.nodes.at(subDfgNodeId).op;
+        pair.second.tag = _dfg.nodes.at(subDfgNodeId).tag;
+
+        for (auto preNodeId : _dfg.nodes.at(subDfgNodeId).pre_nodes)
+        {
+            vector<uint>::iterator iter = find(nodeList.begin(), nodeList.end(), preNodeId);
+            if (iter != nodeList.end())
+            {
+                pair.second.pre_nodes.insert(preNodeId);
+            }
+        }
+
+        for (auto nextNodeId : _dfg.nodes.at(subDfgNodeId).next_nodes)
+        {
+            vector<uint>::iterator iter;
+            iter = find(nodeList.begin(), nodeList.end(), nextNodeId);
+            if (iter != nodeList.end())
+            {
+                pair.second.next_nodes.insert(nextNodeId);
+            }
+        }
+    }
+
+    /*The first statement in a basic block must be Phi statement,
+    And we should cut off the feedback edge*/
+    int firstNodeId = nodeList.front();
+    for (auto preNodeId : subDfg.nodes.at(firstNodeId).pre_nodes)
+    {
+        set<int>::iterator iter = find(subDfg.nodes.at(preNodeId).next_nodes.begin(), subDfg.nodes.at(preNodeId).next_nodes.end(), firstNodeId);
+        if (iter != subDfg.nodes.at(preNodeId).next_nodes.end())
+        {
+            subDfg.nodes.at(preNodeId).next_nodes.erase(iter);
+        }
+    }
+    subDfg.nodes.at(nodeList.front()).pre_nodes.clear();
+
+    return subDfg;
 }

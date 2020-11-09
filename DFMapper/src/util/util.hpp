@@ -296,5 +296,16 @@ namespace DFMpr
             );
             return std::move(right);
         }
+
+        // Print Error
+        static void throwError(const string errorDescrip, const string fileName, const uint lineNum)
+        {
+            std::cout << std::endl;
+            std::cout << "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" << std::endl;
+            std::cout << "Error: " << errorDescrip << std::endl;
+            std::cout << "Line: " << lineNum << std::endl;
+            std::cout << "File name: " << fileName << std::endl;
+            DEBUG_ASSERT(false);
+        }
     };
 }

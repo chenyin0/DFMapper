@@ -87,6 +87,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -114,6 +115,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -130,6 +132,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -161,12 +164,30 @@
     <ClCompile Include="src\tinyxml2\tinyxml2.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="IR\backprop.ll" />
-    <None Include="IR\gemm.ll" />
+    <Xml Include="src\resource\arch\arch_config.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Xml Include="src\resource\arch\arch_config.xml" />
-    <Xml Include="src\resource\arch\arch_config_64.xml" />
+    <None Include="IR\aes.ll" />
+    <None Include="IR\backprop.ll" />
+    <None Include="IR\bfs_bulk.ll" />
+    <None Include="IR\bfs_queue.ll" />
+    <None Include="IR\fft_strided.ll" />
+    <None Include="IR\fft_transpose.ll" />
+    <None Include="IR\gemm.ll" />
+    <None Include="IR\gemm_blocked.ll" />
+    <None Include="IR\gemm_ncube.ll" />
+    <None Include="IR\gemm_ncubed.ll" />
+    <None Include="IR\kmp.ll" />
+    <None Include="IR\md_grid.ll" />
+    <None Include="IR\md_knn.ll" />
+    <None Include="IR\nw.ll" />
+    <None Include="IR\sort_merge.ll" />
+    <None Include="IR\sort_radix.ll" />
+    <None Include="IR\spmv_crs.ll" />
+    <None Include="IR\spmv_ellpack.ll" />
+    <None Include="IR\stencil_2d.ll" />
+    <None Include="IR\stencil_3d.ll" />
+    <None Include="IR\viterbi.ll" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

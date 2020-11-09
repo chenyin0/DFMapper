@@ -1,4 +1,6 @@
 #include "./dfg.h"
+#include "../common/dfg_tool.h"
+#include "../util/util.hpp"
 
 using namespace DFMpr;
 Dfg::Dfg()
@@ -173,13 +175,89 @@ void Dfg::genDfg(string fpath)
     //}
 
     in.close();
+
+    dfgAnalyze();  // Generate path delay and node level
 }
 
+Dfg Dfg::genSubDfg(string fpath, vector<uint> _blockId)
+{
+    std::ifstream in;
+    //文件名输入
+    in.open(fpath, std::ios::in);
+    vector<uint> blockList;
+
+    while (!in.eof())
+    {
+        string strBuff;
+        std::istringstream iss;
+        getline(in, strBuff);
+        iss.str(strBuff);
+
+        vector<string> v;
+        string s;
+        while (iss >> s)
+        {
+            v.push_back(s);
+        }
+
+        if (v.size() > 0)
+        {
+            //开始节点
+            if (v[0].find(":") != string::npos)
+            {
+                int blockId = stoi(v[0].substr(0, v[0].length() - 1));
+                blockList.push_back(blockId);
+                std::cout << blockId << std::endl;
+            }
+        }
+    }
+
+    vector<uint> nodeList;
+    for (auto blockId : _blockId)
+    {
+        vector<uint>::iterator ptr = find(blockList.begin(), blockList.end(), blockId);
+        if (ptr != blockList.end() - 1)
+        {
+            uint begin = (*ptr) + 1;
+            uint end = *(++ptr) - 1;
+            for (size_t nodeId = begin; nodeId < end; ++nodeId)
+            {
+                //std::cout << nodeId << std::endl;
+                nodeList.push_back(nodeId);
+            }
+        }
+        else 
+        {
+            Util::throwError("Basic_block_Id is out of range!", __FILE__, __LINE__);
+        }
+
+    }
+
+    //for (auto nodeId : nodeList)
+    //{
+    //    std::cout << nodeId << std::endl;
+    //}
+
+    Dfg subDfg = DfgTool::genSubDfg(*this, nodeList);
+    subDfg.dfgAnalyze();  // Generate path delay and node level for this sub-dfg
+
+    return subDfg;
+}
+
+void Dfg::dfgAnalyze()
+{
+    DfgTool::breakFeedbackLoop(*this);
+    DfgTool::bfsTraverse(*this);
+    DfgTool::pathAnalyze(*this);
+    DfgTool::nodeLevelAnalyze(*this);
+}
 
 // Modify this function according to your need!!!
 Op Dfg::getNodeOp(int nodeId, string _op)
 {
-    if (_op == "add" || _op == "fadd")
+    if (_op == "phi")
+        return Op::Phi;
+    else if (_op == "add" || _op == "fadd")
         return Op::Add;
     else if (_op == "sub" || _op == "fsub")
         return Op::Sub;

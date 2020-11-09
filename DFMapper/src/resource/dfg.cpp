@@ -64,7 +64,7 @@ void Dfg::genDfg(string fpath)
                 {
                     for (int i = 1; i < v.size(); ++i)
                     {
-                        if (v[i].find("%") != string::npos)
+                        if (v[i].find("%") != string::npos && isdigit(v[i][1]))
                         {
                             nodes[stoi(v[0].substr(1))].pre_nodes.insert(stoi(v[i].substr(1)));
                         }

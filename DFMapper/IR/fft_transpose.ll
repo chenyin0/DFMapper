@@ -5,17 +5,6 @@ target triple = "x86_64-unknown-linux-gnu"
 
 @__const.twiddles8.reversed8 = private unnamed_addr constant [8 x i32] [i32 0, i32 4, i32 2, i32 6, i32 1, i32 5, i32 3, i32 7], align 16
 
-; Function Attrs: argmemonly nounwind willreturn
-declare void @llvm.lifetime.start.p0i8(i64 immarg, i8* nocapture) #1
-
-; Function Attrs: nofree nounwind optsize
-declare dso_local double @cos(double) local_unnamed_addr #2
-
-; Function Attrs: nofree nounwind optsize
-declare dso_local double @sin(double) local_unnamed_addr #2
-
-; Function Attrs: argmemonly nounwind willreturn
-declare void @llvm.lifetime.end.p0i8(i64 immarg, i8* nocapture) #1
 
 ; Function Attrs: nounwind optsize uwtable
 define dso_local void @fft1D_512(double* nocapture %0, double* nocapture %1) local_unnamed_addr #4 {

@@ -151,6 +151,7 @@
     <ClInclude Include="src\resource\arch\para.hpp" />
     <ClInclude Include="src\resource\arch\preprocess.h" />
     <ClInclude Include="src\resource\dfg.h" />
+    <ClInclude Include="src\resource\app_set.h" />
     <ClInclude Include="src\tinyxml2\tinyxml2.h" />
     <ClInclude Include="src\util\cord.hpp" />
     <ClInclude Include="src\util\ReadFile.hpp" />
@@ -161,6 +162,7 @@
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\resource\arch\preprocess.cpp" />
     <ClCompile Include="src\resource\dfg.cpp" />
+    <ClCompile Include="src\resource\app_set.cpp" />
     <ClCompile Include="src\tinyxml2\tinyxml2.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -173,10 +175,8 @@
     <None Include="IR\bfs_queue.ll" />
     <None Include="IR\fft_strided.ll" />
     <None Include="IR\fft_transpose.ll" />
-    <None Include="IR\gemm.ll" />
     <None Include="IR\gemm_blocked.ll" />
     <None Include="IR\gemm_ncube.ll" />
-    <None Include="IR\gemm_ncubed.ll" />
     <None Include="IR\kmp.ll" />
     <None Include="IR\md_grid.ll" />
     <None Include="IR\md_knn.ll" />

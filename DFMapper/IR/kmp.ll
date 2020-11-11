@@ -3,6 +3,7 @@ source_filename = "kmp.c"
 target datalayout = "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
 
+
 ; Function Attrs: nofree norecurse nounwind optsize uwtable
 define dso_local i32 @kmp(i8* nocapture readonly %0, i8* nocapture readonly %1, i32* nocapture %2, i32* nocapture %3) local_unnamed_addr #1 {
   store i32 0, i32* %3, align 4, !tbaa !2

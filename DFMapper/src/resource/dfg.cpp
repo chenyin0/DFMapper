@@ -7,11 +7,21 @@ Dfg::Dfg()
 {
 }
 
+Dfg::Dfg(string filePath)
+{
+    genDfg(filePath);
+}
+
 void Dfg::genDfg(string fpath)
 {
     std::ifstream in;
     //文件名输入
     in.open(fpath, std::ios::in);
+    if (!in.is_open())
+    {
+        Util::throwError("File: "+fpath+" can not open!", __FILE__, __LINE__);
+    }
+
     vector<int> start;
 
     while (!in.eof())
@@ -179,44 +189,44 @@ void Dfg::genDfg(string fpath)
     dfgAnalyze();  // Generate path delay and node level
 }
 
-Dfg Dfg::genSubDfg(string fpath, vector<uint> _blockId)
+Dfg Dfg::genSubDfg(string fpath, vector<uint> fullBlockList, vector<uint> _blockId)
 {
-    std::ifstream in;
-    //文件名输入
-    in.open(fpath, std::ios::in);
-    vector<uint> blockList;
+    //std::ifstream in;
+    ////文件名输入
+    //in.open(fpath, std::ios::in);
+    //vector<uint> blockList;
 
-    while (!in.eof())
-    {
-        string strBuff;
-        std::istringstream iss;
-        getline(in, strBuff);
-        iss.str(strBuff);
+    //while (!in.eof())
+    //{
+    //    string strBuff;
+    //    std::istringstream iss;
+    //    getline(in, strBuff);
+    //    iss.str(strBuff);
 
-        vector<string> v;
-        string s;
-        while (iss >> s)
-        {
-            v.push_back(s);
-        }
+    //    vector<string> v;
+    //    string s;
+    //    while (iss >> s)
+    //    {
+    //        v.push_back(s);
+    //    }
 
-        if (v.size() > 0)
-        {
-            //开始节点
-            if (v[0].find(":") != string::npos)
-            {
-                int blockId = stoi(v[0].substr(0, v[0].length() - 1));
-                blockList.push_back(blockId);
-                std::cout << blockId << std::endl;
-            }
-        }
-    }
+    //    if (v.size() > 0)
+    //    {
+    //        //开始节点
+    //        if (v[0].find(":") != string::npos)
+    //        {
+    //            int blockId = stoi(v[0].substr(0, v[0].length() - 1));
+    //            blockList.push_back(blockId);
+    //            std::cout << blockId << std::endl;
+    //        }
+    //    }
+    //}
 
     vector<uint> nodeList;
     for (auto blockId : _blockId)
     {
-        vector<uint>::iterator ptr = find(blockList.begin(), blockList.end(), blockId);
-        if (ptr != blockList.end() - 1)
+        vector<uint>::iterator ptr = find(fullBlockList.begin(), fullBlockList.end(), blockId);
+        if (ptr != fullBlockList.end() - 1)
         {
             uint begin = (*ptr) + 1;
             uint end = *(++ptr) - 1;
@@ -250,6 +260,7 @@ void Dfg::dfgAnalyze()
     DfgTool::bfsTraverse(*this);
     DfgTool::pathAnalyze(*this);
     DfgTool::nodeLevelAnalyze(*this);
+    DfgTool::levelDegreeAnalyze(*this);
 }
 
 // Modify this function according to your need!!!

@@ -1,6 +1,7 @@
 #pragma once
 
 #include "enum_definition.hpp"
+#include "../util/util.hpp"
 #include <stdexcept>
 #include <cstdio>
 
@@ -1290,6 +1291,40 @@ namespace DFMpr
 				return BpType::ack;
 			DEBUG_ASSERT(false);
 			return BpType::credit;
+		}
+	};
+
+	class OpTypeConverter
+	{
+	public:
+		static auto toString(Op type_)->string
+		{
+			if (type_ == Op::Phi)
+				return "Phi";
+			if (type_ == Op::Add)
+				return "Add";
+			if (type_ == Op::Sub)
+				return "Sub";
+			if (type_ == Op::Mul)
+				return "Mul";
+			if (type_ == Op::Div)
+				return "Div";
+			if (type_ == Op::And)
+				return "And";
+			if (type_ == Op::Or)
+				return "Or";
+			if (type_ == Op::Xor)
+				return "Xor";
+			if (type_ == Op::Cmp)
+				return "Cmp";
+			if (type_ == Op::Load)
+				return "Load";
+			if (type_ == Op::Store)
+				return "Store";
+			if (type_ == Op::Undefine)
+				return "Undef";
+			Util::throwError("Undefined operation conversion!", __FILE__, __LINE__);
+			return "";
 		}
 	};
 }

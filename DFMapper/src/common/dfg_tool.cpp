@@ -1,4 +1,5 @@
 #include "dfg_tool.h"
+#include "enum_converter.hpp"
 
 using namespace DFMpr;
 
@@ -13,10 +14,12 @@ void DfgTool::printDfg(Dfg& _dfg)
         //vector<int>::iterator it = find(start.begin(), start.end(), pair.first);
         //if (it != start.end())
         //    continue;
-        std::cout << pair.first << "\tnodeLevel: " << pair.second.nodeLevel << std::endl;
-        std::cout << "\ttag: " << pair.second.tag << std::endl;
+        std::cout << ">> " << pair.first << std::endl;
+        std::cout << std::setw(9) << "level: " << pair.second.nodeLevel << std::endl;
+        std::cout << std::setw(9) << "op: " << OpTypeConverter::toString(pair.second.op) << std::endl;
+        std::cout << std::setw(9) << "tag: " << pair.second.tag << std::endl;
 
-        std::cout << "\tpre_nodes: ";
+        std::cout << std::setw(9) << "pre: ";
         for (auto node : pair.second.pre_nodes)
         {
             //vector<int>::iterator it = find(start.begin(), start.end(), node);
@@ -24,7 +27,9 @@ void DfgTool::printDfg(Dfg& _dfg)
             //    continue;
             std::cout << node << " ";
         }
-        std::cout << "\n\tnext_nodes: ";
+
+        std::cout << pair.first << std::endl;
+        std::cout << std::setw(9) << "next: ";
         for (auto node : pair.second.next_nodes)
         {
             //vector<int>::iterator it = find(start.begin(), start.end(), node);
@@ -76,7 +81,11 @@ void DfgTool::printDfg(Dfg& _dfg)
     std::cout << std::endl;
     for (size_t i = 0; i < _dfg.nodeLevelDist.size(); ++i)
     {
-        std::cout << "Node_level: " << i << "\tNode_num: " << _dfg.nodeLevelDist[i] << std::endl;
+        std::cout << "Node_level: " << i << "\tNode_num: " << _dfg.nodeLevelDist[i];
+        std::cout << "\tinDeg: " << _dfg.levels[i].inDegree;
+        std::cout << "\toutDeg: " << _dfg.levels[i].outDegree;
+        std::cout << "\tmaxInDeg: " << _dfg.levels[i].maxSingleNodeInDegree;
+        std::cout << "\tmaxOutDeg: " << _dfg.levels[i].maxSingleNodeOutDegree << std::endl;
     }
 }
 
@@ -170,16 +179,29 @@ void DfgTool::pathAnalyze(Dfg& _dfg)
 
 void DfgTool::nodeLevelAnalyze(Dfg& _dfg)
 {
-    int maxLevel = 0;
     for (auto pair : _dfg.nodes)
     {
-        maxLevel = std::max<uint>(maxLevel, pair.second.nodeLevel);
+        _dfg.maxLevel = std::max<uint>(_dfg.maxLevel, pair.second.nodeLevel);
     }
 
-    _dfg.nodeLevelDist.resize(maxLevel + 1);
+    _dfg.nodeLevelDist.resize(_dfg.maxLevel + 1);
     for (auto pair : _dfg.nodes)
     {
         _dfg.nodeLevelDist[pair.second.nodeLevel]++;
+    }
+}
+
+void DfgTool::levelDegreeAnalyze(Dfg& _dfg)
+{
+    _dfg.levels.resize(_dfg.maxLevel + 1);
+    for (auto pair : _dfg.nodes)
+    {
+        uint nodeLevel = pair.second.nodeLevel;
+        _dfg.levels[nodeLevel].inDegree += pair.second.pre_nodes.size();
+        _dfg.levels[nodeLevel].outDegree += pair.second.next_nodes.size();
+
+        _dfg.levels[nodeLevel].maxSingleNodeInDegree = std::max<uint>(_dfg.levels[nodeLevel].maxSingleNodeInDegree, pair.second.pre_nodes.size());
+        _dfg.levels[nodeLevel].maxSingleNodeOutDegree = std::max<uint>(_dfg.levels[nodeLevel].maxSingleNodeOutDegree, pair.second.next_nodes.size());
     }
 }
 
@@ -191,6 +213,14 @@ void DfgTool::breakFeedbackLoop(Dfg& _dfg)
         {
             if (*iter > pair.first)
             {
+                // Delete nextNode of successor node
+                set<int>::iterator nextNodeIter = find(_dfg.nodes.at(*iter).next_nodes.begin(), _dfg.nodes.at(*iter).next_nodes.end(), pair.first);
+                if (nextNodeIter != _dfg.nodes.at(*iter).next_nodes.end())
+                {
+                    _dfg.nodes.at(*iter).next_nodes.erase(nextNodeIter);
+                }
+
+                // Delete preNode of current node
                 pair.second.pre_nodes.erase(iter++);
             }
             else
@@ -199,6 +229,55 @@ void DfgTool::breakFeedbackLoop(Dfg& _dfg)
             }
         }
     }
+}
+
+vector<uint> DfgTool::getFullBlockList(string fpath)
+{
+    std::ifstream in;
+    //文件名输入
+    in.open(fpath, std::ios::in);
+    if (!in.is_open())
+    {
+        Util::throwError("File: " + fpath + " can not open!", __FILE__, __LINE__);
+    }
+    vector<uint> blockList;
+
+    while (!in.eof())
+    {
+        string strBuff;
+        std::istringstream iss;
+        getline(in, strBuff);
+        iss.str(strBuff);
+
+        vector<string> v;
+        string s;
+        while (iss >> s)
+        {
+            //std::cout << s << std::endl;
+            //std::cout << v.size() << std::endl;
+            //if (s == "12345")
+            //{
+            //    uint i = 0;
+            //    ++i;
+            //}
+
+            v.push_back(s);
+        }
+
+        if (v.size() > 0)
+        {
+            //开始节点
+            if (v[0].find(":") != string::npos)
+            {
+                int blockId = stoi(v[0].substr(0, v[0].length() - 1));
+                blockList.push_back(blockId);
+            }
+        }
+    }
+
+    in.close();
+
+    return blockList;
 }
 
 Dfg DfgTool::genSubDfg(Dfg& _dfg, vector<uint> nodeList)

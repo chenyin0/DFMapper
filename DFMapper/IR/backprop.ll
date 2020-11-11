@@ -3,17 +3,7 @@ source_filename = "backprop.c"
 target datalayout = "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
 
-; Function Attrs: argmemonly nounwind willreturn
-declare void @llvm.lifetime.start.p0i8(i64 immarg, i8* nocapture) #1
 
-; Function Attrs: nofree nounwind optsize
-declare dso_local double @exp(double) local_unnamed_addr #2
-
-; Function Attrs: argmemonly nounwind willreturn
-declare void @llvm.lifetime.end.p0i8(i64 immarg, i8* nocapture) #1
-
-; Function Attrs: nofree nounwind optsize
-declare dso_local double @sqrt(double) local_unnamed_addr #2
 
 ; Function Attrs: nounwind optsize uwtable
 define dso_local void @backprop(double* nocapture %0, double* nocapture %1, double* nocapture %2, double* nocapture %3, double* nocapture %4, double* nocapture %5, double* nocapture readonly %6, double* nocapture readonly %7) local_unnamed_addr #4 {

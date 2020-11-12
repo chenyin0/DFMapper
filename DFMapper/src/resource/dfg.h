@@ -27,9 +27,10 @@ namespace DFMpr {
         vector<float> delayDistNorm;  // Normalized delay distribution (%)
         vector<float> delayDistIntervalNorm;
         vector<uint> nodeLevelDist;
+        string opToString(Op _op);
 
     private:
-        Op getNodeOp(int nodeId, string _op);
+        Op stringToOp(string _op);
         std::ifstream in;
         std::fstream out;
     };

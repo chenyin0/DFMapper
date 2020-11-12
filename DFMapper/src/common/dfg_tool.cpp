@@ -15,6 +15,7 @@ void DfgTool::printDfg(Dfg& _dfg)
         //    continue;
         std::cout << pair.first << "\tnodeLevel: " << pair.second.nodeLevel << std::endl;
         std::cout << "\ttag: " << pair.second.tag << std::endl;
+        std::cout << "\top: " << _dfg.opToString(pair.second.op) << std::endl;
 
         std::cout << "\tpre_nodes: ";
         for (auto node : pair.second.pre_nodes)

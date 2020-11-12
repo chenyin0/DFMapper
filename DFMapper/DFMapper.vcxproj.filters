@@ -17,6 +17,9 @@
     <ClCompile Include="src\resource\app_set.cpp">
       <Filter>src\resource</Filter>
     </ClCompile>
+    <ClCompile Include="src\common\logger.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\common\dfg_tool.h">
@@ -61,6 +64,9 @@
     <ClInclude Include="src\resource\app_set.h">
       <Filter>src\resource</Filter>
     </ClInclude>
+    <ClInclude Include="src\common\logger.h">
+      <Filter>src\common</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="src">
@@ -104,6 +110,9 @@
     </Filter>
     <Filter Include="src\resource\arch">
       <UniqueIdentifier>{1837f761-fe67-4891-afe1-ba2a25dbbbe7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="result">
+      <UniqueIdentifier>{c547a6a0-b9af-4ba7-a5e2-a762977b81d6}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -169,5 +178,10 @@
     <None Include="IR\md_knn.ll">
       <Filter>IR</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="result\log.txt">
+      <Filter>result</Filter>
+    </Text>
   </ItemGroup>
 </Project>

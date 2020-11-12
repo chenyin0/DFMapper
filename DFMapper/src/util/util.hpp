@@ -307,5 +307,19 @@ namespace DFMpr
             std::cout << "File name: " << fileName << std::endl;
             DEBUG_ASSERT(false);
         }
+
+        // Get system clock
+        static const string getCurrentSystemTime()
+        {
+            struct tm ptm;
+            time_t tt;
+            time(&tt);
+            localtime_s(&ptm, &tt);
+            char date[60] = { 0 };
+            sprintf_s(date, "%d-%02d-%02d      %02d:%02d:%02d",
+                (int)ptm.tm_year + 1900, (int)ptm.tm_mon + 1, (int)ptm.tm_mday,
+                (int)ptm.tm_hour, (int)ptm.tm_min, (int)ptm.tm_sec);
+            return std::string(date);
+        }
     };
 }

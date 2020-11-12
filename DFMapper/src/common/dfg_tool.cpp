@@ -1,5 +1,6 @@
 #include "dfg_tool.h"
 #include "enum_converter.hpp"
+#include "../common/logger.h"
 
 using namespace DFMpr;
 
@@ -8,53 +9,72 @@ const vector<uint> DfgTool::distInterval = { 0,1,4,7,10,20 };
 void DfgTool::printDfg(Dfg& _dfg)
 {
     // Print node info
-    std::cout << std::endl;
-    for (auto pair : _dfg.nodes)
-    {
-        //vector<int>::iterator it = find(start.begin(), start.end(), pair.first);
-        //if (it != start.end())
-        //    continue;
-        std::cout << ">> " << pair.first << std::endl;
-        std::cout << std::setw(9) << "level: " << pair.second.nodeLevel << std::endl;
-        std::cout << std::setw(9) << "op: " << OpTypeConverter::toString(pair.second.op) << std::endl;
-        std::cout << std::setw(9) << "tag: " << pair.second.tag << std::endl;
-
-        std::cout << std::setw(9) << "pre: ";
-        for (auto node : pair.second.pre_nodes)
-        {
-            //vector<int>::iterator it = find(start.begin(), start.end(), node);
-            //if (it != start.end())
-            //    continue;
-            std::cout << node << " ";
-        }
-
-        std::cout << pair.first << std::endl;
-        std::cout << std::setw(9) << "next: ";
-        for (auto node : pair.second.next_nodes)
-        {
-            //vector<int>::iterator it = find(start.begin(), start.end(), node);
-            //if (it != start.end())
-            //    continue;
-            std::cout << node << " ";
-        }
-        std::cout << std::endl << std::endl;
-    }
+    //Logger::printDfg(_dfg);
 
     // Print maximal node delay
-    std::cout << std::endl;
-    std::cout << "MaxDelay: " << _dfg.maxDelay << std::endl;
-
-    //for (auto delay : _dfg.pathDelay)
-    //{
-    //    std::cout << "\n" << delay << std::endl;
-    //}
+    Logger::printMaxNodeDelay(_dfg);
 
     // Print normalized delay distribution
-    std::cout << std::endl;
-    for (size_t i = 0; i < _dfg.delayDistNorm.size(); ++i)
-    {
-        std::cout << "Delay: " << i << "\tDist: " << _dfg.delayDistNorm[i] << std::endl;
-    }
+    Logger::printNormDelayDistribution(_dfg);
+
+    // Print delay distribution
+    Logger::printDelayDistribution(_dfg);
+
+    // Print normalized delay distribution with interval
+    Logger::printDelayDistIntervalNorm(_dfg);
+
+    // Print node level distribution
+    Logger::printNodeLevelDistribution(_dfg);
+
+
+    //// Print node info
+    //std::cout << std::endl;
+    //for (auto pair : _dfg.nodes)
+    //{
+    //    //vector<int>::iterator it = find(start.begin(), start.end(), pair.first);
+    //    //if (it != start.end())
+    //    //    continue;
+    //    std::cout << ">> " << pair.first << std::endl;
+    //    std::cout << std::setw(9) << "level: " << pair.second.nodeLevel << std::endl;
+    //    std::cout << std::setw(9) << "op: " << OpTypeConverter::toString(pair.second.op) << std::endl;
+    //    std::cout << std::setw(9) << "tag: " << pair.second.tag << std::endl;
+
+    //    std::cout << std::setw(9) << "pre: ";
+    //    for (auto node : pair.second.pre_nodes)
+    //    {
+    //        //vector<int>::iterator it = find(start.begin(), start.end(), node);
+    //        //if (it != start.end())
+    //        //    continue;
+    //        std::cout << node << " ";
+    //    }
+
+    //    std::cout << pair.first << std::endl;
+    //    std::cout << std::setw(9) << "next: ";
+    //    for (auto node : pair.second.next_nodes)
+    //    {
+    //        //vector<int>::iterator it = find(start.begin(), start.end(), node);
+    //        //if (it != start.end())
+    //        //    continue;
+    //        std::cout << node << " ";
+    //    }
+    //    std::cout << std::endl << std::endl;
+    //}
+
+    //// Print maximal node delay
+    //std::cout << std::endl;
+    //std::cout << "MaxDelay: " << _dfg.maxDelay << std::endl;
+
+    ////for (auto delay : _dfg.pathDelay)
+    ////{
+    ////    std::cout << "\n" << delay << std::endl;
+    ////}
+
+    //// Print normalized delay distribution
+    //std::cout << std::endl;
+    //for (size_t i = 0; i < _dfg.delayDistNorm.size(); ++i)
+    //{
+    //    std::cout << "Delay: " << i << "\tDist: " << _dfg.delayDistNorm[i] << std::endl;
+    //}
 
     //// Print delay distribution
     //std::cout << std::endl;
@@ -63,30 +83,32 @@ void DfgTool::printDfg(Dfg& _dfg)
     //    std::cout << "Delay: " << i << "\tDist: " << _dfg.delayDist[i] << std::endl;
     //}
 
-    // Print normalized delay distribution with interval
-    std::cout << std::endl;
-    for (size_t i = 0; i < _dfg.delayDistIntervalNorm.size(); ++i)
-    {
-        if (i != _dfg.delayDistIntervalNorm.size() - 1)
-        {
-            std::cout << "[ " << DfgTool::distInterval[i] << " , " << DfgTool::distInterval[i + 1] << " ) = " << _dfg.delayDistIntervalNorm[i] << std::endl;
-        }
-        else
-        {
-            std::cout << "[ " << DfgTool::distInterval[i] << " , INF ) = " << _dfg.delayDistIntervalNorm[i] << std::endl;
-        }
-    }
+    //// Print normalized delay distribution with interval
+    //std::cout << std::endl;
+    //for (size_t i = 0; i < _dfg.delayDistIntervalNorm.size(); ++i)
+    //{
+    //    if (i != _dfg.delayDistIntervalNorm.size() - 1)
+    //    {
+    //        std::cout << "[ " << DfgTool::distInterval[i] << " , " << DfgTool::distInterval[i + 1] << " ) = " << _dfg.delayDistIntervalNorm[i] << std::endl;
+    //    }
+    //    else
+    //    {
+    //        std::cout << "[ " << DfgTool::distInterval[i] << " , INF ) = " << _dfg.delayDistIntervalNorm[i] << std::endl;
+    //    }
+    //}
 
-    // Print node level distribution
-    std::cout << std::endl;
-    for (size_t i = 0; i < _dfg.nodeLevelDist.size(); ++i)
-    {
-        std::cout << "Node_level: " << i << "\tNode_num: " << _dfg.nodeLevelDist[i];
-        std::cout << "\tinDeg: " << _dfg.levels[i].inDegree;
-        std::cout << "\toutDeg: " << _dfg.levels[i].outDegree;
-        std::cout << "\tmaxInDeg: " << _dfg.levels[i].maxSingleNodeInDegree;
-        std::cout << "\tmaxOutDeg: " << _dfg.levels[i].maxSingleNodeOutDegree << std::endl;
-    }
+    //// Print node level distribution
+    //std::cout << std::endl;
+    //for (size_t i = 0; i < _dfg.nodeLevelDist.size(); ++i)
+    //{
+    //    std::cout << "Node_level: " << i << "\tNode_num: " << _dfg.nodeLevelDist[i];
+    //    std::cout << "\tinDeg: " << _dfg.levels[i].inDegree;
+    //    std::cout << "\toutDeg: " << _dfg.levels[i].outDegree;
+    //    std::cout << "\tmaxInDeg: " << _dfg.levels[i].maxSingleNodeInDegree;
+    //    std::cout << "\tmaxOutDeg: " << _dfg.levels[i].maxSingleNodeOutDegree;
+    //    std::cout << "\tinRegionDeg: " << _dfg.levels[i].inRegionDegree;
+    //    std::cout << "\toutRegionDeg: " << _dfg.levels[i].outRegionDegree << std::endl;
+    //}
 }
 
 void DfgTool::bfsTraverse(Dfg& _dfg)
@@ -202,6 +224,17 @@ void DfgTool::levelDegreeAnalyze(Dfg& _dfg)
 
         _dfg.levels[nodeLevel].maxSingleNodeInDegree = std::max<uint>(_dfg.levels[nodeLevel].maxSingleNodeInDegree, pair.second.pre_nodes.size());
         _dfg.levels[nodeLevel].maxSingleNodeOutDegree = std::max<uint>(_dfg.levels[nodeLevel].maxSingleNodeOutDegree, pair.second.next_nodes.size());
+    }
+}
+
+void DfgTool::subDfgLevelDegreeAnalyze(Dfg& _subDfg, Dfg& _fullDfg)
+{
+    for (auto pair : _subDfg.nodes)
+    {
+        uint nodeId = pair.first;
+        uint nodeLevel = pair.second.nodeLevel;
+        _subDfg.levels[nodeLevel].outRegionDegree += _fullDfg.nodes.at(nodeId).pre_nodes.size() - pair.second.pre_nodes.size();
+        _subDfg.levels[nodeLevel].inRegionDegree += _fullDfg.nodes.at(nodeId).next_nodes.size() - pair.second.next_nodes.size();
     }
 }
 

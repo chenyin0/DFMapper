@@ -145,6 +145,7 @@
     <ClInclude Include="src\common\dfg_tool.h" />
     <ClInclude Include="src\common\enum_converter.hpp" />
     <ClInclude Include="src\common\enum_definition.hpp" />
+    <ClInclude Include="src\common\logger.h" />
     <ClInclude Include="src\define\define.hpp" />
     <ClInclude Include="src\define\global.hpp" />
     <ClInclude Include="src\resource\arch\arch_block_net.hpp" />
@@ -159,6 +160,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\common\dfg_tool.cpp" />
+    <ClCompile Include="src\common\logger.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\resource\arch\preprocess.cpp" />
     <ClCompile Include="src\resource\dfg.cpp" />
@@ -188,6 +190,9 @@
     <None Include="IR\stencil_2d.ll" />
     <None Include="IR\stencil_3d.ll" />
     <None Include="IR\viterbi.ll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="result\log.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

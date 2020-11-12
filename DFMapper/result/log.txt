@@ -1,0 +1,2532 @@
+log open
+2020-11-12      16:57:33
+
+MaxDelay: 0
+
+Delay: 0	Dist: -nan(ind)
+
+Delay: 0	Dist: 0
+
+[ 0 , 1 ) = -nan(ind)
+[ 1 , 4 ) = 0
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 15	inDeg: 0	outDeg: 0	maxInDeg: 0	maxOutDeg: 0	inRegionDeg: 15	outRegionDeg: 15
+
+MaxDelay: 3
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 71.4286
+Delay: 2	Dist: 0
+Delay: 3	Dist: 28.5714
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 5
+Delay: 2	Dist: 0
+Delay: 3	Dist: 2
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 4	maxInDeg: 0	maxOutDeg: 4	inRegionDeg: 0	outRegionDeg: 3
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 2	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 2	inDeg: 4	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 2
+
+MaxDelay: 4
+
+Delay: 0	Dist: 4.34783
+Delay: 1	Dist: 73.913
+Delay: 2	Dist: 4.34783
+Delay: 3	Dist: 0
+Delay: 4	Dist: 17.3913
+
+Delay: 0	Dist: 1
+Delay: 1	Dist: 17
+Delay: 2	Dist: 1
+Delay: 3	Dist: 0
+Delay: 4	Dist: 4
+
+[ 0 , 1 ) = 4.34783
+[ 1 , 4 ) = 78.2609
+[ 4 , 7 ) = 17.3913
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 10	inDeg: 0	outDeg: 10	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 1	outRegionDeg: 17
+Node_level: 1	Node_num: 5	inDeg: 5	outDeg: 4	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 0
+Node_level: 2	Node_num: 5	inDeg: 6	outDeg: 4	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 0
+Node_level: 3	Node_num: 4	inDeg: 4	outDeg: 4	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 4	inDeg: 8	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 3
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 96.5517
+Delay: 2	Dist: 0
+Delay: 3	Dist: 3.44828
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 28
+Delay: 2	Dist: 0
+Delay: 3	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 9	maxInDeg: 0	maxOutDeg: 8	inRegionDeg: 1	outRegionDeg: 9
+Node_level: 1	Node_num: 8	inDeg: 8	outDeg: 7	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 4	outRegionDeg: 1
+Node_level: 2	Node_num: 7	inDeg: 7	outDeg: 7	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 6
+Node_level: 3	Node_num: 7	inDeg: 8	outDeg: 6	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 3	inDeg: 6	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 4
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 83.3333
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 16.6667
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 15
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 3
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 83.3333
+[ 4 , 7 ) = 16.6667
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 9	inDeg: 0	outDeg: 7	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 10
+Node_level: 1	Node_num: 4	inDeg: 4	outDeg: 4	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 2	Node_num: 4	inDeg: 4	outDeg: 4	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 4	inDeg: 4	outDeg: 3	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 0
+Node_level: 4	Node_num: 3	inDeg: 6	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+MaxDelay: 3
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 96.5517
+Delay: 2	Dist: 0
+Delay: 3	Dist: 3.44828
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 28
+Delay: 2	Dist: 0
+Delay: 3	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 9	maxInDeg: 0	maxOutDeg: 8	inRegionDeg: 1	outRegionDeg: 9
+Node_level: 1	Node_num: 8	inDeg: 8	outDeg: 7	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 7	inDeg: 7	outDeg: 7	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 6
+Node_level: 3	Node_num: 7	inDeg: 8	outDeg: 6	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 3	inDeg: 6	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 3
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 85.7143
+Delay: 2	Dist: 0
+Delay: 3	Dist: 14.2857
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 12
+Delay: 2	Dist: 0
+Delay: 3	Dist: 2
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 5	maxInDeg: 0	maxOutDeg: 5	inRegionDeg: 1	outRegionDeg: 4
+Node_level: 1	Node_num: 4	inDeg: 4	outDeg: 4	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 2
+Node_level: 2	Node_num: 3	inDeg: 3	outDeg: 4	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 3	Node_num: 3	inDeg: 5	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 4	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 1
+
+MaxDelay: 0
+
+Delay: 0	Dist: -nan(ind)
+
+Delay: 0	Dist: 0
+
+[ 0 , 1 ) = -nan(ind)
+[ 1 , 4 ) = 0
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 27	inDeg: 0	outDeg: 0	maxInDeg: 0	maxOutDeg: 0	inRegionDeg: 55	outRegionDeg: 28
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 6
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 1	outRegionDeg: 4
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 0
+
+Delay: 0	Dist: -nan(ind)
+
+Delay: 0	Dist: 0
+
+[ 0 , 1 ) = -nan(ind)
+[ 1 , 4 ) = 0
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 11	inDeg: 0	outDeg: 0	maxInDeg: 0	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 12
+
+MaxDelay: 4
+
+Delay: 0	Dist: 17.7419
+Delay: 1	Dist: 58.0645
+Delay: 2	Dist: 19.3548
+Delay: 3	Dist: 3.22581
+Delay: 4	Dist: 1.6129
+
+Delay: 0	Dist: 11
+Delay: 1	Dist: 36
+Delay: 2	Dist: 12
+Delay: 3	Dist: 2
+Delay: 4	Dist: 1
+
+[ 0 , 1 ) = 17.7419
+[ 1 , 4 ) = 80.6452
+[ 4 , 7 ) = 1.6129
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 5	maxInDeg: 0	maxOutDeg: 5	inRegionDeg: 1	outRegionDeg: 4
+Node_level: 1	Node_num: 5	inDeg: 5	outDeg: 4	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 2	Node_num: 4	inDeg: 4	outDeg: 6	maxInDeg: 1	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 3
+Node_level: 3	Node_num: 3	inDeg: 3	outDeg: 10	maxInDeg: 1	maxOutDeg: 4	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 10	inDeg: 16	outDeg: 19	maxInDeg: 2	maxOutDeg: 4	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 7	inDeg: 8	outDeg: 10	maxInDeg: 2	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 6	Node_num: 8	inDeg: 16	outDeg: 6	maxInDeg: 3	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 7	Node_num: 4	inDeg: 10	outDeg: 2	maxInDeg: 3	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 7
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 1	outRegionDeg: 4
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 2
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 5
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 80.9524
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 14.2857
+Delay: 5	Dist: 4.7619
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 17
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 3
+Delay: 5	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 80.9524
+[ 4 , 7 ) = 19.0476
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 9	inDeg: 0	outDeg: 8	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 10
+Node_level: 1	Node_num: 4	inDeg: 4	outDeg: 4	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 2	Node_num: 4	inDeg: 4	outDeg: 4	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 4	inDeg: 4	outDeg: 4	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 4	inDeg: 7	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 5	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+MaxDelay: 3
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 96.5517
+Delay: 2	Dist: 0
+Delay: 3	Dist: 3.44828
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 28
+Delay: 2	Dist: 0
+Delay: 3	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 9	maxInDeg: 0	maxOutDeg: 8	inRegionDeg: 1	outRegionDeg: 9
+Node_level: 1	Node_num: 8	inDeg: 8	outDeg: 7	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 4	outRegionDeg: 1
+Node_level: 2	Node_num: 7	inDeg: 7	outDeg: 7	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 6
+Node_level: 3	Node_num: 7	inDeg: 8	outDeg: 6	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 3	inDeg: 6	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 4
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 83.3333
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 16.6667
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 15
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 3
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 83.3333
+[ 4 , 7 ) = 16.6667
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 9	inDeg: 0	outDeg: 7	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 2	outRegionDeg: 10
+Node_level: 1	Node_num: 4	inDeg: 4	outDeg: 4	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 2	Node_num: 4	inDeg: 4	outDeg: 4	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 4	inDeg: 4	outDeg: 3	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 0
+Node_level: 4	Node_num: 3	inDeg: 6	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+MaxDelay: 3
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 96.5517
+Delay: 2	Dist: 0
+Delay: 3	Dist: 3.44828
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 28
+Delay: 2	Dist: 0
+Delay: 3	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 9	maxInDeg: 0	maxOutDeg: 8	inRegionDeg: 1	outRegionDeg: 9
+Node_level: 1	Node_num: 8	inDeg: 8	outDeg: 7	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 2	outRegionDeg: 1
+Node_level: 2	Node_num: 7	inDeg: 7	outDeg: 7	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 6
+Node_level: 3	Node_num: 7	inDeg: 8	outDeg: 6	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 3	inDeg: 6	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 7
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 1	outRegionDeg: 4
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 2
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 6
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 1	outRegionDeg: 5
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 5
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 84.2105
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 10.5263
+Delay: 5	Dist: 5.26316
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 16
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 2
+Delay: 5	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 84.2105
+[ 4 , 7 ) = 15.7895
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 20	inDeg: 0	outDeg: 7	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 21
+Node_level: 1	Node_num: 4	inDeg: 4	outDeg: 4	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 2	Node_num: 4	inDeg: 4	outDeg: 4	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 4	inDeg: 4	outDeg: 3	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 0
+Node_level: 4	Node_num: 3	inDeg: 5	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 5	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+MaxDelay: 3
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 96.5517
+Delay: 2	Dist: 0
+Delay: 3	Dist: 3.44828
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 28
+Delay: 2	Dist: 0
+Delay: 3	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 9	maxInDeg: 0	maxOutDeg: 8	inRegionDeg: 1	outRegionDeg: 9
+Node_level: 1	Node_num: 8	inDeg: 8	outDeg: 7	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 4	outRegionDeg: 1
+Node_level: 2	Node_num: 7	inDeg: 7	outDeg: 7	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 6
+Node_level: 3	Node_num: 7	inDeg: 8	outDeg: 6	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 3	inDeg: 6	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 4
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 83.3333
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 16.6667
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 15
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 3
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 83.3333
+[ 4 , 7 ) = 16.6667
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 8	inDeg: 0	outDeg: 7	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 9
+Node_level: 1	Node_num: 4	inDeg: 4	outDeg: 4	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 2	Node_num: 4	inDeg: 4	outDeg: 4	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 4	inDeg: 4	outDeg: 3	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 0
+Node_level: 4	Node_num: 3	inDeg: 6	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+MaxDelay: 3
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 96.5517
+Delay: 2	Dist: 0
+Delay: 3	Dist: 3.44828
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 28
+Delay: 2	Dist: 0
+Delay: 3	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 9	maxInDeg: 0	maxOutDeg: 8	inRegionDeg: 1	outRegionDeg: 9
+Node_level: 1	Node_num: 8	inDeg: 8	outDeg: 7	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 2	outRegionDeg: 1
+Node_level: 2	Node_num: 7	inDeg: 7	outDeg: 7	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 6
+Node_level: 3	Node_num: 7	inDeg: 8	outDeg: 6	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 3	inDeg: 6	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 7
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 1	outRegionDeg: 4
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 2
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 5
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 80
+Delay: 2	Dist: 10
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 10
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 8
+Delay: 2	Dist: 1
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 90
+[ 4 , 7 ) = 10
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 4	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 8
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 2	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 4
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 90.9091
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 9.09091
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 10
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 90.9091
+[ 4 , 7 ) = 9.09091
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 4
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 3	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 2	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 5
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 83.3333
+Delay: 2	Dist: 8.33333
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 8.33333
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 10
+Delay: 2	Dist: 1
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 91.6667
+[ 4 , 7 ) = 8.33333
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 4
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 3	maxInDeg: 1	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 2	inDeg: 3	outDeg: 2	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 2	inDeg: 3	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 6	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 5
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 80
+Delay: 2	Dist: 10
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 10
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 8
+Delay: 2	Dist: 1
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 90
+[ 4 , 7 ) = 10
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 4	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 8
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 2	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 4
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 90.9091
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 9.09091
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 10
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 90.9091
+[ 4 , 7 ) = 9.09091
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 4
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 3	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 2	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 5
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 83.3333
+Delay: 2	Dist: 8.33333
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 8.33333
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 10
+Delay: 2	Dist: 1
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 91.6667
+[ 4 , 7 ) = 8.33333
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 4
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 3	maxInDeg: 1	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 2	inDeg: 3	outDeg: 2	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 2	inDeg: 3	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 6	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 5
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 80
+Delay: 2	Dist: 10
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 10
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 8
+Delay: 2	Dist: 1
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 90
+[ 4 , 7 ) = 10
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 4	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 8
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 2	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 7
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 4
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 5
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 83.3333
+Delay: 2	Dist: 8.33333
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 8.33333
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 10
+Delay: 2	Dist: 1
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 91.6667
+[ 4 , 7 ) = 8.33333
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 4
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 3	maxInDeg: 1	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 2	inDeg: 3	outDeg: 2	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 2	inDeg: 3	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 6	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 5
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 85.7143
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 14.2857
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 6
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 85.7143
+[ 4 , 7 ) = 14.2857
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 8
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+MaxDelay: 6
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 87.5
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 12.5
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 7
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 87.5
+[ 4 , 7 ) = 12.5
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 4
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 6	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 1
+
+MaxDelay: 4
+
+Delay: 0	Dist: 7.14286
+Delay: 1	Dist: 78.5714
+Delay: 2	Dist: 0
+Delay: 3	Dist: 7.14286
+Delay: 4	Dist: 7.14286
+
+Delay: 0	Dist: 1
+Delay: 1	Dist: 11
+Delay: 2	Dist: 0
+Delay: 3	Dist: 1
+Delay: 4	Dist: 1
+
+[ 0 , 1 ) = 7.14286
+[ 1 , 4 ) = 85.7143
+[ 4 , 7 ) = 7.14286
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 5	maxInDeg: 0	maxOutDeg: 5	inRegionDeg: 0	outRegionDeg: 4
+Node_level: 1	Node_num: 4	inDeg: 4	outDeg: 3	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 3
+Node_level: 2	Node_num: 3	inDeg: 3	outDeg: 3	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 1	inDeg: 2	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 2	inDeg: 3	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 5	Node_num: 1	inDeg: 2	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 2
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 1	outRegionDeg: 3
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 2	outRegionDeg: 1
+
+MaxDelay: 3
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 85.7143
+Delay: 2	Dist: 0
+Delay: 3	Dist: 14.2857
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 6
+Delay: 2	Dist: 0
+Delay: 3	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 4
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 4	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 1
+
+MaxDelay: 4
+
+Delay: 0	Dist: 10
+Delay: 1	Dist: 70
+Delay: 2	Dist: 10
+Delay: 3	Dist: 0
+Delay: 4	Dist: 10
+
+Delay: 0	Dist: 1
+Delay: 1	Dist: 7
+Delay: 2	Dist: 1
+Delay: 3	Dist: 0
+Delay: 4	Dist: 1
+
+[ 0 , 1 ) = 10
+[ 1 , 4 ) = 80
+[ 4 , 7 ) = 10
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 4	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 8
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 2	inDeg: 4	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 0
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 2
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 1	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 4
+Node_level: 1	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 1
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 4
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 1	outRegionDeg: 3
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+MaxDelay: 3
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 88.8889
+Delay: 2	Dist: 0
+Delay: 3	Dist: 11.1111
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 8
+Delay: 2	Dist: 0
+Delay: 3	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 4
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 5	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 4
+
+Delay: 0	Dist: 10
+Delay: 1	Dist: 70
+Delay: 2	Dist: 10
+Delay: 3	Dist: 0
+Delay: 4	Dist: 10
+
+Delay: 0	Dist: 1
+Delay: 1	Dist: 7
+Delay: 2	Dist: 1
+Delay: 3	Dist: 0
+Delay: 4	Dist: 1
+
+[ 0 , 1 ) = 10
+[ 1 , 4 ) = 80
+[ 4 , 7 ) = 10
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 4	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 8
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 2	inDeg: 4	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 0
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 2
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 1	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 4
+Node_level: 1	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 1
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 4
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 1	outRegionDeg: 3
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+MaxDelay: 3
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 88.8889
+Delay: 2	Dist: 0
+Delay: 3	Dist: 11.1111
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 8
+Delay: 2	Dist: 0
+Delay: 3	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 4
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 5	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 7
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 83.3333
+Delay: 2	Dist: 8.33333
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 0
+Delay: 7	Dist: 8.33333
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 10
+Delay: 2	Dist: 1
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 0
+Delay: 7	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 91.6667
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 8.33333
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 9
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 2
+Node_level: 3	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 1	inDeg: 2	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 6	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 7	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+MaxDelay: 6
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 81.8182
+Delay: 2	Dist: 9.09091
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 9.09091
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 9
+Delay: 2	Dist: 1
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 90.9091
+[ 4 , 7 ) = 9.09091
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 4	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 8
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 2	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 6	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 1	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 3
+Node_level: 1	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+MaxDelay: 4
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 87.5
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 12.5
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 7
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 87.5
+[ 4 , 7 ) = 12.5
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 4
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 2	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 6	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 4
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 85.7143
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 14.2857
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 6
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 85.7143
+[ 4 , 7 ) = 14.2857
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 4
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 5	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 7
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 83.3333
+Delay: 2	Dist: 8.33333
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 0
+Delay: 7	Dist: 8.33333
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 10
+Delay: 2	Dist: 1
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 0
+Delay: 7	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 91.6667
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 8.33333
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 9
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 2
+Node_level: 3	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 1	inDeg: 2	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 6	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 7	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+MaxDelay: 6
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 81.8182
+Delay: 2	Dist: 9.09091
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 9.09091
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 9
+Delay: 2	Dist: 1
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 90.9091
+[ 4 , 7 ) = 9.09091
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 4	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 8
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 2	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 6	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 1	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 3
+Node_level: 1	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+MaxDelay: 4
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 87.5
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 12.5
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 7
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 87.5
+[ 4 , 7 ) = 12.5
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 4
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 2	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 6	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 4
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 85.7143
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 14.2857
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 6
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 85.7143
+[ 4 , 7 ) = 14.2857
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 4
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 5	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 7
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 83.3333
+Delay: 2	Dist: 8.33333
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 0
+Delay: 7	Dist: 8.33333
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 10
+Delay: 2	Dist: 1
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 0
+Delay: 7	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 91.6667
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 8.33333
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 9
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 2
+Node_level: 3	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 1	inDeg: 2	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 6	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 7	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+MaxDelay: 6
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 81.8182
+Delay: 2	Dist: 9.09091
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 9.09091
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 9
+Delay: 2	Dist: 1
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 90.9091
+[ 4 , 7 ) = 9.09091
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 4	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 8
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 2	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 6	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 5
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 4
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 1
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 4
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 4
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 1
+
+MaxDelay: 0
+
+Delay: 0	Dist: -nan(ind)
+
+Delay: 0	Dist: 0
+
+[ 0 , 1 ) = -nan(ind)
+[ 1 , 4 ) = 0
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 3	inDeg: 0	outDeg: 0	maxInDeg: 0	maxOutDeg: 0	inRegionDeg: 11	outRegionDeg: 4
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 6
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 9
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 1	outRegionDeg: 0
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 2
+Node_level: 3	Node_num: 2	inDeg: 2	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 4	outRegionDeg: 0
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 4
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 1	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 5	outRegionDeg: 7
+Node_level: 1	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 0
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 4	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 8
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 4	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 5
+Node_level: 1	Node_num: 2	inDeg: 3	outDeg: 2	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 2
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 4	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 2
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 81.8182
+Delay: 2	Dist: 18.1818
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 18
+Delay: 2	Dist: 4
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 1	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 4
+Node_level: 1	Node_num: 1	inDeg: 1	outDeg: 2	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 2	outRegionDeg: 1
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 4	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 3	Node_num: 4	inDeg: 4	outDeg: 5	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 2	outRegionDeg: 3
+Node_level: 4	Node_num: 5	inDeg: 5	outDeg: 6	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 2	outRegionDeg: 2
+Node_level: 5	Node_num: 2	inDeg: 2	outDeg: 4	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 6	Node_num: 4	inDeg: 8	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 3
+
+Delay: 0	Dist: 14.2857
+Delay: 1	Dist: 57.1429
+Delay: 2	Dist: 0
+Delay: 3	Dist: 28.5714
+
+Delay: 0	Dist: 2
+Delay: 1	Dist: 8
+Delay: 2	Dist: 0
+Delay: 3	Dist: 4
+
+[ 0 , 1 ) = 14.2857
+[ 1 , 4 ) = 85.7143
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 3	inDeg: 0	outDeg: 6	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 4
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 2
+Node_level: 2	Node_num: 3	inDeg: 4	outDeg: 4	maxInDeg: 2	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 4	inDeg: 8	outDeg: 2	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 2	outRegionDeg: 0
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 4
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 1	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 3
+Node_level: 1	Node_num: 1	inDeg: 1	outDeg: 2	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 1
+
+MaxDelay: 2
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 90.9091
+Delay: 2	Dist: 9.09091
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 10
+Delay: 2	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 4
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 2
+Node_level: 3	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 2
+Node_level: 4	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 6	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 2
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 5	outRegionDeg: 2
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 8	outRegionDeg: 1
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 3
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 1	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 4
+Node_level: 1	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+MaxDelay: 6
+
+Delay: 0	Dist: 12.5
+Delay: 1	Dist: 75
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 12.5
+
+Delay: 0	Dist: 1
+Delay: 1	Dist: 6
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 1
+
+[ 0 , 1 ) = 12.5
+[ 1 , 4 ) = 75
+[ 4 , 7 ) = 12.5
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 1	outRegionDeg: 12
+Node_level: 1	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 3
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 5	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 6	Node_num: 1	inDeg: 2	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 2
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 3	outRegionDeg: 9
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 6	outRegionDeg: 1
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 3
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 1	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 4
+Node_level: 1	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 0
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+MaxDelay: 6
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 85.7143
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 14.2857
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 6
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 85.7143
+[ 4 , 7 ) = 14.2857
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 10
+Node_level: 1	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 5	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 6	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 3	outRegionDeg: 0
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 3
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 3
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 1
+
+MaxDelay: 2
+
+Delay: 0	Dist: 18.1818
+Delay: 1	Dist: 54.5455
+Delay: 2	Dist: 27.2727
+
+Delay: 0	Dist: 2
+Delay: 1	Dist: 6
+Delay: 2	Dist: 3
+
+[ 0 , 1 ) = 18.1818
+[ 1 , 4 ) = 81.8182
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 6	inDeg: 0	outDeg: 6	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 7
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 3	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 2	Node_num: 5	inDeg: 8	outDeg: 2	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 0
+
+MaxDelay: 4
+
+Delay: 0	Dist: 7.8125
+Delay: 1	Dist: 73.4375
+Delay: 2	Dist: 14.0625
+Delay: 3	Dist: 3.125
+Delay: 4	Dist: 1.5625
+
+Delay: 0	Dist: 5
+Delay: 1	Dist: 47
+Delay: 2	Dist: 9
+Delay: 3	Dist: 2
+Delay: 4	Dist: 1
+
+[ 0 , 1 ) = 7.8125
+[ 1 , 4 ) = 90.625
+[ 4 , 7 ) = 1.5625
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 40	inDeg: 0	outDeg: 40	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 41
+Node_level: 1	Node_num: 18	inDeg: 29	outDeg: 13	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 0
+Node_level: 2	Node_num: 16	inDeg: 25	outDeg: 7	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 4	inDeg: 7	outDeg: 3	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 2	inDeg: 3	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 2
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 55.5556
+Delay: 2	Dist: 44.4444
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 5
+Delay: 2	Dist: 4
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 9	inDeg: 0	outDeg: 7	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 2	outRegionDeg: 10
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 0
+Node_level: 2	Node_num: 2	inDeg: 6	outDeg: 0	maxInDeg: 3	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 4
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 2
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 5
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 4
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 0
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 1
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 4
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 3	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 3	outRegionDeg: 9
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 3	outRegionDeg: 0
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 3	outRegionDeg: 1
+
+MaxDelay: 5
+
+Delay: 0	Dist: 8.57143
+Delay: 1	Dist: 68.5714
+Delay: 2	Dist: 14.2857
+Delay: 3	Dist: 2.85714
+Delay: 4	Dist: 2.85714
+Delay: 5	Dist: 2.85714
+
+Delay: 0	Dist: 3
+Delay: 1	Dist: 24
+Delay: 2	Dist: 5
+Delay: 3	Dist: 1
+Delay: 4	Dist: 1
+Delay: 5	Dist: 1
+
+[ 0 , 1 ) = 8.57143
+[ 1 , 4 ) = 85.7143
+[ 4 , 7 ) = 5.71429
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 4	inDeg: 0	outDeg: 6	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 1	outRegionDeg: 11
+Node_level: 1	Node_num: 4	inDeg: 4	outDeg: 6	maxInDeg: 1	maxOutDeg: 3	inRegionDeg: 2	outRegionDeg: 2
+Node_level: 2	Node_num: 6	inDeg: 7	outDeg: 5	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 4
+Node_level: 3	Node_num: 4	inDeg: 4	outDeg: 5	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 2
+Node_level: 4	Node_num: 4	inDeg: 5	outDeg: 5	maxInDeg: 2	maxOutDeg: 2	inRegionDeg: 1	outRegionDeg: 0
+Node_level: 5	Node_num: 3	inDeg: 5	outDeg: 4	maxInDeg: 2	maxOutDeg: 2	inRegionDeg: 1	outRegionDeg: 0
+Node_level: 6	Node_num: 2	inDeg: 5	outDeg: 2	maxInDeg: 3	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 7	Node_num: 2	inDeg: 5	outDeg: 2	maxInDeg: 3	maxOutDeg: 1	inRegionDeg: 2	outRegionDeg: 0
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 11
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 5	maxInDeg: 0	maxOutDeg: 5	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 1	Node_num: 5	inDeg: 5	outDeg: 3	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 13	outRegionDeg: 0
+Node_level: 2	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 0
+Node_level: 3	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 2
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 1	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 12	outRegionDeg: 5
+Node_level: 1	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 5	outRegionDeg: 1
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 5	outRegionDeg: 1
+
+MaxDelay: 2
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 80
+Delay: 2	Dist: 20
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 4
+Delay: 2	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 4	inDeg: 0	outDeg: 4	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 9
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 2	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 1	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 3
+Node_level: 1	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+MaxDelay: 2
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 88.8889
+Delay: 2	Dist: 11.1111
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 8
+Delay: 2	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 6
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 3	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 2	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 1
+
+MaxDelay: 7
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 77.2727
+Delay: 2	Dist: 9.09091
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 9.09091
+Delay: 7	Dist: 4.54545
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 17
+Delay: 2	Dist: 2
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 2
+Delay: 7	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 86.3636
+[ 4 , 7 ) = 9.09091
+[ 7 , 10 ) = 4.54545
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 3	inDeg: 0	outDeg: 6	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 15
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 3	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 2	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 3	Node_num: 2	inDeg: 2	outDeg: 4	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 2	outDeg: 3	maxInDeg: 2	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 3	inDeg: 5	outDeg: 3	maxInDeg: 3	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 6	Node_num: 3	inDeg: 5	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 7	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 1	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 8
+Node_level: 1	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 2
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 88.8889
+Delay: 2	Dist: 11.1111
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 8
+Delay: 2	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 5
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 3	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 2
+Node_level: 2	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 0
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 1
+
+MaxDelay: 7
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 77.2727
+Delay: 2	Dist: 9.09091
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 9.09091
+Delay: 7	Dist: 4.54545
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 17
+Delay: 2	Dist: 2
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 2
+Delay: 7	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 86.3636
+[ 4 , 7 ) = 9.09091
+[ 7 , 10 ) = 4.54545
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 3	inDeg: 0	outDeg: 6	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 14
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 3	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 2	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 3	Node_num: 2	inDeg: 2	outDeg: 4	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 2	outDeg: 3	maxInDeg: 2	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 3	inDeg: 5	outDeg: 3	maxInDeg: 3	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 6	Node_num: 3	inDeg: 5	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 7	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 3
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 1	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 3	outRegionDeg: 3
+Node_level: 1	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 0
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 2	outRegionDeg: 0
+
+MaxDelay: 4
+
+Delay: 0	Dist: 8.33333
+Delay: 1	Dist: 75
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 16.6667
+
+Delay: 0	Dist: 1
+Delay: 1	Dist: 9
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 2
+
+[ 0 , 1 ) = 8.33333
+[ 1 , 4 ) = 75
+[ 4 , 7 ) = 16.6667
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 4	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 9
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 2	inDeg: 3	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 5	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 6	Node_num: 1	inDeg: 2	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 0
+
+Delay: 0	Dist: -nan(ind)
+
+Delay: 0	Dist: 0
+
+[ 0 , 1 ) = -nan(ind)
+[ 1 , 4 ) = 0
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 3	inDeg: 0	outDeg: 0	maxInDeg: 0	maxOutDeg: 0	inRegionDeg: 5	outRegionDeg: 3
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 3
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 4	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 4	outRegionDeg: 11
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+MaxDelay: 5
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 85.7143
+Delay: 2	Dist: 7.14286
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 7.14286
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 12
+Delay: 2	Dist: 1
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 92.8571
+[ 4 , 7 ) = 7.14286
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 4	inDeg: 0	outDeg: 6	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 19
+Node_level: 1	Node_num: 4	inDeg: 4	outDeg: 3	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 2	Node_num: 3	inDeg: 4	outDeg: 2	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 2
+Node_level: 3	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 2	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 1	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 4
+Node_level: 1	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 2
+
+MaxDelay: 4
+
+Delay: 0	Dist: 9.09091
+Delay: 1	Dist: 72.7273
+Delay: 2	Dist: 0
+Delay: 3	Dist: 9.09091
+Delay: 4	Dist: 9.09091
+
+Delay: 0	Dist: 1
+Delay: 1	Dist: 8
+Delay: 2	Dist: 0
+Delay: 3	Dist: 1
+Delay: 4	Dist: 1
+
+[ 0 , 1 ) = 9.09091
+[ 1 , 4 ) = 81.8182
+[ 4 , 7 ) = 9.09091
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 4	maxInDeg: 0	maxOutDeg: 4	inRegionDeg: 0	outRegionDeg: 3
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 4	Node_num: 2	inDeg: 3	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 5	Node_num: 1	inDeg: 2	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 5
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 2	outRegionDeg: 3
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 7
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 3	outRegionDeg: 3
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 3	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 4	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 2	outRegionDeg: 0
+
+MaxDelay: 5
+
+Delay: 0	Dist: 12.5
+Delay: 1	Dist: 68.75
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 6.25
+Delay: 5	Dist: 12.5
+
+Delay: 0	Dist: 2
+Delay: 1	Dist: 11
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 1
+Delay: 5	Dist: 2
+
+[ 0 , 1 ) = 12.5
+[ 1 , 4 ) = 68.75
+[ 4 , 7 ) = 18.75
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 5	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 8
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 2	inDeg: 2	outDeg: 3	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 2
+Node_level: 5	Node_num: 3	inDeg: 6	outDeg: 2	maxInDeg: 3	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 0
+Node_level: 6	Node_num: 1	inDeg: 2	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 3
+
+Delay: 0	Dist: 16.6667
+Delay: 1	Dist: 58.3333
+Delay: 2	Dist: 8.33333
+Delay: 3	Dist: 16.6667
+
+Delay: 0	Dist: 2
+Delay: 1	Dist: 7
+Delay: 2	Dist: 1
+Delay: 3	Dist: 2
+
+[ 0 , 1 ) = 16.6667
+[ 1 , 4 ) = 83.3333
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 3	inDeg: 0	outDeg: 6	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 12
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 2	inDeg: 4	outDeg: 2	maxInDeg: 3	maxOutDeg: 2	inRegionDeg: 2	outRegionDeg: 0
+Node_level: 3	Node_num: 2	inDeg: 5	outDeg: 2	maxInDeg: 3	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 0
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 5
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 4	outRegionDeg: 6
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+MaxDelay: 4
+
+Delay: 0	Dist: 22.2222
+Delay: 1	Dist: 55.5556
+Delay: 2	Dist: 5.55556
+Delay: 3	Dist: 5.55556
+Delay: 4	Dist: 11.1111
+
+Delay: 0	Dist: 4
+Delay: 1	Dist: 10
+Delay: 2	Dist: 1
+Delay: 3	Dist: 1
+Delay: 4	Dist: 2
+
+[ 0 , 1 ) = 22.2222
+[ 1 , 4 ) = 66.6667
+[ 4 , 7 ) = 11.1111
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 3	inDeg: 0	outDeg: 7	maxInDeg: 0	maxOutDeg: 4	inRegionDeg: 0	outRegionDeg: 12
+Node_level: 1	Node_num: 4	inDeg: 4	outDeg: 3	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 2	Node_num: 3	inDeg: 5	outDeg: 2	maxInDeg: 3	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 4	Node_num: 3	inDeg: 6	outDeg: 3	maxInDeg: 3	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 1	inDeg: 2	outDeg: 2	maxInDeg: 2	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 0

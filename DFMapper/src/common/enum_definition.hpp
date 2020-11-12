@@ -4,6 +4,12 @@
 #include "../tinyxml2/tinyxml2.h"
 
 namespace DFMpr {
+    enum class LogMode {
+        Print_detail,
+        Print_brief,
+        Turn_off
+    };
+
     enum class Op {
         Phi,
         Add,  // add, fadd

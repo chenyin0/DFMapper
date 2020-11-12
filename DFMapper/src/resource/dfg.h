@@ -32,7 +32,7 @@ namespace DFMpr {
         Dfg(string filePath);
         void genDfg(string fpath);
         void dfgAnalyze();  // Contain dfg analysis function in DfgTool
-        Dfg genSubDfg(string fpath, vector<uint> fullBlockList, vector<uint> blockId);
+        Dfg genSubDfg(vector<uint> fullBlockList, vector<uint> blockId);
         map<int, Node> nodes;
         vector<Level> levels;
 

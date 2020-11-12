@@ -11,11 +11,14 @@ TODO:
 #include "resource/dfg.h"
 #include "common/dfg_tool.h"
 #include "./resource/app_set.h"
+#include "./common/logger.h"
 
 using namespace DFMpr;
 
 int main()
 {
+    Logger logger("./result/log.txt");
+
     ////string appName = "aes";  // dfgGen error, fix it!
     ////string appName = "backprop";
     ////string appName = "bfs_queue";
@@ -99,6 +102,16 @@ int main()
             {
                 std::cout << i << std::endl;
             }
+        }
+    }
+
+    for (size_t i = 0; i < appSet.dfgSet.size(); ++i)
+    {
+        std::cout << ">>>>>>>>> App Name: " << appList[i] << std::endl;
+        std::cout << "SubDfg_size: " << appSet.dfgSet[i].subDfg.size() << std::endl;
+        for (auto& subDfg : appSet.dfgSet[i].subDfg)
+        {
+            DfgTool::printDfg(subDfg);
         }
     }
 

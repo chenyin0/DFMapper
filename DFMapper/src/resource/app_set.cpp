@@ -71,7 +71,7 @@ void AppSet::genDfgSet()
 
             for (auto blockIds : selectBlockList[i])
             {
-                dfgSet[i].subDfg.push_back(dfgSet[i].dfg.genSubDfg(fPath, fullBlockList[i], blockIds));
+                dfgSet[i].subDfg.push_back(dfgSet[i].dfg.genSubDfg(fullBlockList[i], blockIds));
             }
         }
     }

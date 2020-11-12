@@ -189,39 +189,8 @@ void Dfg::genDfg(string fpath)
     dfgAnalyze();  // Generate path delay and node level
 }
 
-Dfg Dfg::genSubDfg(string fpath, vector<uint> fullBlockList, vector<uint> _blockId)
+Dfg Dfg::genSubDfg(vector<uint> fullBlockList, vector<uint> _blockId)
 {
-    //std::ifstream in;
-    ////文件名输入
-    //in.open(fpath, std::ios::in);
-    //vector<uint> blockList;
-
-    //while (!in.eof())
-    //{
-    //    string strBuff;
-    //    std::istringstream iss;
-    //    getline(in, strBuff);
-    //    iss.str(strBuff);
-
-    //    vector<string> v;
-    //    string s;
-    //    while (iss >> s)
-    //    {
-    //        v.push_back(s);
-    //    }
-
-    //    if (v.size() > 0)
-    //    {
-    //        //开始节点
-    //        if (v[0].find(":") != string::npos)
-    //        {
-    //            int blockId = stoi(v[0].substr(0, v[0].length() - 1));
-    //            blockList.push_back(blockId);
-    //            std::cout << blockId << std::endl;
-    //        }
-    //    }
-    //}
-
     vector<uint> nodeList;
     for (auto blockId : _blockId)
     {
@@ -250,6 +219,7 @@ Dfg Dfg::genSubDfg(string fpath, vector<uint> fullBlockList, vector<uint> _block
 
     Dfg subDfg = DfgTool::genSubDfg(*this, nodeList);
     subDfg.dfgAnalyze();  // Generate path delay and node level for this sub-dfg
+    DfgTool::subDfgLevelDegreeAnalyze(subDfg, *this);
 
     return subDfg;
 }

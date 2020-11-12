@@ -10,6 +10,7 @@ namespace DFMpr {
         static void pathAnalyze(Dfg& _dfg);  // Analyze imbalanced path
         static void nodeLevelAnalyze(Dfg& _dfg);  // Statistic node level
         static void levelDegreeAnalyze(Dfg& _dfg);  // Statistic in-out degree of each level
+        static void subDfgLevelDegreeAnalyze(Dfg& _subDfg, Dfg& _fullDfg);  // Static inter-subDfg edges
         static void breakFeedbackLoop(Dfg& _dfg);
         static const vector<uint> distInterval;  // Define distribution interval
         static Dfg genSubDfg(Dfg& _dfg, vector<uint> nodeList);  // Generate sub-DFG from original DFG according to node list

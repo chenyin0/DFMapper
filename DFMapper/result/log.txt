@@ -1,46 +1,11308 @@
 log open
-2020-11-12      19:26:15
+2020-11-12      19:44:55
 
-MaxDelay: 9
+>> 5
+  level: 0
+     op: Store
+    tag: 
+    pre: 5
+   next: 
 
-Delay: 0	Dist: 25.1309
-Delay: 1	Dist: 37.6963
-Delay: 2	Dist: 14.6597
-Delay: 3	Dist: 5.75916
-Delay: 4	Dist: 5.75916
-Delay: 5	Dist: 4.18848
-Delay: 6	Dist: 3.14136
-Delay: 7	Dist: 0.52356
-Delay: 8	Dist: 1.04712
-Delay: 9	Dist: 2.09424
+>> 6
+  level: 0
+     op: Undef
+    tag: 
+    pre: 6
+   next: 
 
-Delay: 0	Dist: 48
-Delay: 1	Dist: 72
-Delay: 2	Dist: 28
-Delay: 3	Dist: 11
-Delay: 4	Dist: 11
-Delay: 5	Dist: 8
-Delay: 6	Dist: 6
-Delay: 7	Dist: 1
-Delay: 8	Dist: 2
-Delay: 9	Dist: 4
+>> 7
+  level: 0
+     op: Undef
+    tag: 
+    pre: 7
+   next: 
 
-[ 0 , 1 ) = 25.1309
-[ 1 , 4 ) = 58.1152
-[ 4 , 7 ) = 13.089
-[ 7 , 10 ) = 3.66492
+>> 8
+  level: 0
+     op: Store
+    tag: 
+    pre: 8
+   next: 
+
+>> 9
+  level: 0
+     op: Undef
+    tag: 
+    pre: 9
+   next: 
+
+>> 10
+  level: 0
+     op: Store
+    tag: 
+    pre: 10
+   next: 
+
+>> 11
+  level: 0
+     op: Undef
+    tag: 
+    pre: 11
+   next: 
+
+>> 12
+  level: 0
+     op: Store
+    tag: 
+    pre: 12
+   next: 
+
+>> 13
+  level: 0
+     op: Undef
+    tag: 
+    pre: 13
+   next: 
+
+>> 14
+  level: 0
+     op: Store
+    tag: 
+    pre: 14
+   next: 
+
+>> 15
+  level: 0
+     op: Undef
+    tag: 
+    pre: 15
+   next: 
+
+>> 16
+  level: 0
+     op: Store
+    tag: 
+    pre: 16
+   next: 
+
+>> 17
+  level: 0
+     op: Undef
+    tag: 
+    pre: 17
+   next: 
+
+>> 18
+  level: 0
+     op: Store
+    tag: 
+    pre: 18
+   next: 
+
+>> 19
+  level: 0
+     op: Undef
+    tag: 
+    pre: 19
+   next: 
+
+
+MaxDelay: 0
+
+Delay: 0	Dist: -nan(ind)
+
+Delay: 0	Dist: 0
+
+[ 0 , 1 ) = -nan(ind)
+[ 1 , 4 ) = 0
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
 [ 10 , 20 ) = 0
 [ 20 , INF ) = 0
 
-Node_level: 0	Node_num: 7	inDeg: 0	outDeg: 21	maxInDeg: 0	maxOutDeg: 9	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 0	Node_num: 15	inDeg: 0	outDeg: 0	maxInDeg: 0	maxOutDeg: 0	inRegionDeg: 15	outRegionDeg: 15
+
+>> 22
+  level: 0
+     op: Phi
+    tag: 
+    pre: 22
+   next: 23 25 26 27 
+
+>> 23
+  level: 1
+     op: Undef
+    tag: 
+    pre: 22 23
+   next: 24 
+
+>> 24
+  level: 2
+     op: Load
+    tag: 
+    pre: 23 24
+   next: 25 26 
+
+>> 25
+  level: 3
+     op: Store
+    tag: 
+    pre: 22 24 25
+   next: 
+
+>> 26
+  level: 3
+     op: Store
+    tag: 
+    pre: 22 24 26
+   next: 
+
+>> 27
+  level: 1
+     op: Add
+    tag: 
+    pre: 22 27
+   next: 
+
+
+MaxDelay: 3
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 71.4286
+Delay: 2	Dist: 0
+Delay: 3	Dist: 28.5714
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 5
+Delay: 2	Dist: 0
+Delay: 3	Dist: 2
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 4	maxInDeg: 0	maxOutDeg: 4	inRegionDeg: 0	outRegionDeg: 3
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 2	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 2	inDeg: 4	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 2
+
+>> 34
+  level: 0
+     op: Phi
+    tag: 
+    pre: 34
+   next: 
+
+>> 35
+  level: 0
+     op: Phi
+    tag: 
+    pre: 35
+   next: 40 61 
+
+>> 36
+  level: 0
+     op: Load
+    tag: 
+    pre: 36
+   next: 37 
+
+>> 37
+  level: 1
+     op: Undef
+    tag: 
+    pre: 36 37
+   next: 38 
+
+>> 38
+  level: 2
+     op: Undef
+    tag: 
+    pre: 37 38
+   next: 39 
+
+>> 39
+  level: 3
+     op: Load
+    tag: 
+    pre: 38 39
+   next: 40 
+
+>> 40
+  level: 4
+     op: Xor
+    tag: 
+    pre: 35 39 40
+   next: 42 
+
+>> 41
+  level: 0
+     op: Load
+    tag: 
+    pre: 41
+   next: 42 
+
+>> 42
+  level: 2
+     op: Xor
+    tag: 
+    pre: 40 41 42
+   next: 
+
+>> 43
+  level: 0
+     op: Load
+    tag: 
+    pre: 43
+   next: 44 
+
+>> 44
+  level: 1
+     op: Undef
+    tag: 
+    pre: 43 44
+   next: 45 
+
+>> 45
+  level: 2
+     op: Undef
+    tag: 
+    pre: 44 45
+   next: 46 
+
+>> 46
+  level: 3
+     op: Load
+    tag: 
+    pre: 45 46
+   next: 48 
+
+>> 47
+  level: 0
+     op: Load
+    tag: 
+    pre: 47
+   next: 48 
+
+>> 48
+  level: 4
+     op: Xor
+    tag: 
+    pre: 46 47 48
+   next: 
+
+>> 49
+  level: 0
+     op: Load
+    tag: 
+    pre: 49
+   next: 50 
+
+>> 50
+  level: 1
+     op: Undef
+    tag: 
+    pre: 49 50
+   next: 51 
+
+>> 51
+  level: 2
+     op: Undef
+    tag: 
+    pre: 50 51
+   next: 52 
+
+>> 52
+  level: 3
+     op: Load
+    tag: 
+    pre: 51 52
+   next: 54 
+
+>> 53
+  level: 0
+     op: Load
+    tag: 
+    pre: 53
+   next: 54 
+
+>> 54
+  level: 4
+     op: Xor
+    tag: 
+    pre: 52 53 54
+   next: 
+
+>> 55
+  level: 0
+     op: Load
+    tag: 
+    pre: 55
+   next: 56 
+
+>> 56
+  level: 1
+     op: Undef
+    tag: 
+    pre: 55 56
+   next: 57 
+
+>> 57
+  level: 2
+     op: Undef
+    tag: 
+    pre: 56 57
+   next: 58 
+
+>> 58
+  level: 3
+     op: Load
+    tag: 
+    pre: 57 58
+   next: 60 
+
+>> 59
+  level: 0
+     op: Load
+    tag: 
+    pre: 59
+   next: 60 
+
+>> 60
+  level: 4
+     op: Xor
+    tag: 
+    pre: 58 59 60
+   next: 
+
+>> 61
+  level: 1
+     op: Div
+    tag: 
+    pre: 35 61
+   next: 
+
+
+MaxDelay: 4
+
+Delay: 0	Dist: 4.34783
+Delay: 1	Dist: 73.913
+Delay: 2	Dist: 4.34783
+Delay: 3	Dist: 0
+Delay: 4	Dist: 17.3913
+
+Delay: 0	Dist: 1
+Delay: 1	Dist: 17
+Delay: 2	Dist: 1
+Delay: 3	Dist: 0
+Delay: 4	Dist: 4
+
+[ 0 , 1 ) = 4.34783
+[ 1 , 4 ) = 78.2609
+[ 4 , 7 ) = 17.3913
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 10	inDeg: 0	outDeg: 10	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 1	outRegionDeg: 15
+Node_level: 1	Node_num: 5	inDeg: 5	outDeg: 4	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 0
+Node_level: 2	Node_num: 5	inDeg: 6	outDeg: 4	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 0
+Node_level: 3	Node_num: 4	inDeg: 4	outDeg: 4	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 4	inDeg: 8	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+
+>> 64
+  level: 0
+     op: Phi
+    tag: 
+    pre: 64
+   next: 68 
+
+>> 65
+  level: 0
+     op: Phi
+    tag: 
+    pre: 65
+   next: 66 69 72 76 79 83 86 90 
+
+>> 66
+  level: 1
+     op: Store
+    tag: 
+    pre: 65 66
+   next: 67 
+
+>> 67
+  level: 2
+     op: Load
+    tag: 
+    pre: 66 67
+   next: 68 
+
+>> 68
+  level: 3
+     op: Xor
+    tag: 
+    pre: 64 67 68
+   next: 
+
+>> 69
+  level: 1
+     op: Add
+    tag: 
+    pre: 65 69
+   next: 70 
+
+>> 70
+  level: 2
+     op: Undef
+    tag: 
+    pre: 69 70
+   next: 71 
+
+>> 71
+  level: 3
+     op: Load
+    tag: 
+    pre: 70 71
+   next: 75 
+
+>> 72
+  level: 1
+     op: Or
+    tag: 
+    pre: 65 72
+   next: 73 
+
+>> 73
+  level: 2
+     op: Store
+    tag: 
+    pre: 72 73
+   next: 74 
+
+>> 74
+  level: 3
+     op: Load
+    tag: 
+    pre: 73 74
+   next: 75 
+
+>> 75
+  level: 4
+     op: Xor
+    tag: 
+    pre: 71 74 75
+   next: 
+
+>> 76
+  level: 1
+     op: Add
+    tag: 
+    pre: 65 76
+   next: 77 
+
+>> 77
+  level: 2
+     op: Undef
+    tag: 
+    pre: 76 77
+   next: 78 
+
+>> 78
+  level: 3
+     op: Load
+    tag: 
+    pre: 77 78
+   next: 82 
+
+>> 79
+  level: 1
+     op: Or
+    tag: 
+    pre: 65 79
+   next: 80 
+
+>> 80
+  level: 2
+     op: Store
+    tag: 
+    pre: 79 80
+   next: 81 
+
+>> 81
+  level: 3
+     op: Load
+    tag: 
+    pre: 80 81
+   next: 82 
+
+>> 82
+  level: 4
+     op: Xor
+    tag: 
+    pre: 78 81 82
+   next: 
+
+>> 83
+  level: 1
+     op: Add
+    tag: 
+    pre: 65 83
+   next: 84 
+
+>> 84
+  level: 2
+     op: Undef
+    tag: 
+    pre: 83 84
+   next: 85 
+
+>> 85
+  level: 3
+     op: Load
+    tag: 
+    pre: 84 85
+   next: 89 
+
+>> 86
+  level: 1
+     op: Or
+    tag: 
+    pre: 65 86
+   next: 87 
+
+>> 87
+  level: 2
+     op: Store
+    tag: 
+    pre: 86 87
+   next: 88 
+
+>> 88
+  level: 3
+     op: Load
+    tag: 
+    pre: 87 88
+   next: 89 
+
+>> 89
+  level: 4
+     op: Xor
+    tag: 
+    pre: 85 88 89
+   next: 
+
+>> 90
+  level: 1
+     op: Cmp
+    tag: 
+    pre: 65 90
+   next: 
+
+
+MaxDelay: 3
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 96.5517
+Delay: 2	Dist: 0
+Delay: 3	Dist: 3.44828
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 28
+Delay: 2	Dist: 0
+Delay: 3	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 9	maxInDeg: 0	maxOutDeg: 8	inRegionDeg: 1	outRegionDeg: 9
+Node_level: 1	Node_num: 8	inDeg: 8	outDeg: 7	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 4	outRegionDeg: 1
+Node_level: 2	Node_num: 7	inDeg: 7	outDeg: 7	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 6
+Node_level: 3	Node_num: 7	inDeg: 8	outDeg: 6	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 3	inDeg: 6	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+>> 93
+  level: 0
+     op: Mul
+    tag: 
+    pre: 93
+   next: 
+
+>> 94
+  level: 0
+     op: Load
+    tag: 
+    pre: 94
+   next: 95 
+
+>> 95
+  level: 1
+     op: Undef
+    tag: 
+    pre: 94 95
+   next: 96 
+
+>> 96
+  level: 2
+     op: Undef
+    tag: 
+    pre: 95 96
+   next: 97 
+
+>> 97
+  level: 3
+     op: Load
+    tag: 
+    pre: 96 97
+   next: 99 
+
+>> 98
+  level: 0
+     op: Load
+    tag: 
+    pre: 98
+   next: 99 
+
+>> 99
+  level: 4
+     op: Xor
+    tag: 
+    pre: 97 98 99
+   next: 
+
+>> 100
+  level: 0
+     op: Load
+    tag: 
+    pre: 100
+   next: 101 
+
+>> 101
+  level: 1
+     op: Undef
+    tag: 
+    pre: 100 101
+   next: 102 
+
+>> 102
+  level: 2
+     op: Undef
+    tag: 
+    pre: 101 102
+   next: 103 
+
+>> 103
+  level: 3
+     op: Load
+    tag: 
+    pre: 102 103
+   next: 105 
+
+>> 104
+  level: 0
+     op: Load
+    tag: 
+    pre: 104
+   next: 105 
+
+>> 105
+  level: 4
+     op: Xor
+    tag: 
+    pre: 103 104 105
+   next: 
+
+>> 106
+  level: 0
+     op: Load
+    tag: 
+    pre: 106
+   next: 107 
+
+>> 107
+  level: 1
+     op: Undef
+    tag: 
+    pre: 106 107
+   next: 108 
+
+>> 108
+  level: 2
+     op: Undef
+    tag: 
+    pre: 107 108
+   next: 109 
+
+>> 109
+  level: 3
+     op: Load
+    tag: 
+    pre: 108 109
+   next: 111 
+
+>> 110
+  level: 0
+     op: Load
+    tag: 
+    pre: 110
+   next: 111 
+
+>> 111
+  level: 4
+     op: Xor
+    tag: 
+    pre: 109 110 111
+   next: 
+
+>> 112
+  level: 0
+     op: Load
+    tag: 
+    pre: 112
+   next: 113 
+
+>> 113
+  level: 1
+     op: Undef
+    tag: 
+    pre: 112 113
+   next: 114 
+
+>> 114
+  level: 2
+     op: Undef
+    tag: 
+    pre: 113 114
+   next: 115 
+
+>> 115
+  level: 3
+     op: Load
+    tag: 
+    pre: 114 115
+   next: 
+
+>> 116
+  level: 0
+     op: Load
+    tag: 
+    pre: 116
+   next: 
+
+
+MaxDelay: 4
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 83.3333
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 16.6667
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 15
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 3
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 83.3333
+[ 4 , 7 ) = 16.6667
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 9	inDeg: 0	outDeg: 7	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 10
+Node_level: 1	Node_num: 4	inDeg: 4	outDeg: 4	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 2	Node_num: 4	inDeg: 4	outDeg: 4	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 4	inDeg: 4	outDeg: 3	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 0
+Node_level: 4	Node_num: 3	inDeg: 6	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+>> 119
+  level: 0
+     op: Phi
+    tag: 
+    pre: 119
+   next: 123 
+
+>> 120
+  level: 0
+     op: Phi
+    tag: 
+    pre: 120
+   next: 121 124 127 131 134 138 141 145 
+
+>> 121
+  level: 1
+     op: Store
+    tag: 
+    pre: 120 121
+   next: 122 
+
+>> 122
+  level: 2
+     op: Load
+    tag: 
+    pre: 121 122
+   next: 123 
+
+>> 123
+  level: 3
+     op: Xor
+    tag: 
+    pre: 119 122 123
+   next: 
+
+>> 124
+  level: 1
+     op: Add
+    tag: 
+    pre: 120 124
+   next: 125 
+
+>> 125
+  level: 2
+     op: Undef
+    tag: 
+    pre: 124 125
+   next: 126 
+
+>> 126
+  level: 3
+     op: Load
+    tag: 
+    pre: 125 126
+   next: 130 
+
+>> 127
+  level: 1
+     op: Or
+    tag: 
+    pre: 120 127
+   next: 128 
+
+>> 128
+  level: 2
+     op: Store
+    tag: 
+    pre: 127 128
+   next: 129 
+
+>> 129
+  level: 3
+     op: Load
+    tag: 
+    pre: 128 129
+   next: 130 
+
+>> 130
+  level: 4
+     op: Xor
+    tag: 
+    pre: 126 129 130
+   next: 
+
+>> 131
+  level: 1
+     op: Add
+    tag: 
+    pre: 120 131
+   next: 132 
+
+>> 132
+  level: 2
+     op: Undef
+    tag: 
+    pre: 131 132
+   next: 133 
+
+>> 133
+  level: 3
+     op: Load
+    tag: 
+    pre: 132 133
+   next: 137 
+
+>> 134
+  level: 1
+     op: Or
+    tag: 
+    pre: 120 134
+   next: 135 
+
+>> 135
+  level: 2
+     op: Store
+    tag: 
+    pre: 134 135
+   next: 136 
+
+>> 136
+  level: 3
+     op: Load
+    tag: 
+    pre: 135 136
+   next: 137 
+
+>> 137
+  level: 4
+     op: Xor
+    tag: 
+    pre: 133 136 137
+   next: 
+
+>> 138
+  level: 1
+     op: Add
+    tag: 
+    pre: 120 138
+   next: 139 
+
+>> 139
+  level: 2
+     op: Undef
+    tag: 
+    pre: 138 139
+   next: 140 
+
+>> 140
+  level: 3
+     op: Load
+    tag: 
+    pre: 139 140
+   next: 144 
+
+>> 141
+  level: 1
+     op: Or
+    tag: 
+    pre: 120 141
+   next: 142 
+
+>> 142
+  level: 2
+     op: Store
+    tag: 
+    pre: 141 142
+   next: 143 
+
+>> 143
+  level: 3
+     op: Load
+    tag: 
+    pre: 142 143
+   next: 144 
+
+>> 144
+  level: 4
+     op: Xor
+    tag: 
+    pre: 140 143 144
+   next: 
+
+>> 145
+  level: 1
+     op: Cmp
+    tag: 
+    pre: 120 145
+   next: 
+
+
+MaxDelay: 3
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 96.5517
+Delay: 2	Dist: 0
+Delay: 3	Dist: 3.44828
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 28
+Delay: 2	Dist: 0
+Delay: 3	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 9	maxInDeg: 0	maxOutDeg: 8	inRegionDeg: 1	outRegionDeg: 9
+Node_level: 1	Node_num: 8	inDeg: 8	outDeg: 7	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 7	inDeg: 7	outDeg: 7	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 6
+Node_level: 3	Node_num: 7	inDeg: 8	outDeg: 6	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 3	inDeg: 6	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+>> 148
+  level: 0
+     op: Phi
+    tag: 
+    pre: 148
+   next: 149 151 152 155 159 
+
+>> 149
+  level: 1
+     op: Undef
+    tag: 
+    pre: 148 149
+   next: 150 
+
+>> 150
+  level: 2
+     op: Load
+    tag: 
+    pre: 149 150
+   next: 151 154 
+
+>> 151
+  level: 3
+     op: Store
+    tag: 
+    pre: 148 150 151
+   next: 
+
+>> 152
+  level: 1
+     op: Store
+    tag: 
+    pre: 148 152
+   next: 153 
+
+>> 153
+  level: 2
+     op: Load
+    tag: 
+    pre: 152 153
+   next: 154 
+
+>> 154
+  level: 3
+     op: Xor
+    tag: 
+    pre: 150 153 154
+   next: 
+
+>> 155
+  level: 1
+     op: Add
+    tag: 
+    pre: 148 155
+   next: 156 158 
+
+>> 156
+  level: 2
+     op: Undef
+    tag: 
+    pre: 155 156
+   next: 157 
+
+>> 157
+  level: 3
+     op: Load
+    tag: 
+    pre: 156 157
+   next: 158 
+
+>> 158
+  level: 4
+     op: Store
+    tag: 
+    pre: 155 157 158
+   next: 
+
+>> 159
+  level: 1
+     op: Add
+    tag: 
+    pre: 148 159
+   next: 
+
+
+MaxDelay: 3
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 85.7143
+Delay: 2	Dist: 0
+Delay: 3	Dist: 14.2857
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 12
+Delay: 2	Dist: 0
+Delay: 3	Dist: 2
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 5	maxInDeg: 0	maxOutDeg: 5	inRegionDeg: 1	outRegionDeg: 4
+Node_level: 1	Node_num: 4	inDeg: 4	outDeg: 4	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 2
+Node_level: 2	Node_num: 3	inDeg: 3	outDeg: 4	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 3	Node_num: 3	inDeg: 5	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 4	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 1
+
+>> 162
+  level: 0
+     op: Store
+    tag: 
+    pre: 162
+   next: 
+
+>> 163
+  level: 0
+     op: Store
+    tag: 
+    pre: 163
+   next: 
+
+>> 164
+  level: 0
+     op: Store
+    tag: 
+    pre: 164
+   next: 
+
+>> 165
+  level: 0
+     op: Store
+    tag: 
+    pre: 165
+   next: 
+
+>> 166
+  level: 0
+     op: Store
+    tag: 
+    pre: 166
+   next: 
+
+>> 167
+  level: 0
+     op: Store
+    tag: 
+    pre: 167
+   next: 
+
+>> 168
+  level: 0
+     op: Store
+    tag: 
+    pre: 168
+   next: 
+
+>> 169
+  level: 0
+     op: Store
+    tag: 
+    pre: 169
+   next: 
+
+>> 170
+  level: 0
+     op: Store
+    tag: 
+    pre: 170
+   next: 
+
+>> 171
+  level: 0
+     op: Store
+    tag: 
+    pre: 171
+   next: 
+
+>> 172
+  level: 0
+     op: Store
+    tag: 
+    pre: 172
+   next: 
+
+>> 173
+  level: 0
+     op: Store
+    tag: 
+    pre: 173
+   next: 
+
+>> 174
+  level: 0
+     op: Store
+    tag: 
+    pre: 174
+   next: 
+
+>> 175
+  level: 0
+     op: Store
+    tag: 
+    pre: 175
+   next: 
+
+>> 176
+  level: 0
+     op: Undef
+    tag: 
+    pre: 176
+   next: 
+
+>> 177
+  level: 0
+     op: Undef
+    tag: 
+    pre: 177
+   next: 
+
+>> 178
+  level: 0
+     op: Store
+    tag: 
+    pre: 178
+   next: 
+
+>> 179
+  level: 0
+     op: Undef
+    tag: 
+    pre: 179
+   next: 
+
+>> 180
+  level: 0
+     op: Store
+    tag: 
+    pre: 180
+   next: 
+
+>> 181
+  level: 0
+     op: Undef
+    tag: 
+    pre: 181
+   next: 
+
+>> 182
+  level: 0
+     op: Store
+    tag: 
+    pre: 182
+   next: 
+
+>> 183
+  level: 0
+     op: Undef
+    tag: 
+    pre: 183
+   next: 
+
+>> 184
+  level: 0
+     op: Undef
+    tag: 
+    pre: 184
+   next: 
+
+>> 185
+  level: 0
+     op: Store
+    tag: 
+    pre: 185
+   next: 
+
+>> 186
+  level: 0
+     op: Undef
+    tag: 
+    pre: 186
+   next: 
+
+>> 187
+  level: 0
+     op: Store
+    tag: 
+    pre: 187
+   next: 
+
+>> 188
+  level: 0
+     op: Undef
+    tag: 
+    pre: 188
+   next: 
+
+
+MaxDelay: 0
+
+Delay: 0	Dist: -nan(ind)
+
+Delay: 0	Dist: 0
+
+[ 0 , 1 ) = -nan(ind)
+[ 1 , 4 ) = 0
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 27	inDeg: 0	outDeg: 0	maxInDeg: 0	maxOutDeg: 0	inRegionDeg: 55	outRegionDeg: 28
+
+>> 194
+  level: 0
+     op: Phi
+    tag: 
+    pre: 194
+   next: 195 200 
+
+>> 195
+  level: 1
+     op: Store
+    tag: 
+    pre: 194 195
+   next: 196 
+
+>> 196
+  level: 2
+     op: Load
+    tag: 
+    pre: 195 196
+   next: 197 
+
+>> 197
+  level: 3
+     op: Undef
+    tag: 
+    pre: 196 197
+   next: 198 
+
+>> 198
+  level: 4
+     op: Undef
+    tag: 
+    pre: 197 198
+   next: 199 
+
+>> 199
+  level: 5
+     op: Load
+    tag: 
+    pre: 198 199
+   next: 
+
+>> 200
+  level: 1
+     op: Add
+    tag: 
+    pre: 194 200
+   next: 
+
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 6
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 1	outRegionDeg: 4
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+>> 203
+  level: 0
+     op: Load
+    tag: 
+    pre: 203
+   next: 
+
+>> 204
+  level: 0
+     op: Load
+    tag: 
+    pre: 204
+   next: 
+
+>> 205
+  level: 0
+     op: Load
+    tag: 
+    pre: 205
+   next: 
+
+>> 206
+  level: 0
+     op: Load
+    tag: 
+    pre: 206
+   next: 
+
+>> 207
+  level: 0
+     op: Load
+    tag: 
+    pre: 207
+   next: 
+
+>> 208
+  level: 0
+     op: Load
+    tag: 
+    pre: 208
+   next: 
+
+>> 209
+  level: 0
+     op: Load
+    tag: 
+    pre: 209
+   next: 
+
+>> 210
+  level: 0
+     op: Load
+    tag: 
+    pre: 210
+   next: 
+
+>> 211
+  level: 0
+     op: Load
+    tag: 
+    pre: 211
+   next: 
+
+>> 212
+  level: 0
+     op: Load
+    tag: 
+    pre: 212
+   next: 
+
+>> 213
+  level: 0
+     op: Load
+    tag: 
+    pre: 213
+   next: 
+
+
+MaxDelay: 0
+
+Delay: 0	Dist: -nan(ind)
+
+Delay: 0	Dist: 0
+
+[ 0 , 1 ) = -nan(ind)
+[ 1 , 4 ) = 0
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 11	inDeg: 0	outDeg: 0	maxInDeg: 0	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 12
+
+>> 216
+  level: 0
+     op: Phi
+    tag: 
+    pre: 216
+   next: 217 219 222 225 257 
+
+>> 217
+  level: 1
+     op: Store
+    tag: 
+    pre: 216 217
+   next: 218 
+
+>> 218
+  level: 2
+     op: Load
+    tag: 
+    pre: 217 218
+   next: 228 235 251 
+
+>> 219
+  level: 1
+     op: Or
+    tag: 
+    pre: 216 219
+   next: 220 
+
+>> 220
+  level: 2
+     op: Store
+    tag: 
+    pre: 219 220
+   next: 221 
+
+>> 221
+  level: 3
+     op: Load
+    tag: 
+    pre: 220 221
+   next: 228 237 242 
+
+>> 222
+  level: 1
+     op: Or
+    tag: 
+    pre: 216 222
+   next: 223 
+
+>> 223
+  level: 2
+     op: Store
+    tag: 
+    pre: 222 223
+   next: 224 
+
+>> 224
+  level: 3
+     op: Load
+    tag: 
+    pre: 223 224
+   next: 229 237 244 
+
+>> 225
+  level: 1
+     op: Or
+    tag: 
+    pre: 216 225
+   next: 226 
+
+>> 226
+  level: 2
+     op: Store
+    tag: 
+    pre: 225 226
+   next: 227 
+
+>> 227
+  level: 3
+     op: Load
+    tag: 
+    pre: 226 227
+   next: 230 244 249 251 
+
+>> 228
+  level: 4
+     op: Xor
+    tag: 
+    pre: 218 221 228
+   next: 229 231 232 249 
+
+>> 229
+  level: 4
+     op: Xor
+    tag: 
+    pre: 224 228 229
+   next: 230 256 
+
+>> 230
+  level: 5
+     op: Xor
+    tag: 
+    pre: 227 229 230
+   next: 235 242 
+
+>> 231
+  level: 4
+     op: Cmp
+    tag: 
+    pre: 228 231
+   next: 234 
+
+>> 232
+  level: 4
+     op: Mul
+    tag: 
+    pre: 228 232
+   next: 233 234 
+
+>> 233
+  level: 5
+     op: Xor
+    tag: 
+    pre: 232 233
+   next: 234 
+
+>> 234
+  level: 6
+     op: Undef
+    tag: 
+    pre: 231 232 233 234
+   next: 236 
+
+>> 235
+  level: 6
+     op: Xor
+    tag: 
+    pre: 218 230 235
+   next: 236 
+
+>> 236
+  level: 6
+     op: Xor
+    tag: 
+    pre: 234 235 236
+   next: 
+
+>> 237
+  level: 4
+     op: Xor
+    tag: 
+    pre: 221 224 237
+   next: 238 239 
+
+>> 238
+  level: 5
+     op: Cmp
+    tag: 
+    pre: 237 238
+   next: 241 
+
+>> 239
+  level: 5
+     op: Mul
+    tag: 
+    pre: 237 239
+   next: 240 241 
+
+>> 240
+  level: 6
+     op: Xor
+    tag: 
+    pre: 239 240
+   next: 241 
+
+>> 241
+  level: 7
+     op: Undef
+    tag: 
+    pre: 238 239 240 241
+   next: 243 
+
+>> 242
+  level: 6
+     op: Xor
+    tag: 
+    pre: 221 230 242
+   next: 243 
+
+>> 243
+  level: 7
+     op: Xor
+    tag: 
+    pre: 241 242 243
+   next: 
+
+>> 244
+  level: 4
+     op: Xor
+    tag: 
+    pre: 224 227 244
+   next: 245 246 
+
+>> 245
+  level: 5
+     op: Cmp
+    tag: 
+    pre: 244 245
+   next: 248 
+
+>> 246
+  level: 5
+     op: Mul
+    tag: 
+    pre: 244 246
+   next: 247 248 
+
+>> 247
+  level: 6
+     op: Xor
+    tag: 
+    pre: 246 247
+   next: 248 
+
+>> 248
+  level: 7
+     op: Undef
+    tag: 
+    pre: 245 246 247 248
+   next: 250 
+
+>> 249
+  level: 4
+     op: Xor
+    tag: 
+    pre: 227 228 249
+   next: 250 
+
+>> 250
+  level: 7
+     op: Xor
+    tag: 
+    pre: 248 249 250
+   next: 
+
+>> 251
+  level: 4
+     op: Xor
+    tag: 
+    pre: 218 227 251
+   next: 252 253 
+
+>> 252
+  level: 4
+     op: Cmp
+    tag: 
+    pre: 251 252
+   next: 255 
+
+>> 253
+  level: 4
+     op: Mul
+    tag: 
+    pre: 251 253
+   next: 254 255 
+
+>> 254
+  level: 5
+     op: Xor
+    tag: 
+    pre: 253 254
+   next: 255 
+
+>> 255
+  level: 6
+     op: Undef
+    tag: 
+    pre: 252 253 254 255
+   next: 256 
+
+>> 256
+  level: 6
+     op: Xor
+    tag: 
+    pre: 229 255 256
+   next: 
+
+>> 257
+  level: 1
+     op: Add
+    tag: 
+    pre: 216 257
+   next: 
+
+
+MaxDelay: 4
+
+Delay: 0	Dist: 17.7419
+Delay: 1	Dist: 58.0645
+Delay: 2	Dist: 19.3548
+Delay: 3	Dist: 3.22581
+Delay: 4	Dist: 1.6129
+
+Delay: 0	Dist: 11
+Delay: 1	Dist: 36
+Delay: 2	Dist: 12
+Delay: 3	Dist: 2
+Delay: 4	Dist: 1
+
+[ 0 , 1 ) = 17.7419
+[ 1 , 4 ) = 80.6452
+[ 4 , 7 ) = 1.6129
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 5	maxInDeg: 0	maxOutDeg: 5	inRegionDeg: 1	outRegionDeg: 4
+Node_level: 1	Node_num: 5	inDeg: 5	outDeg: 4	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 2	Node_num: 4	inDeg: 4	outDeg: 6	maxInDeg: 1	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 3
+Node_level: 3	Node_num: 3	inDeg: 3	outDeg: 10	maxInDeg: 1	maxOutDeg: 4	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 10	inDeg: 16	outDeg: 19	maxInDeg: 2	maxOutDeg: 4	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 7	inDeg: 8	outDeg: 10	maxInDeg: 2	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 6	Node_num: 8	inDeg: 16	outDeg: 6	maxInDeg: 3	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 7	Node_num: 4	inDeg: 10	outDeg: 2	maxInDeg: 3	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+
+>> 263
+  level: 0
+     op: Phi
+    tag: 
+    pre: 263
+   next: 264 266 269 
+
+>> 264
+  level: 1
+     op: Undef
+    tag: 
+    pre: 263 264
+   next: 265 
+
+>> 265
+  level: 2
+     op: Load
+    tag: 
+    pre: 264 265
+   next: 268 
+
+>> 266
+  level: 1
+     op: Store
+    tag: 
+    pre: 263 266
+   next: 267 
+
+>> 267
+  level: 2
+     op: Load
+    tag: 
+    pre: 266 267
+   next: 268 
+
+>> 268
+  level: 3
+     op: Xor
+    tag: 
+    pre: 265 267 268
+   next: 
+
+>> 269
+  level: 1
+     op: Add
+    tag: 
+    pre: 263 269
+   next: 
+
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 7
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 1	outRegionDeg: 4
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 2
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+>> 272
+  level: 0
+     op: Load
+    tag: 
+    pre: 272
+   next: 273 
+
+>> 273
+  level: 1
+     op: Undef
+    tag: 
+    pre: 272 273
+   next: 274 
+
+>> 274
+  level: 2
+     op: Undef
+    tag: 
+    pre: 273 274
+   next: 275 
+
+>> 275
+  level: 3
+     op: Load
+    tag: 
+    pre: 274 275
+   next: 276 
+
+>> 276
+  level: 4
+     op: Xor
+    tag: 
+    pre: 275 276
+   next: 278 
+
+>> 277
+  level: 0
+     op: Load
+    tag: 
+    pre: 277
+   next: 278 
+
+>> 278
+  level: 5
+     op: Xor
+    tag: 
+    pre: 276 277 278
+   next: 
+
+>> 279
+  level: 0
+     op: Load
+    tag: 
+    pre: 279
+   next: 280 
+
+>> 280
+  level: 1
+     op: Undef
+    tag: 
+    pre: 279 280
+   next: 281 
+
+>> 281
+  level: 2
+     op: Undef
+    tag: 
+    pre: 280 281
+   next: 282 
+
+>> 282
+  level: 3
+     op: Load
+    tag: 
+    pre: 281 282
+   next: 284 
+
+>> 283
+  level: 0
+     op: Load
+    tag: 
+    pre: 283
+   next: 284 
+
+>> 284
+  level: 4
+     op: Xor
+    tag: 
+    pre: 282 283 284
+   next: 
+
+>> 285
+  level: 0
+     op: Load
+    tag: 
+    pre: 285
+   next: 286 
+
+>> 286
+  level: 1
+     op: Undef
+    tag: 
+    pre: 285 286
+   next: 287 
+
+>> 287
+  level: 2
+     op: Undef
+    tag: 
+    pre: 286 287
+   next: 288 
+
+>> 288
+  level: 3
+     op: Load
+    tag: 
+    pre: 287 288
+   next: 290 
+
+>> 289
+  level: 0
+     op: Load
+    tag: 
+    pre: 289
+   next: 290 
+
+>> 290
+  level: 4
+     op: Xor
+    tag: 
+    pre: 288 289 290
+   next: 
+
+>> 291
+  level: 0
+     op: Load
+    tag: 
+    pre: 291
+   next: 292 
+
+>> 292
+  level: 1
+     op: Undef
+    tag: 
+    pre: 291 292
+   next: 293 
+
+>> 293
+  level: 2
+     op: Undef
+    tag: 
+    pre: 292 293
+   next: 294 
+
+>> 294
+  level: 3
+     op: Load
+    tag: 
+    pre: 293 294
+   next: 296 
+
+>> 295
+  level: 0
+     op: Load
+    tag: 
+    pre: 295
+   next: 296 
+
+>> 296
+  level: 4
+     op: Xor
+    tag: 
+    pre: 294 295 296
+   next: 
+
+>> 297
+  level: 0
+     op: Div
+    tag: 
+    pre: 297
+   next: 
+
+
+MaxDelay: 5
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 80.9524
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 14.2857
+Delay: 5	Dist: 4.7619
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 17
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 3
+Delay: 5	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 80.9524
+[ 4 , 7 ) = 19.0476
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 9	inDeg: 0	outDeg: 8	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 10
+Node_level: 1	Node_num: 4	inDeg: 4	outDeg: 4	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 2	Node_num: 4	inDeg: 4	outDeg: 4	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 4	inDeg: 4	outDeg: 4	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 4	inDeg: 7	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 5	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+>> 300
+  level: 0
+     op: Phi
+    tag: 
+    pre: 300
+   next: 304 
+
+>> 301
+  level: 0
+     op: Phi
+    tag: 
+    pre: 301
+   next: 302 305 308 312 315 319 322 326 
+
+>> 302
+  level: 1
+     op: Store
+    tag: 
+    pre: 301 302
+   next: 303 
+
+>> 303
+  level: 2
+     op: Load
+    tag: 
+    pre: 302 303
+   next: 304 
+
+>> 304
+  level: 3
+     op: Xor
+    tag: 
+    pre: 300 303 304
+   next: 
+
+>> 305
+  level: 1
+     op: Add
+    tag: 
+    pre: 301 305
+   next: 306 
+
+>> 306
+  level: 2
+     op: Undef
+    tag: 
+    pre: 305 306
+   next: 307 
+
+>> 307
+  level: 3
+     op: Load
+    tag: 
+    pre: 306 307
+   next: 311 
+
+>> 308
+  level: 1
+     op: Or
+    tag: 
+    pre: 301 308
+   next: 309 
+
+>> 309
+  level: 2
+     op: Store
+    tag: 
+    pre: 308 309
+   next: 310 
+
+>> 310
+  level: 3
+     op: Load
+    tag: 
+    pre: 309 310
+   next: 311 
+
+>> 311
+  level: 4
+     op: Xor
+    tag: 
+    pre: 307 310 311
+   next: 
+
+>> 312
+  level: 1
+     op: Add
+    tag: 
+    pre: 301 312
+   next: 313 
+
+>> 313
+  level: 2
+     op: Undef
+    tag: 
+    pre: 312 313
+   next: 314 
+
+>> 314
+  level: 3
+     op: Load
+    tag: 
+    pre: 313 314
+   next: 318 
+
+>> 315
+  level: 1
+     op: Or
+    tag: 
+    pre: 301 315
+   next: 316 
+
+>> 316
+  level: 2
+     op: Store
+    tag: 
+    pre: 315 316
+   next: 317 
+
+>> 317
+  level: 3
+     op: Load
+    tag: 
+    pre: 316 317
+   next: 318 
+
+>> 318
+  level: 4
+     op: Xor
+    tag: 
+    pre: 314 317 318
+   next: 
+
+>> 319
+  level: 1
+     op: Add
+    tag: 
+    pre: 301 319
+   next: 320 
+
+>> 320
+  level: 2
+     op: Undef
+    tag: 
+    pre: 319 320
+   next: 321 
+
+>> 321
+  level: 3
+     op: Load
+    tag: 
+    pre: 320 321
+   next: 325 
+
+>> 322
+  level: 1
+     op: Or
+    tag: 
+    pre: 301 322
+   next: 323 
+
+>> 323
+  level: 2
+     op: Store
+    tag: 
+    pre: 322 323
+   next: 324 
+
+>> 324
+  level: 3
+     op: Load
+    tag: 
+    pre: 323 324
+   next: 325 
+
+>> 325
+  level: 4
+     op: Xor
+    tag: 
+    pre: 321 324 325
+   next: 
+
+>> 326
+  level: 1
+     op: Cmp
+    tag: 
+    pre: 301 326
+   next: 
+
+
+MaxDelay: 3
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 96.5517
+Delay: 2	Dist: 0
+Delay: 3	Dist: 3.44828
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 28
+Delay: 2	Dist: 0
+Delay: 3	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 9	maxInDeg: 0	maxOutDeg: 8	inRegionDeg: 1	outRegionDeg: 9
+Node_level: 1	Node_num: 8	inDeg: 8	outDeg: 7	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 4	outRegionDeg: 1
+Node_level: 2	Node_num: 7	inDeg: 7	outDeg: 7	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 6
+Node_level: 3	Node_num: 7	inDeg: 8	outDeg: 6	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 3	inDeg: 6	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+>> 329
+  level: 0
+     op: Mul
+    tag: 
+    pre: 329
+   next: 
+
+>> 330
+  level: 0
+     op: Load
+    tag: 
+    pre: 330
+   next: 331 
+
+>> 331
+  level: 1
+     op: Undef
+    tag: 
+    pre: 330 331
+   next: 332 
+
+>> 332
+  level: 2
+     op: Undef
+    tag: 
+    pre: 331 332
+   next: 333 
+
+>> 333
+  level: 3
+     op: Load
+    tag: 
+    pre: 332 333
+   next: 335 
+
+>> 334
+  level: 0
+     op: Load
+    tag: 
+    pre: 334
+   next: 335 
+
+>> 335
+  level: 4
+     op: Xor
+    tag: 
+    pre: 333 334 335
+   next: 
+
+>> 336
+  level: 0
+     op: Load
+    tag: 
+    pre: 336
+   next: 337 
+
+>> 337
+  level: 1
+     op: Undef
+    tag: 
+    pre: 336 337
+   next: 338 
+
+>> 338
+  level: 2
+     op: Undef
+    tag: 
+    pre: 337 338
+   next: 339 
+
+>> 339
+  level: 3
+     op: Load
+    tag: 
+    pre: 338 339
+   next: 341 
+
+>> 340
+  level: 0
+     op: Load
+    tag: 
+    pre: 340
+   next: 341 
+
+>> 341
+  level: 4
+     op: Xor
+    tag: 
+    pre: 339 340 341
+   next: 
+
+>> 342
+  level: 0
+     op: Load
+    tag: 
+    pre: 342
+   next: 343 
+
+>> 343
+  level: 1
+     op: Undef
+    tag: 
+    pre: 342 343
+   next: 344 
+
+>> 344
+  level: 2
+     op: Undef
+    tag: 
+    pre: 343 344
+   next: 345 
+
+>> 345
+  level: 3
+     op: Load
+    tag: 
+    pre: 344 345
+   next: 347 
+
+>> 346
+  level: 0
+     op: Load
+    tag: 
+    pre: 346
+   next: 347 
+
+>> 347
+  level: 4
+     op: Xor
+    tag: 
+    pre: 345 346 347
+   next: 
+
+>> 348
+  level: 0
+     op: Load
+    tag: 
+    pre: 348
+   next: 349 
+
+>> 349
+  level: 1
+     op: Undef
+    tag: 
+    pre: 348 349
+   next: 350 
+
+>> 350
+  level: 2
+     op: Undef
+    tag: 
+    pre: 349 350
+   next: 351 
+
+>> 351
+  level: 3
+     op: Load
+    tag: 
+    pre: 350 351
+   next: 
+
+>> 352
+  level: 0
+     op: Load
+    tag: 
+    pre: 352
+   next: 
+
+
+MaxDelay: 4
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 83.3333
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 16.6667
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 15
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 3
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 83.3333
+[ 4 , 7 ) = 16.6667
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 9	inDeg: 0	outDeg: 7	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 2	outRegionDeg: 10
+Node_level: 1	Node_num: 4	inDeg: 4	outDeg: 4	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 2	Node_num: 4	inDeg: 4	outDeg: 4	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 4	inDeg: 4	outDeg: 3	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 0
+Node_level: 4	Node_num: 3	inDeg: 6	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+>> 355
+  level: 0
+     op: Phi
+    tag: 
+    pre: 355
+   next: 359 
+
+>> 356
+  level: 0
+     op: Phi
+    tag: 
+    pre: 356
+   next: 357 360 363 367 370 374 377 381 
+
+>> 357
+  level: 1
+     op: Store
+    tag: 
+    pre: 356 357
+   next: 358 
+
+>> 358
+  level: 2
+     op: Load
+    tag: 
+    pre: 357 358
+   next: 359 
+
+>> 359
+  level: 3
+     op: Xor
+    tag: 
+    pre: 355 358 359
+   next: 
+
+>> 360
+  level: 1
+     op: Add
+    tag: 
+    pre: 356 360
+   next: 361 
+
+>> 361
+  level: 2
+     op: Undef
+    tag: 
+    pre: 360 361
+   next: 362 
+
+>> 362
+  level: 3
+     op: Load
+    tag: 
+    pre: 361 362
+   next: 366 
+
+>> 363
+  level: 1
+     op: Or
+    tag: 
+    pre: 356 363
+   next: 364 
+
+>> 364
+  level: 2
+     op: Store
+    tag: 
+    pre: 363 364
+   next: 365 
+
+>> 365
+  level: 3
+     op: Load
+    tag: 
+    pre: 364 365
+   next: 366 
+
+>> 366
+  level: 4
+     op: Xor
+    tag: 
+    pre: 362 365 366
+   next: 
+
+>> 367
+  level: 1
+     op: Add
+    tag: 
+    pre: 356 367
+   next: 368 
+
+>> 368
+  level: 2
+     op: Undef
+    tag: 
+    pre: 367 368
+   next: 369 
+
+>> 369
+  level: 3
+     op: Load
+    tag: 
+    pre: 368 369
+   next: 373 
+
+>> 370
+  level: 1
+     op: Or
+    tag: 
+    pre: 356 370
+   next: 371 
+
+>> 371
+  level: 2
+     op: Store
+    tag: 
+    pre: 370 371
+   next: 372 
+
+>> 372
+  level: 3
+     op: Load
+    tag: 
+    pre: 371 372
+   next: 373 
+
+>> 373
+  level: 4
+     op: Xor
+    tag: 
+    pre: 369 372 373
+   next: 
+
+>> 374
+  level: 1
+     op: Add
+    tag: 
+    pre: 356 374
+   next: 375 
+
+>> 375
+  level: 2
+     op: Undef
+    tag: 
+    pre: 374 375
+   next: 376 
+
+>> 376
+  level: 3
+     op: Load
+    tag: 
+    pre: 375 376
+   next: 380 
+
+>> 377
+  level: 1
+     op: Or
+    tag: 
+    pre: 356 377
+   next: 378 
+
+>> 378
+  level: 2
+     op: Store
+    tag: 
+    pre: 377 378
+   next: 379 
+
+>> 379
+  level: 3
+     op: Load
+    tag: 
+    pre: 378 379
+   next: 380 
+
+>> 380
+  level: 4
+     op: Xor
+    tag: 
+    pre: 376 379 380
+   next: 
+
+>> 381
+  level: 1
+     op: Cmp
+    tag: 
+    pre: 356 381
+   next: 
+
+
+MaxDelay: 3
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 96.5517
+Delay: 2	Dist: 0
+Delay: 3	Dist: 3.44828
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 28
+Delay: 2	Dist: 0
+Delay: 3	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 9	maxInDeg: 0	maxOutDeg: 8	inRegionDeg: 1	outRegionDeg: 9
+Node_level: 1	Node_num: 8	inDeg: 8	outDeg: 7	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 2	outRegionDeg: 1
+Node_level: 2	Node_num: 7	inDeg: 7	outDeg: 7	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 6
+Node_level: 3	Node_num: 7	inDeg: 8	outDeg: 6	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 3	inDeg: 6	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+>> 384
+  level: 0
+     op: Phi
+    tag: 
+    pre: 384
+   next: 385 387 390 
+
+>> 385
+  level: 1
+     op: Undef
+    tag: 
+    pre: 384 385
+   next: 386 
+
+>> 386
+  level: 2
+     op: Load
+    tag: 
+    pre: 385 386
+   next: 389 
+
+>> 387
+  level: 1
+     op: Store
+    tag: 
+    pre: 384 387
+   next: 388 
+
+>> 388
+  level: 2
+     op: Load
+    tag: 
+    pre: 387 388
+   next: 389 
+
+>> 389
+  level: 3
+     op: Xor
+    tag: 
+    pre: 386 388 389
+   next: 
+
+>> 390
+  level: 1
+     op: Add
+    tag: 
+    pre: 384 390
+   next: 
+
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 7
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 1	outRegionDeg: 4
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 2
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+>> 399
+  level: 0
+     op: Phi
+    tag: 
+    pre: 399
+   next: 400 405 
+
+>> 400
+  level: 1
+     op: Store
+    tag: 
+    pre: 399 400
+   next: 401 
+
+>> 401
+  level: 2
+     op: Load
+    tag: 
+    pre: 400 401
+   next: 402 
+
+>> 402
+  level: 3
+     op: Undef
+    tag: 
+    pre: 401 402
+   next: 403 
+
+>> 403
+  level: 4
+     op: Undef
+    tag: 
+    pre: 402 403
+   next: 404 
+
+>> 404
+  level: 5
+     op: Load
+    tag: 
+    pre: 403 404
+   next: 
+
+>> 405
+  level: 1
+     op: Add
+    tag: 
+    pre: 399 405
+   next: 
+
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 6
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 1	outRegionDeg: 5
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+>> 408
+  level: 0
+     op: Load
+    tag: 
+    pre: 408
+   next: 
+
+>> 409
+  level: 0
+     op: Load
+    tag: 
+    pre: 409
+   next: 
+
+>> 410
+  level: 0
+     op: Load
+    tag: 
+    pre: 410
+   next: 
+
+>> 411
+  level: 0
+     op: Load
+    tag: 
+    pre: 411
+   next: 
+
+>> 412
+  level: 0
+     op: Load
+    tag: 
+    pre: 412
+   next: 
+
+>> 413
+  level: 0
+     op: Load
+    tag: 
+    pre: 413
+   next: 
+
+>> 414
+  level: 0
+     op: Load
+    tag: 
+    pre: 414
+   next: 
+
+>> 415
+  level: 0
+     op: Load
+    tag: 
+    pre: 415
+   next: 
+
+>> 416
+  level: 0
+     op: Load
+    tag: 
+    pre: 416
+   next: 
+
+>> 417
+  level: 0
+     op: Load
+    tag: 
+    pre: 417
+   next: 
+
+>> 418
+  level: 0
+     op: Load
+    tag: 
+    pre: 418
+   next: 
+
+>> 419
+  level: 0
+     op: Load
+    tag: 
+    pre: 419
+   next: 
+
+>> 420
+  level: 0
+     op: Load
+    tag: 
+    pre: 420
+   next: 421 
+
+>> 421
+  level: 1
+     op: Undef
+    tag: 
+    pre: 420 421
+   next: 422 
+
+>> 422
+  level: 2
+     op: Undef
+    tag: 
+    pre: 421 422
+   next: 423 
+
+>> 423
+  level: 3
+     op: Load
+    tag: 
+    pre: 422 423
+   next: 424 
+
+>> 424
+  level: 4
+     op: Xor
+    tag: 
+    pre: 423 424
+   next: 426 
+
+>> 425
+  level: 0
+     op: Load
+    tag: 
+    pre: 425
+   next: 426 
+
+>> 426
+  level: 5
+     op: Xor
+    tag: 
+    pre: 424 425 426
+   next: 
+
+>> 427
+  level: 0
+     op: Load
+    tag: 
+    pre: 427
+   next: 428 
+
+>> 428
+  level: 1
+     op: Undef
+    tag: 
+    pre: 427 428
+   next: 429 
+
+>> 429
+  level: 2
+     op: Undef
+    tag: 
+    pre: 428 429
+   next: 430 
+
+>> 430
+  level: 3
+     op: Load
+    tag: 
+    pre: 429 430
+   next: 432 
+
+>> 431
+  level: 0
+     op: Load
+    tag: 
+    pre: 431
+   next: 432 
+
+>> 432
+  level: 4
+     op: Xor
+    tag: 
+    pre: 430 431 432
+   next: 
+
+>> 433
+  level: 0
+     op: Load
+    tag: 
+    pre: 433
+   next: 434 
+
+>> 434
+  level: 1
+     op: Undef
+    tag: 
+    pre: 433 434
+   next: 435 
+
+>> 435
+  level: 2
+     op: Undef
+    tag: 
+    pre: 434 435
+   next: 436 
+
+>> 436
+  level: 3
+     op: Load
+    tag: 
+    pre: 435 436
+   next: 438 
+
+>> 437
+  level: 0
+     op: Load
+    tag: 
+    pre: 437
+   next: 438 
+
+>> 438
+  level: 4
+     op: Xor
+    tag: 
+    pre: 436 437 438
+   next: 
+
+>> 439
+  level: 0
+     op: Load
+    tag: 
+    pre: 439
+   next: 440 
+
+>> 440
+  level: 1
+     op: Undef
+    tag: 
+    pre: 439 440
+   next: 441 
+
+>> 441
+  level: 2
+     op: Undef
+    tag: 
+    pre: 440 441
+   next: 442 
+
+>> 442
+  level: 3
+     op: Load
+    tag: 
+    pre: 441 442
+   next: 
+
+>> 443
+  level: 0
+     op: Load
+    tag: 
+    pre: 443
+   next: 
+
+
+MaxDelay: 5
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 84.2105
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 10.5263
+Delay: 5	Dist: 5.26316
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 16
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 2
+Delay: 5	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 84.2105
+[ 4 , 7 ) = 15.7895
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 20	inDeg: 0	outDeg: 7	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 21
+Node_level: 1	Node_num: 4	inDeg: 4	outDeg: 4	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 2	Node_num: 4	inDeg: 4	outDeg: 4	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 4	inDeg: 4	outDeg: 3	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 0
+Node_level: 4	Node_num: 3	inDeg: 5	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 5	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+>> 446
+  level: 0
+     op: Phi
+    tag: 
+    pre: 446
+   next: 450 
+
+>> 447
+  level: 0
+     op: Phi
+    tag: 
+    pre: 447
+   next: 448 451 454 458 461 465 468 472 
+
+>> 448
+  level: 1
+     op: Store
+    tag: 
+    pre: 447 448
+   next: 449 
+
+>> 449
+  level: 2
+     op: Load
+    tag: 
+    pre: 448 449
+   next: 450 
+
+>> 450
+  level: 3
+     op: Xor
+    tag: 
+    pre: 446 449 450
+   next: 
+
+>> 451
+  level: 1
+     op: Add
+    tag: 
+    pre: 447 451
+   next: 452 
+
+>> 452
+  level: 2
+     op: Undef
+    tag: 
+    pre: 451 452
+   next: 453 
+
+>> 453
+  level: 3
+     op: Load
+    tag: 
+    pre: 452 453
+   next: 457 
+
+>> 454
+  level: 1
+     op: Or
+    tag: 
+    pre: 447 454
+   next: 455 
+
+>> 455
+  level: 2
+     op: Store
+    tag: 
+    pre: 454 455
+   next: 456 
+
+>> 456
+  level: 3
+     op: Load
+    tag: 
+    pre: 455 456
+   next: 457 
+
+>> 457
+  level: 4
+     op: Xor
+    tag: 
+    pre: 453 456 457
+   next: 
+
+>> 458
+  level: 1
+     op: Add
+    tag: 
+    pre: 447 458
+   next: 459 
+
+>> 459
+  level: 2
+     op: Undef
+    tag: 
+    pre: 458 459
+   next: 460 
+
+>> 460
+  level: 3
+     op: Load
+    tag: 
+    pre: 459 460
+   next: 464 
+
+>> 461
+  level: 1
+     op: Or
+    tag: 
+    pre: 447 461
+   next: 462 
+
+>> 462
+  level: 2
+     op: Store
+    tag: 
+    pre: 461 462
+   next: 463 
+
+>> 463
+  level: 3
+     op: Load
+    tag: 
+    pre: 462 463
+   next: 464 
+
+>> 464
+  level: 4
+     op: Xor
+    tag: 
+    pre: 460 463 464
+   next: 
+
+>> 465
+  level: 1
+     op: Add
+    tag: 
+    pre: 447 465
+   next: 466 
+
+>> 466
+  level: 2
+     op: Undef
+    tag: 
+    pre: 465 466
+   next: 467 
+
+>> 467
+  level: 3
+     op: Load
+    tag: 
+    pre: 466 467
+   next: 471 
+
+>> 468
+  level: 1
+     op: Or
+    tag: 
+    pre: 447 468
+   next: 469 
+
+>> 469
+  level: 2
+     op: Store
+    tag: 
+    pre: 468 469
+   next: 470 
+
+>> 470
+  level: 3
+     op: Load
+    tag: 
+    pre: 469 470
+   next: 471 
+
+>> 471
+  level: 4
+     op: Xor
+    tag: 
+    pre: 467 470 471
+   next: 
+
+>> 472
+  level: 1
+     op: Cmp
+    tag: 
+    pre: 447 472
+   next: 
+
+
+MaxDelay: 3
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 96.5517
+Delay: 2	Dist: 0
+Delay: 3	Dist: 3.44828
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 28
+Delay: 2	Dist: 0
+Delay: 3	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 9	maxInDeg: 0	maxOutDeg: 8	inRegionDeg: 1	outRegionDeg: 9
+Node_level: 1	Node_num: 8	inDeg: 8	outDeg: 7	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 4	outRegionDeg: 1
+Node_level: 2	Node_num: 7	inDeg: 7	outDeg: 7	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 6
+Node_level: 3	Node_num: 7	inDeg: 8	outDeg: 6	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 3	inDeg: 6	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+>> 475
+  level: 0
+     op: Load
+    tag: 
+    pre: 475
+   next: 476 
+
+>> 476
+  level: 1
+     op: Undef
+    tag: 
+    pre: 475 476
+   next: 477 
+
+>> 477
+  level: 2
+     op: Undef
+    tag: 
+    pre: 476 477
+   next: 478 
+
+>> 478
+  level: 3
+     op: Load
+    tag: 
+    pre: 477 478
+   next: 480 
+
+>> 479
+  level: 0
+     op: Load
+    tag: 
+    pre: 479
+   next: 480 
+
+>> 480
+  level: 4
+     op: Xor
+    tag: 
+    pre: 478 479 480
+   next: 
+
+>> 481
+  level: 0
+     op: Load
+    tag: 
+    pre: 481
+   next: 482 
+
+>> 482
+  level: 1
+     op: Undef
+    tag: 
+    pre: 481 482
+   next: 483 
+
+>> 483
+  level: 2
+     op: Undef
+    tag: 
+    pre: 482 483
+   next: 484 
+
+>> 484
+  level: 3
+     op: Load
+    tag: 
+    pre: 483 484
+   next: 486 
+
+>> 485
+  level: 0
+     op: Load
+    tag: 
+    pre: 485
+   next: 486 
+
+>> 486
+  level: 4
+     op: Xor
+    tag: 
+    pre: 484 485 486
+   next: 
+
+>> 487
+  level: 0
+     op: Load
+    tag: 
+    pre: 487
+   next: 488 
+
+>> 488
+  level: 1
+     op: Undef
+    tag: 
+    pre: 487 488
+   next: 489 
+
+>> 489
+  level: 2
+     op: Undef
+    tag: 
+    pre: 488 489
+   next: 490 
+
+>> 490
+  level: 3
+     op: Load
+    tag: 
+    pre: 489 490
+   next: 492 
+
+>> 491
+  level: 0
+     op: Load
+    tag: 
+    pre: 491
+   next: 492 
+
+>> 492
+  level: 4
+     op: Xor
+    tag: 
+    pre: 490 491 492
+   next: 
+
+>> 493
+  level: 0
+     op: Load
+    tag: 
+    pre: 493
+   next: 494 
+
+>> 494
+  level: 1
+     op: Undef
+    tag: 
+    pre: 493 494
+   next: 495 
+
+>> 495
+  level: 2
+     op: Undef
+    tag: 
+    pre: 494 495
+   next: 496 
+
+>> 496
+  level: 3
+     op: Load
+    tag: 
+    pre: 495 496
+   next: 
+
+>> 497
+  level: 0
+     op: Load
+    tag: 
+    pre: 497
+   next: 
+
+
+MaxDelay: 4
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 83.3333
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 16.6667
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 15
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 3
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 83.3333
+[ 4 , 7 ) = 16.6667
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 8	inDeg: 0	outDeg: 7	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 9
+Node_level: 1	Node_num: 4	inDeg: 4	outDeg: 4	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 2	Node_num: 4	inDeg: 4	outDeg: 4	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 4	inDeg: 4	outDeg: 3	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 0
+Node_level: 4	Node_num: 3	inDeg: 6	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+>> 500
+  level: 0
+     op: Phi
+    tag: 
+    pre: 500
+   next: 504 
+
+>> 501
+  level: 0
+     op: Phi
+    tag: 
+    pre: 501
+   next: 502 505 508 512 515 519 522 526 
+
+>> 502
+  level: 1
+     op: Store
+    tag: 
+    pre: 501 502
+   next: 503 
+
+>> 503
+  level: 2
+     op: Load
+    tag: 
+    pre: 502 503
+   next: 504 
+
+>> 504
+  level: 3
+     op: Xor
+    tag: 
+    pre: 500 503 504
+   next: 
+
+>> 505
+  level: 1
+     op: Add
+    tag: 
+    pre: 501 505
+   next: 506 
+
+>> 506
+  level: 2
+     op: Undef
+    tag: 
+    pre: 505 506
+   next: 507 
+
+>> 507
+  level: 3
+     op: Load
+    tag: 
+    pre: 506 507
+   next: 511 
+
+>> 508
+  level: 1
+     op: Or
+    tag: 
+    pre: 501 508
+   next: 509 
+
+>> 509
+  level: 2
+     op: Store
+    tag: 
+    pre: 508 509
+   next: 510 
+
+>> 510
+  level: 3
+     op: Load
+    tag: 
+    pre: 509 510
+   next: 511 
+
+>> 511
+  level: 4
+     op: Xor
+    tag: 
+    pre: 507 510 511
+   next: 
+
+>> 512
+  level: 1
+     op: Add
+    tag: 
+    pre: 501 512
+   next: 513 
+
+>> 513
+  level: 2
+     op: Undef
+    tag: 
+    pre: 512 513
+   next: 514 
+
+>> 514
+  level: 3
+     op: Load
+    tag: 
+    pre: 513 514
+   next: 518 
+
+>> 515
+  level: 1
+     op: Or
+    tag: 
+    pre: 501 515
+   next: 516 
+
+>> 516
+  level: 2
+     op: Store
+    tag: 
+    pre: 515 516
+   next: 517 
+
+>> 517
+  level: 3
+     op: Load
+    tag: 
+    pre: 516 517
+   next: 518 
+
+>> 518
+  level: 4
+     op: Xor
+    tag: 
+    pre: 514 517 518
+   next: 
+
+>> 519
+  level: 1
+     op: Add
+    tag: 
+    pre: 501 519
+   next: 520 
+
+>> 520
+  level: 2
+     op: Undef
+    tag: 
+    pre: 519 520
+   next: 521 
+
+>> 521
+  level: 3
+     op: Load
+    tag: 
+    pre: 520 521
+   next: 525 
+
+>> 522
+  level: 1
+     op: Or
+    tag: 
+    pre: 501 522
+   next: 523 
+
+>> 523
+  level: 2
+     op: Store
+    tag: 
+    pre: 522 523
+   next: 524 
+
+>> 524
+  level: 3
+     op: Load
+    tag: 
+    pre: 523 524
+   next: 525 
+
+>> 525
+  level: 4
+     op: Xor
+    tag: 
+    pre: 521 524 525
+   next: 
+
+>> 526
+  level: 1
+     op: Cmp
+    tag: 
+    pre: 501 526
+   next: 
+
+
+MaxDelay: 3
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 96.5517
+Delay: 2	Dist: 0
+Delay: 3	Dist: 3.44828
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 28
+Delay: 2	Dist: 0
+Delay: 3	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 9	maxInDeg: 0	maxOutDeg: 8	inRegionDeg: 1	outRegionDeg: 9
+Node_level: 1	Node_num: 8	inDeg: 8	outDeg: 7	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 2	outRegionDeg: 1
+Node_level: 2	Node_num: 7	inDeg: 7	outDeg: 7	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 6
+Node_level: 3	Node_num: 7	inDeg: 8	outDeg: 6	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 3	inDeg: 6	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+>> 529
+  level: 0
+     op: Phi
+    tag: 
+    pre: 529
+   next: 530 532 535 
+
+>> 530
+  level: 1
+     op: Undef
+    tag: 
+    pre: 529 530
+   next: 531 
+
+>> 531
+  level: 2
+     op: Load
+    tag: 
+    pre: 530 531
+   next: 534 
+
+>> 532
+  level: 1
+     op: Store
+    tag: 
+    pre: 529 532
+   next: 533 
+
+>> 533
+  level: 2
+     op: Load
+    tag: 
+    pre: 532 533
+   next: 534 
+
+>> 534
+  level: 3
+     op: Xor
+    tag: 
+    pre: 531 533 534
+   next: 
+
+>> 535
+  level: 1
+     op: Add
+    tag: 
+    pre: 529 535
+   next: 
+
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 7
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 1	outRegionDeg: 4
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 2
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+>> 53
+  level: 0
+     op: Phi
+    tag: 
+    pre: 53
+   next: 61 
+
+>> 54
+  level: 0
+     op: Phi
+    tag: 
+    pre: 54
+   next: 55 58 62 
+
+>> 55
+  level: 1
+     op: Add
+    tag: 
+    pre: 54 55
+   next: 56 
+
+>> 56
+  level: 2
+     op: Undef
+    tag: 
+    pre: 55 56
+   next: 57 
+
+>> 57
+  level: 3
+     op: Load
+    tag: 
+    pre: 56 57
+   next: 60 
+
+>> 58
+  level: 1
+     op: Undef
+    tag: 
+    pre: 54 58
+   next: 59 
+
+>> 59
+  level: 2
+     op: Load
+    tag: 
+    pre: 58 59
+   next: 60 
+
+>> 60
+  level: 4
+     op: Mul
+    tag: 
+    pre: 57 59 60
+   next: 61 
+
+>> 61
+  level: 5
+     op: Add
+    tag: 
+    pre: 53 60 61
+   next: 
+
+>> 62
+  level: 1
+     op: Add
+    tag: 
+    pre: 54 62
+   next: 
+
+
+MaxDelay: 5
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 80
+Delay: 2	Dist: 10
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 10
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 8
+Delay: 2	Dist: 1
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 90
+[ 4 , 7 ) = 10
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 4	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 8
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 2	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+>> 68
+  level: 0
+     op: Phi
+    tag: 
+    pre: 68
+   next: 69 72 77 
+
+>> 69
+  level: 1
+     op: Undef
+    tag: 
+    pre: 68 69
+   next: 70 76 
+
+>> 70
+  level: 2
+     op: Undef
+    tag: 
+    pre: 69 70
+   next: 71 
+
+>> 71
+  level: 3
+     op: Load
+    tag: 
+    pre: 70 71
+   next: 75 
+
+>> 72
+  level: 1
+     op: Undef
+    tag: 
+    pre: 68 72
+   next: 73 
+
+>> 73
+  level: 2
+     op: Undef
+    tag: 
+    pre: 72 73
+   next: 74 
+
+>> 74
+  level: 3
+     op: Load
+    tag: 
+    pre: 73 74
+   next: 75 
+
+>> 75
+  level: 4
+     op: Add
+    tag: 
+    pre: 71 74 75
+   next: 76 
+
+>> 76
+  level: 5
+     op: Store
+    tag: 
+    pre: 69 75 76
+   next: 
+
+>> 77
+  level: 1
+     op: Add
+    tag: 
+    pre: 68 77
+   next: 
+
+
+MaxDelay: 4
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 90.9091
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 9.09091
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 10
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 90.9091
+[ 4 , 7 ) = 9.09091
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 4
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 3	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 2	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+>> 80
+  level: 0
+     op: Phi
+    tag: 
+    pre: 80
+   next: 81 85 90 
+
+>> 81
+  level: 1
+     op: Store
+    tag: 
+    pre: 80 81
+   next: 82 
+
+>> 82
+  level: 2
+     op: Load
+    tag: 
+    pre: 81 82
+   next: 83 84 86 
+
+>> 83
+  level: 3
+     op: Sub
+    tag: 
+    pre: 82 83
+   next: 84 
+
+>> 84
+  level: 4
+     op: Mul
+    tag: 
+    pre: 82 83 84
+   next: 85 
+
+>> 85
+  level: 5
+     op: Store
+    tag: 
+    pre: 80 84 85
+   next: 
+
+>> 86
+  level: 3
+     op: Undef
+    tag: 
+    pre: 82 86
+   next: 87 
+
+>> 87
+  level: 4
+     op: Undef
+    tag: 
+    pre: 86 87
+   next: 88 
+
+>> 88
+  level: 5
+     op: Add
+    tag: 
+    pre: 87 88
+   next: 89 
+
+>> 89
+  level: 6
+     op: Div
+    tag: 
+    pre: 88 89
+   next: 
+
+>> 90
+  level: 1
+     op: Add
+    tag: 
+    pre: 80 90
+   next: 
+
+
+MaxDelay: 5
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 83.3333
+Delay: 2	Dist: 8.33333
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 8.33333
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 10
+Delay: 2	Dist: 1
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 91.6667
+[ 4 , 7 ) = 8.33333
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 4
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 3	maxInDeg: 1	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 2	inDeg: 3	outDeg: 2	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 2	inDeg: 3	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 6	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+>> 97
+  level: 0
+     op: Phi
+    tag: 
+    pre: 97
+   next: 105 
+
+>> 98
+  level: 0
+     op: Phi
+    tag: 
+    pre: 98
+   next: 99 102 106 
+
+>> 99
+  level: 1
+     op: Add
+    tag: 
+    pre: 98 99
+   next: 100 
+
+>> 100
+  level: 2
+     op: Undef
+    tag: 
+    pre: 99 100
+   next: 101 
+
+>> 101
+  level: 3
+     op: Load
+    tag: 
+    pre: 100 101
+   next: 104 
+
+>> 102
+  level: 1
+     op: Undef
+    tag: 
+    pre: 98 102
+   next: 103 
+
+>> 103
+  level: 2
+     op: Load
+    tag: 
+    pre: 102 103
+   next: 104 
+
+>> 104
+  level: 4
+     op: Mul
+    tag: 
+    pre: 101 103 104
+   next: 105 
+
+>> 105
+  level: 5
+     op: Add
+    tag: 
+    pre: 97 104 105
+   next: 
+
+>> 106
+  level: 1
+     op: Add
+    tag: 
+    pre: 98 106
+   next: 
+
+
+MaxDelay: 5
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 80
+Delay: 2	Dist: 10
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 10
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 8
+Delay: 2	Dist: 1
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 90
+[ 4 , 7 ) = 10
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 4	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 8
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 2	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+>> 112
+  level: 0
+     op: Phi
+    tag: 
+    pre: 112
+   next: 113 116 121 
+
+>> 113
+  level: 1
+     op: Undef
+    tag: 
+    pre: 112 113
+   next: 114 120 
+
+>> 114
+  level: 2
+     op: Undef
+    tag: 
+    pre: 113 114
+   next: 115 
+
+>> 115
+  level: 3
+     op: Load
+    tag: 
+    pre: 114 115
+   next: 119 
+
+>> 116
+  level: 1
+     op: Undef
+    tag: 
+    pre: 112 116
+   next: 117 
+
+>> 117
+  level: 2
+     op: Undef
+    tag: 
+    pre: 116 117
+   next: 118 
+
+>> 118
+  level: 3
+     op: Load
+    tag: 
+    pre: 117 118
+   next: 119 
+
+>> 119
+  level: 4
+     op: Add
+    tag: 
+    pre: 115 118 119
+   next: 120 
+
+>> 120
+  level: 5
+     op: Store
+    tag: 
+    pre: 113 119 120
+   next: 
+
+>> 121
+  level: 1
+     op: Add
+    tag: 
+    pre: 112 121
+   next: 
+
+
+MaxDelay: 4
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 90.9091
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 9.09091
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 10
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 90.9091
+[ 4 , 7 ) = 9.09091
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 4
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 3	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 2	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+>> 124
+  level: 0
+     op: Phi
+    tag: 
+    pre: 124
+   next: 125 129 134 
+
+>> 125
+  level: 1
+     op: Store
+    tag: 
+    pre: 124 125
+   next: 126 
+
+>> 126
+  level: 2
+     op: Load
+    tag: 
+    pre: 125 126
+   next: 127 128 130 
+
+>> 127
+  level: 3
+     op: Sub
+    tag: 
+    pre: 126 127
+   next: 128 
+
+>> 128
+  level: 4
+     op: Mul
+    tag: 
+    pre: 126 127 128
+   next: 129 
+
+>> 129
+  level: 5
+     op: Store
+    tag: 
+    pre: 124 128 129
+   next: 
+
+>> 130
+  level: 3
+     op: Undef
+    tag: 
+    pre: 126 130
+   next: 131 
+
+>> 131
+  level: 4
+     op: Undef
+    tag: 
+    pre: 130 131
+   next: 132 
+
+>> 132
+  level: 5
+     op: Add
+    tag: 
+    pre: 131 132
+   next: 133 
+
+>> 133
+  level: 6
+     op: Div
+    tag: 
+    pre: 132 133
+   next: 
+
+>> 134
+  level: 1
+     op: Add
+    tag: 
+    pre: 124 134
+   next: 
+
+
+MaxDelay: 5
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 83.3333
+Delay: 2	Dist: 8.33333
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 8.33333
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 10
+Delay: 2	Dist: 1
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 91.6667
+[ 4 , 7 ) = 8.33333
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 4
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 3	maxInDeg: 1	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 2	inDeg: 3	outDeg: 2	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 2	inDeg: 3	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 6	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+>> 141
+  level: 0
+     op: Phi
+    tag: 
+    pre: 141
+   next: 149 
+
+>> 142
+  level: 0
+     op: Phi
+    tag: 
+    pre: 142
+   next: 143 146 150 
+
+>> 143
+  level: 1
+     op: Add
+    tag: 
+    pre: 142 143
+   next: 144 
+
+>> 144
+  level: 2
+     op: Undef
+    tag: 
+    pre: 143 144
+   next: 145 
+
+>> 145
+  level: 3
+     op: Load
+    tag: 
+    pre: 144 145
+   next: 148 
+
+>> 146
+  level: 1
+     op: Undef
+    tag: 
+    pre: 142 146
+   next: 147 
+
+>> 147
+  level: 2
+     op: Load
+    tag: 
+    pre: 146 147
+   next: 148 
+
+>> 148
+  level: 4
+     op: Mul
+    tag: 
+    pre: 145 147 148
+   next: 149 
+
+>> 149
+  level: 5
+     op: Add
+    tag: 
+    pre: 141 148 149
+   next: 
+
+>> 150
+  level: 1
+     op: Add
+    tag: 
+    pre: 142 150
+   next: 
+
+
+MaxDelay: 5
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 80
+Delay: 2	Dist: 10
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 10
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 8
+Delay: 2	Dist: 1
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 90
+[ 4 , 7 ) = 10
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 4	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 8
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 2	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+>> 156
+  level: 0
+     op: Phi
+    tag: 
+    pre: 156
+   next: 157 159 162 
+
+>> 157
+  level: 1
+     op: Store
+    tag: 
+    pre: 156 157
+   next: 158 
+
+>> 158
+  level: 2
+     op: Load
+    tag: 
+    pre: 157 158
+   next: 161 
+
+>> 159
+  level: 1
+     op: Undef
+    tag: 
+    pre: 156 159
+   next: 160 
+
+>> 160
+  level: 2
+     op: Load
+    tag: 
+    pre: 159 160
+   next: 161 
+
+>> 161
+  level: 3
+     op: Add
+    tag: 
+    pre: 158 160 161
+   next: 
+
+>> 162
+  level: 1
+     op: Add
+    tag: 
+    pre: 156 162
+   next: 
+
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 7
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 4
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+>> 165
+  level: 0
+     op: Phi
+    tag: 
+    pre: 165
+   next: 166 170 175 
+
+>> 166
+  level: 1
+     op: Store
+    tag: 
+    pre: 165 166
+   next: 167 
+
+>> 167
+  level: 2
+     op: Load
+    tag: 
+    pre: 166 167
+   next: 168 169 171 
+
+>> 168
+  level: 3
+     op: Sub
+    tag: 
+    pre: 167 168
+   next: 169 
+
+>> 169
+  level: 4
+     op: Mul
+    tag: 
+    pre: 167 168 169
+   next: 170 
+
+>> 170
+  level: 5
+     op: Store
+    tag: 
+    pre: 165 169 170
+   next: 
+
+>> 171
+  level: 3
+     op: Undef
+    tag: 
+    pre: 167 171
+   next: 172 
+
+>> 172
+  level: 4
+     op: Undef
+    tag: 
+    pre: 171 172
+   next: 173 
+
+>> 173
+  level: 5
+     op: Add
+    tag: 
+    pre: 172 173
+   next: 174 
+
+>> 174
+  level: 6
+     op: Div
+    tag: 
+    pre: 173 174
+   next: 
+
+>> 175
+  level: 1
+     op: Add
+    tag: 
+    pre: 165 175
+   next: 
+
+
+MaxDelay: 5
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 83.3333
+Delay: 2	Dist: 8.33333
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 8.33333
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 10
+Delay: 2	Dist: 1
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 91.6667
+[ 4 , 7 ) = 8.33333
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 4
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 3	maxInDeg: 1	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 2	inDeg: 3	outDeg: 2	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 2	inDeg: 3	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 6	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+>> 178
+  level: 0
+     op: Phi
+    tag: 
+    pre: 178
+   next: 180 185 
+
+>> 179
+  level: 0
+     op: Phi
+    tag: 
+    pre: 179
+   next: 184 
+
+>> 180
+  level: 1
+     op: Undef
+    tag: 
+    pre: 178 180
+   next: 181 
+
+>> 181
+  level: 2
+     op: Load
+    tag: 
+    pre: 180 181
+   next: 182 
+
+>> 182
+  level: 3
+     op: Undef
+    tag: 
+    pre: 181 182
+   next: 183 
+
+>> 183
+  level: 4
+     op: Undef
+    tag: 
+    pre: 182 183
+   next: 184 
+
+>> 184
+  level: 5
+     op: Add
+    tag: 
+    pre: 179 183 184
+   next: 
+
+>> 185
+  level: 1
+     op: Add
+    tag: 
+    pre: 178 185
+   next: 
+
+
+MaxDelay: 5
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 85.7143
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 14.2857
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 6
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 85.7143
+[ 4 , 7 ) = 14.2857
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 8
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+>> 188
+  level: 0
+     op: Phi
+    tag: 
+    pre: 188
+   next: 189 194 195 
+
+>> 189
+  level: 1
+     op: Undef
+    tag: 
+    pre: 188 189
+   next: 190 
+
+>> 190
+  level: 2
+     op: Load
+    tag: 
+    pre: 189 190
+   next: 191 
+
+>> 191
+  level: 3
+     op: Undef
+    tag: 
+    pre: 190 191
+   next: 192 
+
+>> 192
+  level: 4
+     op: Undef
+    tag: 
+    pre: 191 192
+   next: 193 
+
+>> 193
+  level: 5
+     op: Div
+    tag: 
+    pre: 192 193
+   next: 194 
+
+>> 194
+  level: 6
+     op: Store
+    tag: 
+    pre: 188 193 194
+   next: 
+
+>> 195
+  level: 1
+     op: Add
+    tag: 
+    pre: 188 195
+   next: 
+
+
+MaxDelay: 6
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 87.5
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 12.5
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 7
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 87.5
+[ 4 , 7 ) = 12.5
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 4
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 6	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 1
+
+>> 201
+  level: 0
+     op: Phi
+    tag: 
+    pre: 201
+   next: 202 204 208 211 212 
+
+>> 202
+  level: 1
+     op: Undef
+    tag: 
+    pre: 201 202
+   next: 203 
+
+>> 203
+  level: 2
+     op: Load
+    tag: 
+    pre: 202 203
+   next: 206 
+
+>> 204
+  level: 1
+     op: Undef
+    tag: 
+    pre: 201 204
+   next: 205 
+
+>> 205
+  level: 2
+     op: Load
+    tag: 
+    pre: 204 205
+   next: 206 
+
+>> 206
+  level: 3
+     op: Sub
+    tag: 
+    pre: 203 205 206
+   next: 207 
+
+>> 207
+  level: 4
+     op: Undef
+    tag: 
+    pre: 206 207
+   next: 210 
+
+>> 208
+  level: 1
+     op: Undef
+    tag: 
+    pre: 201 208
+   next: 209 
+
+>> 209
+  level: 2
+     op: Load
+    tag: 
+    pre: 208 209
+   next: 210 
+
+>> 210
+  level: 5
+     op: Mul
+    tag: 
+    pre: 207 209 210
+   next: 211 
+
+>> 211
+  level: 4
+     op: Store
+    tag: 
+    pre: 201 210 211
+   next: 
+
+>> 212
+  level: 1
+     op: Add
+    tag: 
+    pre: 201 212
+   next: 
+
+
+MaxDelay: 4
+
+Delay: 0	Dist: 7.14286
+Delay: 1	Dist: 78.5714
+Delay: 2	Dist: 0
+Delay: 3	Dist: 7.14286
+Delay: 4	Dist: 7.14286
+
+Delay: 0	Dist: 1
+Delay: 1	Dist: 11
+Delay: 2	Dist: 0
+Delay: 3	Dist: 1
+Delay: 4	Dist: 1
+
+[ 0 , 1 ) = 7.14286
+[ 1 , 4 ) = 85.7143
+[ 4 , 7 ) = 7.14286
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 5	maxInDeg: 0	maxOutDeg: 5	inRegionDeg: 0	outRegionDeg: 4
+Node_level: 1	Node_num: 4	inDeg: 4	outDeg: 3	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 3
+Node_level: 2	Node_num: 3	inDeg: 3	outDeg: 3	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 1	inDeg: 2	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 2	inDeg: 3	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 5	Node_num: 1	inDeg: 2	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+
+>> 215
+  level: 0
+     op: Phi
+    tag: 
+    pre: 215
+   next: 216 217 
+
+>> 216
+  level: 1
+     op: Undef
+    tag: 
+    pre: 215 216
+   next: 
+
+>> 217
+  level: 1
+     op: Mul
+    tag: 
+    pre: 215 217
+   next: 
+
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 2
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 1	outRegionDeg: 3
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 2	outRegionDeg: 1
+
+>> 220
+  level: 0
+     op: Phi
+    tag: 
+    pre: 220
+   next: 221 224 226 
+
+>> 221
+  level: 1
+     op: Undef
+    tag: 
+    pre: 220 221
+   next: 222 
+
+>> 222
+  level: 2
+     op: Load
+    tag: 
+    pre: 221 222
+   next: 223 
+
+>> 223
+  level: 3
+     op: Mul
+    tag: 
+    pre: 222 223
+   next: 225 
+
+>> 224
+  level: 1
+     op: Add
+    tag: 
+    pre: 220 224
+   next: 225 
+
+>> 225
+  level: 4
+     op: Store
+    tag: 
+    pre: 223 224 225
+   next: 
+
+>> 226
+  level: 1
+     op: Add
+    tag: 
+    pre: 220 226
+   next: 
+
+
+MaxDelay: 3
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 85.7143
+Delay: 2	Dist: 0
+Delay: 3	Dist: 14.2857
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 6
+Delay: 2	Dist: 0
+Delay: 3	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 4
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 4	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 1
+
+>> 236
+  level: 0
+     op: Phi
+    tag: 
+    pre: 236
+   next: 244 
+
+>> 237
+  level: 0
+     op: Phi
+    tag: 
+    pre: 237
+   next: 238 240 245 
+
+>> 238
+  level: 1
+     op: Undef
+    tag: 
+    pre: 237 238
+   next: 239 
+
+>> 239
+  level: 2
+     op: Load
+    tag: 
+    pre: 238 239
+   next: 243 
+
+>> 240
+  level: 1
+     op: Add
+    tag: 
+    pre: 237 240
+   next: 241 
+
+>> 241
+  level: 2
+     op: Undef
+    tag: 
+    pre: 240 241
+   next: 242 
+
+>> 242
+  level: 3
+     op: Load
+    tag: 
+    pre: 241 242
+   next: 243 
+
+>> 243
+  level: 4
+     op: Mul
+    tag: 
+    pre: 239 242 243
+   next: 244 
+
+>> 244
+  level: 4
+     op: Add
+    tag: 
+    pre: 236 243 244
+   next: 
+
+>> 245
+  level: 1
+     op: Add
+    tag: 
+    pre: 237 245
+   next: 
+
+
+MaxDelay: 4
+
+Delay: 0	Dist: 10
+Delay: 1	Dist: 70
+Delay: 2	Dist: 10
+Delay: 3	Dist: 0
+Delay: 4	Dist: 10
+
+Delay: 0	Dist: 1
+Delay: 1	Dist: 7
+Delay: 2	Dist: 1
+Delay: 3	Dist: 0
+Delay: 4	Dist: 1
+
+[ 0 , 1 ) = 10
+[ 1 , 4 ) = 80
+[ 4 , 7 ) = 10
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 4	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 8
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 2	inDeg: 4	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 0
+
+>> 248
+  level: 0
+     op: Undef
+    tag: 
+    pre: 248
+   next: 249 
+
+>> 249
+  level: 1
+     op: Load
+    tag: 
+    pre: 248 249
+   next: 250 
+
+>> 250
+  level: 2
+     op: Mul
+    tag: 
+    pre: 249 250
+   next: 
+
+>> 251
+  level: 0
+     op: Add
+    tag: 
+    pre: 251
+   next: 
+
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 2
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 1	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 4
+Node_level: 1	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 1
+
+>> 254
+  level: 0
+     op: Phi
+    tag: 
+    pre: 254
+   next: 255 256 
+
+>> 255
+  level: 1
+     op: Mul
+    tag: 
+    pre: 254 255
+   next: 
+
+>> 256
+  level: 1
+     op: Undef
+    tag: 
+    pre: 254 256
+   next: 257 
+
+>> 257
+  level: 2
+     op: Load
+    tag: 
+    pre: 256 257
+   next: 258 
+
+>> 258
+  level: 3
+     op: Undef
+    tag: 
+    pre: 257 258
+   next: 
+
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 4
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 1	outRegionDeg: 3
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+>> 261
+  level: 0
+     op: Phi
+    tag: 
+    pre: 261
+   next: 262 266 269 
+
+>> 262
+  level: 1
+     op: Undef
+    tag: 
+    pre: 261 262
+   next: 263 
+
+>> 263
+  level: 2
+     op: Undef
+    tag: 
+    pre: 262 263
+   next: 264 
+
+>> 264
+  level: 3
+     op: Load
+    tag: 
+    pre: 263 264
+   next: 265 
+
+>> 265
+  level: 4
+     op: Mul
+    tag: 
+    pre: 264 265
+   next: 268 
+
+>> 266
+  level: 1
+     op: Add
+    tag: 
+    pre: 261 266
+   next: 267 
+
+>> 267
+  level: 2
+     op: Undef
+    tag: 
+    pre: 266 267
+   next: 268 
+
+>> 268
+  level: 5
+     op: Store
+    tag: 
+    pre: 265 267 268
+   next: 
+
+>> 269
+  level: 1
+     op: Add
+    tag: 
+    pre: 261 269
+   next: 
+
+
+MaxDelay: 3
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 88.8889
+Delay: 2	Dist: 0
+Delay: 3	Dist: 11.1111
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 8
+Delay: 2	Dist: 0
+Delay: 3	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 4
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 5	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+>> 279
+  level: 0
+     op: Phi
+    tag: 
+    pre: 279
+   next: 287 
+
+>> 280
+  level: 0
+     op: Phi
+    tag: 
+    pre: 280
+   next: 281 283 288 
+
+>> 281
+  level: 1
+     op: Undef
+    tag: 
+    pre: 280 281
+   next: 282 
+
+>> 282
+  level: 2
+     op: Load
+    tag: 
+    pre: 281 282
+   next: 286 
+
+>> 283
+  level: 1
+     op: Add
+    tag: 
+    pre: 280 283
+   next: 284 
+
+>> 284
+  level: 2
+     op: Undef
+    tag: 
+    pre: 283 284
+   next: 285 
+
+>> 285
+  level: 3
+     op: Load
+    tag: 
+    pre: 284 285
+   next: 286 
+
+>> 286
+  level: 4
+     op: Mul
+    tag: 
+    pre: 282 285 286
+   next: 287 
+
+>> 287
+  level: 4
+     op: Add
+    tag: 
+    pre: 279 286 287
+   next: 
+
+>> 288
+  level: 1
+     op: Add
+    tag: 
+    pre: 280 288
+   next: 
+
+
+MaxDelay: 4
+
+Delay: 0	Dist: 10
+Delay: 1	Dist: 70
+Delay: 2	Dist: 10
+Delay: 3	Dist: 0
+Delay: 4	Dist: 10
+
+Delay: 0	Dist: 1
+Delay: 1	Dist: 7
+Delay: 2	Dist: 1
+Delay: 3	Dist: 0
+Delay: 4	Dist: 1
+
+[ 0 , 1 ) = 10
+[ 1 , 4 ) = 80
+[ 4 , 7 ) = 10
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 4	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 8
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 2	inDeg: 4	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 0
+
+>> 291
+  level: 0
+     op: Undef
+    tag: 
+    pre: 291
+   next: 292 
+
+>> 292
+  level: 1
+     op: Load
+    tag: 
+    pre: 291 292
+   next: 293 
+
+>> 293
+  level: 2
+     op: Mul
+    tag: 
+    pre: 292 293
+   next: 
+
+>> 294
+  level: 0
+     op: Add
+    tag: 
+    pre: 294
+   next: 
+
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 2
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 1	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 4
+Node_level: 1	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 1
+
+>> 297
+  level: 0
+     op: Phi
+    tag: 
+    pre: 297
+   next: 298 299 
+
+>> 298
+  level: 1
+     op: Mul
+    tag: 
+    pre: 297 298
+   next: 
+
+>> 299
+  level: 1
+     op: Undef
+    tag: 
+    pre: 297 299
+   next: 300 
+
+>> 300
+  level: 2
+     op: Load
+    tag: 
+    pre: 299 300
+   next: 301 
+
+>> 301
+  level: 3
+     op: Undef
+    tag: 
+    pre: 300 301
+   next: 
+
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 4
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 1	outRegionDeg: 3
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+>> 304
+  level: 0
+     op: Phi
+    tag: 
+    pre: 304
+   next: 305 309 312 
+
+>> 305
+  level: 1
+     op: Undef
+    tag: 
+    pre: 304 305
+   next: 306 
+
+>> 306
+  level: 2
+     op: Undef
+    tag: 
+    pre: 305 306
+   next: 307 
+
+>> 307
+  level: 3
+     op: Load
+    tag: 
+    pre: 306 307
+   next: 308 
+
+>> 308
+  level: 4
+     op: Mul
+    tag: 
+    pre: 307 308
+   next: 311 
+
+>> 309
+  level: 1
+     op: Add
+    tag: 
+    pre: 304 309
+   next: 310 
+
+>> 310
+  level: 2
+     op: Undef
+    tag: 
+    pre: 309 310
+   next: 311 
+
+>> 311
+  level: 5
+     op: Store
+    tag: 
+    pre: 308 310 311
+   next: 
+
+>> 312
+  level: 1
+     op: Add
+    tag: 
+    pre: 304 312
+   next: 
+
+
+MaxDelay: 3
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 88.8889
+Delay: 2	Dist: 0
+Delay: 3	Dist: 11.1111
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 8
+Delay: 2	Dist: 0
+Delay: 3	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 4
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 5	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+>> 322
+  level: 0
+     op: Phi
+    tag: 
+    pre: 322
+   next: 324 333 
+
+>> 323
+  level: 0
+     op: Phi
+    tag: 
+    pre: 323
+   next: 332 
+
+>> 324
+  level: 1
+     op: Add
+    tag: 
+    pre: 322 324
+   next: 325 328 
+
+>> 325
+  level: 2
+     op: Undef
+    tag: 
+    pre: 324 325
+   next: 326 
+
+>> 326
+  level: 3
+     op: Load
+    tag: 
+    pre: 325 326
+   next: 327 
+
+>> 327
+  level: 4
+     op: Mul
+    tag: 
+    pre: 326 327
+   next: 330 
+
+>> 328
+  level: 2
+     op: Store
+    tag: 
+    pre: 324 328
+   next: 329 
+
+>> 329
+  level: 3
+     op: Load
+    tag: 
+    pre: 328 329
+   next: 330 
+
+>> 330
+  level: 5
+     op: Sub
+    tag: 
+    pre: 327 329 330
+   next: 331 
+
+>> 331
+  level: 6
+     op: Mul
+    tag: 
+    pre: 330 331
+   next: 332 
+
+>> 332
+  level: 7
+     op: Add
+    tag: 
+    pre: 323 331 332
+   next: 
+
+>> 333
+  level: 1
+     op: Add
+    tag: 
+    pre: 322 333
+   next: 
+
+
+MaxDelay: 7
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 83.3333
+Delay: 2	Dist: 8.33333
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 0
+Delay: 7	Dist: 8.33333
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 10
+Delay: 2	Dist: 1
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 0
+Delay: 7	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 91.6667
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 8.33333
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 9
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 2
+Node_level: 3	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 1	inDeg: 2	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 6	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 7	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+>> 339
+  level: 0
+     op: Phi
+    tag: 
+    pre: 339
+   next: 341 344 349 
+
+>> 340
+  level: 0
+     op: Phi
+    tag: 
+    pre: 340
+   next: 348 
+
+>> 341
+  level: 1
+     op: Undef
+    tag: 
+    pre: 339 341
+   next: 342 
+
+>> 342
+  level: 2
+     op: Load
+    tag: 
+    pre: 341 342
+   next: 343 
+
+>> 343
+  level: 3
+     op: Mul
+    tag: 
+    pre: 342 343
+   next: 346 
+
+>> 344
+  level: 1
+     op: Store
+    tag: 
+    pre: 339 344
+   next: 345 
+
+>> 345
+  level: 2
+     op: Load
+    tag: 
+    pre: 344 345
+   next: 346 
+
+>> 346
+  level: 4
+     op: Sub
+    tag: 
+    pre: 343 345 346
+   next: 347 
+
+>> 347
+  level: 5
+     op: Mul
+    tag: 
+    pre: 346 347
+   next: 348 
+
+>> 348
+  level: 6
+     op: Add
+    tag: 
+    pre: 340 347 348
+   next: 
+
+>> 349
+  level: 1
+     op: Add
+    tag: 
+    pre: 339 349
+   next: 
+
+
+MaxDelay: 6
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 81.8182
+Delay: 2	Dist: 9.09091
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 9.09091
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 9
+Delay: 2	Dist: 1
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 90.9091
+[ 4 , 7 ) = 9.09091
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 4	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 8
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 2	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 6	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+>> 352
+  level: 0
+     op: Undef
+    tag: 
+    pre: 352
+   next: 354 
+
+>> 353
+  level: 0
+     op: Undef
+    tag: 
+    pre: 353
+   next: 
+
+>> 354
+  level: 1
+     op: Undef
+    tag: 
+    pre: 352 354
+   next: 
+
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 1	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 3
+Node_level: 1	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+>> 360
+  level: 0
+     op: Phi
+    tag: 
+    pre: 360
+   next: 361 367 
+
+>> 361
+  level: 1
+     op: Add
+    tag: 
+    pre: 360 361
+   next: 362 
+
+>> 362
+  level: 2
+     op: Undef
+    tag: 
+    pre: 361 362
+   next: 363 366 
+
+>> 363
+  level: 3
+     op: Undef
+    tag: 
+    pre: 362 363
+   next: 364 
+
+>> 364
+  level: 4
+     op: Load
+    tag: 
+    pre: 363 364
+   next: 365 
+
+>> 365
+  level: 5
+     op: Div
+    tag: 
+    pre: 364 365
+   next: 366 
+
+>> 366
+  level: 6
+     op: Store
+    tag: 
+    pre: 362 365 366
+   next: 
+
+>> 367
+  level: 1
+     op: Add
+    tag: 
+    pre: 360 367
+   next: 
+
+
+MaxDelay: 4
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 87.5
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 12.5
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 7
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 87.5
+[ 4 , 7 ) = 12.5
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 4
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 2	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 6	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+>> 376
+  level: 0
+     op: Phi
+    tag: 
+    pre: 376
+   next: 377 382 
+
+>> 377
+  level: 1
+     op: Undef
+    tag: 
+    pre: 376 377
+   next: 378 381 
+
+>> 378
+  level: 2
+     op: Undef
+    tag: 
+    pre: 377 378
+   next: 379 
+
+>> 379
+  level: 3
+     op: Load
+    tag: 
+    pre: 378 379
+   next: 380 
+
+>> 380
+  level: 4
+     op: Div
+    tag: 
+    pre: 379 380
+   next: 381 
+
+>> 381
+  level: 5
+     op: Store
+    tag: 
+    pre: 377 380 381
+   next: 
+
+>> 382
+  level: 1
+     op: Add
+    tag: 
+    pre: 376 382
+   next: 
+
+
+MaxDelay: 4
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 85.7143
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 14.2857
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 6
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 85.7143
+[ 4 , 7 ) = 14.2857
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 4
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 5	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+>> 389
+  level: 0
+     op: Phi
+    tag: 
+    pre: 389
+   next: 391 400 
+
+>> 390
+  level: 0
+     op: Phi
+    tag: 
+    pre: 390
+   next: 399 
+
+>> 391
+  level: 1
+     op: Add
+    tag: 
+    pre: 389 391
+   next: 392 395 
+
+>> 392
+  level: 2
+     op: Undef
+    tag: 
+    pre: 391 392
+   next: 393 
+
+>> 393
+  level: 3
+     op: Load
+    tag: 
+    pre: 392 393
+   next: 394 
+
+>> 394
+  level: 4
+     op: Mul
+    tag: 
+    pre: 393 394
+   next: 397 
+
+>> 395
+  level: 2
+     op: Store
+    tag: 
+    pre: 391 395
+   next: 396 
+
+>> 396
+  level: 3
+     op: Load
+    tag: 
+    pre: 395 396
+   next: 397 
+
+>> 397
+  level: 5
+     op: Sub
+    tag: 
+    pre: 394 396 397
+   next: 398 
+
+>> 398
+  level: 6
+     op: Mul
+    tag: 
+    pre: 397 398
+   next: 399 
+
+>> 399
+  level: 7
+     op: Add
+    tag: 
+    pre: 390 398 399
+   next: 
+
+>> 400
+  level: 1
+     op: Add
+    tag: 
+    pre: 389 400
+   next: 
+
+
+MaxDelay: 7
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 83.3333
+Delay: 2	Dist: 8.33333
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 0
+Delay: 7	Dist: 8.33333
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 10
+Delay: 2	Dist: 1
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 0
+Delay: 7	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 91.6667
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 8.33333
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 9
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 2
+Node_level: 3	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 1	inDeg: 2	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 6	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 7	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+>> 406
+  level: 0
+     op: Phi
+    tag: 
+    pre: 406
+   next: 408 411 416 
+
+>> 407
+  level: 0
+     op: Phi
+    tag: 
+    pre: 407
+   next: 415 
+
+>> 408
+  level: 1
+     op: Undef
+    tag: 
+    pre: 406 408
+   next: 409 
+
+>> 409
+  level: 2
+     op: Load
+    tag: 
+    pre: 408 409
+   next: 410 
+
+>> 410
+  level: 3
+     op: Mul
+    tag: 
+    pre: 409 410
+   next: 413 
+
+>> 411
+  level: 1
+     op: Store
+    tag: 
+    pre: 406 411
+   next: 412 
+
+>> 412
+  level: 2
+     op: Load
+    tag: 
+    pre: 411 412
+   next: 413 
+
+>> 413
+  level: 4
+     op: Sub
+    tag: 
+    pre: 410 412 413
+   next: 414 
+
+>> 414
+  level: 5
+     op: Mul
+    tag: 
+    pre: 413 414
+   next: 415 
+
+>> 415
+  level: 6
+     op: Add
+    tag: 
+    pre: 407 414 415
+   next: 
+
+>> 416
+  level: 1
+     op: Add
+    tag: 
+    pre: 406 416
+   next: 
+
+
+MaxDelay: 6
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 81.8182
+Delay: 2	Dist: 9.09091
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 9.09091
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 9
+Delay: 2	Dist: 1
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 90.9091
+[ 4 , 7 ) = 9.09091
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 4	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 8
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 2	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 6	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+>> 419
+  level: 0
+     op: Undef
+    tag: 
+    pre: 419
+   next: 421 
+
+>> 420
+  level: 0
+     op: Undef
+    tag: 
+    pre: 420
+   next: 
+
+>> 421
+  level: 1
+     op: Undef
+    tag: 
+    pre: 419 421
+   next: 
+
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 1	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 3
+Node_level: 1	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+>> 427
+  level: 0
+     op: Phi
+    tag: 
+    pre: 427
+   next: 428 434 
+
+>> 428
+  level: 1
+     op: Add
+    tag: 
+    pre: 427 428
+   next: 429 
+
+>> 429
+  level: 2
+     op: Undef
+    tag: 
+    pre: 428 429
+   next: 430 433 
+
+>> 430
+  level: 3
+     op: Undef
+    tag: 
+    pre: 429 430
+   next: 431 
+
+>> 431
+  level: 4
+     op: Load
+    tag: 
+    pre: 430 431
+   next: 432 
+
+>> 432
+  level: 5
+     op: Div
+    tag: 
+    pre: 431 432
+   next: 433 
+
+>> 433
+  level: 6
+     op: Store
+    tag: 
+    pre: 429 432 433
+   next: 
+
+>> 434
+  level: 1
+     op: Add
+    tag: 
+    pre: 427 434
+   next: 
+
+
+MaxDelay: 4
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 87.5
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 12.5
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 7
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 87.5
+[ 4 , 7 ) = 12.5
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 4
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 2	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 6	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+>> 443
+  level: 0
+     op: Phi
+    tag: 
+    pre: 443
+   next: 444 449 
+
+>> 444
+  level: 1
+     op: Undef
+    tag: 
+    pre: 443 444
+   next: 445 448 
+
+>> 445
+  level: 2
+     op: Undef
+    tag: 
+    pre: 444 445
+   next: 446 
+
+>> 446
+  level: 3
+     op: Load
+    tag: 
+    pre: 445 446
+   next: 447 
+
+>> 447
+  level: 4
+     op: Div
+    tag: 
+    pre: 446 447
+   next: 448 
+
+>> 448
+  level: 5
+     op: Store
+    tag: 
+    pre: 444 447 448
+   next: 
+
+>> 449
+  level: 1
+     op: Add
+    tag: 
+    pre: 443 449
+   next: 
+
+
+MaxDelay: 4
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 85.7143
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 14.2857
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 6
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 85.7143
+[ 4 , 7 ) = 14.2857
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 4
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 5	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+>> 456
+  level: 0
+     op: Phi
+    tag: 
+    pre: 456
+   next: 458 467 
+
+>> 457
+  level: 0
+     op: Phi
+    tag: 
+    pre: 457
+   next: 466 
+
+>> 458
+  level: 1
+     op: Add
+    tag: 
+    pre: 456 458
+   next: 459 462 
+
+>> 459
+  level: 2
+     op: Undef
+    tag: 
+    pre: 458 459
+   next: 460 
+
+>> 460
+  level: 3
+     op: Load
+    tag: 
+    pre: 459 460
+   next: 461 
+
+>> 461
+  level: 4
+     op: Mul
+    tag: 
+    pre: 460 461
+   next: 464 
+
+>> 462
+  level: 2
+     op: Store
+    tag: 
+    pre: 458 462
+   next: 463 
+
+>> 463
+  level: 3
+     op: Load
+    tag: 
+    pre: 462 463
+   next: 464 
+
+>> 464
+  level: 5
+     op: Sub
+    tag: 
+    pre: 461 463 464
+   next: 465 
+
+>> 465
+  level: 6
+     op: Mul
+    tag: 
+    pre: 464 465
+   next: 466 
+
+>> 466
+  level: 7
+     op: Add
+    tag: 
+    pre: 457 465 466
+   next: 
+
+>> 467
+  level: 1
+     op: Add
+    tag: 
+    pre: 456 467
+   next: 
+
+
+MaxDelay: 7
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 83.3333
+Delay: 2	Dist: 8.33333
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 0
+Delay: 7	Dist: 8.33333
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 10
+Delay: 2	Dist: 1
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 0
+Delay: 7	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 91.6667
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 8.33333
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 9
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 2
+Node_level: 3	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 1	inDeg: 2	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 6	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 7	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+>> 473
+  level: 0
+     op: Phi
+    tag: 
+    pre: 473
+   next: 475 478 483 
+
+>> 474
+  level: 0
+     op: Phi
+    tag: 
+    pre: 474
+   next: 482 
+
+>> 475
+  level: 1
+     op: Undef
+    tag: 
+    pre: 473 475
+   next: 476 
+
+>> 476
+  level: 2
+     op: Load
+    tag: 
+    pre: 475 476
+   next: 477 
+
+>> 477
+  level: 3
+     op: Mul
+    tag: 
+    pre: 476 477
+   next: 480 
+
+>> 478
+  level: 1
+     op: Store
+    tag: 
+    pre: 473 478
+   next: 479 
+
+>> 479
+  level: 2
+     op: Load
+    tag: 
+    pre: 478 479
+   next: 480 
+
+>> 480
+  level: 4
+     op: Sub
+    tag: 
+    pre: 477 479 480
+   next: 481 
+
+>> 481
+  level: 5
+     op: Mul
+    tag: 
+    pre: 480 481
+   next: 482 
+
+>> 482
+  level: 6
+     op: Add
+    tag: 
+    pre: 474 481 482
+   next: 
+
+>> 483
+  level: 1
+     op: Add
+    tag: 
+    pre: 473 483
+   next: 
+
+
+MaxDelay: 6
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 81.8182
+Delay: 2	Dist: 9.09091
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 9.09091
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 9
+Delay: 2	Dist: 1
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 90.9091
+[ 4 , 7 ) = 9.09091
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 4	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 8
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 2	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 6	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+>> 492
+  level: 0
+     op: Phi
+    tag: 
+    pre: 492
+   next: 493 497 
+
+>> 493
+  level: 1
+     op: Add
+    tag: 
+    pre: 492 493
+   next: 494 
+
+>> 494
+  level: 2
+     op: Store
+    tag: 
+    pre: 493 494
+   next: 495 
+
+>> 495
+  level: 3
+     op: Load
+    tag: 
+    pre: 494 495
+   next: 496 
+
+>> 496
+  level: 4
+     op: Div
+    tag: 
+    pre: 495 496
+   next: 
+
+>> 497
+  level: 1
+     op: Add
+    tag: 
+    pre: 492 497
+   next: 
+
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 5
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 4
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 1
+
+>> 503
+  level: 0
+     op: Phi
+    tag: 
+    pre: 503
+   next: 504 507 
+
+>> 504
+  level: 1
+     op: Store
+    tag: 
+    pre: 503 504
+   next: 505 
+
+>> 505
+  level: 2
+     op: Load
+    tag: 
+    pre: 504 505
+   next: 506 
+
+>> 506
+  level: 3
+     op: Div
+    tag: 
+    pre: 505 506
+   next: 
+
+>> 507
+  level: 1
+     op: Add
+    tag: 
+    pre: 503 507
+   next: 
+
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 4
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 4
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 1
+
+>> 11
+  level: 0
+     op: Phi
+    tag: 
+    pre: 11
+   next: 
+
+>> 12
+  level: 0
+     op: Phi
+    tag: 
+    pre: 12
+   next: 
+
+>> 13
+  level: 0
+     op: Phi
+    tag: 
+    pre: 13
+   next: 
+
+
+MaxDelay: 0
+
+Delay: 0	Dist: -nan(ind)
+
+Delay: 0	Dist: 0
+
+[ 0 , 1 ) = -nan(ind)
+[ 1 , 4 ) = 0
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 3	inDeg: 0	outDeg: 0	maxInDeg: 0	maxOutDeg: 0	inRegionDeg: 11	outRegionDeg: 4
+
+>> 25
+  level: 0
+     op: Phi
+    tag: 
+    pre: 25
+   next: 28 
+
+>> 26
+  level: 0
+     op: Undef
+    tag: 
+    pre: 26
+   next: 27 
+
+>> 27
+  level: 1
+     op: Load
+    tag: 
+    pre: 26 27
+   next: 29 31 
+
+>> 28
+  level: 1
+     op: And
+    tag: 
+    pre: 25 28
+   next: 
+
+>> 29
+  level: 2
+     op: Undef
+    tag: 
+    pre: 27 29
+   next: 30 
+
+>> 30
+  level: 3
+     op: Load
+    tag: 
+    pre: 29 30
+   next: 
+
+>> 31
+  level: 2
+     op: Undef
+    tag: 
+    pre: 27 31
+   next: 32 
+
+>> 32
+  level: 3
+     op: Load
+    tag: 
+    pre: 31 32
+   next: 
+
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 6
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 9
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 1	outRegionDeg: 0
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 2
+Node_level: 3	Node_num: 2	inDeg: 2	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 4	outRegionDeg: 0
+
+>> 37
+  level: 0
+     op: Phi
+    tag: 
+    pre: 37
+   next: 
+
+>> 38
+  level: 0
+     op: Phi
+    tag: 
+    pre: 38
+   next: 39 
+
+>> 39
+  level: 1
+     op: Undef
+    tag: 
+    pre: 38 39
+   next: 40 
+
+>> 40
+  level: 2
+     op: Load
+    tag: 
+    pre: 39 40
+   next: 41 
+
+>> 41
+  level: 3
+     op: Store
+    tag: 
+    pre: 40 41
+   next: 42 
+
+>> 42
+  level: 4
+     op: Load
+    tag: 
+    pre: 41 42
+   next: 
+
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 4
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 1	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 5	outRegionDeg: 7
+Node_level: 1	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 0
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 4	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+>> 45
+  level: 0
+     op: Load
+    tag: 
+    pre: 45
+   next: 46 
+
+>> 46
+  level: 1
+     op: Add
+    tag: 
+    pre: 45 46
+   next: 47 
+
+>> 47
+  level: 2
+     op: Undef
+    tag: 
+    pre: 46 47
+   next: 48 
+
+>> 48
+  level: 3
+     op: Store
+    tag: 
+    pre: 47 48
+   next: 49 
+
+>> 49
+  level: 4
+     op: Load
+    tag: 
+    pre: 48 49
+   next: 50 
+
+>> 50
+  level: 5
+     op: Add
+    tag: 
+    pre: 49 50
+   next: 
+
+>> 51
+  level: 0
+     op: Cmp
+    tag: 
+    pre: 51
+   next: 53 
+
+>> 52
+  level: 0
+     op: Add
+    tag: 
+    pre: 52
+   next: 53 
+
+>> 53
+  level: 1
+     op: Undef
+    tag: 
+    pre: 51 52 53
+   next: 54 
+
+>> 54
+  level: 2
+     op: Store
+    tag: 
+    pre: 53 54
+   next: 
+
+>> 55
+  level: 0
+     op: Add
+    tag: 
+    pre: 55
+   next: 
+
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 8
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 4	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 5
+Node_level: 1	Node_num: 2	inDeg: 3	outDeg: 2	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 2
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 4	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+>> 10
+  level: 0
+     op: Phi
+    tag: 
+    pre: 10
+   next: 11 
+
+>> 11
+  level: 1
+     op: Or
+    tag: 
+    pre: 10 11
+   next: 12 16 
+
+>> 12
+  level: 2
+     op: Xor
+    tag: 
+    pre: 11 12
+   next: 13 27 
+
+>> 13
+  level: 3
+     op: Undef
+    tag: 
+    pre: 12 13
+   next: 14 21 
+
+>> 14
+  level: 4
+     op: Store
+    tag: 
+    pre: 13 14
+   next: 15 
+
+>> 15
+  level: 5
+     op: Load
+    tag: 
+    pre: 14 15
+   next: 19 20 
+
+>> 16
+  level: 2
+     op: Undef
+    tag: 
+    pre: 11 16
+   next: 17 23 
+
+>> 17
+  level: 3
+     op: Store
+    tag: 
+    pre: 16 17
+   next: 18 
+
+>> 18
+  level: 4
+     op: Load
+    tag: 
+    pre: 17 18
+   next: 19 20 
+
+>> 19
+  level: 6
+     op: Add
+    tag: 
+    pre: 15 18 19
+   next: 
+
+>> 20
+  level: 6
+     op: Sub
+    tag: 
+    pre: 15 18 20
+   next: 
+
+>> 21
+  level: 4
+     op: Store
+    tag: 
+    pre: 13 21
+   next: 22 
+
+>> 22
+  level: 5
+     op: Load
+    tag: 
+    pre: 21 22
+   next: 25 26 
+
+>> 23
+  level: 3
+     op: Store
+    tag: 
+    pre: 16 23
+   next: 24 
+
+>> 24
+  level: 4
+     op: Load
+    tag: 
+    pre: 23 24
+   next: 25 26 
+
+>> 25
+  level: 6
+     op: Add
+    tag: 
+    pre: 22 24 25
+   next: 
+
+>> 26
+  level: 6
+     op: Sub
+    tag: 
+    pre: 22 24 26
+   next: 
+
+>> 27
+  level: 3
+     op: Mul
+    tag: 
+    pre: 12 27
+   next: 28 
+
+>> 28
+  level: 4
+     op: And
+    tag: 
+    pre: 27 28
+   next: 
+
+
+MaxDelay: 2
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 81.8182
+Delay: 2	Dist: 18.1818
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 18
+Delay: 2	Dist: 4
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 1	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 2
+Node_level: 1	Node_num: 1	inDeg: 1	outDeg: 2	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 2	outRegionDeg: 1
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 4	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 3	Node_num: 4	inDeg: 4	outDeg: 5	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 2	outRegionDeg: 3
+Node_level: 4	Node_num: 5	inDeg: 5	outDeg: 6	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 2	outRegionDeg: 2
+Node_level: 5	Node_num: 2	inDeg: 2	outDeg: 4	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 6	Node_num: 4	inDeg: 8	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+>> 31
+  level: 0
+     op: Undef
+    tag: 
+    pre: 31
+   next: 32 36 
+
+>> 32
+  level: 1
+     op: Undef
+    tag: 
+    pre: 31 32
+   next: 33 
+
+>> 33
+  level: 2
+     op: Load
+    tag: 
+    pre: 32 33
+   next: 35 41 
+
+>> 34
+  level: 0
+     op: Load
+    tag: 
+    pre: 34
+   next: 35 42 
+
+>> 35
+  level: 3
+     op: Mul
+    tag: 
+    pre: 33 34 35
+   next: 40 
+
+>> 36
+  level: 1
+     op: Undef
+    tag: 
+    pre: 31 36
+   next: 37 
+
+>> 37
+  level: 2
+     op: Load
+    tag: 
+    pre: 36 37
+   next: 39 42 
+
+>> 38
+  level: 0
+     op: Load
+    tag: 
+    pre: 38
+   next: 39 41 
+
+>> 39
+  level: 3
+     op: Mul
+    tag: 
+    pre: 37 38 39
+   next: 40 
+
+>> 40
+  level: 2
+     op: Sub
+    tag: 
+    pre: 35 39 40
+   next: 
+
+>> 41
+  level: 3
+     op: Mul
+    tag: 
+    pre: 33 38 41
+   next: 
+
+>> 42
+  level: 3
+     op: Mul
+    tag: 
+    pre: 34 37 42
+   next: 
+
+
+MaxDelay: 3
+
+Delay: 0	Dist: 14.2857
+Delay: 1	Dist: 57.1429
+Delay: 2	Dist: 0
+Delay: 3	Dist: 28.5714
+
+Delay: 0	Dist: 2
+Delay: 1	Dist: 8
+Delay: 2	Dist: 0
+Delay: 3	Dist: 4
+
+[ 0 , 1 ) = 14.2857
+[ 1 , 4 ) = 85.7143
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 3	inDeg: 0	outDeg: 6	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 4
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 2
+Node_level: 2	Node_num: 3	inDeg: 4	outDeg: 4	maxInDeg: 2	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 4	inDeg: 8	outDeg: 2	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 2	outRegionDeg: 0
+
+>> 12
+  level: 0
+     op: Phi
+    tag: 
+    pre: 12
+   next: 13 
+
+>> 13
+  level: 1
+     op: Add
+    tag: 
+    pre: 12 13
+   next: 14 15 
+
+>> 14
+  level: 2
+     op: Mul
+    tag: 
+    pre: 13 14
+   next: 
+
+>> 15
+  level: 2
+     op: Add
+    tag: 
+    pre: 13 15
+   next: 16 
+
+>> 16
+  level: 3
+     op: Undef
+    tag: 
+    pre: 15 16
+   next: 
+
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 4
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 1	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 1	Node_num: 1	inDeg: 1	outDeg: 2	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 1
+
+>> 19
+  level: 0
+     op: Phi
+    tag: 
+    pre: 19
+   next: 20 29 
+
+>> 20
+  level: 1
+     op: Add
+    tag: 
+    pre: 19 20
+   next: 21 25 
+
+>> 21
+  level: 2
+     op: Add
+    tag: 
+    pre: 20 21
+   next: 22 
+
+>> 22
+  level: 3
+     op: Undef
+    tag: 
+    pre: 21 22
+   next: 23 
+
+>> 23
+  level: 4
+     op: Load
+    tag: 
+    pre: 22 23
+   next: 24 
+
+>> 24
+  level: 5
+     op: Mul
+    tag: 
+    pre: 23 24
+   next: 28 
+
+>> 25
+  level: 2
+     op: Add
+    tag: 
+    pre: 20 25
+   next: 26 
+
+>> 26
+  level: 3
+     op: Store
+    tag: 
+    pre: 25 26
+   next: 27 
+
+>> 27
+  level: 4
+     op: Load
+    tag: 
+    pre: 26 27
+   next: 28 
+
+>> 28
+  level: 6
+     op: Add
+    tag: 
+    pre: 24 27 28
+   next: 
+
+>> 29
+  level: 1
+     op: Add
+    tag: 
+    pre: 19 29
+   next: 
+
+
+MaxDelay: 2
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 90.9091
+Delay: 2	Dist: 9.09091
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 10
+Delay: 2	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 4
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 2
+Node_level: 3	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 2
+Node_level: 4	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 6	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+>> 6
+  level: 0
+     op: Phi
+    tag: 
+    pre: 6
+   next: 9 
+
+>> 7
+  level: 0
+     op: Phi
+    tag: 
+    pre: 7
+   next: 8 
+
+>> 8
+  level: 1
+     op: Cmp
+    tag: 
+    pre: 7 8
+   next: 
+
+>> 9
+  level: 1
+     op: Undef
+    tag: 
+    pre: 6 9
+   next: 
+
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 2
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 5	outRegionDeg: 2
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 8	outRegionDeg: 1
+
+>> 14
+  level: 0
+     op: Phi
+    tag: 
+    pre: 14
+   next: 15 
+
+>> 15
+  level: 1
+     op: Undef
+    tag: 
+    pre: 14 15
+   next: 16 
+
+>> 16
+  level: 2
+     op: Undef
+    tag: 
+    pre: 15 16
+   next: 17 
+
+>> 17
+  level: 3
+     op: Load
+    tag: 
+    pre: 16 17
+   next: 
+
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 3
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 1	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 4
+Node_level: 1	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+>> 23
+  level: 0
+     op: Phi
+    tag: 
+    pre: 23
+   next: 24 29 
+
+>> 24
+  level: 1
+     op: Undef
+    tag: 
+    pre: 23 24
+   next: 25 
+
+>> 25
+  level: 2
+     op: Undef
+    tag: 
+    pre: 24 25
+   next: 26 
+
+>> 26
+  level: 3
+     op: Load
+    tag: 
+    pre: 25 26
+   next: 27 
+
+>> 27
+  level: 4
+     op: Cmp
+    tag: 
+    pre: 26 27
+   next: 28 
+
+>> 28
+  level: 5
+     op: Undef
+    tag: 
+    pre: 27 28
+   next: 29 
+
+>> 29
+  level: 6
+     op: Add
+    tag: 
+    pre: 23 28 29
+   next: 30 
+
+>> 30
+  level: 2
+     op: Store
+    tag: 
+    pre: 29 30
+   next: 
+
+>> 31
+  level: 0
+     op: Add
+    tag: 
+    pre: 31
+   next: 
+
+
+MaxDelay: 6
+
+Delay: 0	Dist: 12.5
+Delay: 1	Dist: 75
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 12.5
+
+Delay: 0	Dist: 1
+Delay: 1	Dist: 6
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 1
+
+[ 0 , 1 ) = 12.5
+[ 1 , 4 ) = 75
+[ 4 , 7 ) = 12.5
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 1	outRegionDeg: 11
+Node_level: 1	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 3
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 5	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 6	Node_num: 1	inDeg: 2	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+
+>> 34
+  level: 0
+     op: Phi
+    tag: 
+    pre: 34
+   next: 37 
+
+>> 35
+  level: 0
+     op: Phi
+    tag: 
+    pre: 35
+   next: 36 
+
+>> 36
+  level: 1
+     op: Cmp
+    tag: 
+    pre: 35 36
+   next: 
+
+>> 37
+  level: 1
+     op: Undef
+    tag: 
+    pre: 34 37
+   next: 
+
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 2
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 3	outRegionDeg: 9
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 6	outRegionDeg: 1
+
+>> 40
+  level: 0
+     op: Phi
+    tag: 
+    pre: 40
+   next: 41 
+
+>> 41
+  level: 1
+     op: Undef
+    tag: 
+    pre: 40 41
+   next: 42 
+
+>> 42
+  level: 2
+     op: Undef
+    tag: 
+    pre: 41 42
+   next: 43 
+
+>> 43
+  level: 3
+     op: Load
+    tag: 
+    pre: 42 43
+   next: 
+
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 3
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 1	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 4
+Node_level: 1	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 0
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+>> 50
+  level: 0
+     op: Phi
+    tag: 
+    pre: 50
+   next: 51 56 
+
+>> 51
+  level: 1
+     op: Undef
+    tag: 
+    pre: 50 51
+   next: 52 
+
+>> 52
+  level: 2
+     op: Undef
+    tag: 
+    pre: 51 52
+   next: 53 
+
+>> 53
+  level: 3
+     op: Load
+    tag: 
+    pre: 52 53
+   next: 54 
+
+>> 54
+  level: 4
+     op: Cmp
+    tag: 
+    pre: 53 54
+   next: 55 
+
+>> 55
+  level: 5
+     op: Undef
+    tag: 
+    pre: 54 55
+   next: 56 
+
+>> 56
+  level: 6
+     op: Add
+    tag: 
+    pre: 50 55 56
+   next: 
+
+
+MaxDelay: 6
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 85.7143
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 14.2857
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 6
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 85.7143
+[ 4 , 7 ) = 14.2857
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 10
+Node_level: 1	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 5	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 6	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 3	outRegionDeg: 0
+
+>> 59
+  level: 0
+     op: Load
+    tag: 
+    pre: 59
+   next: 60 
+
+>> 60
+  level: 1
+     op: Add
+    tag: 
+    pre: 59 60
+   next: 
+
+>> 61
+  level: 0
+     op: Add
+    tag: 
+    pre: 61
+   next: 62 
+
+>> 62
+  level: 1
+     op: Undef
+    tag: 
+    pre: 61 62
+   next: 63 
+
+>> 63
+  level: 2
+     op: Undef
+    tag: 
+    pre: 62 63
+   next: 
+
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 3
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 3
 Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
-Node_level: 2	Node_num: 19	inDeg: 20	outDeg: 34	maxInDeg: 2	maxOutDeg: 5	inRegionDeg: 0	outRegionDeg: 0
-Node_level: 3	Node_num: 11	inDeg: 17	outDeg: 22	maxInDeg: 2	maxOutDeg: 4	inRegionDeg: 0	outRegionDeg: 0
-Node_level: 4	Node_num: 12	inDeg: 20	outDeg: 22	maxInDeg: 3	maxOutDeg: 4	inRegionDeg: 0	outRegionDeg: 0
-Node_level: 5	Node_num: 21	inDeg: 45	outDeg: 35	maxInDeg: 4	maxOutDeg: 5	inRegionDeg: 0	outRegionDeg: 0
-Node_level: 6	Node_num: 16	inDeg: 32	outDeg: 27	maxInDeg: 4	maxOutDeg: 5	inRegionDeg: 0	outRegionDeg: 0
-Node_level: 7	Node_num: 7	inDeg: 11	outDeg: 13	maxInDeg: 3	maxOutDeg: 4	inRegionDeg: 0	outRegionDeg: 0
-Node_level: 8	Node_num: 9	inDeg: 26	outDeg: 20	maxInDeg: 4	maxOutDeg: 5	inRegionDeg: 0	outRegionDeg: 0
-Node_level: 9	Node_num: 6	inDeg: 16	outDeg: 4	maxInDeg: 5	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 0
-Node_level: 10	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
-Node_level: 11	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 1
+
+>> 40
+  level: 0
+     op: Load
+    tag: 
+    pre: 40
+   next: 43 
+
+>> 41
+  level: 0
+     op: Load
+    tag: 
+    pre: 41
+   next: 42 
+
+>> 42
+  level: 1
+     op: Undef
+    tag: 
+    pre: 41 42
+   next: 43 
+
+>> 43
+  level: 2
+     op: Undef
+    tag: 
+    pre: 40 42 43
+   next: 44 
+
+>> 44
+  level: 2
+     op: Load
+    tag: 
+    pre: 43 44
+   next: 
+
+>> 45
+  level: 0
+     op: Load
+    tag: 
+    pre: 45
+   next: 48 
+
+>> 46
+  level: 0
+     op: Load
+    tag: 
+    pre: 46
+   next: 47 
+
+>> 47
+  level: 1
+     op: Undef
+    tag: 
+    pre: 46 47
+   next: 48 
+
+>> 48
+  level: 2
+     op: Undef
+    tag: 
+    pre: 45 47 48
+   next: 49 
+
+>> 49
+  level: 2
+     op: Load
+    tag: 
+    pre: 48 49
+   next: 
+
+>> 50
+  level: 0
+     op: Load
+    tag: 
+    pre: 50
+   next: 53 
+
+>> 51
+  level: 0
+     op: Load
+    tag: 
+    pre: 51
+   next: 52 
+
+>> 52
+  level: 1
+     op: Undef
+    tag: 
+    pre: 51 52
+   next: 53 
+
+>> 53
+  level: 2
+     op: Undef
+    tag: 
+    pre: 50 52 53
+   next: 
+
+
+MaxDelay: 2
+
+Delay: 0	Dist: 18.1818
+Delay: 1	Dist: 54.5455
+Delay: 2	Dist: 27.2727
+
+Delay: 0	Dist: 2
+Delay: 1	Dist: 6
+Delay: 2	Dist: 3
+
+[ 0 , 1 ) = 18.1818
+[ 1 , 4 ) = 81.8182
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 6	inDeg: 0	outDeg: 6	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 7
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 3	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 2	Node_num: 5	inDeg: 8	outDeg: 2	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 0
+
+>> 60
+  level: 0
+     op: Load
+    tag: 
+    pre: 60
+   next: 64 
+
+>> 61
+  level: 0
+     op: Store
+    tag: 
+    pre: 61
+   next: 62 
+
+>> 62
+  level: 1
+     op: Load
+    tag: 
+    pre: 61 62
+   next: 63 
+
+>> 63
+  level: 2
+     op: Undef
+    tag: 
+    pre: 62 63
+   next: 64 
+
+>> 64
+  level: 3
+     op: Add
+    tag: 
+    pre: 60 63 64
+   next: 65 
+
+>> 65
+  level: 2
+     op: Undef
+    tag: 
+    pre: 64 65
+   next: 
+
+>> 66
+  level: 0
+     op: Load
+    tag: 
+    pre: 66
+   next: 72 
+
+>> 67
+  level: 0
+     op: Load
+    tag: 
+    pre: 67
+   next: 68 
+
+>> 68
+  level: 1
+     op: Mul
+    tag: 
+    pre: 67 68
+   next: 70 
+
+>> 69
+  level: 0
+     op: Load
+    tag: 
+    pre: 69
+   next: 70 
+
+>> 70
+  level: 2
+     op: Add
+    tag: 
+    pre: 68 69 70
+   next: 71 
+
+>> 71
+  level: 3
+     op: Undef
+    tag: 
+    pre: 70 71
+   next: 72 
+
+>> 72
+  level: 4
+     op: Undef
+    tag: 
+    pre: 66 71 72
+   next: 73 
+
+>> 73
+  level: 2
+     op: Load
+    tag: 
+    pre: 72 73
+   next: 
+
+>> 74
+  level: 0
+     op: Load
+    tag: 
+    pre: 74
+   next: 77 
+
+>> 75
+  level: 0
+     op: Load
+    tag: 
+    pre: 75
+   next: 76 
+
+>> 76
+  level: 1
+     op: Undef
+    tag: 
+    pre: 75 76
+   next: 77 
+
+>> 77
+  level: 2
+     op: Undef
+    tag: 
+    pre: 74 76 77
+   next: 78 
+
+>> 78
+  level: 2
+     op: Load
+    tag: 
+    pre: 77 78
+   next: 
+
+>> 79
+  level: 0
+     op: Load
+    tag: 
+    pre: 79
+   next: 82 
+
+>> 80
+  level: 0
+     op: Load
+    tag: 
+    pre: 80
+   next: 81 
+
+>> 81
+  level: 1
+     op: Undef
+    tag: 
+    pre: 80 81
+   next: 82 
+
+>> 82
+  level: 2
+     op: Undef
+    tag: 
+    pre: 79 81 82
+   next: 83 
+
+>> 83
+  level: 2
+     op: Load
+    tag: 
+    pre: 82 83
+   next: 
+
+>> 84
+  level: 0
+     op: Load
+    tag: 
+    pre: 84
+   next: 87 
+
+>> 85
+  level: 0
+     op: Load
+    tag: 
+    pre: 85
+   next: 86 
+
+>> 86
+  level: 1
+     op: Undef
+    tag: 
+    pre: 85 86
+   next: 87 
+
+>> 87
+  level: 2
+     op: Undef
+    tag: 
+    pre: 84 86 87
+   next: 88 
+
+>> 88
+  level: 2
+     op: Load
+    tag: 
+    pre: 87 88
+   next: 
+
+>> 89
+  level: 0
+     op: Load
+    tag: 
+    pre: 89
+   next: 91 
+
+>> 90
+  level: 0
+     op: Load
+    tag: 
+    pre: 90
+   next: 91 
+
+>> 91
+  level: 1
+     op: Sub
+    tag: 
+    pre: 89 90 91
+   next: 
+
+>> 92
+  level: 0
+     op: Load
+    tag: 
+    pre: 92
+   next: 94 
+
+>> 93
+  level: 0
+     op: Load
+    tag: 
+    pre: 93
+   next: 94 
+
+>> 94
+  level: 1
+     op: Sub
+    tag: 
+    pre: 92 93 94
+   next: 
+
+>> 95
+  level: 0
+     op: Load
+    tag: 
+    pre: 95
+   next: 97 
+
+>> 96
+  level: 0
+     op: Load
+    tag: 
+    pre: 96
+   next: 97 
+
+>> 97
+  level: 1
+     op: Sub
+    tag: 
+    pre: 95 96 97
+   next: 
+
+>> 98
+  level: 0
+     op: Load
+    tag: 
+    pre: 98
+   next: 100 
+
+>> 99
+  level: 0
+     op: Load
+    tag: 
+    pre: 99
+   next: 100 
+
+>> 100
+  level: 1
+     op: Mul
+    tag: 
+    pre: 98 99 100
+   next: 104 
+
+>> 101
+  level: 0
+     op: Load
+    tag: 
+    pre: 101
+   next: 103 
+
+>> 102
+  level: 0
+     op: Load
+    tag: 
+    pre: 102
+   next: 103 
+
+>> 103
+  level: 1
+     op: Mul
+    tag: 
+    pre: 101 102 103
+   next: 104 
+
+>> 104
+  level: 2
+     op: Add
+    tag: 
+    pre: 100 103 104
+   next: 108 
+
+>> 105
+  level: 0
+     op: Load
+    tag: 
+    pre: 105
+   next: 107 
+
+>> 106
+  level: 0
+     op: Load
+    tag: 
+    pre: 106
+   next: 107 
+
+>> 107
+  level: 1
+     op: Mul
+    tag: 
+    pre: 105 106 107
+   next: 108 
+
+>> 108
+  level: 3
+     op: Add
+    tag: 
+    pre: 104 107 108
+   next: 109 
+
+>> 109
+  level: 4
+     op: Div
+    tag: 
+    pre: 108 109
+   next: 
+
+>> 110
+  level: 0
+     op: Load
+    tag: 
+    pre: 110
+   next: 112 
+
+>> 111
+  level: 0
+     op: Load
+    tag: 
+    pre: 111
+   next: 112 
+
+>> 112
+  level: 1
+     op: Mul
+    tag: 
+    pre: 110 111 112
+   next: 114 
+
+>> 113
+  level: 0
+     op: Load
+    tag: 
+    pre: 113
+   next: 114 
+
+>> 114
+  level: 2
+     op: Mul
+    tag: 
+    pre: 112 113 114
+   next: 
+
+>> 115
+  level: 0
+     op: Load
+    tag: 
+    pre: 115
+   next: 119 
+
+>> 116
+  level: 0
+     op: Load
+    tag: 
+    pre: 116
+   next: 117 
+
+>> 117
+  level: 1
+     op: Mul
+    tag: 
+    pre: 116 117
+   next: 118 
+
+>> 118
+  level: 2
+     op: Sub
+    tag: 
+    pre: 117 118
+   next: 119 
+
+>> 119
+  level: 3
+     op: Mul
+    tag: 
+    pre: 115 118 119
+   next: 
+
+>> 120
+  level: 0
+     op: Load
+    tag: 
+    pre: 120
+   next: 122 
+
+>> 121
+  level: 0
+     op: Load
+    tag: 
+    pre: 121
+   next: 122 
+
+>> 122
+  level: 1
+     op: Mul
+    tag: 
+    pre: 120 121 122
+   next: 
+
+>> 123
+  level: 0
+     op: Load
+    tag: 
+    pre: 123
+   next: 125 
+
+>> 124
+  level: 0
+     op: Load
+    tag: 
+    pre: 124
+   next: 125 
+
+>> 125
+  level: 1
+     op: Mul
+    tag: 
+    pre: 123 124 125
+   next: 127 
+
+>> 126
+  level: 0
+     op: Load
+    tag: 
+    pre: 126
+   next: 127 
+
+>> 127
+  level: 2
+     op: Add
+    tag: 
+    pre: 125 126 127
+   next: 
+
+>> 128
+  level: 0
+     op: Load
+    tag: 
+    pre: 128
+   next: 130 
+
+>> 129
+  level: 0
+     op: Load
+    tag: 
+    pre: 129
+   next: 130 
+
+>> 130
+  level: 1
+     op: Mul
+    tag: 
+    pre: 128 129 130
+   next: 132 
+
+>> 131
+  level: 0
+     op: Load
+    tag: 
+    pre: 131
+   next: 132 
+
+>> 132
+  level: 2
+     op: Add
+    tag: 
+    pre: 130 131 132
+   next: 
+
+>> 133
+  level: 0
+     op: Load
+    tag: 
+    pre: 133
+   next: 135 
+
+>> 134
+  level: 0
+     op: Load
+    tag: 
+    pre: 134
+   next: 135 
+
+>> 135
+  level: 1
+     op: Mul
+    tag: 
+    pre: 133 134 135
+   next: 137 
+
+>> 136
+  level: 0
+     op: Load
+    tag: 
+    pre: 136
+   next: 137 
+
+>> 137
+  level: 2
+     op: Add
+    tag: 
+    pre: 135 136 137
+   next: 
+
+>> 138
+  level: 0
+     op: Store
+    tag: 
+    pre: 138
+   next: 139 
+
+>> 139
+  level: 1
+     op: Load
+    tag: 
+    pre: 138 139
+   next: 
+
+
+MaxDelay: 4
+
+Delay: 0	Dist: 7.8125
+Delay: 1	Dist: 73.4375
+Delay: 2	Dist: 14.0625
+Delay: 3	Dist: 3.125
+Delay: 4	Dist: 1.5625
+
+Delay: 0	Dist: 5
+Delay: 1	Dist: 47
+Delay: 2	Dist: 9
+Delay: 3	Dist: 2
+Delay: 4	Dist: 1
+
+[ 0 , 1 ) = 7.8125
+[ 1 , 4 ) = 90.625
+[ 4 , 7 ) = 1.5625
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 40	inDeg: 0	outDeg: 40	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 41
+Node_level: 1	Node_num: 18	inDeg: 29	outDeg: 13	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 0
+Node_level: 2	Node_num: 16	inDeg: 25	outDeg: 7	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 4	inDeg: 7	outDeg: 3	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 2	inDeg: 3	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+
+>> 145
+  level: 0
+     op: Load
+    tag: 
+    pre: 145
+   next: 149 
+
+>> 146
+  level: 0
+     op: Load
+    tag: 
+    pre: 146
+   next: 149 
+
+>> 147
+  level: 0
+     op: Load
+    tag: 
+    pre: 147
+   next: 148 
+
+>> 148
+  level: 1
+     op: Undef
+    tag: 
+    pre: 147 148
+   next: 149 
+
+>> 149
+  level: 2
+     op: Store
+    tag: 
+    pre: 145 146 148 149
+   next: 
+
+>> 150
+  level: 0
+     op: Load
+    tag: 
+    pre: 150
+   next: 154 
+
+>> 151
+  level: 0
+     op: Load
+    tag: 
+    pre: 151
+   next: 154 
+
+>> 152
+  level: 0
+     op: Load
+    tag: 
+    pre: 152
+   next: 153 
+
+>> 153
+  level: 1
+     op: Undef
+    tag: 
+    pre: 152 153
+   next: 154 
+
+>> 154
+  level: 2
+     op: Store
+    tag: 
+    pre: 150 151 153 154
+   next: 
+
+>> 155
+  level: 0
+     op: Load
+    tag: 
+    pre: 155
+   next: 
+
+>> 156
+  level: 0
+     op: Load
+    tag: 
+    pre: 156
+   next: 
+
+>> 157
+  level: 0
+     op: Load
+    tag: 
+    pre: 157
+   next: 158 
+
+>> 158
+  level: 1
+     op: Undef
+    tag: 
+    pre: 157 158
+   next: 
+
+
+MaxDelay: 2
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 55.5556
+Delay: 2	Dist: 44.4444
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 5
+Delay: 2	Dist: 4
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 9	inDeg: 0	outDeg: 7	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 2	outRegionDeg: 10
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 0
+Node_level: 2	Node_num: 2	inDeg: 6	outDeg: 0	maxInDeg: 3	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+>> 8
+  level: 0
+     op: Phi
+    tag: 
+    pre: 8
+   next: 9 10 12 
+
+>> 9
+  level: 1
+     op: Store
+    tag: 
+    pre: 8 9
+   next: 
+
+>> 10
+  level: 1
+     op: Div
+    tag: 
+    pre: 8 10
+   next: 11 
+
+>> 11
+  level: 2
+     op: Sub
+    tag: 
+    pre: 10 11
+   next: 
+
+>> 12
+  level: 1
+     op: Add
+    tag: 
+    pre: 8 12
+   next: 
+
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 4
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 2
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+>> 15
+  level: 0
+     op: Phi
+    tag: 
+    pre: 15
+   next: 16 18 20 
+
+>> 16
+  level: 1
+     op: Mul
+    tag: 
+    pre: 15 16
+   next: 17 
+
+>> 17
+  level: 2
+     op: Store
+    tag: 
+    pre: 16 17
+   next: 
+
+>> 18
+  level: 1
+     op: Div
+    tag: 
+    pre: 15 18
+   next: 19 
+
+>> 19
+  level: 2
+     op: Sub
+    tag: 
+    pre: 18 19
+   next: 
+
+>> 20
+  level: 1
+     op: Add
+    tag: 
+    pre: 15 20
+   next: 
+
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 5
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 3
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 0
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 1
+
+>> 23
+  level: 0
+     op: Phi
+    tag: 
+    pre: 23
+   next: 26 29 
+
+>> 24
+  level: 0
+     op: Phi
+    tag: 
+    pre: 24
+   next: 
+
+>> 25
+  level: 0
+     op: Phi
+    tag: 
+    pre: 25
+   next: 
+
+>> 26
+  level: 1
+     op: Add
+    tag: 
+    pre: 23 26
+   next: 27 28 
+
+>> 27
+  level: 2
+     op: Undef
+    tag: 
+    pre: 26 27
+   next: 
+
+>> 28
+  level: 2
+     op: Mul
+    tag: 
+    pre: 26 28
+   next: 
+
+>> 29
+  level: 1
+     op: Mul
+    tag: 
+    pre: 23 29
+   next: 
+
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 4
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 3	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 3	outRegionDeg: 9
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 3	outRegionDeg: 0
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 3	outRegionDeg: 1
+
+>> 32
+  level: 0
+     op: Phi
+    tag: 
+    pre: 32
+   next: 35 45 57 
+
+>> 33
+  level: 0
+     op: Phi
+    tag: 
+    pre: 33
+   next: 60 
+
+>> 34
+  level: 0
+     op: Phi
+    tag: 
+    pre: 34
+   next: 59 
+
+>> 35
+  level: 1
+     op: Add
+    tag: 
+    pre: 32 35
+   next: 36 41 49 
+
+>> 36
+  level: 2
+     op: Undef
+    tag: 
+    pre: 35 36
+   next: 37 
+
+>> 37
+  level: 3
+     op: Load
+    tag: 
+    pre: 36 37
+   next: 39 
+
+>> 38
+  level: 0
+     op: Load
+    tag: 
+    pre: 38
+   next: 39 
+
+>> 39
+  level: 4
+     op: Cmp
+    tag: 
+    pre: 37 38 39
+   next: 40 
+
+>> 40
+  level: 2
+     op: Undef
+    tag: 
+    pre: 39 40
+   next: 44 
+
+>> 41
+  level: 2
+     op: Add
+    tag: 
+    pre: 35 41
+   next: 42 
+
+>> 42
+  level: 3
+     op: Undef
+    tag: 
+    pre: 41 42
+   next: 43 
+
+>> 43
+  level: 4
+     op: Load
+    tag: 
+    pre: 42 43
+   next: 44 
+
+>> 44
+  level: 5
+     op: Add
+    tag: 
+    pre: 40 43 44
+   next: 55 56 
+
+>> 45
+  level: 1
+     op: Add
+    tag: 
+    pre: 32 45
+   next: 46 
+
+>> 46
+  level: 2
+     op: Undef
+    tag: 
+    pre: 45 46
+   next: 47 
+
+>> 47
+  level: 3
+     op: Load
+    tag: 
+    pre: 46 47
+   next: 48 53 
+
+>> 48
+  level: 4
+     op: Add
+    tag: 
+    pre: 47 48
+   next: 54 
+
+>> 49
+  level: 2
+     op: Add
+    tag: 
+    pre: 35 49
+   next: 50 
+
+>> 50
+  level: 3
+     op: Undef
+    tag: 
+    pre: 49 50
+   next: 51 
+
+>> 51
+  level: 4
+     op: Load
+    tag: 
+    pre: 50 51
+   next: 52 53 
+
+>> 52
+  level: 5
+     op: Add
+    tag: 
+    pre: 51 52
+   next: 54 
+
+>> 53
+  level: 5
+     op: Cmp
+    tag: 
+    pre: 47 51 53
+   next: 54 
+
+>> 54
+  level: 6
+     op: Undef
+    tag: 
+    pre: 48 52 53 54
+   next: 55 56 
+
+>> 55
+  level: 7
+     op: Cmp
+    tag: 
+    pre: 44 54 55
+   next: 56 
+
+>> 56
+  level: 7
+     op: Undef
+    tag: 
+    pre: 44 54 55 56
+   next: 58 
+
+>> 57
+  level: 1
+     op: Add
+    tag: 
+    pre: 32 57
+   next: 58 
+
+>> 58
+  level: 6
+     op: Store
+    tag: 
+    pre: 56 57 58
+   next: 
+
+>> 59
+  level: 1
+     op: Add
+    tag: 
+    pre: 34 59
+   next: 60 
+
+>> 60
+  level: 2
+     op: Add
+    tag: 
+    pre: 33 59 60
+   next: 
+
+
+MaxDelay: 5
+
+Delay: 0	Dist: 8.57143
+Delay: 1	Dist: 68.5714
+Delay: 2	Dist: 14.2857
+Delay: 3	Dist: 2.85714
+Delay: 4	Dist: 2.85714
+Delay: 5	Dist: 2.85714
+
+Delay: 0	Dist: 3
+Delay: 1	Dist: 24
+Delay: 2	Dist: 5
+Delay: 3	Dist: 1
+Delay: 4	Dist: 1
+Delay: 5	Dist: 1
+
+[ 0 , 1 ) = 8.57143
+[ 1 , 4 ) = 85.7143
+[ 4 , 7 ) = 5.71429
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 4	inDeg: 0	outDeg: 6	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 1	outRegionDeg: 11
+Node_level: 1	Node_num: 4	inDeg: 4	outDeg: 6	maxInDeg: 1	maxOutDeg: 3	inRegionDeg: 2	outRegionDeg: 2
+Node_level: 2	Node_num: 6	inDeg: 7	outDeg: 5	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 4
+Node_level: 3	Node_num: 4	inDeg: 4	outDeg: 5	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 2
+Node_level: 4	Node_num: 4	inDeg: 5	outDeg: 5	maxInDeg: 2	maxOutDeg: 2	inRegionDeg: 1	outRegionDeg: 0
+Node_level: 5	Node_num: 3	inDeg: 5	outDeg: 4	maxInDeg: 2	maxOutDeg: 2	inRegionDeg: 1	outRegionDeg: 0
+Node_level: 6	Node_num: 2	inDeg: 5	outDeg: 2	maxInDeg: 3	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 7	Node_num: 2	inDeg: 5	outDeg: 2	maxInDeg: 3	maxOutDeg: 1	inRegionDeg: 2	outRegionDeg: 0
+
+>> 5
+  level: 0
+     op: Phi
+    tag: 
+    pre: 5
+   next: 6 7 8 10 14 
+
+>> 6
+  level: 1
+     op: Cmp
+    tag: 
+    pre: 5 6
+   next: 
+
+>> 7
+  level: 1
+     op: Mul
+    tag: 
+    pre: 5 7
+   next: 9 
+
+>> 8
+  level: 1
+     op: Add
+    tag: 
+    pre: 5 8
+   next: 11 15 
+
+>> 9
+  level: 2
+     op: Undef
+    tag: 
+    pre: 7 9
+   next: 
+
+>> 10
+  level: 1
+     op: Undef
+    tag: 
+    pre: 5 10
+   next: 
+
+>> 11
+  level: 2
+     op: Undef
+    tag: 
+    pre: 8 11
+   next: 12 
+
+>> 12
+  level: 3
+     op: Mul
+    tag: 
+    pre: 11 12
+   next: 13 
+
+>> 13
+  level: 4
+     op: Add
+    tag: 
+    pre: 12 13
+   next: 
+
+>> 14
+  level: 1
+     op: Mul
+    tag: 
+    pre: 5 14
+   next: 
+
+>> 15
+  level: 2
+     op: Undef
+    tag: 
+    pre: 8 15
+   next: 16 
+
+>> 16
+  level: 3
+     op: Mul
+    tag: 
+    pre: 15 16
+   next: 
+
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 11
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 5	maxInDeg: 0	maxOutDeg: 5	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 1	Node_num: 5	inDeg: 5	outDeg: 3	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 13	outRegionDeg: 0
+Node_level: 2	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 0
+Node_level: 3	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+>> 19
+  level: 0
+     op: Phi
+    tag: 
+    pre: 19
+   next: 21 
+
+>> 20
+  level: 0
+     op: Phi
+    tag: 
+    pre: 20
+   next: 
+
+>> 21
+  level: 1
+     op: Add
+    tag: 
+    pre: 19 21
+   next: 22 
+
+>> 22
+  level: 2
+     op: Add
+    tag: 
+    pre: 21 22
+   next: 
+
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 2
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 1	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 12	outRegionDeg: 3
+Node_level: 1	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 5	outRegionDeg: 1
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 5	outRegionDeg: 1
+
+>> 26
+  level: 0
+     op: Add
+    tag: 
+    pre: 26
+   next: 27 
+
+>> 27
+  level: 1
+     op: Add
+    tag: 
+    pre: 26 27
+   next: 33 
+
+>> 28
+  level: 0
+     op: Undef
+    tag: 
+    pre: 28
+   next: 29 
+
+>> 29
+  level: 1
+     op: Undef
+    tag: 
+    pre: 28 29
+   next: 
+
+>> 30
+  level: 0
+     op: Undef
+    tag: 
+    pre: 30
+   next: 31 
+
+>> 31
+  level: 1
+     op: Undef
+    tag: 
+    pre: 30 31
+   next: 
+
+>> 32
+  level: 0
+     op: Div
+    tag: 
+    pre: 32
+   next: 33 
+
+>> 33
+  level: 2
+     op: Add
+    tag: 
+    pre: 27 32 33
+   next: 
+
+
+MaxDelay: 2
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 80
+Delay: 2	Dist: 20
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 4
+Delay: 2	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 4	inDeg: 0	outDeg: 4	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 9
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 2	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+>> 38
+  level: 0
+     op: Div
+    tag: 
+    pre: 38
+   next: 
+
+>> 39
+  level: 0
+     op: Div
+    tag: 
+    pre: 39
+   next: 40 
+
+>> 40
+  level: 1
+     op: Add
+    tag: 
+    pre: 39 40
+   next: 
+
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 1	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 3
+Node_level: 1	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+>> 43
+  level: 0
+     op: Phi
+    tag: 
+    pre: 43
+   next: 44 46 50 
+
+>> 44
+  level: 1
+     op: Undef
+    tag: 
+    pre: 43 44
+   next: 45 
+
+>> 45
+  level: 2
+     op: Load
+    tag: 
+    pre: 44 45
+   next: 49 
+
+>> 46
+  level: 1
+     op: Div
+    tag: 
+    pre: 43 46
+   next: 47 
+
+>> 47
+  level: 2
+     op: Sub
+    tag: 
+    pre: 46 47
+   next: 48 
+
+>> 48
+  level: 3
+     op: Undef
+    tag: 
+    pre: 47 48
+   next: 49 
+
+>> 49
+  level: 4
+     op: Store
+    tag: 
+    pre: 45 48 49
+   next: 
+
+>> 50
+  level: 1
+     op: Add
+    tag: 
+    pre: 43 50
+   next: 51 
+
+>> 51
+  level: 2
+     op: Div
+    tag: 
+    pre: 50 51
+   next: 
+
+
+MaxDelay: 2
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 88.8889
+Delay: 2	Dist: 11.1111
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 8
+Delay: 2	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 6
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 3	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 2	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 1
+
+>> 54
+  level: 0
+     op: Phi
+    tag: 
+    pre: 54
+   next: 70 71 
+
+>> 55
+  level: 0
+     op: Phi
+    tag: 
+    pre: 55
+   next: 60 69 
+
+>> 56
+  level: 0
+     op: Phi
+    tag: 
+    pre: 56
+   next: 57 66 
+
+>> 57
+  level: 1
+     op: Undef
+    tag: 
+    pre: 56 57
+   next: 58 
+
+>> 58
+  level: 2
+     op: Undef
+    tag: 
+    pre: 57 58
+   next: 59 
+
+>> 59
+  level: 3
+     op: Load
+    tag: 
+    pre: 58 59
+   next: 63 64 
+
+>> 60
+  level: 1
+     op: Undef
+    tag: 
+    pre: 55 60
+   next: 61 
+
+>> 61
+  level: 2
+     op: Undef
+    tag: 
+    pre: 60 61
+   next: 62 
+
+>> 62
+  level: 3
+     op: Load
+    tag: 
+    pre: 61 62
+   next: 63 64 
+
+>> 63
+  level: 4
+     op: Cmp
+    tag: 
+    pre: 59 62 63
+   next: 64 65 67 
+
+>> 64
+  level: 5
+     op: Undef
+    tag: 
+    pre: 59 62 63 64
+   next: 70 
+
+>> 65
+  level: 5
+     op: Undef
+    tag: 
+    pre: 63 65
+   next: 66 
+
+>> 66
+  level: 6
+     op: Add
+    tag: 
+    pre: 56 65 66
+   next: 
+
+>> 67
+  level: 5
+     op: Xor
+    tag: 
+    pre: 63 67
+   next: 68 
+
+>> 68
+  level: 6
+     op: Undef
+    tag: 
+    pre: 67 68
+   next: 69 
+
+>> 69
+  level: 7
+     op: Add
+    tag: 
+    pre: 55 68 69
+   next: 
+
+>> 70
+  level: 6
+     op: Store
+    tag: 
+    pre: 54 64 70
+   next: 
+
+>> 71
+  level: 1
+     op: Add
+    tag: 
+    pre: 54 71
+   next: 72 
+
+>> 72
+  level: 2
+     op: Div
+    tag: 
+    pre: 71 72
+   next: 
+
+
+MaxDelay: 7
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 77.2727
+Delay: 2	Dist: 9.09091
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 9.09091
+Delay: 7	Dist: 4.54545
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 17
+Delay: 2	Dist: 2
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 2
+Delay: 7	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 86.3636
+[ 4 , 7 ) = 9.09091
+[ 7 , 10 ) = 4.54545
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 3	inDeg: 0	outDeg: 6	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 15
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 3	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 2	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 3	Node_num: 2	inDeg: 2	outDeg: 4	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 2	outDeg: 3	maxInDeg: 2	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 3	inDeg: 5	outDeg: 3	maxInDeg: 3	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 6	Node_num: 3	inDeg: 5	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 7	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+>> 77
+  level: 0
+     op: Undef
+    tag: 
+    pre: 77
+   next: 78 
+
+>> 78
+  level: 1
+     op: Undef
+    tag: 
+    pre: 77 78
+   next: 
+
+>> 79
+  level: 0
+     op: Undef
+    tag: 
+    pre: 79
+   next: 
+
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 1	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 8
+Node_level: 1	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+>> 88
+  level: 0
+     op: Phi
+    tag: 
+    pre: 88
+   next: 89 91 95 
+
+>> 89
+  level: 1
+     op: Undef
+    tag: 
+    pre: 88 89
+   next: 90 
+
+>> 90
+  level: 2
+     op: Load
+    tag: 
+    pre: 89 90
+   next: 94 
+
+>> 91
+  level: 1
+     op: Sub
+    tag: 
+    pre: 88 91
+   next: 92 
+
+>> 92
+  level: 2
+     op: Mul
+    tag: 
+    pre: 91 92
+   next: 93 
+
+>> 93
+  level: 3
+     op: Div
+    tag: 
+    pre: 92 93
+   next: 94 
+
+>> 94
+  level: 4
+     op: Store
+    tag: 
+    pre: 90 93 94
+   next: 
+
+>> 95
+  level: 1
+     op: Add
+    tag: 
+    pre: 88 95
+   next: 96 
+
+>> 96
+  level: 2
+     op: Div
+    tag: 
+    pre: 95 96
+   next: 
+
+
+MaxDelay: 2
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 88.8889
+Delay: 2	Dist: 11.1111
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 8
+Delay: 2	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 3	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 5
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 3	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 2
+Node_level: 2	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 0
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 1
+
+>> 99
+  level: 0
+     op: Phi
+    tag: 
+    pre: 99
+   next: 115 116 
+
+>> 100
+  level: 0
+     op: Phi
+    tag: 
+    pre: 100
+   next: 105 114 
+
+>> 101
+  level: 0
+     op: Phi
+    tag: 
+    pre: 101
+   next: 102 111 
+
+>> 102
+  level: 1
+     op: Undef
+    tag: 
+    pre: 101 102
+   next: 103 
+
+>> 103
+  level: 2
+     op: Undef
+    tag: 
+    pre: 102 103
+   next: 104 
+
+>> 104
+  level: 3
+     op: Load
+    tag: 
+    pre: 103 104
+   next: 108 109 
+
+>> 105
+  level: 1
+     op: Undef
+    tag: 
+    pre: 100 105
+   next: 106 
+
+>> 106
+  level: 2
+     op: Undef
+    tag: 
+    pre: 105 106
+   next: 107 
+
+>> 107
+  level: 3
+     op: Load
+    tag: 
+    pre: 106 107
+   next: 108 109 
+
+>> 108
+  level: 4
+     op: Cmp
+    tag: 
+    pre: 104 107 108
+   next: 109 110 112 
+
+>> 109
+  level: 5
+     op: Undef
+    tag: 
+    pre: 104 107 108 109
+   next: 115 
+
+>> 110
+  level: 5
+     op: Undef
+    tag: 
+    pre: 108 110
+   next: 111 
+
+>> 111
+  level: 6
+     op: Add
+    tag: 
+    pre: 101 110 111
+   next: 
+
+>> 112
+  level: 5
+     op: Xor
+    tag: 
+    pre: 108 112
+   next: 113 
+
+>> 113
+  level: 6
+     op: Undef
+    tag: 
+    pre: 112 113
+   next: 114 
+
+>> 114
+  level: 7
+     op: Add
+    tag: 
+    pre: 100 113 114
+   next: 
+
+>> 115
+  level: 6
+     op: Store
+    tag: 
+    pre: 99 109 115
+   next: 
+
+>> 116
+  level: 1
+     op: Add
+    tag: 
+    pre: 99 116
+   next: 117 
+
+>> 117
+  level: 2
+     op: Div
+    tag: 
+    pre: 116 117
+   next: 
+
+
+MaxDelay: 7
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 77.2727
+Delay: 2	Dist: 9.09091
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 9.09091
+Delay: 7	Dist: 4.54545
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 17
+Delay: 2	Dist: 2
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 0
+Delay: 6	Dist: 2
+Delay: 7	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 86.3636
+[ 4 , 7 ) = 9.09091
+[ 7 , 10 ) = 4.54545
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 3	inDeg: 0	outDeg: 6	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 14
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 3	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 2	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 3	Node_num: 2	inDeg: 2	outDeg: 4	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 2	outDeg: 3	maxInDeg: 2	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 3	inDeg: 5	outDeg: 3	maxInDeg: 3	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 6	Node_num: 3	inDeg: 5	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 7	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 0
+
+>> 8
+  level: 0
+     op: Phi
+    tag: 
+    pre: 8
+   next: 
+
+>> 9
+  level: 0
+     op: Phi
+    tag: 
+    pre: 9
+   next: 10 
+
+>> 10
+  level: 1
+     op: Add
+    tag: 
+    pre: 9 10
+   next: 11 
+
+>> 11
+  level: 2
+     op: Undef
+    tag: 
+    pre: 10 11
+   next: 12 
+
+>> 12
+  level: 3
+     op: Load
+    tag: 
+    pre: 11 12
+   next: 
+
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 3
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 1	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 3	outRegionDeg: 3
+Node_level: 1	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 0
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 2	outRegionDeg: 0
+
+>> 18
+  level: 0
+     op: Phi
+    tag: 
+    pre: 18
+   next: 20 22 29 
+
+>> 19
+  level: 0
+     op: Phi
+    tag: 
+    pre: 19
+   next: 28 
+
+>> 20
+  level: 1
+     op: Undef
+    tag: 
+    pre: 18 20
+   next: 21 
+
+>> 21
+  level: 2
+     op: Load
+    tag: 
+    pre: 20 21
+   next: 27 
+
+>> 22
+  level: 1
+     op: Undef
+    tag: 
+    pre: 18 22
+   next: 23 
+
+>> 23
+  level: 2
+     op: Load
+    tag: 
+    pre: 22 23
+   next: 24 
+
+>> 24
+  level: 3
+     op: Undef
+    tag: 
+    pre: 23 24
+   next: 25 
+
+>> 25
+  level: 4
+     op: Undef
+    tag: 
+    pre: 24 25
+   next: 26 
+
+>> 26
+  level: 5
+     op: Load
+    tag: 
+    pre: 25 26
+   next: 27 
+
+>> 27
+  level: 6
+     op: Mul
+    tag: 
+    pre: 21 26 27
+   next: 28 
+
+>> 28
+  level: 4
+     op: Add
+    tag: 
+    pre: 19 27 28
+   next: 
+
+>> 29
+  level: 1
+     op: Add
+    tag: 
+    pre: 18 29
+   next: 
+
+
+MaxDelay: 4
+
+Delay: 0	Dist: 8.33333
+Delay: 1	Dist: 75
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 16.6667
+
+Delay: 0	Dist: 1
+Delay: 1	Dist: 9
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 2
+
+[ 0 , 1 ) = 8.33333
+[ 1 , 4 ) = 75
+[ 4 , 7 ) = 16.6667
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 4	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 9
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 2	inDeg: 3	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 5	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 6	Node_num: 1	inDeg: 2	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+
+>> 5
+  level: 0
+     op: Phi
+    tag: 
+    pre: 5
+   next: 
+
+>> 6
+  level: 0
+     op: Phi
+    tag: 
+    pre: 6
+   next: 
+
+>> 7
+  level: 0
+     op: Phi
+    tag: 
+    pre: 7
+   next: 
+
+
+MaxDelay: 0
+
+Delay: 0	Dist: -nan(ind)
+
+Delay: 0	Dist: 0
+
+[ 0 , 1 ) = -nan(ind)
+[ 1 , 4 ) = 0
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 3	inDeg: 0	outDeg: 0	maxInDeg: 0	maxOutDeg: 0	inRegionDeg: 5	outRegionDeg: 3
+
+>> 14
+  level: 0
+     op: Phi
+    tag: 
+    pre: 14
+   next: 18 19 
+
+>> 15
+  level: 0
+     op: Phi
+    tag: 
+    pre: 15
+   next: 
+
+>> 16
+  level: 0
+     op: Phi
+    tag: 
+    pre: 16
+   next: 
+
+>> 17
+  level: 0
+     op: Phi
+    tag: 
+    pre: 17
+   next: 
+
+>> 18
+  level: 1
+     op: Mul
+    tag: 
+    pre: 14 18
+   next: 
+
+>> 19
+  level: 1
+     op: Add
+    tag: 
+    pre: 14 19
+   next: 20 
+
+>> 20
+  level: 2
+     op: Mul
+    tag: 
+    pre: 19 20
+   next: 
+
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 3
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 4	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 4	outRegionDeg: 7
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+>> 23
+  level: 0
+     op: Phi
+    tag: 
+    pre: 23
+   next: 27 30 37 
+
+>> 24
+  level: 0
+     op: Phi
+    tag: 
+    pre: 24
+   next: 36 
+
+>> 25
+  level: 0
+     op: Phi
+    tag: 
+    pre: 25
+   next: 35 
+
+>> 26
+  level: 0
+     op: Phi
+    tag: 
+    pre: 26
+   next: 34 
+
+>> 27
+  level: 1
+     op: Add
+    tag: 
+    pre: 23 27
+   next: 28 
+
+>> 28
+  level: 2
+     op: Undef
+    tag: 
+    pre: 27 28
+   next: 29 
+
+>> 29
+  level: 3
+     op: Load
+    tag: 
+    pre: 28 29
+   next: 33 
+
+>> 30
+  level: 1
+     op: Add
+    tag: 
+    pre: 23 30
+   next: 31 
+
+>> 31
+  level: 2
+     op: Undef
+    tag: 
+    pre: 30 31
+   next: 32 
+
+>> 32
+  level: 3
+     op: Load
+    tag: 
+    pre: 31 32
+   next: 33 
+
+>> 33
+  level: 4
+     op: Mul
+    tag: 
+    pre: 29 32 33
+   next: 34 
+
+>> 34
+  level: 5
+     op: Add
+    tag: 
+    pre: 26 33 34
+   next: 
+
+>> 35
+  level: 1
+     op: Add
+    tag: 
+    pre: 25 35
+   next: 36 
+
+>> 36
+  level: 2
+     op: Add
+    tag: 
+    pre: 24 35 36
+   next: 
+
+>> 37
+  level: 1
+     op: Add
+    tag: 
+    pre: 23 37
+   next: 
+
+
+MaxDelay: 5
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 85.7143
+Delay: 2	Dist: 7.14286
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 7.14286
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 12
+Delay: 2	Dist: 1
+Delay: 3	Dist: 0
+Delay: 4	Dist: 0
+Delay: 5	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 92.8571
+[ 4 , 7 ) = 7.14286
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 4	inDeg: 0	outDeg: 6	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 19
+Node_level: 1	Node_num: 4	inDeg: 4	outDeg: 3	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 2	Node_num: 3	inDeg: 4	outDeg: 2	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 2
+Node_level: 3	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 1	inDeg: 2	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 1	inDeg: 2	outDeg: 0	maxInDeg: 2	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+>> 43
+  level: 0
+     op: Add
+    tag: 
+    pre: 43
+   next: 44 
+
+>> 44
+  level: 1
+     op: Store
+    tag: 
+    pre: 43 44
+   next: 
+
+>> 45
+  level: 0
+     op: Add
+    tag: 
+    pre: 45
+   next: 
+
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 1
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 1	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 4
+Node_level: 1	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 0	outRegionDeg: 2
+
+>> 11
+  level: 0
+     op: Phi
+    tag: 
+    pre: 11
+   next: 12 14 19 20 
+
+>> 12
+  level: 1
+     op: Undef
+    tag: 
+    pre: 11 12
+   next: 13 
+
+>> 13
+  level: 2
+     op: Load
+    tag: 
+    pre: 12 13
+   next: 18 
+
+>> 14
+  level: 1
+     op: Mul
+    tag: 
+    pre: 11 14
+   next: 15 
+
+>> 15
+  level: 2
+     op: Add
+    tag: 
+    pre: 14 15
+   next: 16 
+
+>> 16
+  level: 3
+     op: Undef
+    tag: 
+    pre: 15 16
+   next: 17 
+
+>> 17
+  level: 4
+     op: Load
+    tag: 
+    pre: 16 17
+   next: 18 
+
+>> 18
+  level: 5
+     op: Add
+    tag: 
+    pre: 13 17 18
+   next: 19 
+
+>> 19
+  level: 4
+     op: Store
+    tag: 
+    pre: 11 18 19
+   next: 
+
+>> 20
+  level: 1
+     op: Add
+    tag: 
+    pre: 11 20
+   next: 
+
+
+MaxDelay: 4
+
+Delay: 0	Dist: 9.09091
+Delay: 1	Dist: 72.7273
+Delay: 2	Dist: 0
+Delay: 3	Dist: 9.09091
+Delay: 4	Dist: 9.09091
+
+Delay: 0	Dist: 1
+Delay: 1	Dist: 8
+Delay: 2	Dist: 0
+Delay: 3	Dist: 1
+Delay: 4	Dist: 1
+
+[ 0 , 1 ) = 9.09091
+[ 1 , 4 ) = 81.8182
+[ 4 , 7 ) = 9.09091
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 4	maxInDeg: 0	maxOutDeg: 4	inRegionDeg: 0	outRegionDeg: 3
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 4	Node_num: 2	inDeg: 3	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 5	Node_num: 1	inDeg: 2	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+
+>> 23
+  level: 0
+     op: Phi
+    tag: 
+    pre: 23
+   next: 24 26 
+
+>> 24
+  level: 1
+     op: Add
+    tag: 
+    pre: 23 24
+   next: 25 
+
+>> 25
+  level: 2
+     op: Undef
+    tag: 
+    pre: 24 25
+   next: 
+
+>> 26
+  level: 1
+     op: Undef
+    tag: 
+    pre: 23 26
+   next: 27 
+
+>> 27
+  level: 2
+     op: Load
+    tag: 
+    pre: 26 27
+   next: 28 
+
+>> 28
+  level: 3
+     op: Undef
+    tag: 
+    pre: 27 28
+   next: 
+
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 5
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 2	outRegionDeg: 3
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+>> 31
+  level: 0
+     op: Phi
+    tag: 
+    pre: 31
+   next: 32 35 
+
+>> 32
+  level: 1
+     op: Undef
+    tag: 
+    pre: 31 32
+   next: 33 
+
+>> 33
+  level: 2
+     op: Load
+    tag: 
+    pre: 32 33
+   next: 34 
+
+>> 34
+  level: 3
+     op: Add
+    tag: 
+    pre: 33 34
+   next: 
+
+>> 35
+  level: 1
+     op: Mul
+    tag: 
+    pre: 31 35
+   next: 36 
+
+>> 36
+  level: 2
+     op: Add
+    tag: 
+    pre: 35 36
+   next: 37 
+
+>> 37
+  level: 3
+     op: Undef
+    tag: 
+    pre: 36 37
+   next: 38 
+
+>> 38
+  level: 4
+     op: Load
+    tag: 
+    pre: 37 38
+   next: 
+
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 7
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 1	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 2	inRegionDeg: 3	outRegionDeg: 3
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 3	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 4	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 2	outRegionDeg: 0
+
+>> 41
+  level: 0
+     op: Phi
+    tag: 
+    pre: 41
+   next: 43 45 54 
+
+>> 42
+  level: 0
+     op: Phi
+    tag: 
+    pre: 42
+   next: 52 53 
+
+>> 43
+  level: 1
+     op: Undef
+    tag: 
+    pre: 41 43
+   next: 44 
+
+>> 44
+  level: 2
+     op: Load
+    tag: 
+    pre: 43 44
+   next: 50 
+
+>> 45
+  level: 1
+     op: Mul
+    tag: 
+    pre: 41 45
+   next: 46 
+
+>> 46
+  level: 2
+     op: Add
+    tag: 
+    pre: 45 46
+   next: 47 
+
+>> 47
+  level: 3
+     op: And
+    tag: 
+    pre: 46 47
+   next: 48 
+
+>> 48
+  level: 4
+     op: Undef
+    tag: 
+    pre: 47 48
+   next: 49 
+
+>> 49
+  level: 5
+     op: Load
+    tag: 
+    pre: 48 49
+   next: 50 
+
+>> 50
+  level: 6
+     op: Add
+    tag: 
+    pre: 44 49 50
+   next: 51 
+
+>> 51
+  level: 4
+     op: Add
+    tag: 
+    pre: 50 51
+   next: 52 53 
+
+>> 52
+  level: 5
+     op: Undef
+    tag: 
+    pre: 42 51 52
+   next: 53 
+
+>> 53
+  level: 5
+     op: Undef
+    tag: 
+    pre: 42 51 52 53
+   next: 
+
+>> 54
+  level: 1
+     op: Add
+    tag: 
+    pre: 41 54
+   next: 
+
+
+MaxDelay: 5
+
+Delay: 0	Dist: 12.5
+Delay: 1	Dist: 68.75
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 6.25
+Delay: 5	Dist: 12.5
+
+Delay: 0	Dist: 2
+Delay: 1	Dist: 11
+Delay: 2	Dist: 0
+Delay: 3	Dist: 0
+Delay: 4	Dist: 1
+Delay: 5	Dist: 2
+
+[ 0 , 1 ) = 12.5
+[ 1 , 4 ) = 68.75
+[ 4 , 7 ) = 18.75
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 5	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 8
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 4	Node_num: 2	inDeg: 2	outDeg: 3	maxInDeg: 1	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 2
+Node_level: 5	Node_num: 3	inDeg: 6	outDeg: 2	maxInDeg: 3	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 0
+Node_level: 6	Node_num: 1	inDeg: 2	outDeg: 1	maxInDeg: 2	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 0
+
+>> 67
+  level: 0
+     op: Phi
+    tag: 
+    pre: 67
+   next: 70 74 76 
+
+>> 68
+  level: 0
+     op: Phi
+    tag: 
+    pre: 68
+   next: 75 
+
+>> 69
+  level: 0
+     op: Phi
+    tag: 
+    pre: 69
+   next: 72 73 
+
+>> 70
+  level: 1
+     op: Undef
+    tag: 
+    pre: 67 70
+   next: 71 
+
+>> 71
+  level: 2
+     op: Load
+    tag: 
+    pre: 70 71
+   next: 72 73 
+
+>> 72
+  level: 3
+     op: Undef
+    tag: 
+    pre: 69 71 72
+   next: 73 75 
+
+>> 73
+  level: 3
+     op: Undef
+    tag: 
+    pre: 69 71 72 73
+   next: 
+
+>> 74
+  level: 1
+     op: Div
+    tag: 
+    pre: 67 74
+   next: 75 
+
+>> 75
+  level: 2
+     op: Undef
+    tag: 
+    pre: 68 72 74 75
+   next: 
+
+>> 76
+  level: 1
+     op: Add
+    tag: 
+    pre: 67 76
+   next: 
+
+
+MaxDelay: 3
+
+Delay: 0	Dist: 16.6667
+Delay: 1	Dist: 58.3333
+Delay: 2	Dist: 8.33333
+Delay: 3	Dist: 16.6667
+
+Delay: 0	Dist: 2
+Delay: 1	Dist: 7
+Delay: 2	Dist: 1
+Delay: 3	Dist: 2
+
+[ 0 , 1 ) = 16.6667
+[ 1 , 4 ) = 83.3333
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 3	inDeg: 0	outDeg: 6	maxInDeg: 0	maxOutDeg: 3	inRegionDeg: 0	outRegionDeg: 12
+Node_level: 1	Node_num: 3	inDeg: 3	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 2	inDeg: 4	outDeg: 2	maxInDeg: 3	maxOutDeg: 2	inRegionDeg: 2	outRegionDeg: 0
+Node_level: 3	Node_num: 2	inDeg: 5	outDeg: 2	maxInDeg: 3	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 0
+
+>> 81
+  level: 0
+     op: Phi
+    tag: 
+    pre: 81
+   next: 85 
+
+>> 82
+  level: 0
+     op: Phi
+    tag: 
+    pre: 82
+   next: 83 
+
+>> 83
+  level: 1
+     op: Undef
+    tag: 
+    pre: 82 83
+   next: 84 
+
+>> 84
+  level: 2
+     op: Load
+    tag: 
+    pre: 83 84
+   next: 
+
+>> 85
+  level: 1
+     op: Undef
+    tag: 
+    pre: 81 85
+   next: 86 
+
+>> 86
+  level: 2
+     op: Undef
+    tag: 
+    pre: 85 86
+   next: 87 
+
+>> 87
+  level: 3
+     op: Load
+    tag: 
+    pre: 86 87
+   next: 
+
+
+MaxDelay: 1
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 100
+
+Delay: 0	Dist: 0
+Delay: 1	Dist: 5
+
+[ 0 , 1 ) = 0
+[ 1 , 4 ) = 100
+[ 4 , 7 ) = 0
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 2	inDeg: 0	outDeg: 2	maxInDeg: 0	maxOutDeg: 1	inRegionDeg: 4	outRegionDeg: 6
+Node_level: 1	Node_num: 2	inDeg: 2	outDeg: 2	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 2	Node_num: 2	inDeg: 2	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 0	maxInDeg: 1	maxOutDeg: 0	inRegionDeg: 1	outRegionDeg: 0
+
+>> 90
+  level: 0
+     op: Phi
+    tag: 
+    pre: 90
+   next: 93 95 102 104 
+
+>> 91
+  level: 0
+     op: Phi
+    tag: 
+    pre: 91
+   next: 103 
+
+>> 92
+  level: 0
+     op: Phi
+    tag: 
+    pre: 92
+   next: 100 101 
+
+>> 93
+  level: 1
+     op: Undef
+    tag: 
+    pre: 90 93
+   next: 94 
+
+>> 94
+  level: 2
+     op: Load
+    tag: 
+    pre: 93 94
+   next: 99 
+
+>> 95
+  level: 1
+     op: Mul
+    tag: 
+    pre: 90 95
+   next: 96 
+
+>> 96
+  level: 2
+     op: Add
+    tag: 
+    pre: 95 96
+   next: 97 
+
+>> 97
+  level: 3
+     op: Undef
+    tag: 
+    pre: 96 97
+   next: 98 
+
+>> 98
+  level: 4
+     op: Load
+    tag: 
+    pre: 97 98
+   next: 99 
+
+>> 99
+  level: 5
+     op: Add
+    tag: 
+    pre: 94 98 99
+   next: 100 101 
+
+>> 100
+  level: 4
+     op: Undef
+    tag: 
+    pre: 92 99 100
+   next: 101 103 
+
+>> 101
+  level: 4
+     op: Undef
+    tag: 
+    pre: 92 99 100 101
+   next: 
+
+>> 102
+  level: 1
+     op: Div
+    tag: 
+    pre: 90 102
+   next: 103 
+
+>> 103
+  level: 2
+     op: Undef
+    tag: 
+    pre: 91 100 102 103
+   next: 
+
+>> 104
+  level: 1
+     op: Add
+    tag: 
+    pre: 90 104
+   next: 
+
+
+MaxDelay: 4
+
+Delay: 0	Dist: 22.2222
+Delay: 1	Dist: 55.5556
+Delay: 2	Dist: 5.55556
+Delay: 3	Dist: 5.55556
+Delay: 4	Dist: 11.1111
+
+Delay: 0	Dist: 4
+Delay: 1	Dist: 10
+Delay: 2	Dist: 1
+Delay: 3	Dist: 1
+Delay: 4	Dist: 2
+
+[ 0 , 1 ) = 22.2222
+[ 1 , 4 ) = 66.6667
+[ 4 , 7 ) = 11.1111
+[ 7 , 10 ) = 0
+[ 10 , 20 ) = 0
+[ 20 , INF ) = 0
+
+Node_level: 0	Node_num: 3	inDeg: 0	outDeg: 7	maxInDeg: 0	maxOutDeg: 4	inRegionDeg: 0	outRegionDeg: 12
+Node_level: 1	Node_num: 4	inDeg: 4	outDeg: 3	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 2
+Node_level: 2	Node_num: 3	inDeg: 5	outDeg: 2	maxInDeg: 3	maxOutDeg: 1	inRegionDeg: 1	outRegionDeg: 1
+Node_level: 3	Node_num: 1	inDeg: 1	outDeg: 1	maxInDeg: 1	maxOutDeg: 1	inRegionDeg: 0	outRegionDeg: 1
+Node_level: 4	Node_num: 3	inDeg: 6	outDeg: 3	maxInDeg: 3	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 0
+Node_level: 5	Node_num: 1	inDeg: 2	outDeg: 2	maxInDeg: 2	maxOutDeg: 2	inRegionDeg: 0	outRegionDeg: 0

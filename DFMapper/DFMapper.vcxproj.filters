@@ -152,6 +152,9 @@
     <None Include="IR\md_knn.ll">
       <Filter>IR</Filter>
     </None>
+    <None Include="IR\aes.ll">
+      <Filter>IR</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="result\log.txt">

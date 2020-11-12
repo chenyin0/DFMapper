@@ -9,7 +9,7 @@ const vector<uint> DfgTool::distInterval = { 0,1,4,7,10,20 };
 void DfgTool::printDfg(Dfg& _dfg)
 {
     // Print node info
-    //Logger::printDfg(_dfg);
+    Logger::printDfg(_dfg);
 
     // Print maximal node delay
     Logger::printMaxNodeDelay(_dfg);

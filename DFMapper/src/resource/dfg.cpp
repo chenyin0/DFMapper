@@ -41,7 +41,7 @@ void Dfg::genDfg(string fpath)
         if (v.size() > 0)
         {
             //开始节点
-            if (v[0].find(":") != string::npos)
+            if (v[0].find(":") != string::npos && isdigit(v[0][1]))
             {
                 int temp = stoi(v[0].substr(0, v[0].length() - 1));
                 start.push_back(temp);
@@ -49,7 +49,7 @@ void Dfg::genDfg(string fpath)
                 continue;
             }
 
-            if (v[0].find("%") != string::npos)
+            if (v[0].find("%") != string::npos && isdigit(v[0][1]))
             {
                 //phi
                 if (v[2] == "phi")

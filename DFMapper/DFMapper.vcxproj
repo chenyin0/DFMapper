@@ -159,6 +159,7 @@
     <ClCompile Include="src\tinyxml2\tinyxml2.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="IR\aes.ll" />
     <None Include="IR\backprop.ll" />
     <None Include="IR\bfs_bulk.ll" />
     <None Include="IR\bfs_queue.ll" />

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Config>
+  <!-- LS all interconnect in rows and cols, with router -->
+  <BlockConfig>
+    <!-- global array -->
+    <global row="19" col="19"/>
+    <!-- pe -->
+    <block>
+      <type>pe</type>
+      <in_ports>
+        <port_type>d32_v1_b1_l1_s1</port_type>
+        <port_type>d32_v1_b1_l1_s1</port_type>
+        <port_type>d32_v1_b1_l1_s1</port_type>
+        <port_type>v1_b1_l1_s1</port_type>
+        <port_type>b1</port_type>
+        <port_type>b1</port_type>
+      </in_ports>
+      <out_ports>
+        <port_type>d32_v1_b1_l1_s1</port_type>
+        <port_type>b1</port_type>
+        <port_type>b1</port_type>
+        <port_type>b1</port_type>
+        <port_type>b1</port_type>
+      </out_ports>
+      <router_pipes>
+        <port_type>d32_v1_b1_l1_s1</port_type>
+      </router_pipes>
+      <array>
+        <row>-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --</row>
+        <row>-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --</row>
+        <row>-- -- pe -- pe -- pe -- pe -- pe -- pe -- pe -- pe -- --</row>
+        <row>-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --</row>
+        <row>-- -- pe -- pe -- pe -- pe -- pe -- pe -- pe -- pe -- --</row>
+        <row>-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --</row>
+        <row>-- -- pe -- pe -- pe -- pe -- pe -- pe -- pe -- pe -- --</row>
+        <row>-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --</row>
+        <row>-- -- pe -- pe -- pe -- pe -- pe -- pe -- pe -- pe -- --</row>
+        <row>-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --</row>
+        <row>-- -- pe -- pe -- pe -- pe -- pe -- pe -- pe -- pe -- --</row>
+        <row>-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --</row>
+        <row>-- -- pe -- pe -- pe -- pe -- pe -- pe -- pe -- pe -- --</row>
+        <row>-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --</row>
+        <row>-- -- pe -- pe -- pe -- pe -- pe -- pe -- pe -- pe -- --</row>
+        <row>-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --</row>
+        <row>-- -- pe -- pe -- pe -- pe -- pe -- pe -- pe -- pe -- --</row>
+        <row>-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --</row>
+        <row>-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --</row>
+      </array>
+    </block>
+    <!-- ls -->
+    <block>
+      <type>ls</type>
+      <in_ports>
+        <port_type>d32_v1_b1_l1_s1</port_type>
+        <port_type>d32_v1_b1_l1_s1</port_type>
+        <port_type>d32_v1_b1_l1_s1</port_type>
+        <port_type>b1</port_type>
+        <port_type>b1</port_type>
+      </in_ports>
+      <out_ports>
+        <port_type>d32_v1_b1_l1_s1</port_type>
+        <port_type>b1</port_type>
+        <port_type>b1</port_type>
+        <port_type>b1</port_type>
+        <port_type>b1</port_type>
+      </out_ports>
+      <router_pipes>
+        <port_type>d32_v1_b1_l1_s1</port_type>
+      </router_pipes>
+      <array>
+        <row>-- -- ls -- ls -- ls -- ls -- ls -- ls -- ls -- ls -- --</row>
+        <row>-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --</row>
+        <row>ls -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- ls</row>
+        <row>-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --</row>
+        <row>ls -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- ls</row>
+        <row>-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --</row>
+        <row>ls -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- ls</row>
+        <row>-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --</row>
+        <row>ls -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- ls</row>
+        <row>-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --</row>
+        <row>ls -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- ls</row>
+        <row>-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --</row>
+        <row>ls -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- ls</row>
+        <row>-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --</row>
+        <row>ls -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- ls</row>
+        <row>-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --</row>
+        <row>ls -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- ls</row>
+        <row>-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --</row>
+        <row>-- -- ls -- ls -- ls -- ls -- ls -- ls -- ls -- ls -- --</row>
+      </array>
+    </block>
+    <!-- fifo -->
+    <block>
+      <type>fifo</type>
+      <in_ports>
+        <port_type>d32_v1_b1_l1_s1</port_type>
+        <port_type>b1</port_type>
+        <port_type>b1</port_type>
+      </in_ports>
+      <out_ports>
+        <port_type>d32_v1_b1_l1_s1</port_type>
+        <port_type>b1</port_type>
+        <port_type>b1</port_type>
+      </out_ports>
+      <router_pipes>
+        <port_type>d32_v1_b1_l1_s1</port_type>
+      </router_pipes>
+      <array>
+        <row>---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----</row>
+        <row>---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----</row>
+        <row>---- ---- ---- fifo ---- ---- ---- fifo ---- ---- ---- fifo ---- ---- ---- fifo ---- ---- ----</row>
+        <row>---- ---- fifo ---- fifo ---- fifo ---- fifo ---- fifo ---- fifo ---- fifo ---- fifo ---- ----</row>
+        <row>---- ---- ---- fifo ---- ---- ---- fifo ---- ---- ---- fifo ---- ---- ---- fifo ---- ---- ----</row>
+        <row>---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----</row>
+        <row>---- ---- ---- fifo ---- ---- ---- fifo ---- ---- ---- fifo ---- ---- ---- fifo ---- ---- ----</row>
+        <row>---- ---- fifo ---- fifo ---- fifo ---- fifo ---- fifo ---- fifo ---- fifo ---- fifo ---- ----</row>
+        <row>---- ---- ---- fifo ---- ---- ---- fifo ---- ---- ---- fifo ---- ---- ---- fifo ---- ---- ----</row>
+        <row>---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----</row>
+        <row>---- ---- ---- fifo ---- ---- ---- fifo ---- ---- ---- fifo ---- ---- ---- fifo ---- ---- ----</row>
+        <row>---- ---- fifo ---- fifo ---- fifo ---- fifo ---- fifo ---- fifo ---- fifo ---- fifo ---- ----</row>
+        <row>---- ---- ---- fifo ---- ---- ---- fifo ---- ---- ---- fifo ---- ---- ---- fifo ---- ---- ----</row>
+        <row>---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----</row>
+        <row>---- ---- ---- fifo ---- ---- ---- fifo ---- ---- ---- fifo ---- ---- ---- fifo ---- ---- ----</row>
+        <row>---- ---- fifo ---- fifo ---- fifo ---- fifo ---- fifo ---- fifo ---- fifo ---- fifo ---- ----</row>
+        <row>---- ---- ---- fifo ---- ---- ---- fifo ---- ---- ---- fifo ---- ---- ---- fifo ---- ---- ----</row>
+        <row>---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----</row>
+        <row>---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----</row>
+      </array>
+    </block>
+    <!-- bus0 -->
+    <block>
+      <type>bus0</type>
+      <in_ports>
+        <port_type>v1_b1_l1_s1</port_type>
+        <port_type>v1_b1_l1_s1</port_type>
+        <port_type>v1_b1_l1_s1</port_type>
+        <port_type>v1_b1_l1_s1</port_type>
+        <port_type>v1_b1_l1_s1</port_type>
+        <port_type>v1_b1_l1_s1</port_type>
+        <port_type>v1_b1_l1_s1</port_type>
+        <port_type>v1_b1_l1_s1</port_type>
+        <port_type>v1_b1_l1_s1</port_type>
+        <port_type>v1_b1_l1_s1</port_type>
+        <port_type>v1_b1_l1_s1</port_type>
+        <port_type>v1_b1_l1_s1</port_type>
+        <port_type>v1_b1_l1_s1</port_type>
+        <port_type>v1_b1_l1_s1</port_type>
+        <port_type>v1_b1_l1_s1</port_type>
+        <port_type>v1_b1_l1_s1</port_type>
+        <port_type>func_op</port_type>
+      </in_ports>
+      <out_ports>
+        <port_type>v1_b1_l1_s1</port_type>
+        <port_type>v1_b1_l1_s1</port_type>
+        <port_type>v1_b1_l1_s1</port_type>
+        <port_type>v1_b1_l1_s1</port_type>
+        <port_type>v1_b1_l1_s1</port_type>
+        <port_type>v1_b1_l1_s1</port_type>
+        <port_type>v1_b1_l1_s1</port_type>
+        <port_type>v1_b1_l1_s1</port_type>
+        <port_type>v1_b1_l1_s1</port_type>
+        <port_type>v1_b1_l1_s1</port_type>
+        <port_type>v1_b1_l1_s1</port_type>
+        <port_type>v1_b1_l1_s1</port_type>
+        <port_type>v1_b1_l1_s1</port_type>
+        <port_type>v1_b1_l1_s1</port_type>
+        <port_type>v1_b1_l1_s1</port_type>
+        <port_type>v1_b1_l1_s1</port_type>
+        <port_type>func_op</port_type>
+      </out_ports>
+      <array>
+        <row>---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----</row>
+        <row>---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----</row>
+        <row>---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----</row>
+        <row>---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----</row>
+        <row>---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----</row>
+        <row>---- ---- ---- ---- ---- bus0 ---- ---- ---- ---- ---- ---- ---- bus0 ---- ---- ---- ---- ----</row>
+        <row>---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----</row>
+        <row>---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----</row>
+        <row>---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----</row>
+        <row>---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----</row>
+        <row>---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----</row>
+        <row>---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----</row>
+        <row>---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----</row>
+        <row>---- ---- ---- ---- ---- bus0 ---- ---- ---- ---- ---- ---- ---- bus0 ---- ---- ---- ---- ----</row>
+        <row>---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----</row>
+        <row>---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----</row>
+        <row>---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----</row>
+        <row>---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----</row>
+        <row>---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----</row>
+      </array>
+    </block>
+    <!-- bus1 -->
+    <block>
+      <type>bus1</type>
+      <in_ports>
+        <port_type>func_op</port_type>
+        <port_type>func_op</port_type>
+        <port_type>func_op</port_type>
+        <port_type>func_op</port_type>
+      </in_ports>
+      <out_ports>
+        <port_type>func_op</port_type>
+        <port_type>func_op</port_type>
+        <port_type>func_op</port_type>
+        <port_type>func_op</port_type>
+      </out_ports>
+      <array>
+        <row>---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----</row>
+        <row>---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----</row>
+        <row>---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----</row>
+        <row>---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----</row>
+        <row>---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----</row>
+        <row>---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----</row>
+        <row>---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----</row>
+        <row>---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----</row>
+        <row>---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----</row>
+        <row>---- ---- ---- ---- ---- ---- ---- ---- ---- bus1 ---- ---- ---- ---- ---- ---- ---- ---- ----</row>
+        <row>---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----</row>
+        <row>---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----</row>
+        <row>---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----</row>
+        <row>---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----</row>
+        <row>---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----</row>
+        <row>---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----</row>
+        <row>---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----</row>
+        <row>---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----</row>
+        <row>---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----</row>
+      </array>
+    </block>
+    <!-- null -->
+    <block>
+      <type>null</type>
+      <in_ports></in_ports>
+      <out_ports></out_ports>
+      <array>
+        <row>null null ---- null ---- null ---- null ---- null ---- null ---- null ---- null ---- null null</row>
+        <row>null null null null null null null null null null null null null null null null null null null</row>
+        <row>---- null ---- ---- ---- null ---- ---- ---- null ---- ---- ---- null ---- ---- ---- null ----</row>
+        <row>null null ---- null ---- null ---- null ---- null ---- null ---- null ---- null ---- null null</row>
+        <row>---- null ---- ---- ---- null ---- ---- ---- null ---- ---- ---- null ---- ---- ---- null ----</row>
+        <row>null null null null null ---- null null null null null null null ---- null null null null null</row>
+        <row>---- null ---- ---- ---- null ---- ---- ---- null ---- ---- ---- null ---- ---- ---- null ----</row>
+        <row>null null ---- null ---- null ---- null ---- null ---- null ---- null ---- null ---- null null</row>
+        <row>---- null ---- ---- ---- null ---- ---- ---- null ---- ---- ---- null ---- ---- ---- null ----</row>
+        <row>null null null null null null null null null ---- null null null null null null null null null</row>
+        <row>---- null ---- ---- ---- null ---- ---- ---- null ---- ---- ---- null ---- ---- ---- null ----</row>
+        <row>null null ---- null ---- null ---- null ---- null ---- null ---- null ---- null ---- null null</row>
+        <row>---- null ---- ---- ---- null ---- ---- ---- null ---- ---- ---- null ---- ---- ---- null ----</row>
+        <row>null null null null null ---- null null null null null null null ---- null null null null null</row>
+        <row>---- null ---- ---- ---- null ---- ---- ---- null ---- ---- ---- null ---- ---- ---- null ----</row>
+        <row>null null ---- null ---- null ---- null ---- null ---- null ---- null ---- null ---- null null</row>
+        <row>---- null ---- ---- ---- null ---- ---- ---- null ---- ---- ---- null ---- ---- ---- null ----</row>
+        <row>null null null null null null null null null null null null null null null null null null null</row>
+        <row>null null ---- null ---- null ---- null ---- null ---- null ---- null ---- null ---- null null</row>
+      </array>
+    </block>
+  </BlockConfig>
+  <NetConfig>
+    <WireNetConfig>
+      <WireNet config_mode="way4hop2">
+        <config wire_type="d32_v1_b1_l1_s1" block_type="pe" port="all"/>
+      </WireNet>
+      <WireNet config_mode="way4hop2">
+        <config wire_type="d32_v1_b1_l1_s1" block_type="ls" port="all"/>
+      </WireNet>
+      <WireNet config_mode="cluster">
+        <config wire_type="d32_v1_b1_l1_s1" block_type="fifo" port="all"/>
+      </WireNet>
+      <WireNet config_mode="cluster">
+        <config wire_type="d32_v1_b1_l1_s1" block_type="router" port="all"/>
+      </WireNet>
+
+      <WireNet config_mode="row_full_connect" wire_type="d32_v1_b1_l1_s1" source_block="pe" target_block="ls"/>
+      <WireNet config_mode="col_full_connect" wire_type="d32_v1_b1_l1_s1" source_block="pe" target_block="ls"/>
+      <WireNet config_mode="row_full_connect" wire_type="d32_v1_b1_l1_s1" source_block="ls" target_block="pe"/>
+      <WireNet config_mode="col_full_connect" wire_type="d32_v1_b1_l1_s1" source_block="ls" target_block="pe"/>
+      <WireNet config_mode="pe_fifo_connect" wire_type="d32_v1_b1_l1_s1" source_block="pe" target_block="fifo"/>
+      <WireNet config_mode="pe_fifo_connect" wire_type="d32_v1_b1_l1_s1" source_block="fifo" target_block="pe"/>
+      <WireNet config_mode="ls_fifo_connect" wire_type="d32_v1_b1_l1_s1" source_block="ls" target_block="fifo"/>
+      <WireNet config_mode="ls_fifo_connect" wire_type="d32_v1_b1_l1_s1" source_block="fifo" target_block="ls"/>
+      <WireNet config_mode="bus_pe_connect" wire_type="v1_b1_l1_s1" source_block="bus0" target_block="pe"/>
+      <WireNet config_mode="bus_pe_connect" wire_type="v1_b1_l1_s1" source_block="pe" target_block="bus0"/>
+      <WireNet config_mode="bus_bus_connect" wire_type="v1_b1_l1_s1" source_block="bus0" target_block="bus1"/>
+      <WireNet config_mode="bus_bus_connect" wire_type="v1_b1_l1_s1" source_block="bus1" target_block="bus0"/>
+    </WireNetConfig>
+  </NetConfig>
+</Config>

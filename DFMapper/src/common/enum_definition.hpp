@@ -11,6 +11,7 @@ namespace DFMpr {
     };
 
     enum class Op {
+        Undefine,
         Phi,
         Add,  // add, fadd
         Sub,  // sub, fsub
@@ -21,8 +22,7 @@ namespace DFMpr {
         Xor,  // xor
         Cmp,  // icmp
         Load,  // load
-        Store,  // store
-        Undefine
+        Store,  // store 
     }; 
 
     enum class NodeType

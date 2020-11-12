@@ -66,6 +66,7 @@ void Dfg::genDfg(string fpath)
                             {
                                 nodes[stoi(v[0].substr(1))].pre_nodes.insert(stoi(v[i + 2].substr(1)));
                             }
+                            nodes[stoi(v[0].substr(1))].op = Op::Phi;
                         }
                     }
                 }
@@ -78,6 +79,10 @@ void Dfg::genDfg(string fpath)
                         {
                             nodes[stoi(v[0].substr(1))].pre_nodes.insert(stoi(v[i].substr(1)));
                         }
+                    }
+                    if (v[1] == "=")
+                    {
+                        nodes[stoi(v[0].substr(1))].op = stringToOp(v[2]);
                     }
                 }
             }
@@ -95,6 +100,7 @@ void Dfg::genDfg(string fpath)
                 if (temp.size() == 2)
                 {
                     nodes[temp[1]].pre_nodes.insert(temp[0]);
+                    nodes[temp[1]].op = Op::Store;
                 }
                 else if (temp.size() == 1)
                 {
@@ -234,7 +240,7 @@ void Dfg::dfgAnalyze()
 }
 
 // Modify this function according to your need!!!
-Op Dfg::getNodeOp(int nodeId, string _op)
+Op Dfg::stringToOp(string _op)
 {
     if (_op == "phi")
         return Op::Phi;
@@ -260,4 +266,32 @@ Op Dfg::getNodeOp(int nodeId, string _op)
         return Op::Store;
     else
         return Op::Undefine;
+}
+
+string Dfg::opToString(Op _op)
+{
+    if (_op == Op::Phi)
+        return "phi";
+    else if (_op == Op::Add)
+        return "add";
+    else if (_op == Op::Sub)
+        return "sub";
+    else if (_op == Op::Mul)
+        return "mul";
+    else if (_op == Op::Div)
+        return "div";
+    else if (_op == Op::And)
+        return "and";
+    else if (_op == Op::Or)
+        return "or";
+    else if (_op == Op::Xor)
+        return "xor";
+    else if (_op == Op::Cmp)
+        return "icmp";
+    else if (_op == Op::Load)
+        return "load";
+    else if (_op == Op::Store)
+        return "store";
+    else
+        return "undefine";
 }

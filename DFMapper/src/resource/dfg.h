@@ -44,9 +44,10 @@ namespace DFMpr {
         vector<float> delayDistIntervalNorm;
         vector<uint> nodeLevelDist;
         //vector<uint> blockList;
+        string opToString(Op _op);
 
     private:
-        Op getNodeOp(int nodeId, string _op);
+        Op stringToOp(string _op);
         std::ifstream in;
         std::fstream out;
     };

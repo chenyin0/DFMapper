@@ -1,32 +1,49 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="src\common\dfg_tool.cpp">
-      <Filter>src\common</Filter>
-    </ClCompile>
-    <ClCompile Include="src\resource\dfg.cpp">
-      <Filter>src\resource</Filter>
-    </ClCompile>
-    <ClCompile Include="src\resource\arch\preprocess.cpp">
-      <Filter>src\resource\arch</Filter>
-    </ClCompile>
-    <ClCompile Include="src\tinyxml2\tinyxml2.cpp">
-      <Filter>src\tinyxml2</Filter>
-    </ClCompile>
+    <Filter Include="src">
+      <UniqueIdentifier>{eb86fd26-80e7-43f0-b647-c96e46a198f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mapper">
+      <UniqueIdentifier>{243c242f-2bf7-4f6c-a99c-302e6b8033a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\util">
+      <UniqueIdentifier>{9f406661-cc75-45da-9b1e-a340a027e68a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mapper\ILP">
+      <UniqueIdentifier>{e78f8c80-aee3-4e07-a456-1af33bae8d0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mapper\simulate_anneal">
+      <UniqueIdentifier>{008dc975-aaf9-4dc4-a491-eee563e2d26e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mapper\graph_traversal">
+      <UniqueIdentifier>{761cde92-82bd-40b4-8672-02b03248f130}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IR">
+      <UniqueIdentifier>{4cecc739-7d82-4c36-8643-81e1877495f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\define">
+      <UniqueIdentifier>{0626d718-6c9d-498a-83af-5c136c92aa4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\resource">
+      <UniqueIdentifier>{992fa409-3f80-417e-89de-a6f942d3a331}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common">
+      <UniqueIdentifier>{3f4dc042-7487-4753-b361-3c14ba716020}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mapper\template_match">
+      <UniqueIdentifier>{83635f20-5135-4dac-b3e3-e02d288becc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mapper\routing">
+      <UniqueIdentifier>{ad894d9e-46c1-4826-97f3-2f10c545d307}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\common\dfg_tool.h">
-      <Filter>src\common</Filter>
+    <ClInclude Include="src\util\ReadFile.hpp">
+      <Filter>src\util</Filter>
     </ClInclude>
-    <ClInclude Include="src\common\enum_converter.hpp">
-      <Filter>src\common</Filter>
-    </ClInclude>
-    <ClInclude Include="src\common\enum_definition.hpp">
-      <Filter>src\common</Filter>
-    </ClInclude>
-    <ClInclude Include="src\define\global.hpp">
-      <Filter>src\define</Filter>
+    <ClInclude Include="src\util\util.hpp">
+      <Filter>src\util</Filter>
     </ClInclude>
     <ClInclude Include="src\define\define.hpp">
       <Filter>src\define</Filter>
@@ -34,139 +51,29 @@
     <ClInclude Include="src\resource\dfg.h">
       <Filter>src\resource</Filter>
     </ClInclude>
-    <ClInclude Include="src\resource\arch\arch_block_net.hpp">
-      <Filter>src\resource\arch</Filter>
+    <ClInclude Include="src\common\dfg_tool.h">
+      <Filter>src\common</Filter>
     </ClInclude>
-    <ClInclude Include="src\resource\arch\para.hpp">
-      <Filter>src\resource\arch</Filter>
-    </ClInclude>
-    <ClInclude Include="src\resource\arch\preprocess.h">
-      <Filter>src\resource\arch</Filter>
-    </ClInclude>
-    <ClInclude Include="src\tinyxml2\tinyxml2.h">
-      <Filter>src\tinyxml2</Filter>
-    </ClInclude>
-    <ClInclude Include="src\util\cord.hpp">
-      <Filter>src\util</Filter>
-    </ClInclude>
-    <ClInclude Include="src\util\ReadFile.hpp">
-      <Filter>src\util</Filter>
-    </ClInclude>
-    <ClInclude Include="src\util\util.hpp">
-      <Filter>src\util</Filter>
+    <ClInclude Include="src\common\enum.h">
+      <Filter>src\common</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="src">
-      <UniqueIdentifier>{0eed52f9-ebb8-4a2a-a71b-ba2368256692}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="IR">
-      <UniqueIdentifier>{c319a2da-81e7-48da-8fab-60524f908604}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\util">
-      <UniqueIdentifier>{1515cea8-77b2-461a-b780-ec97fc38d133}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\tinyxml2">
-      <UniqueIdentifier>{b449d12a-b3ea-4e9a-a9ac-db3785c93dc0}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\resource">
-      <UniqueIdentifier>{2c0e62f4-45d3-44ee-8443-af572671a7ad}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\mapper">
-      <UniqueIdentifier>{be73175d-7f91-49a6-b99c-a3eb68c15b67}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\define">
-      <UniqueIdentifier>{7d936471-d06c-4726-9c70-85e2cbbbac61}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\common">
-      <UniqueIdentifier>{10907690-f4b2-4f7b-821d-96daf201e997}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\mapper\graph_traversal">
-      <UniqueIdentifier>{0ec4034c-3359-4d29-9673-401dfe09a800}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\mapper\ilp">
-      <UniqueIdentifier>{35983675-fab1-4c79-a803-907ce1e3eded}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\mapper\routing">
-      <UniqueIdentifier>{2038e980-f07a-4a9b-9c75-58f2b1985514}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\mapper\simulate_anneal">
-      <UniqueIdentifier>{391fdf5d-cd94-42f6-99c1-6dad4ae05328}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\mapper\template_match">
-      <UniqueIdentifier>{bc26ab61-6a41-43e3-b3bc-8af688f89dcc}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="src\resource\arch">
-      <UniqueIdentifier>{1837f761-fe67-4891-afe1-ba2a25dbbbe7}</UniqueIdentifier>
-    </Filter>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\resource\dfg.cpp">
+      <Filter>src\resource</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\dfg_tool.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Xml Include="src\resource\arch\arch_config.xml">
-      <Filter>src\resource\arch</Filter>
-    </Xml>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="IR\aes.ll">
-      <Filter>IR</Filter>
-    </None>
     <None Include="IR\backprop.ll">
       <Filter>IR</Filter>
     </None>
-    <None Include="IR\bfs_bulk.ll">
-      <Filter>IR</Filter>
-    </None>
-    <None Include="IR\bfs_queue.ll">
-      <Filter>IR</Filter>
-    </None>
-    <None Include="IR\fft_strided.ll">
-      <Filter>IR</Filter>
-    </None>
-    <None Include="IR\fft_transpose.ll">
-      <Filter>IR</Filter>
-    </None>
-    <None Include="IR\gemm_blocked.ll">
-      <Filter>IR</Filter>
-    </None>
-    <None Include="IR\gemm_ncube.ll">
-      <Filter>IR</Filter>
-    </None>
-    <None Include="IR\kmp.ll">
-      <Filter>IR</Filter>
-    </None>
-    <None Include="IR\md_grid.ll">
-      <Filter>IR</Filter>
-    </None>
-    <None Include="IR\md_knn.ll">
-      <Filter>IR</Filter>
-    </None>
-    <None Include="IR\nw.ll">
-      <Filter>IR</Filter>
-    </None>
-    <None Include="IR\sort_merge.ll">
-      <Filter>IR</Filter>
-    </None>
-    <None Include="IR\sort_radix.ll">
-      <Filter>IR</Filter>
-    </None>
-    <None Include="IR\spmv_crs.ll">
-      <Filter>IR</Filter>
-    </None>
-    <None Include="IR\spmv_ellpack.ll">
-      <Filter>IR</Filter>
-    </None>
-    <None Include="IR\stencil_2d.ll">
-      <Filter>IR</Filter>
-    </None>
-    <None Include="IR\stencil_3d.ll">
-      <Filter>IR</Filter>
-    </None>
-    <None Include="IR\viterbi.ll">
-      <Filter>IR</Filter>
-    </None>
     <None Include="IR\gemm.ll">
-      <Filter>IR</Filter>
-    </None>
-    <None Include="IR\gemm_ncubed.ll">
       <Filter>IR</Filter>
     </None>
   </ItemGroup>

@@ -8,6 +8,7 @@ namespace DFMpr {
     public:
         Logger(string fileName);
         ~Logger();
+        static std::ofstream& getOutputFile();
 
         std::ofstream& getFile()
         {

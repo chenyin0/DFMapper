@@ -24,6 +24,6 @@ namespace DFMpr {
         vector<string> appList;
     public:
         vector<vector<uint>> fullBlockList;
-        vector<vector<vector<uint>>> selectBlockList;
+        vector<vector<vector<uint>>> selectBlockList;  // AppName<BlockList<>> (BlockList is a vector)
     };
 }

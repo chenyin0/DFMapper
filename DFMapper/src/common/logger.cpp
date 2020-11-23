@@ -13,7 +13,7 @@ Logger::Logger(string fileName)
 
     if (_output_file.is_open())
     {
-        _output_file << "log open" << std::endl;
+        std::cout << "Log Open ->>>" << std::endl;
         _output_file << Util::getCurrentSystemTime() << std::endl;
     }
 }
@@ -21,6 +21,11 @@ Logger::Logger(string fileName)
 Logger::~Logger()
 {
     _output_file.close();
+}
+
+std::ofstream& Logger::getOutputFile()
+{
+    return _output_file;
 }
 
 void Logger::printDfg(const Dfg& _dfg)
@@ -106,9 +111,9 @@ void Logger::printDelayDistIntervalNorm(const Dfg& _dfg)
 void Logger::printNodeLevelDistribution(const Dfg& _dfg)
 {
     _output_file << std::endl;
-    for (size_t i = 0; i < _dfg.nodeLevelDist.size(); ++i)
+    for (size_t i = 0; i < _dfg.levels.size(); ++i)
     {
-        _output_file << "Node_level: " << i << "\tNode_num: " << _dfg.nodeLevelDist[i];
+        _output_file << "Node_level: " << i << "\tNode_num: " << _dfg.levels[i].nodeNum;
         _output_file << "\tinDeg: " << _dfg.levels[i].inDegree;
         _output_file << "\toutDeg: " << _dfg.levels[i].outDegree;
         _output_file << "\tmaxInDeg: " << _dfg.levels[i].maxSingleNodeInDegree;

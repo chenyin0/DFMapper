@@ -14,6 +14,7 @@ namespace DFMpr {
 
     struct Level
     {
+        uint nodeNum;
         uint outDegree;
         uint inDegree;
 
@@ -37,12 +38,12 @@ namespace DFMpr {
         vector<Level> levels;
 
         uint maxDelay = 0;
-        uint maxLevel = 0;
+        //uint maxLevel = 0;
         vector<uint> pathDelay;  // Record the delay cycle of each Edge
         vector<uint> delayDist;  // Delay distribution
         vector<float> delayDistNorm;  // Normalized delay distribution (%)
         vector<float> delayDistIntervalNorm;
-        vector<uint> nodeLevelDist;
+        //vector<uint> nodeLevelDist;
         //vector<uint> blockList;
         string opToString(Op _op);
 

@@ -9,7 +9,7 @@ const vector<uint> DfgTool::distInterval = { 0,1,4,7,10,20 };
 void DfgTool::printDfg(Dfg& _dfg)
 {
     // Print node info
-    Logger::printDfg(_dfg);
+    //Logger::printDfg(_dfg);
 
     // Print maximal node delay
     Logger::printMaxNodeDelay(_dfg);
@@ -201,23 +201,32 @@ void DfgTool::pathAnalyze(Dfg& _dfg)
 
 void DfgTool::nodeLevelAnalyze(Dfg& _dfg)
 {
+    uint maxLevel = 0;
     for (auto pair : _dfg.nodes)
     {
-        _dfg.maxLevel = std::max<uint>(_dfg.maxLevel, pair.second.nodeLevel);
+        maxLevel = std::max<uint>(maxLevel, pair.second.nodeLevel);
     }
 
-    _dfg.nodeLevelDist.resize(_dfg.maxLevel + 1);
+    //_dfg.nodeLevelDist.resize(_dfg.maxLevel + 1);
+    //for (auto pair : _dfg.nodes)
+    //{
+    //    _dfg.nodeLevelDist[pair.second.nodeLevel]++;
+    //}
+
+    _dfg.levels.resize(maxLevel + 1);
     for (auto pair : _dfg.nodes)
     {
-        _dfg.nodeLevelDist[pair.second.nodeLevel]++;
+        _dfg.levels[pair.second.nodeLevel].nodeNum++;
     }
 }
 
 void DfgTool::levelDegreeAnalyze(Dfg& _dfg)
 {
-    _dfg.levels.resize(_dfg.maxLevel + 1);
+    //_dfg.levels.resize(_dfg.maxLevel + 1);
     for (auto pair : _dfg.nodes)
     {
+        _dfg.levels[pair.second.nodeLevel].nodeNum++;
+
         uint nodeLevel = pair.second.nodeLevel;
         _dfg.levels[nodeLevel].inDegree += pair.second.pre_nodes.size();
         _dfg.levels[nodeLevel].outDegree += pair.second.next_nodes.size();

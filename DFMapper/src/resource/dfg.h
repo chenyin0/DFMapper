@@ -7,6 +7,8 @@ namespace DFMpr {
     {
         string tag;
         Op op = Op::Undefine;  // Initial value = Undefine
+        NodeType type;
+        int type_num;
         set<int> pre_nodes;
         set<int> next_nodes;
         int nodeLevel = -1;  // The max level of a node in BFS traversal
@@ -34,8 +36,6 @@ namespace DFMpr {
         void genDfg(string fpath);
         void dfgAnalyze();  // Contain dfg analysis function in DfgTool
         Dfg genSubDfg(vector<uint> fullBlockList, vector<uint> blockId);
-        map<int, Node> nodes;
-        vector<Level> levels;
 
         uint maxDelay = 0;
         //uint maxLevel = 0;
@@ -46,6 +46,8 @@ namespace DFMpr {
         //vector<uint> nodeLevelDist;
         //vector<uint> blockList;
         string opToString(Op _op);
+        map<int, Node> nodes;
+        vector<Level> levels;
 
     private:
         Op stringToOp(string _op);

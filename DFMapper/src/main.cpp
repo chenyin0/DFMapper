@@ -12,18 +12,28 @@ TODO:
 #include "common/dfg_tool.h"
 #include "./resource/app_set.h"
 #include "./common/logger.h"
+#include "define/global.hpp"
+#include "resource/app_graph/app_graph.h"
+#include "resource/preprocess/preprocess.h"
+#include "resource/resource_graph/pr_res_graph.h"
+#include "mapper/simulate_anneal/placementPattern.hpp"
+#include "mapper/routing/routingMain.hpp"
+#include "../src/resource/arch/arch_generation.h"
+#include "util/Log.hpp"
+#include <io.h>
+#include <direct.h>
 
 using namespace DFMpr;
 
 int main()
 {
-    Logger logger("./result/log.txt");
+    //Logger logger("./result/log.txt");
 
     ////string appName = "aes";  // dfgGen error, fix it!
     ////string appName = "backprop";
     ////string appName = "bfs_queue";  // dfgGen error, fix it!
     ////string appName = "fft_strided";
-    ////string appName = "gemm_blocked";
+    string appName = "gemm_blocked";
     ////string appName = "kmp";
     ////string appName = "md_knn";  // dfgGen error, fix it!
     ////string appName = "nw";
@@ -32,10 +42,69 @@ int main()
     ////string appName = "stencil_2d";
     ////string appName = "viterbi";
 
-    //string filePath = "./IR/" + appName + ".ll";
+    string filePath = "./IR/" + appName + ".ll";
 
-    //Dfg dfg(filePath);
-    //DfgTool::printDfg(dfg);
+    string output_file_addr = R"(.\result\output\)" + appName + R"(\)";
+    if (_access(output_file_addr.c_str(), 0) == -1)
+        _mkdir(output_file_addr.c_str());
+
+    GlobalPara::getInstance()->setInputAddr(InputAddr::architecture_xml_addr, R"(.\src\resource\arch\arch_config.xml)");
+    GlobalPara::getInstance()->setOutputAddr(OutputAddr::resource_block_graph_info_xml_addr, output_file_addr + "Block.xml");
+    GlobalPara::getInstance()->setOutputAddr(OutputAddr::resource_port_graph_info_xml_addr, output_file_addr + "Port.xml");
+    GlobalPara::getInstance()->setOutputAddr(OutputAddr::resource_segment_graph_info_xml_addr, output_file_addr + "Segment.xml");
+    GlobalPara::getInstance()->setOutputAddr(OutputAddr::resource_wire_graph_info_xml_addr, output_file_addr + "Wire.xml");
+
+    GlobalPara::getInstance()->setOutputAddr(OutputAddr::placement_result_xml_addr, output_file_addr + "Placement.xml");
+    GlobalPara::getInstance()->setOutputAddr(OutputAddr::routing_result_xml_addr, output_file_addr + "Routing.xml");
+    GlobalPara::getInstance()->setOutputAddr(OutputAddr::logger_txt_addr, output_file_addr + "Logger.txt");
+
+    Dfg dfg(filePath);
+    DfgTool::printDfg(dfg);
+
+    //生成arch_config
+    int pe_array_size = 8;
+    ArchGeneration tmp(GlobalPara::getInstance()->getOutputAddr(OutputAddr::architecture_xml_addr), pe_array_size);
+    tmp.archConfig();
+
+    // 生成DFG图信息
+    AppGraph app_graph(dfg.nodes);
+
+    // 生成资源图信息
+    ResourceGraph resource_graph;
+    resource_graph.showInfo();
+
+    string logger_addr = GlobalPara::getInstance()->getOutputAddr(OutputAddr::logger_txt_addr);
+    Log log(logger_addr);
+
+    PlacementPattern placement_pattern(app_graph, resource_graph, log);
+    auto [placementBoard, cost, alpha_count] = placement_pattern.setPlacement();
+
+    uint stopCountPara = 100;
+
+    // 自动化布线 - 准备引擎
+    Routing routing(app_graph, resource_graph, placementBoard, stopCountPara, log);
+
+    // 自动化布线 - 执行布线
+    auto routingResult = routing.goRouting();
+
+    // 自动化布线 - 保存结果
+    string routing_addr = GlobalPara::getInstance()->getOutputAddr(OutputAddr::routing_result_xml_addr);
+    routing.saveRoutingResult(routing_addr);
+
+    if (std::get<0>(routingResult) == true)
+    {
+        auto pair = routing.countResult();
+
+        routing.countRoutingResult();
+        auto net_info_count = routing.getNetInfoCount();
+        auto wire_info_count = routing.getWireInfoCount();
+        auto wire_count = resource_graph.getWireNum();
+    }
+
+
+
+
+
 
     ////std::cout << ">>>>>>>>>>> gemm_outer: <<<<<<<<<<<" << std::endl;
     ////Dfg gemm_outer = dfg.genSubDfg(filePath, { 11 });
@@ -48,7 +117,7 @@ int main()
     ////std::cout << ">>>>>>>>>>> md_knn: <<<<<<<<<<<" << std::endl;
     ////Dfg mdknn_inner = dfg.genSubDfg(DfgTool::getFullBlockList(filePath), { 49 });
     ////DfgTool::printDfg(mdknn_inner);
-
+    /*
     vector<string> appList = { 
         //"aes", 
         "backprop", 
@@ -275,4 +344,5 @@ int main()
             }
         }
     }
+    */
 }

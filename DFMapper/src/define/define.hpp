@@ -68,6 +68,8 @@ using std::accumulate;
 #define interface struct
 #define DEBUG_ASSERT(x) if ( !((void)0,(x))) { __debugbreak(); }
 #define DEBUG_CONSOLE true
+#define PRINT_DETAIL_CONSOLE true
+#define PRINT_DETAIL_FILE true
 
 //#define str(s) #s
 //#define xstr(s) str(s)
@@ -77,35 +79,66 @@ using std::accumulate;
 class Bool
 {
 public:
-    Bool()
-        : _value()
-    {
-    }
+	Bool()
+		: _value()
+	{
+	}
 
-    Bool(bool value_)
-        : _value(value_)
-    {
-    }
+	Bool(bool value_)
+		: _value(value_)
+	{
+	}
 
-    operator bool() const
-    {
-        return _value;
-    }
+	operator bool() const
+	{
+		return _value;
+	}
 
-    bool* operator& ()
-    {
-        return &_value;
-    }
+	bool* operator& ()
+	{
+		return &_value;
+	}
 
-    const bool* operator&() const
-    {
-        return &_value;
-    }
+	const bool* operator&() const
+	{
+		return &_value;
+	}
 
 private:
 
-    bool _value;
+	bool _value;
 
 };
 
 #define Bool Bool
+
+
+struct Interval final
+{
+	uint left;
+	uint right;
+
+	explicit Interval(uint a_ = 0, uint b_ = 0)
+		: left(a_)
+		, right(b_)
+	{
+	}
+
+	bool operator==(const Interval& b_) const
+	{
+		return (left == b_.left && right == b_.right);
+	}
+
+	void swap(Interval& a_, Interval& b_) const noexcept
+	{
+		using std::swap;
+		swap(a_.left, b_.left);
+		swap(a_.right, b_.right);
+	}
+
+	explicit operator string() const
+	{
+		auto s = "[" + std::to_string(left) + ", " + std::to_string(right) + ")";
+		return s;
+	}
+};

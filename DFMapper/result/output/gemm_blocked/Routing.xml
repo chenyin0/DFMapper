@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RoutingResult>
+    <wire_rate rate="0.022192"/>
+    <segment_rate rate="-nan(ind)"/>
+    <total_rate rate="0.022192"/>
+    <net source_node="pe0" source_port="0" placement="[10, 8]">
+        <target target_node="pe16" target_port="0" placement="[12, 8]">
+            <path id="2380" type="d32_v1_b1_l1_s1" source_port_pos="[pe][10, 8][out][normal][0]" target_port_pos="[pe][12, 8][in][normal][0]"/>
+            <path id="5132" type="b1" source_port_pos="[pe][12, 8][out][bp][0]" target_port_pos="[pe][10, 8][in][bp][0]"/>
+        </target>
+    </net>
+    <net source_node="pe1" source_port="0" placement="[14, 16]">
+        <target target_node="pe21" target_port="0" placement="[16, 16]">
+            <path id="3052" type="d32_v1_b1_l1_s1" source_port_pos="[pe][14, 16][out][normal][0]" target_port_pos="[pe][16, 16][in][normal][0]"/>
+            <path id="5804" type="b1" source_port_pos="[pe][16, 16][out][bp][0]" target_port_pos="[pe][14, 16][in][bp][0]"/>
+        </target>
+    </net>
+    <net source_node="pe2" source_port="0" placement="[8, 10]">
+        <target target_node="ls2" target_port="0" placement="[18, 10]">
+            <path id="8443" type="d32_v1_b1_l1_s1" source_port_pos="[pe][8, 10][out][normal][0]" target_port_pos="[ls][0, 10][in][router][0]"/>
+            <path id="9922" type="d32_v1_b1_l1_s1" source_port_pos="[ls][0, 10][out][router][0]" target_port_pos="[pe][6, 10][in][router][0]"/>
+            <path id="3439" type="d32_v1_b1_l1_s1" source_port_pos="[pe][6, 10][out][router][0]" target_port_pos="[pe][10, 10][in][router][0]"/>
+            <path id="8484" type="d32_v1_b1_l1_s1" source_port_pos="[pe][10, 10][out][router][0]" target_port_pos="[ls][18, 10][in][normal][0]"/>
+            <path id="8513" type="b1" source_port_pos="[ls][18, 10][out][bp][0]" target_port_pos="[pe][10, 10][in][bp][1]"/>
+            <path id="6191" type="b1" source_port_pos="[pe][10, 10][out][bp][4]" target_port_pos="[pe][6, 10][in][bp][1]"/>
+            <path id="8478" type="b1" source_port_pos="[ls][0, 10][out][bp][3]" target_port_pos="[pe][8, 10][in][bp][0]"/>
+        </target>
+    </net>
+    <net source_node="pe3" source_port="0" placement="[12, 12]">
+        <target target_node="pe4" target_port="0" placement="[12, 10]">
+            <path id="2652" type="d32_v1_b1_l1_s1" source_port_pos="[pe][12, 12][out][normal][0]" target_port_pos="[pe][12, 10][in][normal][0]"/>
+            <path id="5404" type="b1" source_port_pos="[pe][12, 10][out][bp][0]" target_port_pos="[pe][12, 12][in][bp][0]"/>
+        </target>
+        <target target_node="pe5" target_port="0" placement="[10, 12]">
+            <path id="2640" type="d32_v1_b1_l1_s1" source_port_pos="[pe][12, 12][out][normal][0]" target_port_pos="[pe][10, 12][in][normal][0]"/>
+            <path id="5392" type="b1" source_port_pos="[pe][10, 12][out][bp][0]" target_port_pos="[pe][12, 12][in][bp][0]"/>
+        </target>
+    </net>
+    <net source_node="pe4" source_port="0" placement="[12, 10]">
+        <target target_node="pe7" target_port="0" placement="[16, 2]">
+            <path id="3876" type="d32_v1_b1_l1_s1" source_port_pos="[pe][12, 10][out][normal][0]" target_port_pos="[pe][12, 2][in][router][0]"/>
+            <path id="3806" type="d32_v1_b1_l1_s1" source_port_pos="[pe][12, 2][out][router][0]" target_port_pos="[pe][16, 2][in][normal][0]"/>
+            <path id="6558" type="b1" source_port_pos="[pe][16, 2][out][bp][0]" target_port_pos="[pe][12, 2][in][bp][1]"/>
+            <path id="6628" type="b1" source_port_pos="[pe][12, 2][out][bp][4]" target_port_pos="[pe][12, 10][in][bp][0]"/>
+        </target>
+    </net>
+    <net source_node="pe5" source_port="0" placement="[10, 12]">
+        <target target_node="pe6" target_port="0" placement="[6, 4]">
+            <path id="3750" type="d32_v1_b1_l1_s1" source_port_pos="[pe][10, 12][out][normal][0]" target_port_pos="[pe][10, 4][in][router][0]"/>
+            <path id="3668" type="d32_v1_b1_l1_s1" source_port_pos="[pe][10, 4][out][router][0]" target_port_pos="[pe][6, 4][in][normal][0]"/>
+            <path id="6420" type="b1" source_port_pos="[pe][6, 4][out][bp][0]" target_port_pos="[pe][10, 4][in][bp][1]"/>
+            <path id="6502" type="b1" source_port_pos="[pe][10, 4][out][bp][4]" target_port_pos="[pe][10, 12][in][bp][0]"/>
+        </target>
+        <target target_node="pe19" target_port="0" placement="[16, 12]">
+            <path id="8611" type="d32_v1_b1_l1_s1" source_port_pos="[pe][10, 12][out][normal][0]" target_port_pos="[ls][18, 12][in][router][0]"/>
+            <path id="10043" type="d32_v1_b1_l1_s1" source_port_pos="[ls][18, 12][out][router][0]" target_port_pos="[pe][16, 12][in][normal][0]"/>
+            <path id="8664" type="b1" source_port_pos="[ls][18, 12][out][bp][3]" target_port_pos="[pe][10, 12][in][bp][0]"/>
+        </target>
+        <target target_node="pe37" target_port="0" placement="[14, 12]">
+            <path id="3750" type="d32_v1_b1_l1_s1" source_port_pos="[pe][10, 12][out][normal][0]" target_port_pos="[pe][10, 4][in][router][0]"/>
+            <path id="3679" type="d32_v1_b1_l1_s1" source_port_pos="[pe][10, 4][out][router][0]" target_port_pos="[pe][14, 4][in][router][0]"/>
+            <path id="3956" type="d32_v1_b1_l1_s1" source_port_pos="[pe][14, 4][out][router][0]" target_port_pos="[pe][14, 12][in][normal][0]"/>
+            <path id="6708" type="b1" source_port_pos="[pe][14, 12][out][bp][0]" target_port_pos="[pe][14, 4][in][bp][1]"/>
+            <path id="6431" type="b1" source_port_pos="[pe][14, 4][out][bp][4]" target_port_pos="[pe][10, 4][in][bp][1]"/>
+            <path id="6502" type="b1" source_port_pos="[pe][10, 4][out][bp][4]" target_port_pos="[pe][10, 12][in][bp][0]"/>
+        </target>
+        <target target_node="pe38" target_port="0" placement="[10, 14]">
+            <path id="2528" type="d32_v1_b1_l1_s1" source_port_pos="[pe][10, 12][out][normal][0]" target_port_pos="[pe][10, 14][in][normal][0]"/>
+            <path id="5280" type="b1" source_port_pos="[pe][10, 14][out][bp][0]" target_port_pos="[pe][10, 12][in][bp][0]"/>
+        </target>
+    </net>
+    <net source_node="pe6" source_port="0" placement="[6, 4]">
+        <target target_node="pe9" target_port="0" placement="[6, 6]">
+            <path id="1856" type="d32_v1_b1_l1_s1" source_port_pos="[pe][6, 4][out][normal][0]" target_port_pos="[pe][6, 6][in][normal][0]"/>
+            <path id="4608" type="b1" source_port_pos="[pe][6, 6][out][bp][0]" target_port_pos="[pe][6, 4][in][bp][0]"/>
+        </target>
+    </net>
+    <net source_node="pe7" source_port="0" placement="[16, 2]">
+        <target target_node="pe8" target_port="0" placement="[14, 4]">
+            <path id="2836" type="d32_v1_b1_l1_s1" source_port_pos="[pe][16, 2][out][normal][0]" target_port_pos="[pe][14, 4][in][normal][0]"/>
+            <path id="5588" type="b1" source_port_pos="[pe][14, 4][out][bp][0]" target_port_pos="[pe][16, 2][in][bp][0]"/>
+        </target>
+        <target target_node="pe13" target_port="0" placement="[14, 2]">
+            <path id="2832" type="d32_v1_b1_l1_s1" source_port_pos="[pe][16, 2][out][normal][0]" target_port_pos="[pe][14, 2][in][normal][0]"/>
+            <path id="5584" type="b1" source_port_pos="[pe][14, 2][out][bp][0]" target_port_pos="[pe][16, 2][in][bp][0]"/>
+        </target>
+        <target target_node="pe34" target_port="0" placement="[8, 2]">
+            <path id="7779" type="d32_v1_b1_l1_s1" source_port_pos="[pe][16, 2][out][normal][0]" target_port_pos="[ls][16, 0][in][router][0]"/>
+            <path id="9527" type="d32_v1_b1_l1_s1" source_port_pos="[ls][16, 0][out][router][0]" target_port_pos="[pe][16, 8][in][router][0]"/>
+            <path id="4075" type="d32_v1_b1_l1_s1" source_port_pos="[pe][16, 8][out][router][0]" target_port_pos="[pe][16, 16][in][router][0]"/>
+            <path id="4117" type="d32_v1_b1_l1_s1" source_port_pos="[pe][16, 16][out][router][0]" target_port_pos="[pe][12, 16][in][router][0]"/>
+            <path id="3919" type="d32_v1_b1_l1_s1" source_port_pos="[pe][12, 16][out][router][0]" target_port_pos="[pe][8, 16][in][router][0]"/>
+            <path id="3643" type="d32_v1_b1_l1_s1" source_port_pos="[pe][8, 16][out][router][0]" target_port_pos="[pe][8, 8][in][router][0]"/>
+            <path id="7295" type="d32_v1_b1_l1_s1" source_port_pos="[pe][8, 8][out][router][0]" target_port_pos="[ls][8, 0][in][router][0]"/>
+            <path id="9188" type="d32_v1_b1_l1_s1" source_port_pos="[ls][8, 0][out][router][0]" target_port_pos="[pe][8, 2][in][normal][0]"/>
+            <path id="7327" type="b1" source_port_pos="[ls][8, 0][out][bp][3]" target_port_pos="[pe][8, 8][in][bp][1]"/>
+            <path id="6395" type="b1" source_port_pos="[pe][8, 8][out][bp][4]" target_port_pos="[pe][8, 16][in][bp][1]"/>
+            <path id="6671" type="b1" source_port_pos="[pe][8, 16][out][bp][4]" target_port_pos="[pe][12, 16][in][bp][1]"/>
+            <path id="6869" type="b1" source_port_pos="[pe][12, 16][out][bp][4]" target_port_pos="[pe][16, 16][in][bp][1]"/>
+            <path id="6827" type="b1" source_port_pos="[pe][16, 16][out][bp][4]" target_port_pos="[pe][16, 8][in][bp][1]"/>
+            <path id="7832" type="b1" source_port_pos="[ls][16, 0][out][bp][3]" target_port_pos="[pe][16, 2][in][bp][0]"/>
+        </target>
+        <target target_node="pe35" target_port="0" placement="[16, 10]">
+            <path id="7779" type="d32_v1_b1_l1_s1" source_port_pos="[pe][16, 2][out][normal][0]" target_port_pos="[ls][16, 0][in][router][0]"/>
+            <path id="9512" type="d32_v1_b1_l1_s1" source_port_pos="[ls][16, 0][out][router][0]" target_port_pos="[pe][16, 2][in][router][0]"/>
+            <path id="4040" type="d32_v1_b1_l1_s1" source_port_pos="[pe][16, 2][out][router][0]" target_port_pos="[pe][16, 10][in][normal][0]"/>
+            <path id="6792" type="b1" source_port_pos="[pe][16, 10][out][bp][0]" target_port_pos="[pe][16, 2][in][bp][1]"/>
+            <path id="7832" type="b1" source_port_pos="[ls][16, 0][out][bp][3]" target_port_pos="[pe][16, 2][in][bp][0]"/>
+        </target>
+    </net>
+    <net source_node="pe8" source_port="0" placement="[14, 4]">
+        <target target_node="pe12" target_port="0" placement="[14, 6]">
+            <path id="2752" type="d32_v1_b1_l1_s1" source_port_pos="[pe][14, 4][out][normal][0]" target_port_pos="[pe][14, 6][in][normal][0]"/>
+            <path id="5504" type="b1" source_port_pos="[pe][14, 6][out][bp][0]" target_port_pos="[pe][14, 4][in][bp][0]"/>
+        </target>
+    </net>
+    <net source_node="pe9" source_port="0" placement="[6, 6]">
+        <target target_node="pe10" target_port="0" placement="[10, 6]">
+            <path id="3396" type="d32_v1_b1_l1_s1" source_port_pos="[pe][6, 6][out][normal][0]" target_port_pos="[pe][2, 6][in][router][0]"/>
+            <path id="3199" type="d32_v1_b1_l1_s1" source_port_pos="[pe][2, 6][out][router][0]" target_port_pos="[pe][6, 6][in][router][0]"/>
+            <path id="3410" type="d32_v1_b1_l1_s1" source_port_pos="[pe][6, 6][out][router][0]" target_port_pos="[pe][10, 6][in][normal][0]"/>
+            <path id="6162" type="b1" source_port_pos="[pe][10, 6][out][bp][0]" target_port_pos="[pe][6, 6][in][bp][1]"/>
+            <path id="5951" type="b1" source_port_pos="[pe][6, 6][out][bp][4]" target_port_pos="[pe][2, 6][in][bp][1]"/>
+            <path id="6148" type="b1" source_port_pos="[pe][2, 6][out][bp][4]" target_port_pos="[pe][6, 6][in][bp][0]"/>
+        </target>
+        <target target_node="pe31" target_port="0" placement="[8, 6]">
+            <path id="1900" type="d32_v1_b1_l1_s1" source_port_pos="[pe][6, 6][out][normal][0]" target_port_pos="[pe][8, 6][in][normal][0]"/>
+            <path id="4652" type="b1" source_port_pos="[pe][8, 6][out][bp][0]" target_port_pos="[pe][6, 6][in][bp][0]"/>
+        </target>
+    </net>
+    <net source_node="pe10" source_port="0" placement="[10, 6]">
+        <target target_node="pe11" target_port="0" placement="[12, 6]">
+            <path id="2348" type="d32_v1_b1_l1_s1" source_port_pos="[pe][10, 6][out][normal][0]" target_port_pos="[pe][12, 6][in][normal][0]"/>
+            <path id="5100" type="b1" source_port_pos="[pe][12, 6][out][bp][0]" target_port_pos="[pe][10, 6][in][bp][0]"/>
+        </target>
+        <target target_node="pe12" target_port="1" placement="[14, 6]">
+            <path id="3696" type="d32_v1_b1_l1_s1" source_port_pos="[pe][10, 6][out][normal][0]" target_port_pos="[pe][14, 6][in][router][0]"/>
+            <path id="7671" type="d32_v1_b1_l1_s1" source_port_pos="[pe][14, 6][out][router][0]" target_port_pos="[ls][14, 0][in][router][0]"/>
+            <path id="9439" type="d32_v1_b1_l1_s1" source_port_pos="[ls][14, 0][out][router][0]" target_port_pos="[pe][14, 6][in][normal][1]"/>
+            <path id="7709" type="b1" source_port_pos="[ls][14, 0][out][bp][3]" target_port_pos="[pe][14, 6][in][bp][1]"/>
+            <path id="6448" type="b1" source_port_pos="[pe][14, 6][out][bp][4]" target_port_pos="[pe][10, 6][in][bp][0]"/>
+        </target>
+        <target target_node="pe15" target_port="0" placement="[10, 2]">
+            <path id="2328" type="d32_v1_b1_l1_s1" source_port_pos="[pe][10, 6][out][normal][0]" target_port_pos="[pe][10, 2][in][normal][0]"/>
+            <path id="5080" type="b1" source_port_pos="[pe][10, 2][out][bp][0]" target_port_pos="[pe][10, 6][in][bp][0]"/>
+        </target>
+        <target target_node="pe18" target_port="0" placement="[12, 4]">
+            <path id="2344" type="d32_v1_b1_l1_s1" source_port_pos="[pe][10, 6][out][normal][0]" target_port_pos="[pe][12, 4][in][normal][0]"/>
+            <path id="5096" type="b1" source_port_pos="[pe][12, 4][out][bp][0]" target_port_pos="[pe][10, 6][in][bp][0]"/>
+        </target>
+        <target target_node="pe23" target_port="0" placement="[10, 4]">
+            <path id="2332" type="d32_v1_b1_l1_s1" source_port_pos="[pe][10, 6][out][normal][0]" target_port_pos="[pe][10, 4][in][normal][0]"/>
+            <path id="5084" type="b1" source_port_pos="[pe][10, 4][out][bp][0]" target_port_pos="[pe][10, 6][in][bp][0]"/>
+        </target>
+    </net>
+    <net source_node="pe11" source_port="0" placement="[12, 6]">
+        <target target_node="pe18" target_port="1" placement="[12, 4]">
+            <path id="2461" type="d32_v1_b1_l1_s1" source_port_pos="[pe][12, 6][out][normal][0]" target_port_pos="[pe][12, 4][in][normal][1]"/>
+            <path id="5213" type="b1" source_port_pos="[pe][12, 4][out][bp][1]" target_port_pos="[pe][12, 6][in][bp][0]"/>
+        </target>
+    </net>
+    <net source_node="pe12" source_port="0" placement="[14, 6]">
+        <target target_node="pe13" target_port="1" placement="[14, 2]">
+            <path id="2777" type="d32_v1_b1_l1_s1" source_port_pos="[pe][14, 6][out][normal][0]" target_port_pos="[pe][14, 2][in][normal][1]"/>
+            <path id="5529" type="b1" source_port_pos="[pe][14, 2][out][bp][1]" target_port_pos="[pe][14, 6][in][bp][0]"/>
+        </target>
+        <target target_node="pe28" target_port="0" placement="[16, 8]">
+            <path id="2800" type="d32_v1_b1_l1_s1" source_port_pos="[pe][14, 6][out][normal][0]" target_port_pos="[pe][16, 8][in][normal][0]"/>
+            <path id="5552" type="b1" source_port_pos="[pe][16, 8][out][bp][0]" target_port_pos="[pe][14, 6][in][bp][0]"/>
+        </target>
+    </net>
+    <net source_node="pe13" source_port="0" placement="[14, 2]">
+        <target target_node="pe14" target_port="0" placement="[14, 10]">
+            <path id="3936" type="d32_v1_b1_l1_s1" source_port_pos="[pe][14, 2][out][normal][0]" target_port_pos="[pe][10, 2][in][router][0]"/>
+            <path id="3661" type="d32_v1_b1_l1_s1" source_port_pos="[pe][10, 2][out][router][0]" target_port_pos="[pe][14, 2][in][router][0]"/>
+            <path id="3944" type="d32_v1_b1_l1_s1" source_port_pos="[pe][14, 2][out][router][0]" target_port_pos="[pe][14, 10][in][normal][0]"/>
+            <path id="6696" type="b1" source_port_pos="[pe][14, 10][out][bp][0]" target_port_pos="[pe][14, 2][in][bp][1]"/>
+            <path id="6413" type="b1" source_port_pos="[pe][14, 2][out][bp][4]" target_port_pos="[pe][10, 2][in][bp][1]"/>
+            <path id="6688" type="b1" source_port_pos="[pe][10, 2][out][bp][4]" target_port_pos="[pe][14, 2][in][bp][0]"/>
+        </target>
+        <target target_node="pe15" target_port="1" placement="[10, 2]">
+            <path id="7987" type="d32_v1_b1_l1_s1" source_port_pos="[pe][14, 2][out][normal][0]" target_port_pos="[ls][18, 2][in][router][0]"/>
+            <path id="9629" type="d32_v1_b1_l1_s1" source_port_pos="[ls][18, 2][out][router][0]" target_port_pos="[pe][10, 2][in][normal][1]"/>
+            <path id="8028" type="b1" source_port_pos="[ls][18, 2][out][bp][3]" target_port_pos="[pe][14, 2][in][bp][0]"/>
+        </target>
+    </net>
+    <net source_node="pe14" source_port="0" placement="[14, 10]">
+        <target target_node="pe20" target_port="0" placement="[16, 14]">
+            <path id="2964" type="d32_v1_b1_l1_s1" source_port_pos="[pe][14, 10][out][normal][0]" target_port_pos="[pe][16, 14][in][normal][0]"/>
+            <path id="5716" type="b1" source_port_pos="[pe][16, 14][out][bp][0]" target_port_pos="[pe][14, 10][in][bp][0]"/>
+        </target>
+    </net>
+    <net source_node="pe15" source_port="0" placement="[10, 2]">
+        <target target_node="pe16" target_port="1" placement="[12, 8]">
+            <path id="2297" type="d32_v1_b1_l1_s1" source_port_pos="[pe][10, 2][out][normal][0]" target_port_pos="[pe][12, 8][in][normal][1]"/>
+            <path id="5049" type="b1" source_port_pos="[pe][12, 8][out][bp][1]" target_port_pos="[pe][10, 2][in][bp][0]"/>
+        </target>
+    </net>
+    <net source_node="pe16" source_port="0" placement="[12, 8]">
+        <target target_node="ls0" target_port="0" placement="[12, 0]">
+            <path id="7544" type="d32_v1_b1_l1_s1" source_port_pos="[pe][12, 8][out][normal][0]" target_port_pos="[ls][12, 0][in][normal][0]"/>
+            <path id="7558" type="b1" source_port_pos="[ls][12, 0][out][bp][0]" target_port_pos="[pe][12, 8][in][bp][0]"/>
+        </target>
+    </net>
+    <net source_node="ls0" source_port="0" placement="[12, 0]">
+        <target target_node="pe17" target_port="0" placement="[12, 2]">
+            <path id="9328" type="d32_v1_b1_l1_s1" source_port_pos="[ls][12, 0][out][normal][0]" target_port_pos="[pe][12, 2][in][normal][0]"/>
+        </target>
+        <target target_node="pe18" target_port="2" placement="[12, 4]">
+            <path id="9335" type="d32_v1_b1_l1_s1" source_port_pos="[ls][12, 0][out][normal][0]" target_port_pos="[pe][12, 4][in][normal][2]"/>
+        </target>
+        <target target_node="pe22" target_port="0" placement="[12, 16]">
+            <path id="9347" type="d32_v1_b1_l1_s1" source_port_pos="[ls][12, 0][out][normal][0]" target_port_pos="[pe][12, 8][in][router][0]"/>
+            <path id="3854" type="d32_v1_b1_l1_s1" source_port_pos="[pe][12, 8][out][router][0]" target_port_pos="[pe][12, 16][in][normal][0]"/>
+            <path id="6606" type="b1" source_port_pos="[pe][12, 16][out][bp][0]" target_port_pos="[pe][12, 8][in][bp][1]"/>
+        </target>
+    </net>
+    <net source_node="pe17" source_port="0" placement="[12, 2]">
+        <target target_node="pe18" target_port="3" placement="[12, 4]">
+            <path id="2403" type="d32_v1_b1_l1_s1" source_port_pos="[pe][12, 2][out][normal][0]" target_port_pos="[pe][12, 4][in][normal][3]"/>
+            <path id="5155" type="b1" source_port_pos="[pe][12, 4][out][bp][3]" target_port_pos="[pe][12, 2][in][bp][0]"/>
+        </target>
+    </net>
+    <net source_node="pe18" source_port="0" placement="[12, 4]">
+        <target target_node="pe19" target_port="1" placement="[16, 12]">
+            <path id="3822" type="d32_v1_b1_l1_s1" source_port_pos="[pe][12, 4][out][normal][0]" target_port_pos="[pe][16, 4][in][router][0]"/>
+            <path id="4053" type="d32_v1_b1_l1_s1" source_port_pos="[pe][16, 4][out][router][0]" target_port_pos="[pe][16, 12][in][normal][1]"/>
+            <path id="6805" type="b1" source_port_pos="[pe][16, 12][out][bp][1]" target_port_pos="[pe][16, 4][in][bp][1]"/>
+            <path id="6574" type="b1" source_port_pos="[pe][16, 4][out][bp][4]" target_port_pos="[pe][12, 4][in][bp][0]"/>
+        </target>
+        <target target_node="pe25" target_port="0" placement="[16, 4]">
+            <path id="8107" type="d32_v1_b1_l1_s1" source_port_pos="[pe][12, 4][out][normal][0]" target_port_pos="[ls][18, 4][in][router][0]"/>
+            <path id="9723" type="d32_v1_b1_l1_s1" source_port_pos="[ls][18, 4][out][router][0]" target_port_pos="[pe][16, 4][in][normal][0]"/>
+            <path id="8154" type="b1" source_port_pos="[ls][18, 4][out][bp][3]" target_port_pos="[pe][12, 4][in][bp][0]"/>
+        </target>
+    </net>
+    <net source_node="pe19" source_port="0" placement="[16, 12]">
+        <target target_node="pe20" target_port="1" placement="[16, 14]">
+            <path id="3105" type="d32_v1_b1_l1_s1" source_port_pos="[pe][16, 12][out][normal][0]" target_port_pos="[pe][16, 14][in][normal][1]"/>
+            <path id="5857" type="b1" source_port_pos="[pe][16, 14][out][bp][1]" target_port_pos="[pe][16, 12][in][bp][0]"/>
+        </target>
+        <target target_node="pe23" target_port="1" placement="[10, 4]">
+            <path id="4092" type="d32_v1_b1_l1_s1" source_port_pos="[pe][16, 12][out][normal][0]" target_port_pos="[pe][12, 12][in][router][0]"/>
+            <path id="3883" type="d32_v1_b1_l1_s1" source_port_pos="[pe][12, 12][out][router][0]" target_port_pos="[pe][8, 12][in][router][0]"/>
+            <path id="3607" type="d32_v1_b1_l1_s1" source_port_pos="[pe][8, 12][out][router][0]" target_port_pos="[pe][8, 4][in][router][0]"/>
+            <path id="8063" type="d32_v1_b1_l1_s1" source_port_pos="[pe][8, 4][out][router][0]" target_port_pos="[ls][0, 4][in][router][0]"/>
+            <path id="9682" type="d32_v1_b1_l1_s1" source_port_pos="[ls][0, 4][out][router][0]" target_port_pos="[pe][6, 4][in][router][0]"/>
+            <path id="3393" type="d32_v1_b1_l1_s1" source_port_pos="[pe][6, 4][out][router][0]" target_port_pos="[pe][10, 4][in][normal][1]"/>
+            <path id="6145" type="b1" source_port_pos="[pe][10, 4][out][bp][1]" target_port_pos="[pe][6, 4][in][bp][1]"/>
+            <path id="8095" type="b1" source_port_pos="[ls][0, 4][out][bp][3]" target_port_pos="[pe][8, 4][in][bp][1]"/>
+            <path id="6359" type="b1" source_port_pos="[pe][8, 4][out][bp][4]" target_port_pos="[pe][8, 12][in][bp][1]"/>
+            <path id="6635" type="b1" source_port_pos="[pe][8, 12][out][bp][4]" target_port_pos="[pe][12, 12][in][bp][1]"/>
+            <path id="6844" type="b1" source_port_pos="[pe][12, 12][out][bp][4]" target_port_pos="[pe][16, 12][in][bp][0]"/>
+        </target>
+    </net>
+    <net source_node="pe20" source_port="0" placement="[16, 14]">
+        <target target_node="pe21" target_port="1" placement="[16, 16]">
+            <path id="3137" type="d32_v1_b1_l1_s1" source_port_pos="[pe][16, 14][out][normal][0]" target_port_pos="[pe][16, 16][in][normal][1]"/>
+            <path id="5889" type="b1" source_port_pos="[pe][16, 16][out][bp][1]" target_port_pos="[pe][16, 14][in][bp][0]"/>
+        </target>
+    </net>
+    <net source_node="pe21" source_port="0" placement="[16, 16]">
+        <target target_node="ls1" target_port="0" placement="[18, 16]">
+            <path id="8888" type="d32_v1_b1_l1_s1" source_port_pos="[pe][16, 16][out][normal][0]" target_port_pos="[ls][18, 16][in][normal][0]"/>
+            <path id="8902" type="b1" source_port_pos="[ls][18, 16][out][bp][0]" target_port_pos="[pe][16, 16][in][bp][0]"/>
+        </target>
+    </net>
+    <net source_node="ls1" source_port="0" placement="[18, 16]">
+        <target target_node="pe22" target_port="1" placement="[12, 16]">
+            <path id="10174" type="d32_v1_b1_l1_s1" source_port_pos="[ls][18, 16][out][normal][0]" target_port_pos="[pe][12, 16][in][normal][1]"/>
+        </target>
+    </net>
+    <net source_node="pe22" source_port="0" placement="[12, 16]">
+        <target target_node="pe24" target_port="0" placement="[12, 14]">
+            <path id="2716" type="d32_v1_b1_l1_s1" source_port_pos="[pe][12, 16][out][normal][0]" target_port_pos="[pe][12, 14][in][normal][0]"/>
+            <path id="5468" type="b1" source_port_pos="[pe][12, 14][out][bp][0]" target_port_pos="[pe][12, 16][in][bp][0]"/>
+        </target>
+    </net>
+    <net source_node="pe23" source_port="0" placement="[10, 4]">
+        <target target_node="ls2" target_port="1" placement="[18, 10]">
+            <path id="3672" type="d32_v1_b1_l1_s1" source_port_pos="[pe][10, 4][out][normal][0]" target_port_pos="[pe][10, 12][in][router][0]"/>
+            <path id="3745" type="d32_v1_b1_l1_s1" source_port_pos="[pe][10, 12][out][router][0]" target_port_pos="[pe][14, 12][in][router][0]"/>
+            <path id="7727" type="d32_v1_b1_l1_s1" source_port_pos="[pe][14, 12][out][router][0]" target_port_pos="[ls][14, 18][in][router][0]"/>
+            <path id="9472" type="d32_v1_b1_l1_s1" source_port_pos="[ls][14, 18][out][router][0]" target_port_pos="[pe][14, 10][in][router][0]"/>
+            <path id="8501" type="d32_v1_b1_l1_s1" source_port_pos="[pe][14, 10][out][router][0]" target_port_pos="[ls][18, 10][in][normal][1]"/>
+            <path id="8525" type="b1" source_port_pos="[ls][18, 10][out][bp][1]" target_port_pos="[pe][14, 10][in][bp][1]"/>
+            <path id="7771" type="b1" source_port_pos="[ls][14, 18][out][bp][3]" target_port_pos="[pe][14, 12][in][bp][1]"/>
+            <path id="6497" type="b1" source_port_pos="[pe][14, 12][out][bp][4]" target_port_pos="[pe][10, 12][in][bp][1]"/>
+            <path id="6424" type="b1" source_port_pos="[pe][10, 12][out][bp][4]" target_port_pos="[pe][10, 4][in][bp][0]"/>
+        </target>
+    </net>
+    <net source_node="ls2" source_port="0" placement="[18, 10]">
+        <target target_node="ls3" target_port="0" placement="[12, 18]">
+            <path id="9937" type="d32_v1_b1_l1_s1" source_port_pos="[ls][18, 10][out][normal][0]" target_port_pos="[pe][12, 10][in][router][0]"/>
+            <path id="7588" type="d32_v1_b1_l1_s1" source_port_pos="[pe][12, 10][out][router][0]" target_port_pos="[ls][12, 18][in][normal][0]"/>
+            <path id="7617" type="b1" source_port_pos="[ls][12, 18][out][bp][0]" target_port_pos="[pe][12, 10][in][bp][1]"/>
+        </target>
+    </net>
+    <net source_node="ls3" source_port="0" placement="[12, 18]">
+        <target target_node="pe24" target_port="1" placement="[12, 14]">
+            <path id="9379" type="d32_v1_b1_l1_s1" source_port_pos="[ls][12, 18][out][normal][0]" target_port_pos="[pe][12, 14][in][normal][1]"/>
+        </target>
+    </net>
+    <net source_node="pe25" source_port="0" placement="[16, 4]">
+        <target target_node="pe26" target_port="0" placement="[16, 6]">
+            <path id="2880" type="d32_v1_b1_l1_s1" source_port_pos="[pe][16, 4][out][normal][0]" target_port_pos="[pe][16, 6][in][normal][0]"/>
+            <path id="5632" type="b1" source_port_pos="[pe][16, 6][out][bp][0]" target_port_pos="[pe][16, 4][in][bp][0]"/>
+        </target>
+    </net>
+    <net source_node="pe26" source_port="0" placement="[16, 6]">
+        <target target_node="pe27" target_port="0" placement="[14, 8]">
+            <path id="2900" type="d32_v1_b1_l1_s1" source_port_pos="[pe][16, 6][out][normal][0]" target_port_pos="[pe][14, 8][in][normal][0]"/>
+            <path id="5652" type="b1" source_port_pos="[pe][14, 8][out][bp][0]" target_port_pos="[pe][16, 6][in][bp][0]"/>
+        </target>
+        <target target_node="pe28" target_port="1" placement="[16, 8]">
+            <path id="2913" type="d32_v1_b1_l1_s1" source_port_pos="[pe][16, 6][out][normal][0]" target_port_pos="[pe][16, 8][in][normal][1]"/>
+            <path id="5665" type="b1" source_port_pos="[pe][16, 8][out][bp][1]" target_port_pos="[pe][16, 6][in][bp][0]"/>
+        </target>
+    </net>
+    <net source_node="pe28" source_port="0" placement="[16, 8]">
+        <target target_node="pe29" target_port="0" placement="[8, 8]">
+            <path id="8379" type="d32_v1_b1_l1_s1" source_port_pos="[pe][16, 8][out][normal][0]" target_port_pos="[ls][18, 8][in][router][0]"/>
+            <path id="9872" type="d32_v1_b1_l1_s1" source_port_pos="[ls][18, 8][out][router][0]" target_port_pos="[pe][10, 8][in][router][0]"/>
+            <path id="3703" type="d32_v1_b1_l1_s1" source_port_pos="[pe][10, 8][out][router][0]" target_port_pos="[pe][6, 8][in][router][0]"/>
+            <path id="8311" type="d32_v1_b1_l1_s1" source_port_pos="[pe][6, 8][out][router][0]" target_port_pos="[ls][0, 8][in][router][0]"/>
+            <path id="9843" type="d32_v1_b1_l1_s1" source_port_pos="[ls][0, 8][out][router][0]" target_port_pos="[pe][8, 8][in][normal][0]"/>
+            <path id="8349" type="b1" source_port_pos="[ls][0, 8][out][bp][3]" target_port_pos="[pe][6, 8][in][bp][1]"/>
+            <path id="6455" type="b1" source_port_pos="[pe][6, 8][out][bp][4]" target_port_pos="[pe][10, 8][in][bp][1]"/>
+            <path id="8414" type="b1" source_port_pos="[ls][18, 8][out][bp][3]" target_port_pos="[pe][16, 8][in][bp][0]"/>
+        </target>
+    </net>
+    <net source_node="pe29" source_port="0" placement="[8, 8]">
+        <target target_node="pe30" target_port="0" placement="[6, 8]">
+            <path id="2032" type="d32_v1_b1_l1_s1" source_port_pos="[pe][8, 8][out][normal][0]" target_port_pos="[pe][6, 8][in][normal][0]"/>
+            <path id="4784" type="b1" source_port_pos="[pe][6, 8][out][bp][0]" target_port_pos="[pe][8, 8][in][bp][0]"/>
+        </target>
+        <target target_node="pe31" target_port="1" placement="[8, 6]">
+            <path id="2045" type="d32_v1_b1_l1_s1" source_port_pos="[pe][8, 8][out][normal][0]" target_port_pos="[pe][8, 6][in][normal][1]"/>
+            <path id="4797" type="b1" source_port_pos="[pe][8, 6][out][bp][1]" target_port_pos="[pe][8, 8][in][bp][0]"/>
+        </target>
+    </net>
+    <net source_node="pe31" source_port="0" placement="[8, 6]">
+        <target target_node="pe32" target_port="0" placement="[8, 4]">
+            <path id="2012" type="d32_v1_b1_l1_s1" source_port_pos="[pe][8, 6][out][normal][0]" target_port_pos="[pe][8, 4][in][normal][0]"/>
+            <path id="4764" type="b1" source_port_pos="[pe][8, 4][out][bp][0]" target_port_pos="[pe][8, 6][in][bp][0]"/>
+        </target>
+    </net>
+    <net source_node="pe32" source_port="0" placement="[8, 4]">
+        <target target_node="pe33" target_port="0" placement="[6, 2]">
+            <path id="1964" type="d32_v1_b1_l1_s1" source_port_pos="[pe][8, 4][out][normal][0]" target_port_pos="[pe][6, 2][in][normal][0]"/>
+            <path id="4716" type="b1" source_port_pos="[pe][6, 2][out][bp][0]" target_port_pos="[pe][8, 4][in][bp][0]"/>
+        </target>
+        <target target_node="pe34" target_port="1" placement="[8, 2]">
+            <path id="1981" type="d32_v1_b1_l1_s1" source_port_pos="[pe][8, 4][out][normal][0]" target_port_pos="[pe][8, 2][in][normal][1]"/>
+            <path id="4733" type="b1" source_port_pos="[pe][8, 2][out][bp][1]" target_port_pos="[pe][8, 4][in][bp][0]"/>
+        </target>
+    </net>
+    <net source_node="pe35" source_port="0" placement="[16, 10]">
+        <target target_node="pe36" target_port="0" placement="[14, 14]">
+            <path id="3064" type="d32_v1_b1_l1_s1" source_port_pos="[pe][16, 10][out][normal][0]" target_port_pos="[pe][14, 14][in][normal][0]"/>
+            <path id="5816" type="b1" source_port_pos="[pe][14, 14][out][bp][0]" target_port_pos="[pe][16, 10][in][bp][0]"/>
+        </target>
+        <target target_node="pe37" target_port="1" placement="[14, 12]">
+            <path id="3061" type="d32_v1_b1_l1_s1" source_port_pos="[pe][16, 10][out][normal][0]" target_port_pos="[pe][14, 12][in][normal][1]"/>
+            <path id="5813" type="b1" source_port_pos="[pe][14, 12][out][bp][1]" target_port_pos="[pe][16, 10][in][bp][0]"/>
+        </target>
+    </net>
+    <net source_node="pe38" source_port="0" placement="[10, 14]">
+        <target target_node="pe39" target_port="0" placement="[10, 10]">
+            <path id="2552" type="d32_v1_b1_l1_s1" source_port_pos="[pe][10, 14][out][normal][0]" target_port_pos="[pe][10, 10][in][normal][0]"/>
+            <path id="5304" type="b1" source_port_pos="[pe][10, 10][out][bp][0]" target_port_pos="[pe][10, 14][in][bp][0]"/>
+        </target>
+        <target target_node="pe40" target_port="0" placement="[10, 16]">
+            <path id="2560" type="d32_v1_b1_l1_s1" source_port_pos="[pe][10, 14][out][normal][0]" target_port_pos="[pe][10, 16][in][normal][0]"/>
+            <path id="5312" type="b1" source_port_pos="[pe][10, 16][out][bp][0]" target_port_pos="[pe][10, 14][in][bp][0]"/>
+        </target>
+    </net>
+</RoutingResult>

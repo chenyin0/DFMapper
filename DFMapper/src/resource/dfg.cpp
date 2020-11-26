@@ -145,34 +145,49 @@ void Dfg::genDfg(string fpath)
         }
     }
     //pre->next
-    for (auto pair : nodes)
+    for (auto& pair : nodes)
     {
-        for (auto node : pair.second.pre_nodes)
+        for (auto& node : pair.second.pre_nodes)
         {
             nodes[node].next_nodes.insert(pair.first);
         }
     }
     //start_pre->start_next
-    for (auto node : start)
+    for (auto& node : start)
     {
-        for (auto pre_node : nodes[node].pre_nodes)
+        for (auto& pre_node : nodes[node].pre_nodes)
         {
-            for (auto next_node : nodes[node].next_nodes)
+            for (auto& next_node : nodes[node].next_nodes)
             {
                 nodes[pre_node].next_nodes.insert(next_node);
                 nodes[next_node].pre_nodes.insert(pre_node);
             }
         }
     }
-
-    //for (auto pair : nodes)
+    //Ìí¼Ó type + type_num
+    unordered_map<NodeType, int> node_type_num;
+    node_type_num[NodeType::pe] = 0;
+    node_type_num[NodeType::ls] = 0;
+    for (auto& pair : nodes)
+    {
+        if (nodes[pair.first].op == Op::Load || nodes[pair.first].op == Op::Store)
+        {
+            nodes[pair.first].type = NodeType::ls;
+        }
+        else
+        {
+            nodes[pair.first].type = NodeType::pe;
+        }
+        nodes[pair.first].type_num = node_type_num[nodes[pair.first].type]++;
+    }
+    //for (auto& pair : nodes)
     //{
     //    vector<int>::iterator it = find(start.begin(), start.end(), pair.first);
     //    if (it != start.end())
     //        continue;
 
     //    std::cout << pair.first << "\tpre_nodes: ";
-    //    for (auto node : pair.second.pre_nodes)
+    //    for (auto& node : pair.second.pre_nodes)
     //    {
     //        vector<int>::iterator it = find(start.begin(), start.end(), node);
     //        if (it != start.end())
@@ -180,7 +195,7 @@ void Dfg::genDfg(string fpath)
     //        std::cout << node << " ";
     //    }
     //    std::cout << "\n\tnext_nodes: ";
-    //    for (auto node : pair.second.next_nodes)
+    //    for (auto& node : pair.second.next_nodes)
     //    {
     //        vector<int>::iterator it = find(start.begin(), start.end(), node);
     //        if (it != start.end())

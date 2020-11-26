@@ -24,7 +24,7 @@ namespace DFMpr
 	enum class OutputAddr : unsigned char
 	{
 		output_file_addr,
-
+		architecture_xml_addr,
 		hgra_debug_inner_txt_addr,
 		hgra_debug_port_txt_addr,
 		hgra_debug_memory_txt_addr,
@@ -97,6 +97,8 @@ namespace DFMpr
 		{
 			if (type_ == OutputAddr::output_file_addr)
 				return _output_file_addr;
+			if (type_ == OutputAddr::architecture_xml_addr)
+				return _architecture_xml_addr;
 			if (type_ == OutputAddr::hgra_debug_inner_txt_addr)
 				return _hgra_debug_inner_txt_addr;
 			if (type_ == OutputAddr::hgra_debug_port_txt_addr)
@@ -139,6 +141,8 @@ namespace DFMpr
 		{
 			if (type_ == OutputAddr::output_file_addr)
 				_output_file_addr = addr_;
+			if (type_ == OutputAddr::architecture_xml_addr)
+				_architecture_xml_addr = addr_;
 			else if (type_ == OutputAddr::hgra_debug_inner_txt_addr)
 				_hgra_debug_inner_txt_addr = addr_;
 			else if (type_ == OutputAddr::hgra_debug_port_txt_addr)

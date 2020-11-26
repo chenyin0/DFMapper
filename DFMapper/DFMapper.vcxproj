@@ -99,6 +99,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -129,6 +130,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -138,48 +140,87 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="lib\metis\metis.h" />
+    <ClInclude Include="lib\tinyxml2\tinyxml2.h" />
     <ClInclude Include="src\common\dfg_tool.h" />
     <ClInclude Include="src\common\enum_converter.hpp" />
     <ClInclude Include="src\common\enum_definition.hpp" />
     <ClInclude Include="src\common\logger.h" />
     <ClInclude Include="src\define\define.hpp" />
+    <ClInclude Include="src\define\global.hpp" />
+    <ClInclude Include="src\mapper\routing\routingBase.hpp" />
+    <ClInclude Include="src\mapper\routing\routingMain.hpp" />
+    <ClInclude Include="src\mapper\simulate_anneal\placementBase.hpp" />
+    <ClInclude Include="src\mapper\simulate_anneal\placementMain.hpp" />
+    <ClInclude Include="src\mapper\simulate_anneal\placementPara.hpp" />
+    <ClInclude Include="src\mapper\simulate_anneal\placementPattern.hpp" />
+    <ClInclude Include="src\resource\app_graph\app_graph.h" />
+    <ClInclude Include="src\resource\arch\arch_block_net.hpp" />
+    <ClInclude Include="src\resource\arch\arch_generation.h" />
+    <ClInclude Include="src\resource\arch\para.hpp" />
     <ClInclude Include="src\resource\dfg.h" />
-    <ClInclude Include="src\resource\app_set.h" />
-    <ClInclude Include="src\tinyxml2\tinyxml2.h" />
+    <ClInclude Include="src\resource\preprocess\preprocess.h" />
+    <ClInclude Include="src\resource\resource_graph\pr_res_graph.h" />
+    <ClInclude Include="src\resource\resource_graph\pr_res_graph_element.h" />
+    <ClInclude Include="src\resource\resource_graph\pr_res_graph_monitor.h" />
     <ClInclude Include="src\util\cord.hpp" />
+    <ClInclude Include="src\util\Log.hpp" />
+    <ClInclude Include="src\util\mathAssist.hpp" />
     <ClInclude Include="src\util\ReadFile.hpp" />
+    <ClInclude Include="src\util\Timer.hpp" />
     <ClInclude Include="src\util\util.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="lib\tinyxml2\tinyxml2.cpp" />
     <ClCompile Include="src\common\dfg_tool.cpp" />
     <ClCompile Include="src\common\logger.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\resource\app_graph\app_graph.cpp" />
+    <ClCompile Include="src\resource\arch\arch_generation.cpp" />
     <ClCompile Include="src\resource\dfg.cpp" />
-    <ClCompile Include="src\resource\app_set.cpp" />
-    <ClCompile Include="src\tinyxml2\tinyxml2.cpp" />
+    <ClCompile Include="src\resource\preprocess\preprocess.cpp" />
+    <ClCompile Include="src\resource\resource_graph\pr_res_graph.cpp" />
+    <ClCompile Include="src\resource\resource_graph\pr_res_graph_element.cpp" />
+    <ClCompile Include="src\resource\resource_graph\pr_res_graph_monitor.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="IR\aes.ll" />
     <None Include="IR\backprop.ll" />
-    <None Include="IR\bfs_bulk.ll" />
-    <None Include="IR\bfs_queue.ll" />
-    <None Include="IR\fft_strided.ll" />
-    <None Include="IR\fft_transpose.ll" />
-    <None Include="IR\gemm_blocked.ll" />
-    <None Include="IR\kmp.ll" />
-    <None Include="IR\md_grid.ll" />
-    <None Include="IR\md_knn.ll" />
-    <None Include="IR\nw.ll" />
-    <None Include="IR\sort_merge.ll" />
-    <None Include="IR\sort_radix.ll" />
-    <None Include="IR\spmv_crs.ll" />
-    <None Include="IR\spmv_ellpack.ll" />
-    <None Include="IR\stencil_2d.ll" />
-    <None Include="IR\stencil_3d.ll" />
-    <None Include="IR\viterbi.ll" />
+    <None Include="IR\gemm.ll" />
+    <None Include="lib\Eigen\Cholesky" />
+    <None Include="lib\Eigen\CholmodSupport" />
+    <None Include="lib\Eigen\Core" />
+    <None Include="lib\Eigen\Dense" />
+    <None Include="lib\Eigen\Eigen" />
+    <None Include="lib\Eigen\Eigenvalues" />
+    <None Include="lib\Eigen\Geometry" />
+    <None Include="lib\Eigen\Householder" />
+    <None Include="lib\Eigen\IterativeLinearSolvers" />
+    <None Include="lib\Eigen\Jacobi" />
+    <None Include="lib\Eigen\LU" />
+    <None Include="lib\Eigen\MetisSupport" />
+    <None Include="lib\Eigen\OrderingMethods" />
+    <None Include="lib\Eigen\PardisoSupport" />
+    <None Include="lib\Eigen\PaStiXSupport" />
+    <None Include="lib\Eigen\QR" />
+    <None Include="lib\Eigen\QtAlignedMalloc" />
+    <None Include="lib\Eigen\Sparse" />
+    <None Include="lib\Eigen\SparseCholesky" />
+    <None Include="lib\Eigen\SparseCore" />
+    <None Include="lib\Eigen\SparseLU" />
+    <None Include="lib\Eigen\SparseQR" />
+    <None Include="lib\Eigen\SPQRSupport" />
+    <None Include="lib\Eigen\StdDeque" />
+    <None Include="lib\Eigen\StdList" />
+    <None Include="lib\Eigen\StdVector" />
+    <None Include="lib\Eigen\SuperLUSupport" />
+    <None Include="lib\Eigen\SVD" />
+    <None Include="lib\Eigen\UmfPackSupport" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="result\log.txt" />
+    <Xml Include="src\resource\arch\arch_config.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="lib\metis\metis.lib" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

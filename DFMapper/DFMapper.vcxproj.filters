@@ -37,6 +37,15 @@
     <Filter Include="src\mapper\routing">
       <UniqueIdentifier>{ad894d9e-46c1-4826-97f3-2f10c545d307}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\resource\arch">
+      <UniqueIdentifier>{db25bcd3-48ba-4d2c-a9bf-a064e6b954df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\resource\preprocess">
+      <UniqueIdentifier>{ad5824b1-9a85-4eb7-af46-24dbb9eda174}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tinyxml2">
+      <UniqueIdentifier>{852532de-2918-4d4e-aed9-ea122243d470}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\util\ReadFile.hpp">
@@ -54,8 +63,26 @@
     <ClInclude Include="src\common\dfg_tool.h">
       <Filter>src\common</Filter>
     </ClInclude>
-    <ClInclude Include="src\common\enum.h">
+    <ClInclude Include="src\resource\arch\arch_block_net.hpp">
+      <Filter>src\resource\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="src\resource\preprocess\preprocess.h">
+      <Filter>src\resource\preprocess</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tinyxml2\tinyxml2.h">
+      <Filter>src\tinyxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="src\resource\arch\para.hpp">
+      <Filter>src\resource\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\enum_converter.hpp">
       <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\enum_definition.hpp">
+      <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\resource\preprocess\dfg_node.hpp">
+      <Filter>src\resource\preprocess</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -68,6 +95,12 @@
     <ClCompile Include="src\common\dfg_tool.cpp">
       <Filter>src\common</Filter>
     </ClCompile>
+    <ClCompile Include="src\resource\preprocess\preprocess.cpp">
+      <Filter>src\resource\preprocess</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tinyxml2\tinyxml2.cpp">
+      <Filter>src\tinyxml2</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="IR\backprop.ll">
@@ -76,5 +109,10 @@
     <None Include="IR\gemm.ll">
       <Filter>IR</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="src\resource\arch\arch_config.xml">
+      <Filter>src\resource\arch</Filter>
+    </Xml>
   </ItemGroup>
 </Project>

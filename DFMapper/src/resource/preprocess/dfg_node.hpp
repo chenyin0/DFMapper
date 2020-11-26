@@ -10,8 +10,8 @@
  */
 
 #include <utility>
-#include "../util/cord.hpp"
-#include "../../lib/tinyxml2/tinyxml2.h"
+#include "../../util/util.hpp"
+#include "../../tinyxml2/tinyxml2.h"
 
 struct Bus_Label {
 	Label label;

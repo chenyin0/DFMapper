@@ -396,21 +396,21 @@ namespace DFMpr
 			if (type_ == PEOpcode::rishift)
 				return "rishift";
 			if (type_ == PEOpcode::bit_and)
-				return "and";
+				return "bit_and";
 			if (type_ == PEOpcode::bit_or)
-				return "or";
+				return "bit_or";
 			if (type_ == PEOpcode::cos)
 				return "cos";
 			if (type_ == PEOpcode::sin)
 				return "sin";
 			if (type_ == PEOpcode::bit_xor)
-				return "xor";
+				return "bit_xor";
 			if (type_ == PEOpcode::smux)
 				return "smux";
 			if (type_ == PEOpcode::neq)
 				return "neq";
 			if (type_ == PEOpcode::bit_not)
-				return "not";
+				return "bit_not";
 			if (type_ == PEOpcode::merge)
 				return "merge";
 			if (type_ == PEOpcode::lte)
@@ -507,13 +507,13 @@ namespace DFMpr
 				return PEOpcode::eq;
 			if (s_ == "mac" || s_ == "01000")
 				return PEOpcode::mac;
-			if (s_ == "and" || s_ == "01001")
+			if (s_ == "bit_and" || s_ == "01001")
 				return PEOpcode::bit_and;
-			if (s_ == "or" || s_ == "01010")
+			if (s_ == "bit_or" || s_ == "01010")
 				return PEOpcode::bit_or;
-			if (s_ == "not" || s_ == "01011")
+			if (s_ == "bit_not" || s_ == "01011")
 				return PEOpcode::bit_not;
-			if (s_ == "xor" || s_ == "01100")
+			if (s_ == "bit_xor" || s_ == "01100")
 				return PEOpcode::bit_xor;
 			if (s_ == "mux" || s_ == "01101")
 				return PEOpcode::mux;

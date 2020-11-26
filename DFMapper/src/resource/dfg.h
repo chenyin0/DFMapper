@@ -7,6 +7,8 @@ namespace DFMpr {
     {
         string tag;
         Op op;
+        NodeType type;
+        int type_num;
         set<int> pre_nodes;
         set<int> next_nodes;
         int nodeLevel = -1;  // The max level of a node in BFS traversal
@@ -17,8 +19,6 @@ namespace DFMpr {
     public:
         Dfg();
         void genDfg(string fpath);
-        void dfgAnalyze();  // Contain dfg analysis function in DfgTool
-        Dfg genSubDfg(string fpath, vector<uint> blockId);
         map<int, Node> nodes;
 
         uint maxDelay = 0;
@@ -26,11 +26,9 @@ namespace DFMpr {
         vector<uint> delayDist;  // Delay distribution
         vector<float> delayDistNorm;  // Normalized delay distribution (%)
         vector<float> delayDistIntervalNorm;
-        vector<uint> nodeLevelDist;
-        string opToString(Op _op);
 
     private:
-        Op stringToOp(string _op);
+        Op getNodeOp(int nodeId, string _op);
         std::ifstream in;
         std::fstream out;
     };
